@@ -28,49 +28,85 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    article {
+      scroll-margin-top: 90px;
+    }
+
+    .content-section ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .content-section h2 {
+      margin-top: 3rem;
+    }
+
+    .content-section h3 {
+      margin-top: 2rem;
+    }
+
+    .profile-image {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 3rem;
+    }
+  </style>
 </head>
 
 <body id="page-top">
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="js-scroll-trigger" href="index.html">Sanja Zalar Gostimirović - Sanja Somatika</a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#moje-delo">moje delo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#podprem-te-pri">podprem te pri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#okvir-in-meje">okvir in meje</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#potek-srecanja">potek srečanja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#nacin-sodelovanja">način sodelovanja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#strokovna-podlaga">strokovna podlaga</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <main>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="js-scroll-trigger" href="index.html">Sanja Zalar Gostimirović - Sanja Somatika</a>
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#delo">Delo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#teme">Teme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#okvir">Okvir</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#srecanje">Srečanje</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#potek">Potek</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#strokovna-podlaga">Strokovna podlaga</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <!-- Header -->
-    <header class="masthead">
+    <header>
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto my-5 py-5 text-left">
@@ -80,417 +116,333 @@
       </div>
     </header>
 
-    <section class="projects-section text-center">
+    <!-- Profile image -->
+    <section class="text-center">
       <div class="container">
-        <img src="prof.jpg" alt="Sanja Somatika" class="img-fluid">
+        <img src="prof.jpg" alt="Sanja Somatika" class="profile-image">
       </div>
     </section>
 
-    <section id="delo" class="projects-section">
+    <!-- Main content -->
+    <section class="projects-section content-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Psihosocialno svetovanje in somatska podpora</h2>
-
-            <p class="text-black-50 mt-5">
-              Za sodelovanje me poiščejo odrasli, ki doživljajo pomanjkanje stika z osebnimi mejami in potrebami ter izzive pri ohranjanju stika s telesom. Pogosto se soočajo z neželenimi ponavljajočimi se odnosnimi vzorci, predvsem z močnim fokusom na druge, s preobremenjenostjo živčnega sistema ali s tesnobo v nekliničnem okviru.
-            </p>
-
-            <p class="text-black-50">
-              Moje delo združuje psihosocialno svetovanje, integrativno somatsko podporo z izhodiščem v metodi Somatic Experiencing® (telesno orientiran terapevtski model za delo z živčnim sistemom), Somatsko čuječnost (avtorska metoda) in podporo pri regulaciji živčnega sistema.
-            </p>
-
-            <p class="text-black-50">
-              Pri delu izhajam iz bio-psiho-socialnega razumevanja človeka ter povezujem znanja psihosocialnega dela, terapevtskih somatskih modalitet, čuječnosti, teorije navezanosti, regulacije živčnega sistema, odnosnih pristopov in travmatsko informirane podpore.
-            </p>
-
-            <p class="text-black-50">
-              Delo poteka kot kolaborativen proces v nehierarhičnem odnosu a z jasno diferenciranimi vlogami. Usmerjeno je v krepitev psihološke odpornosti, opolnomočenje, stik z občutkom možnosti izbire, gradnjo notranje stabilnosti ter jasnejši stik s svojim telesom in osebnimi mejami.
-            </p>
-
-            <p class="text-black-50">
-              Delo ne vključuje diagnosticiranja ali zdravljenja duševnih bolezni.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="teme" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Teme, s katerimi se klientke obračajo name</h2>
-
-            <ul class="text-black-50 mt-5">
-              <li>osebne meje</li>
-              <li>ugajanje drugim</li>
-              <li>izzivi z regulacijo živčnega sistema</li>
-              <li>krepitev psihološke odpornosti</li>
-              <li>odnosni vzorci</li>
-              <li>težave pri prepoznavanju lastnih potreb</li>
-              <li>kronični stres</li>
-              <li>tesnobnost</li>
-              <li>kronične telesne napetosti</li>
-              <li>odklop od telesa</li>
-              <li>pomanjkanje stika s sabo</li>
-              <li>izčrpanost</li>
-              <li>življenjski prehodi</li>
-              <li>krepitev stika z osebno močjo</li>
-              <li>občutek varnosti v telesu</li>
-              <li>razvijanje večje telesne prisotnosti in pristnosti</li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="okvir" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Meje in okvir dela</h2>
-
-            <p class="text-black-50 mt-5">
-              Moje delo je umeščeno v okvir psihosocialnega svetovanja in somatske podpore. Izhajam iz bio-psiho-socialnega razumevanja človeka ter travmatsko informiranega pristopa.
-            </p>
-
-            <p class="text-black-50">
-              Ne ponujam psihoterapevtske obravnave in ne delam s transferjem ali zdravljenjem duševnih motenj.
-            </p>
-
-            <p class="text-black-50">
-              Pri delu sem zavezana etičnemu kodeksu socialnih delavcev in etičnim smernicam Somatic Experiencing®.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="srecanje" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Kako poteka tipično srečanje</h2>
-
-            <p class="text-black-50 mt-5">
-              Srečanje poteka v obliki pogovora, ki se prepleta s somatskim raziskovanjem izkušnje.
-            </p>
-
-            <p class="text-black-50">
-              Srečanje se prične s kratkim vodenim sidranjem v regulacijo in v tukaj in zdaj. To vzpostavi okvir za nadaljnje delo.
-            </p>
-
-            <p class="text-black-50">
-              Izhodišče je konkretna tema, situacija, odnosni vzorec ali vsebina iz vsakdanjega življenja, ki je klientu trenutno pomembna.
-            </p>
-
-            <p class="text-black-50">
-              V pogovoru se jasni, kaj se v procesu dogaja, kako klientka to doživlja, kateri odzivi se ponavljajo in kaj bi bil smiseln premik naprej.
-            </p>
-
-            <p class="text-black-50">
-              Somatski del v kontekstu individualnega dela ne pomeni telovadbe ali izvajanja vnaprej določenih vaj. Gre za regulirano usmerjanje pozornosti k telesni izkušnji v realnem času: k zaznavam, napetosti, impulzom, občutku meja, stiku s tlemi, orientaciji v prostoru ali spremembam v delovanju živčnega sistema.
-            </p>
-
-            <p class="text-black-50">
-              Srečanje ostaja dialoško in sodelovalno. Somatske intervencije so predlagane kot povabilo. Klientka je spodbujana, da izraža, če nečesa ne želi, če potrebuje premor ali želi ostati pri pogovoru — to je spoštovano; hkrati pa lahko postane del raziskovanja, kadar je za proces relevantno.
-            </p>
-
-            <p class="text-black-50">
-              Če je klient vidno vznemirjen onkraj okna tolerance in vznemirjenost narašča, pogovor pa jo dodatno stopnjuje, ima prednost regulacija živčnega sistema. V takem primeru proces začasno usmerim k somatskim metodam stabilizacije, orientacije in pogovor zaustavim. Moje delo je preplet vodenja in sledenja, glede na kontekst, odziv klienta in namen ohranjanja dovolj varnega okvirja.
-            </p>
-
-            <p class="text-black-50">
-              Namen srečanj ni hitra razrešitev, temveč krepitev zaznave, odpornosti, izbire, regulacije in jasnejšega odnosa do lastne izkušnje.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="potek" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Potek individualnega dela</h2>
-
-            <h3 class="mt-5">Rednost in kontinuiteta</h3>
-            <p class="text-black-50">
-              Trajnejše spremembe vzorcev običajno potrebujejo čas, kontinuiteto in dovolj stabilen okvir in odnos. Individualno delo poteka v obliki rednih tedenskih srečanj.
-            </p>
-
-            <h3 class="mt-5">Uvodni video klic</h3>
-            <p class="text-black-50">
-              Sodelovanje se začne s kratkim uvodnim video klicem, ki je namenjen spoznavanju, razjasnitvi vaših potreb, okvirja mojega dela in preverjanju, ali je sodelovanje možno.
-            </p>
-
-            <h3 class="mt-5">Poskusna faza</h3>
-            <p class="text-black-50">
-              V primeru kompatibilnosti za sodelovanje, sledi poskusna faza petih srečanj. Po tem času skupaj preveriva ali je proces in odnos dovolj podporen za redno nadaljevanje.
-            </p>
-
-            <h3 class="mt-5">Dogovor o sodelovanju</h3>
-            <p class="text-black-50">
-              Sodelovanje poteka v okviru Dogovora o sodelovanju, ki ga oblikujeva ob pričetku, na prvem srečanju.
-            </p>
-
-            <p class="text-black-50">
-              V njem je opredeljeno: tema oziroma izziv, želeni izid, okvir prakse, odgovornosti klientke in moje odgovornosti ter osnovni pogoji sodelovanja.
-            </p>
-
-            <h3 class="mt-5">Cena</h3>
-            <p class="text-black-50">
-              Cena: 65 € / 60 minut
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="kolaborativno-delo" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Kolaborativno delo</h2>
-
-            <p class="text-black-50 mt-5">
-              Proces je usmerjen v želen izid, ki ga opredeli klientka.
-            </p>
-
-            <p class="text-black-50">
-              Klientka ostaja aktivna soustvarjalka in nosilka avtonomije, ki jo pri delu krepiva.
-            </p>
-
-            <p class="text-black-50">
-              Moja vloga je držanje strokovnega svetovalnega okvirja s somatsko usmeritvijo, ki omogoča stabilen in varno razmejen odnos.
-            </p>
-
-            <p class="text-black-50">
-              Delo je transparentno: opažanja so ponujena kot perspektive, ne kot resnice in vedno preverjena v dialogu.
-            </p>
-
-            <p class="text-black-50">
-              Teoretski koncepti so jasno opredeljeni in prevedeni v izkušnjo ter prakso, psihoedukacija je pomemben del procesa podpore.
-            </p>
-
-            <p class="text-black-50">
-              Ker moje delo ni psihoterapevtska obravnava, ne temelji na delu z regresijo ali s transferjem. Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v stik z odraslim delom klientove psihe in ta del naslavljam. Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in notranje vire moči. Podobno ravnam tudi, kadar se v odnosu do mene pojavijo močne projekcije ali prenosne dinamike: te spoštljivo opazimo, poimenujemo in jih uporabimo za več zavedanja, regulacije in jasnosti v sedanjem trenutku.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="proces" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Proces in kontinuiteta</h2>
-
-            <p class="text-black-50 mt-5">
-              Izhajam iz predpostavke, da spremembe ne nastajajo zgolj zaradi razumevanja ali uvida. Razumevanje odpre vrata procesu.
-            </p>
-
-            <p class="text-black-50">
-              Spremembe se gradijo skozi varno, primerno dozirano, ponavljajočo se izkušnjo v stabilnem odnosnem kontekstu.
-            </p>
-
-            <p class="text-black-50">
-              Proces, ki preobraža, temelji na kontinuiteti in prenosu teh izkušenj v vsakdanje življenje.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="utelesene-meje" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Utelešene meje</h2>
-
-            <p class="text-black-50 mt-5">
-              Meje zame niso le kognitivni koncept ali komunikacijska veščina.
-            </p>
-
-            <p class="text-black-50">
-              So telesno-izkustvena kapaciteta: zaznati, vzdržati, izraziti ali prilagoditi mejo v realnem času.
-            </p>
-
-            <p class="text-black-50">
-              Utelešene meje podpirajo jasnejši stik s potrebami in omogočajo življenje v skladu s prioritetami.
-            </p>
-
-            <p class="text-black-50">
-              Prinašajo več možnosti izbire v odnosih in situacijah, kjer je prej prevladal avtomatski odziv.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="strokovno-izhodisce" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Strokovno izhodišče</h2>
-
-            <p class="text-black-50 mt-5">
-              Moje strokovno izhodišče je študij psihosocialne podpore in pomoči na Fakulteti za socialno delo. V okviru formalnega izobraževanja sem pridobila znanja s področja psihosocialnega svetovanja, družinskih in sodelovalnih pristopov, sistemske in narativne terapije, duševnega zdravja, besednjaka psihopatologije, travme in okrevanja.
-            </p>
-
-            <p class="text-black-50">
-              Pod mentorstvom sem opravila 680 ur praktičnega usposabljanja za delo z ljudmi, tako s posamezniki kot s skupinami, v okviru Društva Projekt Človek, Vincencijeve zveze dobrote, Mladinskega središča Vič in CSD Cerknica.
-            </p>
-
-            <p class="text-black-50">
-              Formalno sem usposobljena za psihosocialno podporo, svetovalne pogovore, skupinsko delo, facilitacijo ter osebno vodenje posameznikov in skupin. Neformalno pa za uglašeno vodenje telesno orientiranih procesov podpore in pomoči.
-            </p>
-
-            <p class="text-black-50">
-              Pri IPD Centru za integrativni razvoj sem opravila program RAR, ki obravnava vpliv zgodnjega razvoja na poznejše življenje, ter prvo leto programa OR kot del treninga za telesno orientirano psihoterapijo.
-            </p>
-
-            <p class="text-black-50">
-              Svoje delo nadgrajujem z več kot 600 urami dodatnih strokovnih izobraževanj iz psihoterapevtskih in somatskih pristopov, ob redni osebni terapevtski izkušnji, interviziji in superviziji kot pomembnem delu etične in strokovno odgovorne prakse.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="cujecnost-gibanje-telesna-praksa" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Čuječnost, gibanje in telesna praksa</h2>
-
-            <p class="text-black-50 mt-5">
-              Od leta 2000, ko sem se prvič srečala z jogo in čuječnostjo, negujem osebno prakso, ki je danes zasidrana v somatsko čuječem Budokonu.
-            </p>
-
-            <p class="text-black-50">
-              Argentinski tango je že drugo desetletje pomemben okvir mojega raziskovanja utelešenosti, ozemljenosti, odnosa s tlemi in povezave s sabo ob sočasni povezavi s partnerjem.
-            </p>
-
-            <p class="text-black-50">
-              Od leta 2014 profesionalno poučujem, facilitiram ter vodim individualne in skupinske prakse s somatsko orientacijo, kjer gibanje razumem kot bio-psiho-socialni fenomen, ne zgolj kot telovadbo.
-            </p>
-
-            <p class="text-black-50">
-              Moja učiteljska in facilitacijska izobraževanja vključujejo več kot 800 ur usposabljanj s področij joge, Budokona, čuječnosti in meditacije.
-            </p>
-
-            <p class="text-black-50">
-              Leta 2017 sem v Slovenijo licenčno pripeljala Budokon, sodobno prakso mešanih gibalnih umetnosti, ki je prva v enoten sistem povezala animalistično gibanje, mobilnost, kalisteniko, jogo, borilne veščine in čuječo prisotnost.
-            </p>
-
-            <p class="text-black-50">
-              Opravila sem program MBSR, Mindfulness-Based Stress Reduction, po pristopu dr. Jona Kabat-Zinna, ter učiteljsko usposabljanje iz evidence-based čuječnosti in meditacije pri International Mindfulness and Meditation Alliance, IMMA.
-            </p>
-
-            <p class="text-black-50">
-              Ta znanja vključujem kot del širšega somatskega razumevanja človeka.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="strokovna-podlaga" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Strokovno-praktična podlaga</h2>
-
-            <p class="text-black-50 mt-5">
-              Moja strokovno-praktična podlaga obsega 10.500+ ur formalnega izobraževanja, dodatnih strokovnih usposabljanj, učiteljskih in facilitacijskih izobraževanj ter psihosocialne prakse.
-            </p>
-
-            <ul class="text-black-50">
-              <li>psihosocialno svetovanje; dipl. socialna delavka, magistrska študentka na FSD, smer psihosocialna podpora in pomoč</li>
-              <li>Somatic Experiencing® edukantka pod supervizijo</li>
-              <li>600+ ur dodatnega strokovnega izobraževanja iz somatskih, psihosocialnih in psihoterapevtskih pristopov</li>
-              <li>680 ur formalne psihosocialne strokovne prakse pod mentorstvom na FSD</li>
-              <li>kontinuirana osebna psihoterapevtska izkušnja in osebna izkušnja Somatic Experiencing® kot del strokovne refleksije pri delu z ljudmi</li>
-              <li>travmatsko informiran pristop na podlagi FSD in dodatnega izobraževanja iz integrativne somatske travma terapije</li>
-              <li>opravljen program zgodnjega razvoja “RAR” in 1 leto programa “OR” za telesno usmerjeno psihoterapijo pri IPD, EABP</li>
-              <li>učiteljica evidence-based čuječnosti in meditacije, cert. International Mindfulness and Meditation Alliance, IMMA</li>
-              <li>opravljen program čuječnosti po MBSR, Mindfulness-Based Stress Reduction</li>
-              <li>pri delu zavezana etičnemu kodeksu socialnih delavcev in etičnim smernicam Somatic Experiencing®</li>
-              <li>delo je umeščeno v okvir psihosocialnega svetovanja in somatske podpore, bio-psiho-socialni model podpore in pomoči; ne ponujam psihoterapevtske obravnave</li>
-            </ul>
-
-            <ul class="text-black-50 mt-4">
-              <li>700+ certificiranih ur učiteljskih in facilitacijskih tečajev</li>
-              <li>diploma o usposobljenosti za strokovno delo v športu</li>
-              <li>Budokon certifikat; prakso sem licenčno pripeljala v Slovenijo leta 2017, osebna praksa od 2016</li>
-              <li>RYT hatha, flow in yin joga; praktikantka od leta 2000, poučujem od 2016</li>
-              <li>argentinski tango; študij in praksa od 2009, poučevanje od 2014</li>
-              <li>opravljen izpit iz didaktike na Pedagoški fakulteti</li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="dodatna-izobrazevanja" class="projects-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
-
-            <h2>Dodatna strokovna izobraževanja iz terapevtskih in somatskih pristopov</h2>
-
-            <p class="text-black-50 mt-5">
-              Skupaj 600+ ur
-            </p>
-
-            <ul class="text-black-50">
-              <li>Somatic Experiencing® Professional Training: v procesu, zaključek 2027</li>
-              <li>Telesno orientirana psihoterapija IPD: 1. leto programa OR za telesno usmerjeno psihoterapijo, 170 h</li>
-              <li>Telesno orientirana psihoterapija IPD: program zgodnjega razvoja “RAR”, 30 h</li>
-              <li>Integrative Somatic Trauma Therapy: Embody Lab, 60 h</li>
-              <li>Hakomi Mindful Somatic Psychotherapy: An Experiential Introduction: Lorena Monda, Hakomi Institute International, 12 h</li>
-              <li>Hakomi Method: Somatic Healing: Manuela Mischke-Reeds, PESI, 16,5 h</li>
-              <li>Complex Trauma Certification Training, Level 1 &amp; 2: Janina Fisher, PESI, 48 h</li>
-              <li>Revolutionising Trauma Treatment: Babette Rothschild, PESI, 10,5 h</li>
-              <li>Somatic Experiencing® Introductory Seminar: Glyndie Nickerson, Mudita Institute, 16 h</li>
-              <li>SE Healthy Boundaries: Lilian Troost, Psychologische Beratung, 10 h</li>
-              <li>Polyvagal-Informed Practitioner Course: Deborah Dana, PESI, 18 h</li>
-              <li>Polyvagal Theory in Action: Deborah Dana, PESI, 11 h</li>
-              <li>Internal Family Systems Therapy: Essential Skills: Nancy Sowell, Cece Sykes, Alexia Rothman, Frank Anderson, PESI, 24 h</li>
-              <li>Integrating Internal Family Systems Therapy and Polyvagal Theory: Alexia Rothman, PESI, 6 h</li>
-              <li>Sensorimotor Psychotherapy To Treat Complex Trauma: Pat Ogden, Tracy Jarvis, PESI, 4 h</li>
-              <li>Sensorimotor Psychotherapy in Action: Harness the Wisdom of the Body to Treat Trauma and Relational Wounds: Pat Ogden, PESI, 6 h</li>
-              <li>Applying Attachment Theory in Clinical Practice: Linda Cundy, PESI, 6 h</li>
-              <li>The New Neuroscience of Attachment: Ana Lund, PESI, 6 h</li>
-              <li>How Attachment, Trauma and Temperament Shape Personality: Dan Siegel, PESI, 9 h</li>
-              <li>Person-Centered Psychotherapy and Counselling in Action: Essential Skills and Theoretical Underpinnings: Mick Cooper, PESI, 6 h</li>
-              <li>Anxiety Certification Course: Integrate CBT and Exposure &amp; Response Prevention for Treatment of GAD, Panic Disorder, OCD, Social Anxiety &amp; Phobias: Kimberly J. Morrow, Elizabeth DuPont Spencer, PESI, 12,5 h</li>
-            </ul>
+          <div class="col-lg-12 mx-auto text-left">
+
+            <article id="moje-delo">
+              <h2>Psihosocialno svetovanje in somatska podpora</h2>
+
+              <p class="text-black-50 mt-5">
+                Za sodelovanje me poiščejo odrasli, ki doživljajo pomanjkanje stika z osebnimi mejami in potrebami ter izzive pri ohranjanju stika s telesom. Pogosto se soočajo z neželenimi ponavljajočimi se odnosnimi vzorci, predvsem z močnim fokusom na druge, s preobremenjenostjo živčnega sistema ali s tesnobo v nekliničnem okviru.
+              </p>
+
+              <p class="text-black-50">
+                Moje delo združuje psihosocialno svetovanje, integrativno somatsko podporo z izhodiščem v metodi Somatic Experiencing® (telesno orientiran terapevtski model za delo z živčnim sistemom), Somatsko čuječnost (avtorska metoda) in podporo pri regulaciji živčnega sistema.
+              </p>
+
+              <p class="text-black-50">
+                Pri delu izhajam iz bio-psiho-socialnega razumevanja človeka ter povezujem znanja psihosocialnega dela, terapevtskih somatskih modalitet, čuječnosti, teorije navezanosti, regulacije živčnega sistema, odnosnih pristopov in travmatsko informirane podpore.
+              </p>
+
+              <p class="text-black-50">
+                Delo poteka kot kolaborativen proces v nehierarhičnem odnosu a z jasno diferenciranimi vlogami. Usmerjeno je v krepitev psihološke odpornosti, opolnomočenje, stik z občutkom možnosti izbire, gradnjo notranje stabilnosti ter jasnejši stik s svojim telesom in osebnimi mejami.
+              </p>
+
+              <p class="text-black-50">
+                Delo ne vključuje diagnosticiranja ali zdravljenja duševnih bolezni.
+              </p>
+            </article>
+
+            <article id="podprem-te-pri">
+              <h2>Teme, s katerimi se klientke obračajo name</h2>
+
+              <ul class="text-black-50">
+                <li>osebne meje</li>
+                <li>ugajanje drugim</li>
+                <li>izzivi z regulacijo živčnega sistema</li>
+                <li>krepitev psihološke odpornosti</li>
+                <li>odnosni vzorci</li>
+                <li>težave pri prepoznavanju lastnih potreb</li>
+                <li>kronični stres</li>
+                <li>tesnobnost</li>
+                <li>kronične telesne napetosti</li>
+                <li>odklop od telesa</li>
+                <li>pomanjkanje stika s sabo</li>
+                <li>izčrpanost</li>
+                <li>življenjski prehodi</li>
+                <li>krepitev stika z osebno močjo</li>
+                <li>občutek varnosti v telesu</li>
+                <li>razvijanje večje telesne prisotnosti in pristnosti</li>
+              </ul>
+            </article>
+
+            <article id="okvir-in-meje">
+              <h2>Meje in okvir dela</h2>
+
+              <p class="text-black-50 mt-5">
+                Moje delo je umeščeno v okvir psihosocialnega svetovanja in somatske podpore. Izhajam iz bio-psiho-socialnega razumevanja človeka ter travmatsko informiranega pristopa.
+              </p>
+
+              <p class="text-black-50">
+                Ne ponujam psihoterapevtske obravnave in ne delam s transferjem ali zdravljenjem duševnih motenj.
+              </p>
+
+              <p class="text-black-50">
+                Pri delu sem zavezana etičnemu kodeksu socialnih delavcev in etičnim smernicam Somatic Experiencing®.
+              </p>
+            </article>
+
+            <article id="potek-srecanja">
+              <h2>Kako poteka tipično srečanje</h2>
+
+              <p class="text-black-50 mt-5">
+                Srečanje poteka v obliki pogovora, ki se prepleta s somatskim raziskovanjem izkušnje.
+              </p>
+
+              <p class="text-black-50">
+                Srečanje se prične s kratkim vodenim sidranjem v regulacijo in v tukaj in zdaj. To vzpostavi okvir za nadaljnje delo.
+              </p>
+
+              <p class="text-black-50">
+                Izhodišče je konkretna tema, situacija, odnosni vzorec ali vsebina iz vsakdanjega življenja, ki je klientu trenutno pomembna.
+              </p>
+
+              <p class="text-black-50">
+                V pogovoru se jasni, kaj se v procesu dogaja, kako klientka to doživlja, kateri odzivi se ponavljajo in kaj bi bil smiseln premik naprej.
+              </p>
+
+              <p class="text-black-50">
+                Somatski del v kontekstu individualnega dela ne pomeni telovadbe ali izvajanja vnaprej določenih vaj. Gre za regulirano usmerjanje pozornosti k telesni izkušnji v realnem času: k zaznavam, napetosti, impulzom, občutku meja, stiku s tlemi, orientaciji v prostoru ali spremembam v delovanju živčnega sistema.
+              </p>
+
+              <p class="text-black-50">
+                Srečanje ostaja dialoško in sodelovalno. Somatske intervencije so predlagane kot povabilo. Klientka je spodbujana, da izraža, če nečesa ne želi, če potrebuje premor ali želi ostati pri pogovoru — to je spoštovano; hkrati pa lahko postane del raziskovanja, kadar je za proces relevantno.
+              </p>
+
+              <p class="text-black-50">
+                Če je klient vidno vznemirjen onkraj okna tolerance in vznemirjenost narašča, pogovor pa jo dodatno stopnjuje, ima prednost regulacija živčnega sistema. V takem primeru proces začasno usmerim k somatskim metodam stabilizacije, orientacije in pogovor zaustavim. Moje delo je preplet vodenja in sledenja, glede na kontekst, odziv klienta in namen ohranjanja dovolj varnega okvirja.
+              </p>
+
+              <p class="text-black-50">
+                Namen srečanj ni hitra razrešitev, temveč krepitev zaznave, odpornosti, izbire, regulacije in jasnejšega odnosa do lastne izkušnje.
+              </p>
+            </article>
+
+            <article id="nacin-sodelovanja">
+              <h2>Potek individualnega dela</h2>
+
+              <h3>Rednost in kontinuiteta</h3>
+              <p class="text-black-50">
+                Trajnejše spremembe vzorcev običajno potrebujejo čas, kontinuiteto in dovolj stabilen okvir in odnos. Individualno delo poteka v obliki rednih tedenskih srečanj.
+              </p>
+
+              <h3>Uvodni video klic</h3>
+              <p class="text-black-50">
+                Sodelovanje se začne s kratkim uvodnim video klicem, ki je namenjen spoznavanju, razjasnitvi vaših potreb, okvirja mojega dela in preverjanju, ali je sodelovanje možno.
+              </p>
+
+              <h3>Poskusna faza</h3>
+              <p class="text-black-50">
+                V primeru kompatibilnosti za sodelovanje, sledi poskusna faza petih srečanj. Po tem času skupaj preveriva ali je proces in odnos dovolj podporen za redno nadaljevanje.
+              </p>
+
+              <h3>Dogovor o sodelovanju</h3>
+              <p class="text-black-50">
+                Sodelovanje poteka v okviru Dogovora o sodelovanju, ki ga oblikujeva ob pričetku, na prvem srečanju.
+              </p>
+
+              <p class="text-black-50">
+                V njem je opredeljeno: tema oziroma izziv, želeni izid, okvir prakse, odgovornosti klientke in moje odgovornosti ter osnovni pogoji sodelovanja.
+              </p>
+
+              <h3>Cena</h3>
+              <p class="text-black-50">
+                Cena: 65 € / 60 minut
+              </p>
+            </article>
+
+            <article id="kolaborativno-delo">
+              <h2>Kolaborativno delo</h2>
+
+              <p class="text-black-50 mt-5">
+                Proces je usmerjen v želen izid, ki ga opredeli klientka.
+              </p>
+
+              <p class="text-black-50">
+                Klientka ostaja aktivna soustvarjalka in nosilka avtonomije, ki jo pri delu krepiva.
+              </p>
+
+              <p class="text-black-50">
+                Moja vloga je držanje strokovnega svetovalnega okvirja s somatsko usmeritvijo, ki omogoča stabilen in varno razmejen odnos.
+              </p>
+
+              <p class="text-black-50">
+                Delo je transparentno: opažanja so ponujena kot perspektive, ne kot resnice in vedno preverjena v dialogu.
+              </p>
+
+              <p class="text-black-50">
+                Teoretski koncepti so jasno opredeljeni in prevedeni v izkušnjo ter prakso, psihoedukacija je pomemben del procesa podpore.
+              </p>
+
+              <p class="text-black-50">
+                Ker moje delo ni psihoterapevtska obravnava, ne temelji na delu z regresijo ali s transferjem. Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v stik z odraslim delom klientove psihe in ta del naslavljam. Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in notranje vire moči. Podobno ravnam tudi, kadar se v odnosu do mene pojavijo močne projekcije ali prenosne dinamike: te spoštljivo opazimo, poimenujemo in jih uporabimo za več zavedanja, regulacije in jasnosti v sedanjem trenutku.
+              </p>
+            </article>
+
+            <article id="proces-in-kontinuiteta">
+              <h2>Proces in kontinuiteta</h2>
+
+              <p class="text-black-50 mt-5">
+                Izhajam iz predpostavke, da spremembe ne nastajajo zgolj zaradi razumevanja ali uvida. Razumevanje odpre vrata procesu.
+              </p>
+
+              <p class="text-black-50">
+                Spremembe se gradijo skozi varno, primerno dozirano, ponavljajočo se izkušnjo v stabilnem odnosnem kontekstu.
+              </p>
+
+              <p class="text-black-50">
+                Proces, ki preobraža, temelji na kontinuiteti in prenosu teh izkušenj v vsakdanje življenje.
+              </p>
+            </article>
+
+            <article id="utelesene-meje">
+              <h2>Utelešene meje</h2>
+
+              <p class="text-black-50 mt-5">
+                Meje zame niso le kognitivni koncept ali komunikacijska veščina.
+              </p>
+
+              <p class="text-black-50">
+                So telesno-izkustvena kapaciteta: zaznati, vzdržati, izraziti ali prilagoditi mejo v realnem času.
+              </p>
+
+              <p class="text-black-50">
+                Utelešene meje podpirajo jasnejši stik s potrebami in omogočajo življenje v skladu s prioritetami.
+              </p>
+
+              <p class="text-black-50">
+                Prinašajo več možnosti izbire v odnosih in situacijah, kjer je prej prevladal avtomatski odziv.
+              </p>
+            </article>
+
+            <article id="strokovno-izhodisce">
+              <h2>Strokovno izhodišče</h2>
+
+              <p class="text-black-50 mt-5">
+                Moje strokovno izhodišče je študij psihosocialne podpore in pomoči na Fakulteti za socialno delo. V okviru formalnega izobraževanja sem pridobila znanja s področja psihosocialnega svetovanja, družinskih in sodelovalnih pristopov, sistemske in narativne terapije, duševnega zdravja, besednjaka psihopatologije, travme in okrevanja.
+              </p>
+
+              <p class="text-black-50">
+                Pod mentorstvom sem opravila 680 ur praktičnega usposabljanja za delo z ljudmi, tako s posamezniki kot s skupinami, v okviru Društva Projekt Človek, Vincencijeve zveze dobrote, Mladinskega središča Vič in CSD Cerknica.
+              </p>
+
+              <p class="text-black-50">
+                Formalno sem usposobljena za psihosocialno podporo, svetovalne pogovore, skupinsko delo, facilitacijo ter osebno vodenje posameznikov in skupin. Neformalno pa za uglašeno vodenje telesno orientiranih procesov podpore in pomoči.
+              </p>
+
+              <p class="text-black-50">
+                Pri IPD Centru za integrativni razvoj sem opravila program RAR, ki obravnava vpliv zgodnjega razvoja na poznejše življenje, ter prvo leto programa OR kot del treninga za telesno orientirano psihoterapijo.
+              </p>
+
+              <p class="text-black-50">
+                Svoje delo nadgrajujem z več kot 600 urami dodatnih strokovnih izobraževanj iz psihoterapevtskih in somatskih pristopov, ob redni osebni terapevtski izkušnji, interviziji in superviziji kot pomembnem delu etične in strokovno odgovorne prakse.
+              </p>
+            </article>
+
+            <article id="cujecnost-gibanje-telesna-praksa">
+              <h2>Čuječnost, gibanje in telesna praksa</h2>
+
+              <p class="text-black-50 mt-5">
+                Od leta 2000, ko sem se prvič srečala z jogo in čuječnostjo, negujem osebno prakso, ki je danes zasidrana v somatsko čuječem Budokonu.
+              </p>
+
+              <p class="text-black-50">
+                Argentinski tango je že drugo desetletje pomemben okvir mojega raziskovanja utelešenosti, ozemljenosti, odnosa s tlemi in povezave s sabo ob sočasni povezavi s partnerjem.
+              </p>
+
+              <p class="text-black-50">
+                Od leta 2014 profesionalno poučujem, facilitiram ter vodim individualne in skupinske prakse s somatsko orientacijo, kjer gibanje razumem kot bio-psiho-socialni fenomen, ne zgolj kot telovadbo.
+              </p>
+
+              <p class="text-black-50">
+                Moja učiteljska in facilitacijska izobraževanja vključujejo več kot 800 ur usposabljanj s področij joge, Budokona, čuječnosti in meditacije.
+              </p>
+
+              <p class="text-black-50">
+                Leta 2017 sem v Slovenijo licenčno pripeljala Budokon, sodobno prakso mešanih gibalnih umetnosti, ki je prva v enoten sistem povezala animalistično gibanje, mobilnost, kalisteniko, jogo, borilne veščine in čuječo prisotnost.
+              </p>
+
+              <p class="text-black-50">
+                Opravila sem program MBSR, Mindfulness-Based Stress Reduction, po pristopu dr. Jona Kabat-Zinna, ter učiteljsko usposabljanje iz evidence-based čuječnosti in meditacije pri International Mindfulness and Meditation Alliance, IMMA.
+              </p>
+
+              <p class="text-black-50">
+                Ta znanja vključujem kot del širšega somatskega razumevanja človeka.
+              </p>
+            </article>
+
+            <article id="strokovna-podlaga">
+              <h2>Strokovno-praktična podlaga</h2>
+
+              <p class="text-black-50 mt-5">
+                Moja strokovno-praktična podlaga obsega 10.500+ ur formalnega izobraževanja, dodatnih strokovnih usposabljanj, učiteljskih in facilitacijskih izobraževanj ter psihosocialne prakse.
+              </p>
+
+              <ul class="text-black-50">
+                <li>psihosocialno svetovanje; dipl. socialna delavka, magistrska študentka na FSD, smer psihosocialna podpora in pomoč</li>
+                <li>Somatic Experiencing® edukantka pod supervizijo</li>
+                <li>600+ ur dodatnega strokovnega izobraževanja iz somatskih, psihosocialnih in psihoterapevtskih pristopov</li>
+                <li>680 ur formalne psihosocialne strokovne prakse pod mentorstvom na FSD</li>
+                <li>kontinuirana osebna psihoterapevtska izkušnja in osebna izkušnja Somatic Experiencing® kot del strokovne refleksije pri delu z ljudmi</li>
+                <li>travmatsko informiran pristop na podlagi FSD in dodatnega izobraževanja iz integrativne somatske travma terapije</li>
+                <li>opravljen program zgodnjega razvoja “RAR” in 1 leto programa “OR” za telesno usmerjeno psihoterapijo pri IPD, EABP</li>
+                <li>učiteljica evidence-based čuječnosti in meditacije, cert. International Mindfulness and Meditation Alliance, IMMA</li>
+                <li>opravljen program čuječnosti po MBSR, Mindfulness-Based Stress Reduction</li>
+                <li>pri delu zavezana etičnemu kodeksu socialnih delavcev in etičnim smernicam Somatic Experiencing®</li>
+                <li>delo je umeščeno v okvir psihosocialnega svetovanja in somatske podpore, bio-psiho-socialni model podpore in pomoči; ne ponujam psihoterapevtske obravnave</li>
+              </ul>
+
+              <ul class="text-black-50">
+                <li>700+ certificiranih ur učiteljskih in facilitacijskih tečajev</li>
+                <li>diploma o usposobljenosti za strokovno delo v športu</li>
+                <li>Budokon certifikat; prakso sem licenčno pripeljala v Slovenijo leta 2017, osebna praksa od 2016</li>
+                <li>RYT hatha, flow in yin joga; praktikantka od leta 2000, poučujem od 2016</li>
+                <li>argentinski tango; študij in praksa od 2009, poučevanje od 2014</li>
+                <li>opravljen izpit iz didaktike na Pedagoški fakulteti</li>
+              </ul>
+            </article>
+
+            <article id="dodatna-izobrazevanja">
+              <h2>Dodatna strokovna izobraževanja iz terapevtskih in somatskih pristopov</h2>
+
+              <p class="text-black-50 mt-5">
+                Skupaj 600+ ur
+              </p>
+
+              <ul class="text-black-50">
+                <li>Somatic Experiencing® Professional Training: v procesu, zaključek 2027</li>
+                <li>Telesno orientirana psihoterapija IPD: 1. leto programa OR za telesno usmerjeno psihoterapijo, 170 h</li>
+                <li>Telesno orientirana psihoterapija IPD: program zgodnjega razvoja “RAR”, 30 h</li>
+                <li>Integrative Somatic Trauma Therapy: Embody Lab, 60 h</li>
+                <li>Hakomi Mindful Somatic Psychotherapy: An Experiential Introduction: Lorena Monda, Hakomi Institute International, 12 h</li>
+                <li>Hakomi Method: Somatic Healing: Manuela Mischke-Reeds, PESI, 16,5 h</li>
+                <li>Complex Trauma Certification Training, Level 1 &amp; 2: Janina Fisher, PESI, 48 h</li>
+                <li>Revolutionising Trauma Treatment: Babette Rothschild, PESI, 10,5 h</li>
+                <li>Somatic Experiencing® Introductory Seminar: Glyndie Nickerson, Mudita Institute, 16 h</li>
+                <li>SE Healthy Boundaries: Lilian Troost, Psychologische Beratung, 10 h</li>
+                <li>Polyvagal-Informed Practitioner Course: Deborah Dana, PESI, 18 h</li>
+                <li>Polyvagal Theory in Action: Deborah Dana, PESI, 11 h</li>
+                <li>Internal Family Systems Therapy: Essential Skills: Nancy Sowell, Cece Sykes, Alexia Rothman, Frank Anderson, PESI, 24 h</li>
+                <li>Integrating Internal Family Systems Therapy and Polyvagal Theory: Alexia Rothman, PESI, 6 h</li>
+                <li>Sensorimotor Psychotherapy To Treat Complex Trauma: Pat Ogden, Tracy Jarvis, PESI, 4 h</li>
+                <li>Sensorimotor Psychotherapy in Action: Harness the Wisdom of the Body to Treat Trauma and Relational Wounds: Pat Ogden, PESI, 6 h</li>
+                <li>Applying Attachment Theory in Clinical Practice: Linda Cundy, PESI, 6 h</li>
+                <li>The New Neuroscience of Attachment: Ana Lund, PESI, 6 h</li>
+                <li>How Attachment, Trauma and Temperament Shape Personality: Dan Siegel, PESI, 9 h</li>
+                <li>Person-Centered Psychotherapy and Counselling in Action: Essential Skills and Theoretical Underpinnings: Mick Cooper, PESI, 6 h</li>
+                <li>Anxiety Certification Course: Integrate CBT and Exposure &amp; Response Prevention for Treatment of GAD, Panic Disorder, OCD, Social Anxiety &amp; Phobias: Kimberly J. Morrow, Elizabeth DuPont Spencer, PESI, 12,5 h</li>
+              </ul>
+            </article>
 
           </div>
         </div>
