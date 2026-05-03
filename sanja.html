@@ -19,14 +19,9 @@
 
   <link rel="icon" href="/favicon.ico">
 
-  <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
 
   <style>
@@ -34,8 +29,54 @@
       scroll-behavior: smooth;
     }
 
-    article {
-      scroll-margin-top: 90px;
+    body {
+      background: #ffffff;
+    }
+
+    #mainNav {
+      background-color: #ffffff;
+    }
+
+    .page-header {
+      padding-top: 140px;
+      padding-bottom: 40px;
+      background: #ffffff;
+    }
+
+    .profile-section {
+      padding: 20px 0 60px 0;
+      background: #ffffff;
+    }
+
+    .profile-image {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+    }
+
+    .content-section {
+      padding: 40px 0 80px 0;
+      background: #ffffff;
+    }
+
+    .content-section article {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      scroll-margin-top: 100px;
+    }
+
+    .content-section h2 {
+      margin-bottom: 2rem;
+    }
+
+    .content-section h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content-section p {
+      font-size: 1rem;
+      line-height: 1.8;
     }
 
     .content-section ul {
@@ -47,31 +88,31 @@
 
     .content-section li {
       margin-bottom: 0.5rem;
+      line-height: 1.7;
     }
 
-    .content-section h2 {
-      margin-top: 3rem;
+    .links-section {
+      padding: 80px 0;
+      background: #ffffff;
+      text-align: center;
     }
 
-    .content-section h3 {
-      margin-top: 2rem;
+    .links-section .social a {
+      font-size: 1.4rem;
+      margin: 0 0.75rem;
     }
 
-    .profile-image {
-      max-width: 420px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 3rem;
+    footer {
+      padding: 30px 0;
     }
   </style>
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="js-scroll-trigger" href="index.html">Sanja Somatika</a>
+      <a class="js-scroll-trigger" href="index.html">Sanja Zalar Gostimirović - Sanja Somatika</a>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
         Menu
@@ -105,34 +146,31 @@
 
   <main>
 
-    <!-- Header -->
-    <header>
+    <header class="page-header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto my-5 py-5 text-left">
+          <div class="col-lg-10 mx-auto text-left">
             <h1>Sanja Somatika</h1>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Profile image -->
-    <section class="text-center">
+    <section class="profile-section text-center">
       <div class="container">
         <img src="prof.jpg" alt="Sanja Somatika" class="profile-image">
       </div>
     </section>
 
-    <!-- Main content -->
-    <section class="projects-section content-section">
+    <section class="content-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mx-auto text-left">
+          <div class="col-lg-10 mx-auto text-left">
 
             <article id="moje-delo">
               <h2>Psihosocialno svetovanje in somatska podpora</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Za sodelovanje me poiščejo odrasli, ki doživljajo pomanjkanje stika z osebnimi mejami in potrebami ter izzive pri ohranjanju stika s telesom. Pogosto se soočajo z neželenimi ponavljajočimi se odnosnimi vzorci, predvsem z močnim fokusom na druge, s preobremenjenostjo živčnega sistema ali s tesnobo v nekliničnem okviru.
               </p>
 
@@ -179,7 +217,7 @@
             <article id="okvir-in-meje">
               <h2>Meje in okvir dela</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Moje delo je umeščeno v okvir psihosocialnega svetovanja in somatske podpore. Izhajam iz bio-psiho-socialnega razumevanja človeka ter travmatsko informiranega pristopa.
               </p>
 
@@ -195,7 +233,7 @@
             <article id="potek-srecanja">
               <h2>Kako poteka tipično srečanje</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Srečanje poteka v obliki pogovora, ki se prepleta s somatskim raziskovanjem izkušnje.
               </p>
 
@@ -261,10 +299,10 @@
               </p>
             </article>
 
-            <article id="kolaborativno-delo">
+            <article>
               <h2>Kolaborativno delo</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Proces je usmerjen v želen izid, ki ga opredeli klientka.
               </p>
 
@@ -289,10 +327,10 @@
               </p>
             </article>
 
-            <article id="proces-in-kontinuiteta">
+            <article>
               <h2>Proces in kontinuiteta</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Izhajam iz predpostavke, da spremembe ne nastajajo zgolj zaradi razumevanja ali uvida. Razumevanje odpre vrata procesu.
               </p>
 
@@ -305,10 +343,10 @@
               </p>
             </article>
 
-            <article id="utelesene-meje">
+            <article>
               <h2>Utelešene meje</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Meje zame niso le kognitivni koncept ali komunikacijska veščina.
               </p>
 
@@ -325,10 +363,10 @@
               </p>
             </article>
 
-            <article id="strokovno-izhodisce">
+            <article>
               <h2>Strokovno izhodišče</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Moje strokovno izhodišče je študij psihosocialne podpore in pomoči na Fakulteti za socialno delo. V okviru formalnega izobraževanja sem pridobila znanja s področja psihosocialnega svetovanja, družinskih in sodelovalnih pristopov, sistemske in narativne terapije, duševnega zdravja, besednjaka psihopatologije, travme in okrevanja.
               </p>
 
@@ -349,10 +387,10 @@
               </p>
             </article>
 
-            <article id="cujecnost-gibanje-telesna-praksa">
+            <article>
               <h2>Čuječnost, gibanje in telesna praksa</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Od leta 2000, ko sem se prvič srečala z jogo in čuječnostjo, negujem osebno prakso, ki je danes zasidrana v somatsko čuječem Budokonu.
               </p>
 
@@ -384,7 +422,7 @@
             <article id="strokovna-podlaga">
               <h2>Strokovno-praktična podlaga</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Moja strokovno-praktična podlaga obsega 10.500+ ur formalnega izobraževanja, dodatnih strokovnih usposabljanj, učiteljskih in facilitacijskih izobraževanj ter psihosocialne prakse.
               </p>
 
@@ -412,10 +450,10 @@
               </ul>
             </article>
 
-            <article id="dodatna-izobrazevanja">
+            <article>
               <h2>Dodatna strokovna izobraževanja iz terapevtskih in somatskih pristopov</h2>
 
-              <p class="text-black-50 mt-5">
+              <p class="text-black-50">
                 Skupaj 600+ ur
               </p>
 
@@ -449,52 +487,41 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section bg-primary">
+    <section class="links-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="text-uppercase">povezave</h2>
+        <h2 class="text-uppercase">povezave</h2>
 
-            <div class="social d-flex justify-content-center">
-              <a href="https://www.facebook.com/SanjaSomatika/" class="mx-2" aria-label="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a>
+        <div class="social d-flex justify-content-center">
+          <a href="https://www.facebook.com/SanjaSomatika/" class="mx-2" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
 
-              <a href="https://www.instagram.com/sanja.somatika/" class="mx-2" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
+          <a href="https://www.instagram.com/sanja.somatika/" class="mx-2" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
 
-              <a href="https://www.youtube.com/channel/UCN39OXmKX4rBJyyXUuC2EKw" class="mx-2" aria-label="YouTube">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-
-            <p class="email">
-              <a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a>
-            </p>
-          </div>
+          <a href="https://www.youtube.com/channel/UCN39OXmKX4rBJyyXUuC2EKw" class="mx-2" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
         </div>
+
+        <p class="email mt-4">
+          <a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a>
+        </p>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-primary small text-center text-muted">
+  <footer class="small text-center text-muted">
     <div class="container">
       copyright &copy; <span>Sanja Somatika 2026 - vse pravice pridržane</span>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="js/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
 
 </body>
