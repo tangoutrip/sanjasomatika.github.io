@@ -84,7 +84,25 @@
   }
   </script>
 
-  <style>
+<style>
+  .hero-static {
+    background: #ffffff;
+    padding-top: 130px;
+  }
+
+  .hero-static-title {
+    padding: 40px 15px 50px 15px;
+  }
+
+  .hero-static-title h1 {
+    color: #40e0d0;
+  }
+
+  .hero-static-title h2 {
+    color: #6c757d;
+    font-size: 1.25rem;
+  }
+
   .hero-image-section {
     width: 100%;
     height: 50vh;
@@ -103,6 +121,14 @@
   }
 
   @media (max-width: 768px) {
+    .hero-static {
+      padding-top: 100px;
+    }
+
+    .hero-static-title {
+      padding: 30px 15px 35px 15px;
+    }
+
     .hero-image-section {
       height: 40vh;
       max-height: 380px;
@@ -154,20 +180,18 @@
     </nav>
 
     <!-- Header -->
-<header class="masthead">
-  <div class="container-fluid">
-    <div id="header-title" class="text-center">
-      <h1 class="mx-auto text-uppercase">sanja somatika</h1>
-      <h2 class="text-white-50 mx-auto mt-2 mb-5">
-        <b>psihosocialno svetovanje in somatska podpora</b>
-      </h2>
-    </div>
+<header class="hero-static">
+  <div class="hero-static-title text-center">
+    <h1 class="mx-auto text-uppercase">sanja somatika</h1>
+    <h2 class="mx-auto mt-2 mb-5">
+      <b>psihosocialno svetovanje in somatska podpora</b>
+    </h2>
+  </div>
+
+  <div class="hero-image-section">
+    <img src="sanja_somatika.jpg" alt="Sanja Somatika">
   </div>
 </header>
-
-<section class="hero-image-section">
-  <img src="sanja_somatika.jpg" alt="Sanja Somatika">
-</section>
 
     <!-- About Section -->
     <section id="plesemasane" class="about-section text-left">
