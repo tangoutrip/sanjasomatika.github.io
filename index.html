@@ -84,58 +84,103 @@
   }
   </script>
 
-<style>
-  .hero-static {
-    background: #ffffff;
-    padding-top: 130px;
-  }
-
-  .hero-static-title {
-    padding: 40px 15px 50px 15px;
-  }
-
-  .hero-static-title h1 {
-    color: #40e0d0;
-  }
-
-  .hero-static-title h2 {
-    color: #6c757d;
-    font-size: 1.25rem;
-  }
-
-  .hero-image-section {
-    width: 100%;
-    height: 50vh;
-    max-height: 520px;
-    min-height: 320px;
-    overflow: hidden;
-    background: #ffffff;
-  }
-
-  .hero-image-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-  }
-
-  @media (max-width: 768px) {
+  <style>
     .hero-static {
-      padding-top: 100px;
+      background: #ffffff;
+      padding-top: 130px;
     }
 
     .hero-static-title {
-      padding: 30px 15px 35px 15px;
+      padding: 40px 15px 50px 15px;
+    }
+
+    .hero-static-title h1 {
+      color: #40e0d0;
+    }
+
+    .hero-static-title h2 {
+      color: #6c757d;
+      font-size: 1.25rem;
     }
 
     .hero-image-section {
-      height: 40vh;
-      max-height: 380px;
-      min-height: 260px;
+      width: 100%;
+      height: 50vh;
+      max-height: 520px;
+      min-height: 320px;
+      overflow: hidden;
+      background: #ffffff;
     }
-  }
-</style>
+
+    .hero-image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .photo-strip {
+      width: 100%;
+      height: 34vh;
+      max-height: 360px;
+      min-height: 220px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .photo-strip img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+    }
+
+    .project-image-narrow {
+      width: 100%;
+      height: 45vh;
+      max-height: 460px;
+      min-height: 260px;
+      overflow: hidden;
+    }
+
+    .project-image-narrow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .hero-static {
+        padding-top: 100px;
+      }
+
+      .hero-static-title {
+        padding: 30px 15px 35px 15px;
+      }
+
+      .hero-image-section {
+        height: 40vh;
+        max-height: 380px;
+        min-height: 260px;
+      }
+
+      .photo-strip {
+        height: 28vh;
+        max-height: 300px;
+        min-height: 180px;
+      }
+
+      .project-image-narrow {
+        height: 34vh;
+        max-height: 340px;
+        min-height: 220px;
+      }
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -157,114 +202,67 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="sanja"><b>o mojem delu</b></a>
-            </li>
-                <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#berime"><b>individualni proces</b></a>
+              <a class="nav-link js-scroll-trigger" href="#moje-delo"><b>moje delo</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#plesemasane"><b>somatski pristan</b></a>
-            </li>
-
-          
-          
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tango"><b>somatska čuječnost</b></a>
+              <a class="nav-link js-scroll-trigger" href="#individualni-proces"><b>individualni proces</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#joga"><b>somatika in prakse</b></a>
+              <a class="nav-link js-scroll-trigger" href="#somatski-pristan"><b>somatski pristan</b></a>
             </li>
-      
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#somatika"><b>somatika</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#somatska-cujecnost"><b>somatska čuječnost</b></a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Header -->
-<header class="hero-static">
-  <div class="hero-static-title text-center">
-    <h1 class="mx-auto text-uppercase">sanja somatika</h1>
-    <h2 class="mx-auto mt-2 mb-5">
-      <b>psihosocialno svetovanje in somatska podpora</b>
-    </h2>
-  </div>
-
-  <div class="hero-image-section">
-    <img src="sanja_somatika.jpg" alt="Sanja Somatika">
-  </div>
-</header>
-
-    <!-- About Section -->
-    <section id="plesemasane" class="about-section text-left">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-
-    
-            <div class="mb-5">
-              <h4 class="text-muted mt-5">TELESNO ORIENTIRANO PSIHOSOCIALNO SVETOVANJE</h4>
-
-              <p class="text-black-50 mt-4">
-                Individualna srečanja združujejo psihosocialno svetovanje in integrativno somatsko podporo. Namenjena so odraslim, ki želijo razvijati več stika s sabo, jasnejše osebne meje, boljše prepoznavanje lastnih potreb, več telesnega zavedanja, notranje opore in samoregulacije.
-                <br><br>
-                Pri delu izhajamo iz konkretnih tem, ki jih prinesete v prostor: preobremenjenost, stres, tesnobnost, telesna napetost, odnosni vzorci, ugajanje drugim, občutki krivde, odklop od telesa, izčrpanost ali življenjski prehodi. Srečanja potekajo sodelovalno, postopno in v tempu, ki podpira občutek varnosti, jasnosti in izbire.
-                <br><br>
-                Več o individualnem delu preberete pod razdelkom "individualno".
-              </p>
-            </div>
-
-     </section>
-
-                <!-- About Section -->
-    <section id="tango" class="about-section text-left">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-
-    
-            <div class="mb-5">
-              <h4 class="text-muted mt-5">SOMATSKI PRISTAN - SPLETNO MESEČNO ČLANSTVO</h4>
-
-           <p class="text-black-50 mt-4">
-                Pot iz glave v telo in iz stresa v stik. Pristani v sebi.
-                <br><br>
-                Somatski pristan združuje umiritev in poživitev. Je prvi spletni prostor, ki povezuje prakse za regulacijo živčnega sistema, somatsko čuječnost©, intuitivno gibanje in opolnomočujoč Budokon - na enem mestu, v tvojem tempu in s podporo skupnosti. Za utelešeno življenje in trajnostno skrb zase, ki jo realno umestiš v svoj dan.
-                <br><br>
-                <a href="https://subscribepage.io/s0Zl9r">Več o spletnem članstvu za Somatski pristan preberete tukaj.</a>
-              </p>
-            </div>
-
-                </div>
-        </div>
+    <header class="hero-static">
+      <div class="hero-static-title text-center">
+        <h1 class="mx-auto text-uppercase">sanja somatika</h1>
+        <h2 class="mx-auto mt-2 mb-5">
+          <b>psihosocialno svetovanje in somatska podpora</b>
+        </h2>
       </div>
-    </section>
 
+      <div class="hero-image-section">
+        <img src="sanja_somatika.jpg" alt="Sanja Somatika">
+      </div>
+    </header>
 
-
-    <!-- Somatika Section -->
-    <section id="joga" class="projects-section">
+    <!-- Uvod -->
+    <section id="moje-delo" class="about-section text-left">
       <div class="container">
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-4 offset-xl-8 col-lg-5 offset-lg-7 text-right">
-            <div>
-              <h1>somatika</h1>
-              <p class="text-white mb-2">
-                <b>Z besedo "somatika" označim celosten pristop, ki povezuje telo in um prek zavedanja in raziskovanja telesnih občutkov v sedanjem trenutku. Pri delu uporabljam avtorsko metodo Somatska čuječnost in somatske prakse, ki prispevajo k poglabljanju stika s sabo in z občutkom lastne vrednosti.</b>
-              </p>
-            </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+            <h1>Moje delo</h1>
+
+            <p class="text-black-50 mt-5">
+              Moje delo združuje psihosocialno svetovanje, integrativno somatsko podporo, Somatic Experiencing®, Somatsko čuječnost in prakse za regulacijo živčnega sistema.
+              <br><br>
+              Izhajam iz bio-psiho-socialnega razumevanja človeka ter travmatsko-informiranega pristopa. Delo je namenjeno odraslim, ki želijo razvijati več stika s sabo, jasnejše osebne meje, boljše prepoznavanje lastnih potreb, več telesnega zavedanja, notranje opore in samoregulacije.
+              <br><br>
+              Na tej strani so predstavljeni individualni proces, spletno članstvo Somatski pristan, somatika in Somatska čuječnost kot osrednji okvirji mojega dela.
+            </p>
+
           </div>
         </div>
       </div>
-      <img src="dla.jpg" alt="Somatika">
     </section>
 
-    <!-- Individualna srečanja Section -->
-    <section id="berime" class="about-section text-left">
+    <!-- Individualni proces -->
+    <section id="individualni-proces" class="about-section text-left">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
 
-            <h1 class="mt-5">Individualna srečanja</h1>
+            <h1 class="mt-5">Individualni proces</h1>
 
             <p class="text-black-50 mt-5">
               <b>
@@ -272,11 +270,13 @@
                 <br><br>
                 Pri delu povezujem svetovalni pogovor, somatsko raziskovanje, opolnomočenje in razumevanje odzivov živčnega sistema. V svojo prakso vključujem metodo Somatic Experiencing®, ki jo uporabljam znotraj svojega strokovnega okvirja.
                 <br><br>
+                Pri delu izhajamo iz konkretnih tem, ki jih prinesete v prostor: preobremenjenost, stres, tesnobnost, telesna napetost, odnosni vzorci, ugajanje drugim, občutki krivde, odklop od telesa, izčrpanost ali življenjski prehodi.
+                <br><br>
                 Srečanja so namenjena odraslim, ki želijo razvijati in krepiti stik s sabo, z osebnimi mejami, boljše prepoznavati potrebe, več notranje stabilnosti, psihološke odpornosti in kapacitete za samoregulacijo.
                 <br><br>
-                Klienti se name obračajo s temami osebnih meja, odnosnih izzivov, ob življenjskih prehodih in za krepitev občutka notranje stabilnosti.
-                <br><br>
                 Proces poteka sodelovalno, odnosno in v smeri želenih izidov klienta. Skupaj raziskujemo, kako se določene teme odražajo v telesu, čustvih, mislih, odnosih in vsakdanjem življenju, ter razvijamo načine, ki podpirajo več jasnosti, izbire, regulacije in notranje moči.
+                <br><br>
+                Srečanja potekajo sodelovalno, postopno in v tempu, ki podpira občutek varnosti, jasnosti in izbire.
                 <br><br>
                 Ne ponujam psihoterapevtske obravnave, travma terapije ali zdravljenja duševnih motenj. Po potrebi kliente usmerim h kolegom sorodnih strok.
                 <br>
@@ -284,6 +284,80 @@
                 <br><br>
                 <a href="https://sanjasomatika.si/sanja">Tu lahko preberete več o individualnih srečanjih in mojem delu.</a>
               </b>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pas fotografije -->
+    <section class="photo-strip">
+      <img src="sanjasana.jpg" alt="Sanja Somatika">
+    </section>
+
+    <!-- Somatski pristan -->
+    <section id="somatski-pristan" class="about-section text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+            <h1 class="mt-5">Somatski pristan</h1>
+            <h4 class="text-muted mt-5">SPLETNO MESEČNO ČLANSTVO</h4>
+
+            <p class="text-black-50 mt-4">
+              Pot iz glave v telo in iz stresa v stik. Pristani v sebi.
+              <br><br>
+              Somatski pristan združuje umiritev in poživitev. Je prvi spletni prostor, ki povezuje prakse za regulacijo živčnega sistema, somatsko čuječnost©, intuitivno gibanje in opolnomočujoč Budokon - na enem mestu, v tvojem tempu in s podporo skupnosti. Za utelešeno življenje in trajnostno skrb zase, ki jo realno umestiš v svoj dan.
+              <br><br>
+              <a href="https://subscribepage.io/s0Zl9r">Več o spletnem članstvu za Somatski pristan preberete tukaj.</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Somatika -->
+    <section id="somatika" class="projects-section">
+      <div class="container">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-4 offset-xl-8 col-lg-5 offset-lg-7 text-right">
+            <div>
+              <h1>somatika</h1>
+              <p class="text-white mb-2">
+                <b>
+                  Somatika v osnovi pomeni telo, kot ga doživljamo od znotraj. Pojem se uporablja tako v terapevtskih okvirjih kot pri gibalnih praksah, kjer ni v ospredju telo kot objekt, temveč živa telesna izkušnja, zaznavanje, regulacija, gibanje in stik s sabo.
+                  <br><br>
+                  Sama besedo somatika uporabljam kot celosten pristop, ki povezuje telo in um prek zavedanja in raziskovanja telesnih občutkov v sedanjem trenutku. V svojem delu jo umeščam v psihosocialni, somatski in travmatsko-informirani okvir, pri gibanju pa kot prakso, kjer gibanje ni zgolj telovadba, temveč bio-psiho-socialni fenomen.
+                  <br><br>
+                  Pri delu uporabljam avtorsko metodo Somatska čuječnost in somatske prakse, ki prispevajo k poglabljanju stika s sabo, z osebnimi mejami, z občutkom notranje opore in z občutkom lastne vrednosti.
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-image-narrow">
+        <img src="dla.jpg" alt="Somatika">
+      </div>
+    </section>
+
+    <!-- Somatska čuječnost -->
+    <section id="somatska-cujecnost" class="about-section text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+            <h1 class="mt-5">Somatska čuječnost</h1>
+
+            <p class="text-black-50 mt-5">
+              Čuječnost je praksa ohranjanja pozornosti na mislih, čustvih, občutkih in na okolici - iz trenutka v trenutek, skozi sprejemajočo, sočutno držo, brez sojenja, presojanja in brez identifikacije.
+              <br><br>
+              Pri delu se osredotočam predvsem na Somatsko čuječnost©. Gre za čuječnost, ki pozornost ne usmerja samo k mislim in čustvom, temveč tudi k telesni izkušnji, zaznavam, dihu, stiku s tlemi, orientaciji v prostoru, notranjim impulzom in spremembam v delovanju živčnega sistema.
+              <br><br>
+              Somatska čuječnost podpira prehod iz avtomatskega odziva v več zaznave, izbire, regulacije in stika s sabo. Vključujem jo v individualno delo, vodene prakse, Somatski pristan in gibalne procese s somatsko orientacijo.
             </p>
 
           </div>
