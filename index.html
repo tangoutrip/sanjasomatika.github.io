@@ -1,3 +1,8 @@
+Spodaj je očiščena celotna koda. Odstranil sem neuspešne poskuse z `.about-section`, zamenjal tekstovne sekcije v nov razred `.text-section`, popravil podvojen `<p>`, pustil hero kot je, ohranil vsebino in pustil spodnji kontakt/footer kot sta bila.
+
+Kopiraj celoto:
+
+```html
 <!DOCTYPE html>
 <html lang="sl">
 
@@ -120,23 +125,25 @@
       display: block;
     }
 
-    .about-section {
-      padding-top: 5rem !important;
-      padding-bottom: 4rem !important;
+    .text-section {
+      background: #ffffff;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
     }
 
-    .about-section h1 {
-      margin-top: 1 !important;
+    .text-section h1 {
+      margin-top: 0;
       margin-bottom: 2rem;
     }
 
-    .about-section p {
-      margin-top: 1 !important;
+    .text-section h4 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
     }
 
-    .about-section h4 {
-      margin-top: 1 !important;
-      margin-bottom: 1.5rem;
+    .text-section p {
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     .photo-strip {
@@ -158,6 +165,12 @@
       display: block;
     }
 
+    #somatika.projects-section {
+      min-height: auto !important;
+      padding-top: 4.5rem !important;
+      padding-bottom: 0 !important;
+    }
+
     .project-image-narrow {
       width: 100%;
       height: 34vh;
@@ -172,11 +185,6 @@
       object-fit: cover;
       object-position: center center;
       display: block;
-    }
-
-    #somatika.projects-section {
-      padding-top: 4rem !important;
-      padding-bottom: 0 !important;
     }
 
     @media (max-width: 768px) {
@@ -194,9 +202,9 @@
         min-height: 300px;
       }
 
-      .about-section {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
+      .text-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
       }
 
       .photo-strip {
@@ -205,54 +213,16 @@
         min-height: 170px;
       }
 
+      #somatika.projects-section {
+        padding-top: 3.5rem !important;
+      }
+
       .project-image-narrow {
         height: 28vh;
         max-height: 300px;
         min-height: 180px;
       }
-
-      #somatika.projects-section {
-        padding-top: 3rem !important;
-      }
     }
-    .about-section {
-  min-height: auto !important;
-  height: auto !important;
-  padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
-}
-
-.about-section .container,
-.about-section .row,
-.about-section .col-lg-8 {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-.about-section h1,
-.about-section h2,
-.about-section h3,
-.about-section h4,
-.about-section p {
-  margin-top: 0 !important;
-}
-
-.about-section h1 {
-  margin-bottom: 2rem !important;
-}
-
-.about-section h4 {
-  margin-bottom: 1.5rem !important;
-}
-
-.photo-strip {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.projects-section {
-  min-height: auto !important;
-}
   </style>
 </head>
 
@@ -309,15 +279,13 @@
     </header>
 
     <!-- Uvod -->
-    <section id="moje-delo" class="about-section text-left">
+    <section id="moje-delo" class="text-section text-left">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
 
             <p class="text-black-50">
-       <p class="text-black-50">
-Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notranjimi viri moči, skozi psihosocialno svetovanje, integrativno somatsko podporo in somatsko čuječe prakse.
-</p>
+              Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notranjimi viri moči, skozi psihosocialno svetovanje, integrativno somatsko podporo in somatsko čuječe prakse.
             </p>
 
           </div>
@@ -326,7 +294,7 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
     </section>
 
     <!-- Individualni proces -->
-    <section id="individualni-proces" class="about-section text-left">
+    <section id="individualni-proces" class="text-section text-left">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -343,8 +311,6 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
                 Srečanja potekajo sodelovalno, postopno in v tempu, ki podpira občutek varnosti, jasnosti in izbire.
                 <br><br>
                 Delo je namenjeno podpori ob spreminjanju doživljajsko-vedenjskih vzorcev, učenju, raziskovanju, zorenju, opolnomočenju in krepitvi virov osebne moči.
-
-      
                 <br><br>
                 <a href="https://sanjasomatika.si/sanja">Tu lahko preberete več o individualnih srečanjih in mojem delu.</a>
               </b>
@@ -361,7 +327,7 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
     </section>
 
     <!-- Somatski pristan -->
-    <section id="somatski-pristan" class="about-section text-left">
+    <section id="somatski-pristan" class="text-section text-left">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -370,7 +336,6 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
             <h4 class="text-muted">SPLETNO MESEČNO ČLANSTVO</h4>
 
             <p class="text-black-50">
-       
               Somatski pristan združuje umiritev in poživitev. Je prvi spletni prostor, ki povezuje prakse za regulacijo živčnega sistema, somatsko čuječnost©, intuitivno gibanje in opolnomočujoč Budokon - na enem mestu, v tvojem tempu in s podporo skupnosti. Za utelešeno življenje in trajnostno skrb zase, ki jo realno umestiš v svoj dan.
               <br><br>
               <a href="https://subscribepage.io/s0Zl9r">Več o spletnem članstvu za Somatski pristan preberete tukaj.</a>
@@ -387,7 +352,6 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-4 offset-xl-8 col-lg-5 offset-lg-7 text-right">
             <div>
-          
               <p class="text-white mb-2">
                 <b>
                   Soma v osnovi pomeni telo, kot ga doživljamo od znotraj. Pojem "somatika" se uporablja tako v terapevtskih okvirjih kot pri gibalnih praksah, kjer ni v ospredju telo kot objekt, temveč živa telesna izkušnja, zaznavanje, regulacija, gibanje in stik s sabo.
@@ -404,7 +368,7 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
     </section>
 
     <!-- Somatska čuječnost -->
-    <section id="somatska-cujecnost" class="about-section text-left">
+    <section id="somatska-cujecnost" class="text-section text-left">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -412,22 +376,13 @@ Prostor za krepitev jasnejšega stika s sabo, osebnimi mejami, potrebami in notr
             <h1>Somatska čuječnost</h1>
 
             <p class="text-black-50">
-    Somatska čuječnost je avtorska somatska metoda in specifična podzvrst somatsko usmerjene čuječnosti. Od splošne čuječnosti se razlikuje po tem, da ne opazuje misli kot vsebine, 
-              temveč raziskuje, kako se notranje izkušnje (misli, občutki, impulzi, meje in potrebe) zaznavajo in doživljajo v telesu.
-
-<br><br>
-
-Metoda temelji na arhitekturi pozornosti: hkratnem zaznavanju notranjega senzornega dogajanja, opazovanju poteka doživljanja in orientaciji v realnem času in prostoru.
-              Stik s telesom se gradi postopno, znotraj razpoložljive kapacitete, ob podpori somatosenzornih sider, kot so stik s podlago, opora, teža, prostor in občutek tukaj in zdaj.
-
-<br><br>
-
-Somatska čuječnost po tej metodi ne pomeni “čutiti več” ali se potopiti v doživljanje, ampak razvijati stabilnejši odnos do notranjih stanj brez izgube orientacije, izbire in povezanosti. 
-              Podpira jasnejši stik s potrebami in mejami, razločevanje med senzacijo, odzivom in interpretacijo ter več utelešene prisotnosti v vsakdanjem življenju.
-
-<br><br>
-     <a href="https://doi.org/10.5281/zenodo.18460716">Metodološki okvir moje avtorske metode Somatska čuječnost je dostopen tukaj.</a>
-
+              Somatska čuječnost je avtorska somatska metoda in specifična podzvrst somatsko usmerjene čuječnosti. Od splošne čuječnosti se razlikuje po tem, da ne opazuje misli kot vsebine, temveč raziskuje, kako se notranje izkušnje (misli, občutki, impulzi, meje in potrebe) zaznavajo in doživljajo v telesu.
+              <br><br>
+              Metoda temelji na arhitekturi pozornosti: hkratnem zaznavanju notranjega senzornega dogajanja, opazovanju poteka doživljanja in orientaciji v realnem času in prostoru. Stik s telesom se gradi postopno, znotraj razpoložljive kapacitete, ob podpori somatosenzornih sider, kot so stik s podlago, opora, teža, prostor in občutek tukaj in zdaj.
+              <br><br>
+              Somatska čuječnost po tej metodi ne pomeni “čutiti več” ali se potopiti v doživljanje, ampak razvijati stabilnejši odnos do notranjih stanj brez izgube orientacije, izbire in povezanosti. Podpira jasnejši stik s potrebami in mejami, razločevanje med senzacijo, odzivom in interpretacijo ter več utelešene prisotnosti v vsakdanjem življenju.
+              <br><br>
+              <a href="https://doi.org/10.5281/zenodo.18460716">Metodološki okvir moje avtorske metode Somatska čuječnost je dostopen tukaj.</a>
             </p>
 
           </div>
@@ -488,3 +443,4 @@ Somatska čuječnost po tej metodi ne pomeni “čutiti več” ali se potopiti 
 </body>
 
 </html>
+```
