@@ -120,13 +120,34 @@
       display: block;
     }
 
+    .about-section {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+    }
+
+    .about-section h1 {
+      margin-top: 0 !important;
+      margin-bottom: 2rem;
+    }
+
+    .about-section p {
+      margin-top: 0 !important;
+    }
+
+    .about-section h4 {
+      margin-top: 0 !important;
+      margin-bottom: 1.5rem;
+    }
+
     .photo-strip {
       width: 100%;
-      height: 34vh;
-      max-height: 360px;
-      min-height: 220px;
+      height: 30vh;
+      max-height: 320px;
+      min-height: 200px;
       overflow: hidden;
       background: #ffffff;
+      margin: 0;
+      padding: 0;
     }
 
     .photo-strip img {
@@ -139,9 +160,9 @@
 
     .project-image-narrow {
       width: 100%;
-      height: 45vh;
-      max-height: 460px;
-      min-height: 260px;
+      height: 34vh;
+      max-height: 340px;
+      min-height: 220px;
       overflow: hidden;
     }
 
@@ -151,6 +172,11 @@
       object-fit: cover;
       object-position: center center;
       display: block;
+    }
+
+    #somatika.projects-section {
+      padding-top: 4rem !important;
+      padding-bottom: 0 !important;
     }
 
     @media (max-width: 768px) {
@@ -163,21 +189,30 @@
       }
 
       .hero-image-section {
-        height: 40vh;
-        max-height: 380px;
-        min-height: 260px;
+        height: 44vh;
+        max-height: 420px;
+        min-height: 300px;
+      }
+
+      .about-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
       }
 
       .photo-strip {
+        height: 24vh;
+        max-height: 260px;
+        min-height: 170px;
+      }
+
+      .project-image-narrow {
         height: 28vh;
         max-height: 300px;
         min-height: 180px;
       }
 
-      .project-image-narrow {
-        height: 34vh;
-        max-height: 340px;
-        min-height: 220px;
+      #somatika.projects-section {
+        padding-top: 3rem !important;
       }
     }
   </style>
@@ -201,9 +236,9 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-  <a class="nav-link js-scroll-trigger" href="https://sanjasomatika.si/sanja"><b>moje delo</b></a>
-</li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://sanjasomatika.si/sanja"><b>moje delo</b></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#individualni-proces"><b>individualni procesi</b></a>
             </li>
@@ -241,13 +276,8 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
 
-         
-
-            <p class="text-black-50 mt-5">
-              Moje delo združuje psihosocialno svetovanje, integrativno somatsko podporo z bazo na terapevtskem modelu Somatic Experiencing®, Somatsko čuječnost, 
-              regulacijo živčnega sistema ter somatske prakse za opolnomočenje, ozemljevanje in utelešanje (budokon in argentinski tango).
-       
-    
+            <p class="text-black-50">
+              Moje delo združuje psihosocialno svetovanje, integrativno somatsko podporo z bazo na terapevtskem modelu Somatic Experiencing®, Somatsko čuječnost, regulacijo živčnega sistema ter somatske prakse za opolnomočenje, ozemljevanje in utelešanje (budokon in argentinski tango).
             </p>
 
           </div>
@@ -261,23 +291,17 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
 
-            <h1 class="mt-5">Individualni proces</h1>
+            <h1>Individualni proces</h1>
 
-            <p class="text-black-50 mt-5">
+            <p class="text-black-50">
               <b>
-        Telesno orientirano psihosocialno svetovanje je namenjeno odraslim, ki želijo razvijati jasnejši stik s sabo, osebnimi mejami in potrebami, se posvečati ponavljajočim se odnosnim vzorcem ter razumeti telesne odzive v kontekstu.
-
-<br><br>
-
-Pri delu povezujem svetovalni pogovor z integrativnimi somatskimi pristopi, z izhodiščem v metodi Somatic Experiencing®, razumevanjem odzivov živčnega sistema in Somatsko čuječnostjo. Moj pristop je travmatsko informiran.
-
-<br><br>
-
-Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možnosti izbire, regulacije in utelešene prisotnosti v vsakdanjem življenju.
+                Telesno orientirano psihosocialno svetovanje je namenjeno odraslim, ki želijo razvijati jasnejši stik s sabo, osebnimi mejami in potrebami, se posvečati ponavljajočim se odnosnim vzorcem ter razumeti telesne odzive v kontekstu.
+                <br><br>
+                Pri delu povezujem svetovalni pogovor z integrativnimi somatskimi pristopi, z izhodiščem v metodi Somatic Experiencing®, razumevanjem odzivov živčnega sistema in Somatsko čuječnostjo. Moj pristop je travmatsko informiran.
+                <br><br>
+                Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možnosti izbire, regulacije in utelešene prisotnosti v vsakdanjem življenju.
                 Srečanja potekajo sodelovalno, postopno in v tempu, ki podpira občutek varnosti, jasnosti in izbire.
                 <br><br>
-          
-            
                 Delo je namenjeno podpori ob spreminjanju doživljajsko-vedenjskih vzorcev, učenju, raziskovanju, zorenju, opolnomočenju in krepitvi virov osebne moči.
                 <br><br>
                 <a href="https://sanjasomatika.si/sanja">Tu lahko preberete več o individualnih srečanjih in mojem delu.</a>
@@ -300,10 +324,10 @@ Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možn
         <div class="row">
           <div class="col-lg-8 mx-auto">
 
-            <h1 class="mt-5">Somatski pristan</h1>
-            <h4 class="text-muted mt-5">SPLETNO MESEČNO ČLANSTVO</h4>
+            <h1>Somatski pristan</h1>
+            <h4 class="text-muted">SPLETNO MESEČNO ČLANSTVO</h4>
 
-            <p class="text-black-50 mt-4">
+            <p class="text-black-50">
               Pot iz glave v telo in iz stresa v stik. Pristani v sebi.
               <br><br>
               Somatski pristan združuje umiritev in poživitev. Je prvi spletni prostor, ki povezuje prakse za regulacijo živčnega sistema, somatsko čuječnost©, intuitivno gibanje in opolnomočujoč Budokon - na enem mestu, v tvojem tempu in s podporo skupnosti. Za utelešeno življenje in trajnostno skrb zase, ki jo realno umestiš v svoj dan.
@@ -326,7 +350,6 @@ Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možn
               <p class="text-white mb-2">
                 <b>
                   Somatika v osnovi pomeni telo, kot ga doživljamo od znotraj. Pojem se uporablja tako v terapevtskih okvirjih kot pri gibalnih praksah, kjer ni v ospredju telo kot objekt, temveč živa telesna izkušnja, zaznavanje, regulacija, gibanje in stik s sabo.
-             
                 </b>
               </p>
             </div>
@@ -345,9 +368,9 @@ Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možn
         <div class="row">
           <div class="col-lg-8 mx-auto">
 
-            <h1 class="mt-5">Somatska čuječnost</h1>
+            <h1>Somatska čuječnost</h1>
 
-            <p class="text-black-50 mt-5">
+            <p class="text-black-50">
               Čuječnost je praksa ohranjanja pozornosti na mislih, čustvih, občutkih in na okolici - iz trenutka v trenutek, skozi sprejemajočo, sočutno držo, brez sojenja, presojanja in brez identifikacije.
               <br><br>
               Pri delu se osredotočam predvsem na Somatsko čuječnost©. Gre za čuječnost, ki pozornost ne usmerja samo k mislim in čustvom, temveč tudi k telesni izkušnji, zaznavam, dihu, stiku s tlemi, orientaciji v prostoru, notranjim impulzom in spremembam v delovanju živčnega sistema.
