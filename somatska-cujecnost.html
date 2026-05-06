@@ -1,14 +1,3 @@
-Spodaj je finalna koda za novo podstran **`somatska-cujecnost.html`**.
-
-Fotka je dodana kot hero pas pod uvodom. Uporabil sem datoteko:
-
-```html
-sanja_somatika%20%281%29.jpg
-```
-
-To ustreza imenu: `sanja_somatika (1).jpg`.
-
-```html
 <!DOCTYPE html>
 <html lang="sl">
 
@@ -34,11 +23,11 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:site_name" content="Sanja Somatika">
-  <meta property="og:image" content="https://sanjasomatika.si/sanja_somatika%20%281%29.jpg">
+  <meta property="og:image" content="https://sanjasomatika.si/Somatska-čuječnost-sanja-somatika.jpg">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
 
   <script type="application/ld+json">
@@ -106,6 +95,7 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
 
     body {
       background: #ffffff;
+      font-family: "Roboto", sans-serif;
     }
 
     #mainNav {
@@ -119,20 +109,63 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
       background-color: #ffffff !important;
     }
 
-    .page-header {
-      padding-top: 140px;
-      padding-bottom: 40px;
+    .hero-header {
+      position: relative;
+      width: 100%;
+      min-height: 82vh;
+      overflow: hidden;
       background: #ffffff;
+      display: flex;
+      align-items: center;
     }
 
-    .page-header h1 {
+    .hero-header img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      z-index: 1;
+    }
+
+    .hero-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.38);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      padding-top: 150px;
+      padding-bottom: 80px;
+      color: #ffffff;
+    }
+
+    .hero-content h1 {
+      color: #ffffff;
       margin-bottom: 1.5rem;
+      font-weight: 700;
     }
 
-    .page-header .subtitle {
+    .hero-content .subtitle {
+      color: #ffffff;
       font-size: 1.25rem;
       line-height: 1.7;
-      color: #6c757d;
+      font-weight: 700;
+      max-width: 850px;
+    }
+
+    .hero-content p {
+      color: #ffffff;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      font-weight: 500;
+      max-width: 850px;
     }
 
     .hero-buttons {
@@ -143,67 +176,16 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
       display: inline-block;
       margin-right: 1rem;
       margin-bottom: 1rem;
-    }
-
-    .subpage-hero-strip {
-      width: 100%;
-      height: 520px;
-      overflow: hidden;
-      background: #ffffff;
-    }
-
-    .subpage-hero-strip img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
-
-    .content-section {
-      padding: 40px 0 80px 0;
-      background: #ffffff;
-    }
-
-    .content-section article {
-      padding-top: 50px;
-      padding-bottom: 20px;
-      scroll-margin-top: 100px;
-    }
-
-    .content-section h2 {
-      margin-bottom: 2rem;
+      color: #ffffff;
       font-weight: 700;
-    }
-
-    .content-section h3 {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
-    }
-
-    .content-section p {
-      font-size: 1rem;
-      line-height: 1.8;
-    }
-
-    .content-section ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .content-section li {
-      margin-bottom: 0.5rem;
-      line-height: 1.7;
+      text-decoration: underline;
     }
 
     .on-this-page {
       background: #ffffff;
       border-top: 1px solid rgba(0, 0, 0, 0.08);
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-      padding: 40px 0;
+      padding: 50px 0;
     }
 
     .on-this-page h2 {
@@ -221,6 +203,76 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
     .on-this-page li {
       margin-bottom: 0.5rem;
       line-height: 1.7;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    .content-section {
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .content-section article {
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      scroll-margin-top: 100px;
+    }
+
+    .content-section article::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 100vw;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    .content-section article:nth-of-type(odd)::before {
+      background: #ffffff;
+    }
+
+    .content-section article:nth-of-type(even)::before {
+      background: #f2fbfb;
+    }
+
+    .content-section article > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .content-section h2 {
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .content-section h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .content-section p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      font-weight: 500;
+    }
+
+    .content-section ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-section li {
+      margin-bottom: 0.5rem;
+      line-height: 1.75;
+      font-size: 1.05rem;
+      font-weight: 500;
     }
 
     .links-section {
@@ -239,12 +291,33 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
     }
 
     @media (max-width: 768px) {
-      .page-header {
-        padding-top: 120px;
+      .hero-header {
+        min-height: 78vh;
       }
 
-      .subpage-hero-strip {
-        height: 380px;
+      .hero-header img {
+        object-position: center top;
+      }
+
+      .hero-content {
+        padding-top: 125px;
+        padding-bottom: 60px;
+      }
+
+      .hero-content .subtitle {
+        font-size: 1.1rem;
+      }
+
+      .hero-content p,
+      .content-section p,
+      .content-section li,
+      .on-this-page li {
+        font-size: 1rem;
+      }
+
+      .content-section article {
+        padding-top: 55px;
+        padding-bottom: 55px;
       }
     }
   </style>
@@ -264,7 +337,7 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="sanja.html">za koga</a>
+            <a class="nav-link" href="sanja.html">pristop</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="individualno.html">individualno</a>
@@ -285,8 +358,10 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
 
   <main>
 
-    <header class="page-header">
-      <div class="container">
+    <header class="hero-header">
+      <img src="Somatska-čuječnost-sanja-somatika.jpg" alt="Somatska čuječnost Sanja Somatika">
+
+      <div class="container hero-content">
         <div class="row">
           <div class="col-lg-10 mx-auto text-left">
 
@@ -296,11 +371,11 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
               Avtorska somatska metodologija Sanje Somatike za stik s telesnim doživljanjem, orientacijo in regulacijo živčnega sistema.
             </p>
 
-            <p class="text-black-50">
+            <p>
               Somatska čuječnost je avtorska somatska metodologija, ki jo je Sanja Somatika razvila, poimenovala in vpeljala v slovenski prostor kot samostojen somatski pristop znotraj širšega polja čuječnosti.
             </p>
 
-            <p class="text-black-50">
+            <p>
               Predstavlja metodološki okvir, ki danes prežema individualno delo, Somatski pristan in utelešene gibalne prakse.
             </p>
 
@@ -314,10 +389,6 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
         </div>
       </div>
     </header>
-
-    <section class="subpage-hero-strip">
-      <img src="sanja_somatika%20%281%29.jpg" alt="Somatska čuječnost Sanja Somatika">
-    </section>
 
     <section id="na-tej-strani" class="on-this-page">
       <div class="container">
@@ -783,4 +854,3 @@ To ustreza imenu: `sanja_somatika (1).jpg`.
 </body>
 
 </html>
-```
