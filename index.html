@@ -26,7 +26,7 @@
 
   <!-- Custom fonts for this template -->
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap&subset=latin-ext" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
@@ -131,32 +131,114 @@
 </script>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background: #ffffff;
+      overflow-x: hidden;
+      font-family: 'Manrope', sans-serif;
+      color: #6c757d;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Lora', serif;
+    }
+
+    #mainNav {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      position: fixed !important;
+      top: 0 !important;
+      width: 100% !important;
+      z-index: 9999 !important;
+      background-color: #ffffff !important;
+      padding-top: 1.05rem;
+      padding-bottom: 1.05rem;
+      box-shadow: none;
+    }
+
+    #mainNav .container {
+      max-width: 1280px;
+    }
+
+    #mainNav .navbar-brand {
+      color: #40bfb6 !important;
+      font-family: 'Lora', serif;
+      font-size: 1.38rem;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      white-space: nowrap;
+      margin-right: 2.3rem;
+    }
+
+    #mainNav .navbar-nav {
+      align-items: center;
+    }
+
+    #mainNav .navbar-nav .nav-link {
+      color: #333333;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-variant-caps: all-small-caps;
+      letter-spacing: 0.045em;
+      text-transform: none;
+      white-space: nowrap;
+      padding-left: 0.65rem;
+      padding-right: 0.65rem;
+    }
+
+    #mainNav .navbar-nav .nav-link:hover {
+      color: #40bfb6;
+    }
+
+    #mainNav .navbar-nav .nav-link.nav-priority {
+      font-weight: 800;
+    }
+
     .hero-static {
       background: #ffffff;
-      padding-top: 100px;
+      padding-top: 96px;
     }
 
     .hero-static-title {
-      padding: 40px 15px 50px 15px;
+      padding: 42px 15px 48px 15px;
     }
 
     .hero-static-title h1 {
       color: #40e0d0;
+      font-size: 3.4rem;
+      font-weight: 400;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+      text-transform: none !important;
     }
 
     .hero-static-title h2 {
       color: #6c757d;
-      font-size: 1.25rem;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.18rem;
+      font-weight: 500;
+      line-height: 1.6;
     }
 
-.hero-image-section {
-  width: 100%;
-  height: 70vh;
-  max-height: 900px;
-  min-height: 520px;
-  overflow: hidden;
-  background: #ffffff;
-}
+    .hero-image-section {
+      width: 100%;
+      height: 70vh;
+      max-height: 900px;
+      min-height: 520px;
+      overflow: hidden;
+      background: #ffffff;
     }
 
     .hero-image-section img {
@@ -176,17 +258,33 @@
     .text-section h2 {
       margin-top: 0;
       margin-bottom: 2rem;
-        font-weight: 700;
+      font-weight: 500;
+      line-height: 1.25;
+      color: #111111;
     }
 
     .text-section h4 {
       margin-top: 0;
       margin-bottom: 1.5rem;
+      font-weight: 500;
+      color: #222222;
     }
 
     .text-section p {
       margin-top: 0;
       margin-bottom: 0;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    .text-section a {
+      color: #2bbbad;
+      text-decoration: none;
+    }
+
+    .text-section a:hover {
+      color: #1e8f85;
+      text-decoration: underline;
     }
 
     .photo-strip {
@@ -230,97 +328,71 @@
       display: block;
     }
 
+    .contact-section h2 {
+      font-family: 'Manrope', sans-serif;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 991px) {
+      #mainNav .navbar-nav {
+        align-items: flex-start;
+        padding-top: 0.8rem;
+      }
+
+      #mainNav .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        font-size: 0.9rem;
+      }
+    }
+
     @media (max-width: 768px) {
       .hero-static {
-        padding-top: 100px;
+        padding-top: 92px;
       }
 
       .hero-static-title {
         padding: 30px 15px 35px 15px;
       }
 
-    .hero-image-section {
-  width: 100%;
-  height: 70vh;
-  max-height: 900px;
-  min-height: 520px;
-  overflow: hidden;
-  background: #ffffff;
-}
+      .hero-static-title h1 {
+        font-size: 2.55rem;
+      }
 
-.hero-image-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  display: block;
-}
+      .hero-static-title h2 {
+        font-size: 1rem;
+      }
 
-@media (max-width: 768px) {
-  .hero-static {
-    padding-top: 100px;
-  }
+      .hero-image-section {
+        height: 62vh;
+        max-height: 620px;
+        min-height: 430px;
+      }
 
-  .hero-static-title {
-    padding: 30px 15px 35px 15px;
-  }
+      .hero-image-section img {
+        object-fit: cover;
+        object-position: center top;
+      }
 
-  .hero-image-section {
-    height: 62vh;
-    max-height: 620px;
-    min-height: 430px;
-  }
+      .text-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
 
-  .hero-image-section img {
-    object-fit: cover;
-    object-position: center top;
-  }
+      .photo-strip {
+        height: 24vh;
+        max-height: 260px;
+        min-height: 170px;
+      }
 
-  .text-section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
-  .photo-strip {
-    height: 24vh;
-    max-height: 260px;
-    min-height: 170px;
-  }
-
-  .project-image-narrow {
-    height: 28vh;
-    max-height: 300px;
-    min-height: 180px;
-  }
-}
-
-    #mainNav {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  position: fixed !important;
-  top: 0 !important;
-  width: 100% !important;
-  z-index: 9999 !important;
-  background-color: #ffffff !important;
-}
-
-    #mainNav .brand-link {
-  color: #40bfb6 !important;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0.02em;
-}
-
-#mainNav .nav-link {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
-#mainNav .nav-priority {
-  font-weight: 800;
-}
+      .project-image-narrow {
+        height: 28vh;
+        max-height: 300px;
+        min-height: 180px;
+      }
+    }
   </style>
 </head>
 
@@ -330,48 +402,48 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container">
+      <div class="container">
 
-    <a class="navbar-brand js-scroll-trigger brand-link" href="index.html">
-      Sanja Somatika
-    </a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+          Sanja Somatika
+        </a>
 
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
-      Menu
-      <i class="fas fa-bars"></i>
-    </button>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="somatika.html">somatika</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="somatika.html">somatika</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link nav-priority" href="individualno.html">individualno</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link nav-priority" href="individualno.html">individualno</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="sanja.html">pristop</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sanja.html">pristop</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
+            </li>
 
-      </ul>
-    </div>
-  </div>
-</nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Header -->
     <header class="hero-static">
@@ -395,7 +467,7 @@
 
             <p class="text-black-50">
                 <b>
-            Prostor za krepitev jasnejšega stika telesom, osebnimi mejami in notranjimi viri moči za več psihološke odpornost in fleksibilnejši živčni sistem - skozi psihosocialno svetovanje, integrativno somatsko podporo in somatsko čuječe prakse.  </b>
+            Prostor za krepitev jasnejšega stika s telesom, osebnimi mejami in notranjimi viri moči za več psihološke odpornosti in fleksibilnejši živčni sistem – skozi psihosocialno svetovanje, integrativno somatsko podporo in somatsko čuječe prakse.  </b>
         
 
                  
