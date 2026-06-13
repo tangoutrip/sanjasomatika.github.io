@@ -29,7 +29,7 @@
   <!-- Custom fonts for this template -->
 
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Manrope:wght@600;700;800&family=Roboto:wght@400;500&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Manrope:wght@600;700;800&family=Roboto:wght@300;400;500&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
 
   <!-- Custom styles for this template -->
 
@@ -143,9 +143,10 @@
     body {
       background: #ffffff;
       overflow-x: hidden;
-      font-family: 'Roboto', sans-serif;
-      color: #666f77;
+      font-family: 'Roboto', sans-serif !important;
+      color: #6c757d;
       font-weight: 400;
+      letter-spacing: 0;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -156,7 +157,7 @@
     h4,
     h5,
     h6 {
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'Varela Round', sans-serif !important;
       font-weight: 400;
       letter-spacing: 0;
     }
@@ -181,12 +182,12 @@
     }
 
     #mainNav .container {
-      max-width: 1280px;
+      max-width: 1320px;
     }
 
     #mainNav .navbar-brand {
       color: #40bfb6 !important;
-      font-family: 'Lora', serif;
+      font-family: 'Lora', serif !important;
       font-size: 1.38rem;
       font-weight: 400;
       letter-spacing: 0;
@@ -195,29 +196,36 @@
       margin-right: 2.3rem;
     }
 
+    #mainNav .navbar-brand:hover {
+      color: #40bfb6 !important;
+      text-decoration: none;
+    }
+
     #mainNav .navbar-nav {
       align-items: center;
     }
 
     #mainNav .navbar-nav .nav-link {
-      color: #333333;
-      font-family: 'Manrope', sans-serif;
-      font-size: 0.95rem;
+      color: #333333 !important;
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 1.04rem;
       font-weight: 700;
       font-variant-caps: all-small-caps;
-      letter-spacing: 0.025em;
+      letter-spacing: 0.018em;
       text-transform: none;
       white-space: nowrap;
-      padding-left: 0.72rem;
-      padding-right: 0.72rem;
+      padding-left: 0.62rem;
+      padding-right: 0.62rem;
     }
 
     #mainNav .navbar-nav .nav-link:hover {
-      color: #40bfb6;
+      color: #40bfb6 !important;
+      text-decoration: none;
+      background: transparent;
     }
 
     #mainNav .navbar-nav .nav-link.nav-priority {
-      color: #222222;
+      color: #111111 !important;
       font-weight: 800;
     }
 
@@ -233,11 +241,11 @@
 
     .hero-static-title h1 {
       color: #40e0d0;
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'Varela Round', sans-serif !important;
       font-size: 3.15rem;
       font-weight: 400;
-      line-height: 1.28;
-      letter-spacing: 0.12em;
+      line-height: 1.32;
+      letter-spacing: 0;
       margin-bottom: 0.8rem;
       padding-bottom: 0.15em;
       text-transform: none !important;
@@ -246,10 +254,11 @@
 
     .hero-static-title h2 {
       color: #6c757d;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif !important;
       font-size: 1.15rem;
       font-weight: 500;
       line-height: 1.55;
+      letter-spacing: 0;
     }
 
     .hero-image-section {
@@ -273,36 +282,43 @@
       background: #ffffff;
       padding-top: 4.5rem;
       padding-bottom: 4.5rem;
+      font-family: 'Roboto', sans-serif !important;
+      letter-spacing: 0 !important;
     }
 
     .text-section h2 {
       margin-top: 0;
       margin-bottom: 2rem;
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'Varela Round', sans-serif !important;
       font-weight: 400;
       line-height: 1.3;
       color: #111111;
+      letter-spacing: 0;
     }
 
     .text-section h4 {
       margin-top: 0;
       margin-bottom: 1.5rem;
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'Varela Round', sans-serif !important;
       font-weight: 400;
       color: #222222;
+      letter-spacing: 0;
     }
 
     .text-section p {
       margin-top: 0;
       margin-bottom: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif !important;
       font-size: 1.03rem;
       font-weight: 400;
       line-height: 1.9;
+      letter-spacing: 0 !important;
     }
 
     .text-section .text-black-50 {
-      color: #666f77 !important;
+      color: #6c757d !important;
+      font-family: 'Roboto', sans-serif !important;
+      letter-spacing: 0 !important;
     }
 
     .text-section a {
@@ -357,7 +373,7 @@
     }
 
     .contact-section h2 {
-      font-family: 'Varela Round', sans-serif;
+      font-family: 'Varela Round', sans-serif !important;
       letter-spacing: 0;
     }
 
@@ -372,7 +388,7 @@
         padding-right: 0;
         padding-top: 0.45rem;
         padding-bottom: 0.45rem;
-        font-size: 0.98rem;
+        font-size: 1rem;
       }
     }
 
@@ -387,7 +403,6 @@
 
       .hero-static-title h1 {
         font-size: 2.35rem;
-        letter-spacing: 0.08em;
       }
 
       .hero-static-title h2 {
@@ -435,7 +450,7 @@
 
   <main>
 
-```
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
@@ -513,7 +528,7 @@
     </div>
   </div>
 </section>
-```
+
 
 <!-- Kaj je somatika -->
 
@@ -522,7 +537,7 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
 
-```
+
     <h2>Kaj je somatika?</h2>
 
     <p class="text-black-50">
@@ -535,12 +550,12 @@
 
   </div>
 </div>
-```
+
 
   </div>
 </section>
 
-```
+
 <!-- Individualno -->
 <section id="individualno" class="text-section text-left">
   <div class="container">
@@ -654,7 +669,7 @@
     </div>
   </div>
 </section>
-```
+
 
   </main>
 
