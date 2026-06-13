@@ -304,6 +304,23 @@
   z-index: 9999 !important;
   background-color: #ffffff !important;
 }
+
+    #mainNav .brand-link {
+  color: #40bfb6 !important;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+#mainNav .nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+#mainNav .nav-priority {
+  font-weight: 800;
+}
   </style>
 </head>
 
@@ -313,45 +330,48 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <i class="fas fa-2x fa-caret-up"></i>
-        </a>
+  <div class="container">
 
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
+    <a class="navbar-brand js-scroll-trigger brand-link" href="index.html">
+      Sanja Somatika
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            
-           <li class="nav-item">
-    <a class="nav-link" href="somatika.html"><b>somatika</b></a>
-  </li>
-            
-      <li class="nav-item">
-  <a class="nav-link" href="individualno.html"><b>individualno</b></a>
-</li>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
 
-             <li class="nav-item">
-              <a class="nav-link" href="sanja.html"><b>pristop</b></a>
-            </li>
-           <li class="nav-item">
-  <a class="nav-link" href="somatska-cujecnost.html"><b>somatska čuječnost</b></a>
-</li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#somatski-pristan"><b>somatski pristan</b></a>
-            </li>
-            
-       
-            <li class="nav-item">
-              <a class="nav-link" href="strokovna-podlaga.html"><b>strokovna podlaga</b></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="somatika.html">somatika</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-priority" href="individualno.html">individualno</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="sanja.html">pristop</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- Header -->
     <header class="hero-static">
