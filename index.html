@@ -31,58 +31,104 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://sanjasomatika.si/#org",
-        "name": "Sanja Somatika",
-        "url": "https://sanjasomatika.si/"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sanjasomatika.si/#org",
+      "name": "Sanja Somatika",
+      "url": "https://sanjasomatika.si/",
+      "email": "info@sanjasomatika.si",
+      "sameAs": [
+        "https://www.instagram.com/sanja.somatika/",
+        "https://www.facebook.com/sanjasomatika",
+        "https://www.youtube.com/@sanjasomatika",
+        "https://budokon.si/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sanjasomatika.si/#person",
+      "name": "Sanja Zalar Gostimirović",
+      "alternateName": "Sanja Somatika",
+      "jobTitle": "somatsko usmerjena psihosocialna svetovalka in somatska praktičarka",
+      "url": "https://sanjasomatika.si/",
+      "email": "info@sanjasomatika.si",
+      "worksFor": {
+        "@id": "https://sanjasomatika.si/#org"
       },
-      {
-        "@type": "Person",
-        "@id": "https://sanjasomatika.si/#person",
-        "name": "Sanja Zalar Gostimirović",
-        "alternateName": "Sanja Somatika",
-        "jobTitle": "Somatsko usmerjena psihosocialna svetovalka in somatska praktičarka",
-        "url": "https://sanjasomatika.si/",
-        "sameAs": [
-          "https://www.instagram.com/sanja.somatika/",
-          "https://www.facebook.com/sanjasomatika",
-          "https://www.youtube.com/@sanjasomatika"
-        ],
-        "worksFor": {
-          "@id": "https://sanjasomatika.si/#org"
-        }
+      "knowsAbout": [
+        "psihosocialno svetovanje",
+        "somatska podpora",
+        "integrativni somatski pristopi",
+        "somatska terapija",
+        "somatska edukacija",
+        "somatska čuječnost",
+        "somatsko čuječe prakse",
+        "somatsko gibanje",
+        "intuitivno gibanje",
+        "regulacija živčnega sistema",
+        "razumevanje odzivov živčnega sistema",
+        "telesno orientirano svetovanje",
+        "Somatic Experiencing",
+        "travmatsko informirano delo",
+        "utelešena prisotnost",
+        "osebne meje",
+        "notranji viri moči",
+        "psihološka odpornost",
+        "Budokon",
+        "BDK joga",
+        "gibanje",
+        "joga",
+        "argentinski tango"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sanja.somatika/",
+        "https://www.facebook.com/sanjasomatika",
+        "https://www.youtube.com/@sanjasomatika",
+        "https://budokon.si/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sanjasomatika.si/#service",
+      "name": "Psihosocialno svetovanje in somatska podpora",
+      "provider": {
+        "@id": "https://sanjasomatika.si/#person"
       },
-      {
-        "@type": "Service",
-        "@id": "https://sanjasomatika.si/#service",
-        "name": "Psihosocialno svetovanje in somatska podpora",
-        "provider": {
-          "@id": "https://sanjasomatika.si/#org"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ljubljana"
         },
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Ljubljana"
-          },
-          {
-            "@type": "Country",
-            "name": "Slovenia"
-          }
-        ],
-        "availableChannel": {
+        {
+          "@type": "Country",
+          "name": "Slovenia"
+        }
+      ],
+      "availableChannel": [
+        {
           "@type": "ServiceChannel",
+          "name": "Online",
           "serviceUrl": "https://sanjasomatika.si/",
           "availableLanguage": ["sl"]
+        },
+        {
+          "@type": "ServiceChannel",
+          "name": "V živo",
+          "serviceLocation": {
+            "@type": "Place",
+            "name": "Ljubljana"
+          },
+          "availableLanguage": ["sl"]
         }
-      }
-    ]
-  }
-  </script>
+      ]
+    }
+  ]
+}
+</script>
 
   <style>
     .hero-static {
