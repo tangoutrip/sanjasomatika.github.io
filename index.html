@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="sl">
 
 <head>
@@ -22,16 +21,9 @@
 
   <meta name="google-site-verification" content="mtyq4CNLA9fQWDDKorFQCGXlDHb1CCRAQepgPDiGBek">
 
-  <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap&subset=latin-ext" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale-sanjasana.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -96,7 +88,7 @@
     {
       "@type": "Service",
       "@id": "https://sanjasomatika.si/#service",
-      "name": "Psihosocialno svetovanje in somatska podpora",
+      "name": "Psihosocialno svetovanje s somatskim pristopom",
       "provider": {
         "@id": "https://sanjasomatika.si/#person"
       },
@@ -133,123 +125,78 @@
 </script>
 
   <style>
-    .hero-static {
-      background: #ffffff;
-      padding-top: 100px;
+    :root {
+      --ss-dark: #39463A;
+      --ss-rose: #AB8A7A;
+      --ss-bluegrey: #73868A;
+      --ss-taupe: #927C67;
+      --ss-cream: #E0D7C7;
+      --ss-paper: #f7f3ee;
+      --ss-text: #39463A;
+      --ss-muted: #6f766f;
+      --ss-border: rgba(57, 70, 58, 0.18);
+      --ss-display: 'Cormorant Garamond', serif;
+      --ss-nav: 'Manrope', sans-serif;
     }
 
-    .hero-static-title {
-      padding: 40px 15px 50px 15px;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .hero-static-title h1 {
-      color: #40e0d0;
-    }
-
-    .hero-static-title h2 {
-      color: #6c757d;
-      font-size: 1.25rem;
-    }
-
-    .hero-image-section {
-      width: 100%;
-      height: 70vh;
-      max-height: 900px;
-      min-height: 520px;
-      overflow: hidden;
-      background: #ffffff;
-    }
-
-    .hero-image-section img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 20%;
-      display: block;
-    }
-
-    .text-section {
-      background: #ffffff;
-      padding-top: 4.5rem;
-      padding-bottom: 4.5rem;
-    }
-
-    .text-section h2 {
-      margin-top: 0;
-      margin-bottom: 2rem;
-      font-weight: 700;
-    }
-
-    .text-section h4 {
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-    }
-
-    .text-section p {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .photo-strip {
-      width: 100%;
-      height: 30vh;
-      max-height: 320px;
-      min-height: 200px;
-      overflow: hidden;
-      background: #ffffff;
+    body {
       margin: 0;
-      padding: 0;
+      background: var(--ss-paper);
+      color: var(--ss-text);
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
     }
 
-    .photo-strip img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
+    a {
+      color: var(--ss-bluegrey);
+      text-decoration: none;
     }
 
-    #somatika.projects-section {
-      min-height: auto !important;
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
+    a:hover {
+      color: var(--ss-dark);
+      text-decoration: none;
     }
 
-    .project-image-narrow {
-      width: 100%;
-      height: 34vh;
-      max-height: 340px;
-      min-height: 220px;
-      overflow: hidden;
-    }
-
-    .project-image-narrow img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
-    }
-
+    /* Navigacija: brez grayscale CSS in brez shrink premikov */
     #mainNav {
-      display: block !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-      position: fixed !important;
-      top: 0 !important;
-      width: 100% !important;
-      z-index: 9999 !important;
-      background-color: #ffffff !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      width: 100%;
+      min-height: 58px;
+      padding-top: 0.36rem;
+      padding-bottom: 0.36rem;
+      background: rgba(255, 255, 255, 0.96);
       box-shadow: none;
+      transition: none;
+      transform: none;
+    }
+
+    #mainNav .container {
+      max-width: 1280px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
     }
 
     #mainNav .navbar-brand {
-      color: #40bfb6 !important;
+      color: var(--ss-bluegrey);
       font-family: 'Varela Round', sans-serif;
-      font-size: 1.35rem;
+      font-size: 1.22rem;
       font-weight: 400;
-      text-transform: none;
+      line-height: 1.1;
       letter-spacing: 0;
+      text-transform: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 2rem;
       white-space: nowrap;
     }
 
@@ -258,81 +205,518 @@
     }
 
     #mainNav .navbar-nav .nav-link {
-      color: #333333 !important;
-      font-family: 'Manrope', sans-serif;
-      font-size: 1.1rem;
+      color: var(--ss-dark);
+      font-family: var(--ss-nav);
+      font-size: 0.98rem;
       font-weight: 700;
       font-variant-caps: all-small-caps;
       letter-spacing: 0.025em;
+      line-height: 1.2;
       text-transform: none;
+      padding-top: 0.28rem;
+      padding-bottom: 0.28rem;
+      padding-left: 0.62rem;
+      padding-right: 0.62rem;
       white-space: nowrap;
-      padding-left: 0.7rem;
-      padding-right: 0.7rem;
+      transition: none;
     }
 
     #mainNav .navbar-nav .nav-link:hover {
-      color: #40bfb6 !important;
-      text-decoration: none;
+      color: var(--ss-bluegrey);
       background: transparent;
+      text-decoration: none;
     }
 
     #mainNav .navbar-nav .nav-link.nav-priority {
-      color: #222222 !important;
+      color: var(--ss-dark);
       font-weight: 800;
     }
 
-    @media (max-width: 991px) {
-      #mainNav .navbar-nav {
-        align-items: flex-start;
-        padding-top: 0.8rem;
-      }
-
-      #mainNav .navbar-nav .nav-link {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0.45rem;
-        padding-bottom: 0.45rem;
-        font-size: 1rem;
-      }
+    #mainNav .navbar-toggler {
+      padding: 0.25rem 0.5rem;
+      margin: 0;
+      border-color: var(--ss-border);
     }
 
-    @media (max-width: 768px) {
-      .hero-static {
-        padding-top: 100px;
-      }
-
-      .hero-static-title {
-        padding: 30px 15px 35px 15px;
-      }
-
-      .hero-image-section {
-        height: 62vh;
-        max-height: 620px;
-        min-height: 430px;
-      }
-
-      .hero-image-section img {
-        object-fit: cover;
-        object-position: center top;
-      }
-
-      .text-section {
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
-      }
-
-      .photo-strip {
-        height: 24vh;
-        max-height: 260px;
-        min-height: 170px;
-      }
-
-      .project-image-narrow {
-        height: 28vh;
-        max-height: 300px;
-        min-height: 180px;
-      }
+    /* Hero */
+    .home-hero {
+      position: relative;
+      width: 100%;
+      min-height: 88vh;
+      overflow: hidden;
+      background: #000;
+      margin: 0;
     }
+
+    .home-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('sanja_somatika.jpg');
+      background-size: cover;
+      background-position: center 24%;
+      transform: scale(1.01);
+    }
+
+    .home-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.34) 52%, rgba(0, 0, 0, 0.50) 100%),
+        radial-gradient(circle at center, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.40) 100%);
+    }
+
+    .home-hero__inner {
+      position: relative;
+      z-index: 1;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 126px 24px 72px;
+      text-align: center;
+    }
+
+    .home-hero__copy {
+      width: min(1080px, 100%);
+      color: #ffffff;
+      margin: 0 auto;
+    }
+
+    .home-hero__kicker {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 0.82rem;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      margin: 0 0 1rem;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    .home-hero h1 {
+      font-family: var(--ss-display);
+      font-size: clamp(3.4rem, 6.2vw, 6.1rem);
+      line-height: 0.9;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin: 0 auto 1.35rem;
+      text-transform: none;
+    }
+
+    .home-hero h1 .hero-line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .home-hero__subtitle {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: clamp(1rem, 1.35vw, 1.18rem);
+      line-height: 1.7;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.94);
+      margin: 0 auto 2rem;
+      max-width: 760px;
+    }
+
+    .home-hero__subtitle span {
+      display: block;
+    }
+
+    .home-hero__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 176px;
+      padding: 0.9rem 1.45rem;
+      background: #73868A;
+      color: #ffffff;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      border: 1px solid #73868A;
+      transition: none;
+    }
+
+    .home-hero__cta:hover {
+      background: #39463A;
+      border-color: #39463A;
+      color: #ffffff;
+    }
+
+    /* Uvod */
+    .intro-section {
+      background: var(--ss-paper);
+      padding: clamp(4.5rem, 8vw, 7.5rem) 0;
+      text-align: center;
+    }
+
+    .intro-section__ornament {
+      width: 160px;
+      height: 1px;
+      background: var(--ss-border);
+      margin: 0 auto 2.5rem;
+      position: relative;
+    }
+
+    .intro-section__ornament::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 56px;
+      height: 56px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: var(--ss-paper);
+      border: 1px solid var(--ss-border);
+    }
+
+    .intro-section p {
+      max-width: 850px;
+      margin: 0 auto;
+      color: var(--ss-dark);
+      font-size: clamp(1.06rem, 1.4vw, 1.25rem);
+      line-height: 1.95;
+    }
+
+    /* Ponudba */
+    .entry-section {
+      background: #ffffff;
+      padding: clamp(4.6rem, 8vw, 7.2rem) 0 clamp(5.4rem, 8vw, 7.8rem);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: clamp(3rem, 5vw, 4.6rem);
+    }
+
+    .section-heading h2 {
+      font-family: 'Varela Round', sans-serif;
+      color: var(--ss-dark);
+      font-size: clamp(2rem, 3.7vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.08;
+      margin-bottom: 1rem;
+      text-transform: none;
+    }
+
+    .section-heading p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: var(--ss-muted);
+      font-size: 1.02rem;
+      line-height: 1.85;
+    }
+
+    .entry-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1.5rem, 3vw, 2.7rem);
+    }
+
+    .entry-item {
+      text-align: center;
+    }
+
+    .entry-item__image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: var(--ss-cream);
+      margin-bottom: 1.8rem;
+    }
+
+    .entry-item__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .entry-item h3 {
+      font-family: 'Varela Round', sans-serif;
+      font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+      line-height: 1.15;
+      font-weight: 500;
+      color: var(--ss-dark);
+      margin: 0 0 0.85rem;
+    }
+
+    .entry-item__note {
+      color: var(--ss-rose);
+      font-size: 0.98rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .entry-item p {
+      color: var(--ss-muted);
+      font-size: 0.98rem;
+      line-height: 1.75;
+      margin: 0 auto 1.1rem;
+      max-width: 31ch;
+    }
+
+    .entry-item a {
+      color: var(--ss-dark);
+      font-family: var(--ss-nav);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--ss-border);
+      padding-bottom: 0.22rem;
+    }
+
+    .entry-item a:hover {
+      color: var(--ss-bluegrey);
+      border-bottom-color: var(--ss-bluegrey);
+    }
+
+    /* Somatika */
+    .somatika-section {
+      background: var(--ss-paper);
+      padding: clamp(4.8rem, 8vw, 7.6rem) 0;
+    }
+
+    .somatika-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+      background: var(--ss-taupe);
+      color: #ffffff;
+      min-height: 460px;
+    }
+
+    .somatika-panel__image {
+      min-height: 460px;
+      overflow: hidden;
+      background: var(--ss-cream);
+    }
+
+    .somatika-panel__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .somatika-panel__copy {
+      padding: clamp(3rem, 6vw, 5.4rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .somatika-panel__copy h2 {
+      font-family: 'Varela Round', sans-serif;
+      color: #ffffff;
+      font-size: clamp(2rem, 3.7vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.08;
+      margin: 0 0 1.4rem;
+      text-transform: none;
+    }
+
+    .somatika-panel__copy p {
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.85;
+      margin-bottom: 1.35rem;
+    }
+
+    .somatika-panel__copy a {
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+   /* Footer */
+.site-footer {
+width: 100%;
+padding: 78px 0 34px;
+background: var(--ss-dark);
+color: rgba(255, 255, 255, 0.78);
+border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-footer__inner {
+width: min(1080px, calc(100% - 48px));
+margin-inline: auto;
+}
+
+.site-footer__grid {
+display: grid;
+grid-template-columns: 1.15fr 1fr 1fr;
+gap: clamp(18px, 3.2vw, 44px);
+align-items: start;
+text-align: left;
+}
+
+.footer-title {
+margin: 0 0 14px 0;
+font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+font-size: 0.82rem;
+font-weight: 700;
+line-height: 1.2;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.contact-lines {
+display: grid;
+gap: 10px;
+margin-top: 2px;
+}
+
+.contact-line {
+display: flex;
+align-items: baseline;
+gap: 10px;
+flex-wrap: wrap;
+color: rgba(255, 255, 255, 0.78);
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.contact-link {
+color: rgba(255, 255, 255, 0.88);
+text-decoration: none;
+font-weight: 600;
+}
+
+.contact-link:hover {
+color: var(--ss-bluegrey);
+text-decoration: underline;
+text-underline-offset: 3px;
+}
+
+.contact-text {
+color: rgba(255, 255, 255, 0.74);
+}
+
+.contact-hours {
+color: rgba(255, 255, 255, 0.58);
+font-size: 0.82rem;
+letter-spacing: 0.01em;
+}
+
+.footer-social {
+margin-top: 16px;
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.footer-social__icon {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 34px;
+height: 34px;
+border-radius: 999px;
+border: 1px solid rgba(255, 255, 255, 0.16);
+background-color: rgba(255, 255, 255, 0.08);
+color: rgba(255, 255, 255, 0.78);
+text-decoration: none;
+transition: none;
+}
+
+.footer-social__icon:hover {
+border-color: rgba(255, 255, 255, 0.28);
+background-color: rgba(255, 255, 255, 0.16);
+color: var(--ss-bluegrey);
+}
+
+.footer-social__icon i {
+font-size: 1rem;
+}
+
+.footer-list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: grid;
+gap: 0.42rem;
+}
+
+.footer-list li {
+padding-left: 0;
+line-height: 1.55;
+font-size: 0.95rem;
+color: rgba(255, 255, 255, 0.74);
+}
+
+.footer-list a {
+color: rgba(255, 255, 255, 0.82);
+text-decoration: none;
+font-weight: 500;
+}
+
+.footer-list a:hover {
+color: var(--ss-bluegrey);
+text-decoration: underline;
+text-underline-offset: 3px;
+}
+
+.site-footer__legal {
+margin-top: 72px;
+padding-top: 28px;
+border-top: 1px solid rgba(255, 255, 255, 0.14);
+display: flex;
+justify-content: space-between;
+gap: 12px;
+align-items: center;
+flex-wrap: wrap;
+color: rgba(255, 255, 255, 0.58);
+font-size: 0.82rem;
+line-height: 1.6;
+}
+
+.legal__copy {
+margin: 0;
+}
+
+.legal__links {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+}
+
+.legal__links a {
+color: rgba(255, 255, 255, 0.68);
+text-decoration: none;
+font-weight: 500;
+}
+
+.legal__links a:hover {
+color: var(--ss-bluegrey);
+text-decoration: underline;
+text-underline-offset: 3px;
+}
+
+.legal__sep {
+opacity: 0.6;
+}
+
+@media (max-width: 980px) {
+.site-footer {
+padding: 64px 0 26px;
+}
+
+.site-footer__grid {
+grid-template-columns: 1fr;
+gap: 26px;
+}
+
+.site-footer__legal {
+margin-top: 52px;
+}
+}
   </style>
 </head>
 
@@ -361,7 +745,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link nav-priority" href="individualno.html">individualno</a>
+              <a class="nav-link nav-priority" href="individualno.html">individualen proces</a>
             </li>
 
             <li class="nav-item">
@@ -373,10 +757,6 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
-            </li>
-
-            <li class="nav-item">
               <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
             </li>
 
@@ -385,199 +765,190 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="hero-static">
-      <div class="hero-static-title text-center">
-        <h1 class="mx-auto text-uppercase">sanja somatika</h1>
-        <h2 class="mx-auto mt-2 mb-5">
-          <b>psihosocialno svetovanje s somatskim pristopom</b>
-        </h2>
-      </div>
+    <!-- Hero -->
+    <header class="home-hero">
+      <div class="home-hero__bg" aria-hidden="true"></div>
+      <div class="home-hero__overlay" aria-hidden="true"></div>
 
-      <div class="hero-image-section">
-        <img src="sanja_somatika.jpg" alt="Sanja Somatika">
+      <div class="home-hero__inner">
+        <div class="home-hero__copy">
+          <p class="home-hero__kicker">Sanja Somatika</p>
+          <h1><span class="hero-line">Psihosocialno svetovanje</span><span class="hero-line">s somatskim pristopom</span></h1>
+          <p class="home-hero__subtitle">
+            <span> Za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde.</span>
+            <span>Procesno, dozirano in odnosno telesno orientirano delo.</span>
+          </p>
+          <a class="home-hero__cta" href="individualno.html">INDIVIDUALEN PROCES</a>
+        </div>
       </div>
     </header>
 
     <!-- Uvod -->
-<section id="uvod" class="text-section text-left">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-
-        <p class="text-black-50">
-            <b>
-        Prostor za krepitev jasnejšega stika s telesom, osebnimi mejami in notranjimi viri moči za več psihološke odpornosti in fleksibilnejši živčni sistem – skozi psihosocialno svetovanje s somatskim pristopom, integrativne somatske prakse in Somatsko čuječnost.  </b>
-    
-
-             
+    <section id="uvod" class="intro-section">
+      <div class="container">
+        <div class="intro-section__ornament" aria-hidden="true"></div>
+        <p>
+          Hola, sem Sanja. <br> Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš in za fleksibilen živčni sistem, ki se po vznemirjenu prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost. <p>
         </p>
-
       </div>
-    </div>
+    </section>
+
+    <!-- Ponudba -->
+    <section id="ponudba" class="entry-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Oblike sodelovanja</h2>
+       
+        </div>
+
+        <div class="entry-grid">
+
+          <article class="entry-item">
+            <div class="entry-item__image">
+              <img src="individualno.jpg" alt="Individualno – podporna fotografija">
+            </div>
+            <h3>Individualen proces</h3>
+            <div class="entry-item__note">Za premik iz razmišljanja v spremembo.</div>
+            <p>
+              Kolaborativen in poglobljen individualen proces, kjer telo dobi enakovredno mesto kot razumevanje. Z mikro-premiki do želenih sprememb v odnosih, osebnih mejah in več izbire pri odzivih.
+            </p>
+            <a href="individualno.html">Preberi več o individualnem delu</a>
+          </article>
+
+          <article class="entry-item" id="somatski-pristan">
+            <div class="entry-item__image">
+              <img src="somatska-cujecnost-sanjasomatika.jpg" alt="Somatski pristan – podporna fotografija">
+            </div>
+            <h3>Somatski pristan</h3>
+            <div class="entry-item__note">Za kontinuiteto, podporo in vodstvo.</div>
+            <p>
+              Spletno mesečno članstvo za podporo pri regulaciji živčnega sistema. Kratke prakse, strukturiran okvir in kontinuiteta za krepitev psihosomatske odpornosti in stika s sabo.
+            </p>
+            <a href="https://somatskipristan.si/">Preberi več o somatskem pristanu</a>
+          </article>
+
+          <article class="entry-item">
+            <div class="entry-item__image">
+              <img src="Somatska-čuječnost-sanja-somatika.jpg" alt="Somatska čuječnost – podporna fotografija">
+            </div>
+            <h3>Somatska čuječnost</h3>
+            <div class="entry-item__note">Za urjenje zaznave in stabilen stik.</div>
+            <p>
+              Somatska čuječnost je avtorska metodologija in praksa za krepitev ozemljenega stika s sabo. Podpira pri pravočasni zaznavi svojih potreb in meja, za bolj uglašeno življenje.
+            </p>
+            <a href="somatska-cujecnost.html">Preberi več o Somatski čuječnosti</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Kaj je somatika -->
+    <section id="kaj-je-somatika" class="somatika-section">
+      <div class="container">
+        <div class="somatika-panel">
+          <div class="somatika-panel__image">
+            <img src="somatika.jpg" alt="Somatika">
+          </div>
+
+          <div class="somatika-panel__copy">
+            <h2>Kaj je somatika?</h2>
+
+            <p>
+              Somatika je poimenovanje za široko področje, ki raziskuje telo kot živo izkušnjo, namesto kot objekt, ki ga opazujemo, uporabljamo ali popravljamo. Ukvarja se s telesnim zaznavanjem, gibanjem, dihom, živčnim sistemom, čustvi, mejami, potrebami, stikom in utelešenim doživljanjem.
+            </p>
+
+            <p>
+              Ker se pojem somatika danes uporablja za zelo različne pristope, to prispeva k nejasnosti. Pod isto ime se lahko uvrščajo somatska terapija, somatska psihoterapija, somatsko gibanje, somatska edukacija, bodywork, čuječnostne prakse, fenomenologija telesa in medicinska raba izraza “somatsko”.
+            </p>
+
+            <p>
+              <a href="somatika.html">Preberite poglobljeno razlago: kaj je somatika, od kod izvira beseda, katere vrste poznamo in zakaj Thomas Hanna ni izumitelj somatike.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontakt" class="site-footer" aria-labelledby="footer-title">
+    <div class="site-footer__inner">
+      <div class="site-footer__grid">
+
+
+    <section class="footer-col" aria-labelledby="footer-title">
+      <h2 id="footer-title" class="footer-title">Sanja Zalar Gostimirović</h2>
+
+      <div class="contact-lines">
+        <div class="contact-line">
+          <a class="contact-link" href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a>
+        </div>
+
+        <div class="contact-line">
+          <a class="contact-link" href="tel:+38669888037">069 888 037</a>
+          <span class="contact-hours">(pon–sre 13–15h)</span>
+        </div>
+
+        <div class="contact-line">
+          <span class="contact-text">Ljubljana | splet</span>
+        </div>
+      </div>
+
+      <div class="footer-social" aria-label="Družbena omrežja">
+        <a class="footer-social__icon" href="https://www.instagram.com/sanja.somatika" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a class="footer-social__icon" href="https://www.facebook.com/sanjasomatika/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+
+        <a class="footer-social__icon" href="https://www.youtube.com/@sanjasomatika" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="footer-col" aria-labelledby="footer-collab">
+      <h2 id="footer-collab" class="footer-title">Sodelovanje</h2>
+
+      <ul class="footer-list">
+        <li><a href="individualno.html">Individualno</a></li>
+        <li><a href="https://somatskipristan.si/">Somatski pristan</a></li>
+        <li><a href="https://budokon.si/" target="_blank" rel="noopener noreferrer">Utelešene prakse</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-col" aria-labelledby="footer-method">
+      <h2 id="footer-method" class="footer-title">Metoda in pristop</h2>
+
+      <ul class="footer-list">
+        <li><a href="somatska-cujecnost.html">Somatska čuječnost</a></li>
+        <li><a href="sanja.html">Pristop in okvir dela</a></li>
+        <li><a href="strokovna-podlaga.html">Strokovna podlaga</a></li>
+        <li><a href="somatika.html">Somatika</a></li>
+      </ul>
+    </section>
   </div>
-</section>
 
-
-<!-- Kaj je somatika -->
-
-<section id="kaj-je-somatika" class="text-section text-left">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-
-
-    <h2>Kaj je somatika?</h2>
-
-    <p class="text-black-50">
-      Somatika je poimenovanje za široko področje, ki raziskuje telo kot živo izkušnjo, namesto kot objekt, ki ga opazujemo, uporabljamo ali popravljamo. Ukvarja se s telesnim zaznavanjem, gibanjem, dihom, živčnim sistemom, čustvi, mejami, potrebami, stikom in utelešenim doživljanjem.
-      <br><br>
-      Ker se pojem somatika danes uporablja za zelo različne pristope, to prispeva k nejasnosti. Pod isto ime se lahko uvrščajo somatska terapija, somatska psihoterapija, somatsko gibanje, somatska edukacija, bodywork, čuječnostne prakse, fenomenologija telesa in medicinska raba izraza “somatsko”.
-      <br><br>
-      <b><a href="somatika.html">Preberite poglobljeno razlago: kaj je somatika, od kod izvira beseda, katere vrste somatike poznamo in zakaj Thomas Hanna ni izumitelj somatike.</a></b>
+  <div class="site-footer__legal" aria-label="Pravne informacije">
+    <p class="legal__copy">
+      © 2026 Sanja Somatika. Vse pravice pridržane.
     </p>
 
+    <div class="legal__links">
+      <a href="#">Zasebnost</a>
+      <span class="legal__sep" aria-hidden="true">·</span>
+      <a href="#">Pogoji</a>
+    </div>
   </div>
 </div>
 
 
-  </div>
-</section>
-
-
-    
-    <!-- Individualno -->
-    <section id="individualno" class="text-section text-left">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-
-            <h2>Individualni proces</h2>
-
-            <p class="text-black-50">
-             
-                Telesno orientirano psihosocialno svetovanje je namenjeno odraslim, ki želijo razvijati jasnejši stik s sabo, osebnimi mejami in potrebami, se posvečati ponavljajočim se odnosnim vzorcem ter razumeti telesne odzive v kontekstu.
-                <br><br>
-                Pri delu povezujem svetovalni pogovor z integrativnimi somatskimi pristopi, z izhodiščem v metodi Somatic Experiencing®, razumevanjem odzivov živčnega sistema in Somatsko čuječnostjo. Moj pristop je travmatsko informiran.
-                <br><br>
-                Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možnosti izbire, regulacije in utelešene prisotnosti v vsakdanjem življenju.
-                Srečanja potekajo sodelovalno, postopno in v tempu, ki podpira občutek varnosti, jasnosti in izbire.
-                <br><br>
-                Delo je namenjeno podpori ob spreminjanju doživljajsko-vedenjskih vzorcev, učenju, raziskovanju, opolnomočenju in krepitvi virov osebne moči.
-                <br><br>
-                 <b> <a href="individualno.html">Več o poteku individualnega procesa preberete tukaj.</a>   </b>
-        
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pas fotografije -->
-    <section class="photo-strip">
-      <img src="somatska-cujecnost-sanjasomatika.jpg" alt="Somatska čuječnost Sanja Somatika">
-    </section>
-
-    <!-- Somatski pristan -->
-    <section id="somatski-pristan" class="text-section text-left">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-
-            <h2>Somatski pristan</h2>
-           <b>  Spletno mesečno članstvo </b> <br><br>
-
-            <p class="text-black-50">
-              Somatski pristan združuje umiritev in poživitev. Je prvi spletni prostor, ki povezuje prakse za regulacijo živčnega sistema, Somatsko čuječnost©, intuitivno gibanje in opolnomočujoč Budokon - na enem mestu, v tvojem tempu in s podporo skupnosti. Za utelešeno življenje in trajnostno skrb zase, ki jo realno umestiš v svoj dan.
-              <br><br>
-            <b>    <a href="https://subscribepage.io/s0Zl9r">Več o spletnem članstvu za Somatski pristan preberete tukaj.</a>   </b>
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Somatika / slika -->
-    <section id="somatika" class="projects-section">
-      <div class="project-image-narrow">
-        <img src="somatika.jpg" alt="Somatika">
-      </div>
-    </section>
-
-    <!-- Somatska čuječnost -->
-    <section id="somatska-cujecnost" class="text-section text-left">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-
-            <h2>Somatska čuječnost</h2>
-
-            <p class="text-black-50">
-              Somatska čuječnost je avtorska somatska metoda in specifična podzvrst somatsko usmerjene čuječnosti. Od splošne čuječnosti se razlikuje po tem, da ne opazuje misli kot vsebine, temveč raziskuje, kako se notranje izkušnje (misli, občutki, impulzi, meje in potrebe) zaznavajo in doživljajo v telesu.
-              <br><br>
-              Metoda temelji na arhitekturi pozornosti: hkratnem zaznavanju notranjega senzornega dogajanja, opazovanju poteka doživljanja in orientaciji v realnem času in prostoru. Stik s telesom se gradi postopno, znotraj razpoložljive kapacitete, ob podpori somatosenzornih sider, kot so stik s podlago, opora, teža, prostor in občutek tukaj in zdaj.
-              <br><br>
-              Somatska čuječnost po tej metodi ne pomeni “čutiti več” ali se potopiti v doživljanje, ampak razvijati stabilnejši odnos do notranjih stanj brez izgube orientacije, izbire in povezanosti. Podpira jasnejši stik s potrebami in mejami, razločevanje med senzacijo, odzivom in interpretacijo ter več utelešene prisotnosti v vsakdanjem življenju.
-              <br><br>
-              <b>  <a href="https://doi.org/10.5281/zenodo.18460716">Metodološki okvir moje avtorske metode Somatska čuječnost je dostopen tukaj.</a>   </b>
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <h2 class="text-uppercase">povezave</h2>
-
-            <div class="social d-flex justify-content-center">
-              <a href="https://www.facebook.com/sanjasomatika" class="mx-2" aria-label="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a>
-
-              <a href="https://www.instagram.com/sanja.somatika?igsh=OXZ0ZzdrZzNraXY3" class="mx-2" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-
-              <a href="https://www.youtube.com/@sanjasomatika" class="mx-2" aria-label="YouTube">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-
-            <p class="email">
-              <a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a>
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-primary small text-center text-muted">
-    <div class="container">
-      copyright &copy; <span>sanja somatika 2026 - vse pravice pridržane.</span>
-    </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="js/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
 
 </body>
 
