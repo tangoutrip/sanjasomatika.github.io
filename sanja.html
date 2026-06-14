@@ -20,7 +20,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Roboto:wght@300&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
 
   <style>
@@ -125,14 +125,90 @@
         height: 480px;
       }
     }
+
+    /* Navigation only: shared visual style */
+    #mainNav {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      position: fixed !important;
+      top: 0 !important;
+      width: 100% !important;
+      z-index: 9999 !important;
+      background-color: #ffffff !important;
+      padding-top: 1.05rem;
+      padding-bottom: 1.05rem;
+      box-shadow: none;
+    }
+
+    #mainNav .container {
+      max-width: 1280px;
+    }
+
+    #mainNav .navbar-brand {
+      color: #40bfb6 !important;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 1.38rem;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      white-space: nowrap;
+      margin-right: 2.3rem;
+    }
+
+    #mainNav .navbar-nav {
+      align-items: center;
+    }
+
+    #mainNav .navbar-nav .nav-link {
+      color: #333333;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      font-variant-caps: all-small-caps;
+      letter-spacing: 0.025em;
+      text-transform: none;
+      white-space: nowrap;
+      padding-left: 0.55rem;
+      padding-right: 0.55rem;
+    }
+
+    #mainNav .navbar-nav .nav-link:hover {
+      color: #40bfb6;
+    }
+
+    #mainNav .navbar-nav .nav-link.nav-priority {
+      color: #222222;
+      font-weight: 800;
+    }
+
+    @media (max-width: 991px) {
+      #mainNav .navbar-nav {
+        align-items: flex-start;
+        padding-top: 0.8rem;
+      }
+
+      #mainNav .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        font-size: 1.08rem;
+      }
+    }
+
   </style>
 </head>
 
 <body id="page-top">
 
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="js-scroll-trigger" href="index.html">Sanja Somatika</a>
+
+      <a class="navbar-brand js-scroll-trigger" href="index.html">
+        Sanja Somatika
+      </a>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
         Menu
@@ -142,19 +218,30 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item">
-    <a class="nav-link" href="somatika.html"><b>somatika</b></a>
-  </li> 
-          
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="sanja.html">moje delo</a>
+            <a class="nav-link" href="somatika.html">somatika</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="individualno.html">individualni proces</a>
+            <a class="nav-link nav-priority" href="individualno.html">individualno</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="strokovna-podlaga.html">strokovna podlaga</a>
+            <a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sanja.html">pristop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -198,7 +285,7 @@
               </p>
 
               <p class="text-black-50">
-                Delo poteka kot kolaborativen proces v nehierarhičnem odnosu a z jasno diferenciranimi vlogami. Usmerjeno je v krepitev psihološke odpornosti, opolnomočenje, stik z občutkom možnosti izbire, gradnjo notranje stabilnosti ter jasnejši stik s svojim telesom in osebnimi mejami.
+                Delo poteka kot kolaborativen proces v nehierarhičnem odnosu, a z jasno diferenciranimi vlogami. Usmerjeno je v krepitev psihološke odpornosti, opolnomočenje, stik z občutkom možnosti izbire, gradnjo notranje stabilnosti ter jasnejši stik s svojim telesom in osebnimi mejami.
               </p>
 
               <p class="text-black-50">
@@ -268,7 +355,7 @@
               </p>
 
               <p class="text-black-50">
-                Ker moje delo ni psihoterapevtska obravnava, ne temelji na delu z regresijo v otroška sanja ali s transferjem. Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v stik z odraslim delom klientove psihe in vsebino kolaborativno naslavljava. Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in notranje vire moči. Podobno ravnam tudi, kadar se v odnosu do mene pojavijo močne projekcije ali prenosne dinamike: te spoštljivo opazimo, poimenujemo in jih uporabimo za več zavedanja, regulacije in jasnosti v sedanjem trenutku.
+                Ker moje delo ni psihoterapevtska obravnava, ne temelji na delu z regresijo v otroška stanja ali s transferjem. Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v stik z odraslim delom klientove psihe in vsebino kolaborativno naslavljava. Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in stik z notranjimi viri moči. Podobno ravnam tudi, kadar se v odnosu do mene pojavijo močne projekcije ali prenosne dinamike: te spoštljivo opazimo, poimenujemo in jih uporabimo za več zavedanja, regulacije in jasnosti v sedanjem trenutku.
               </p>
             </article>
 
