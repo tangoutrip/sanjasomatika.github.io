@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="sl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Sanja Somatika | Psihosocialno svetovanje s somatskim pristopom</title>
+
+  <meta name="description" content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom za jasnejši stik s telesom, mejami, potrebami in odzivi živčnega sistema. Ljubljana in online.">
+  <meta name="author" content="Sanja Zalar Gostimirović">
+
+  <link rel="canonical" href="https://sanjasomatika.si/">
+  <link rel="icon" href="/favicon.ico">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sanjasomatika.si/">
+  <meta property="og:image" content="https://sanjasomatika.si/sanjasana.jpg">
+  <meta property="og:title" content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom">
+  <meta property="og:description" content="Psihosocialno svetovanje s somatskim pristopom za jasnejši stik s telesom, mejami, potrebami in odzivi živčnega sistema. Individualno delo v Ljubljani in online.">
+
+  <meta name="google-site-verification" content="mtyq4CNLA9fQWDDKorFQCGXlDHb1CCRAQepgPDiGBek">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap&subset=latin-ext" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale-sanjasana.css" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sanjasomatika.si/#org",
+      "name": "Sanja Somatika",
+      "url": "https://sanjasomatika.si/",
+      "email": "info@sanjasomatika.si",
+      "sameAs": [
+        "https://www.instagram.com/sanja.somatika/",
+        "https://www.facebook.com/sanjasomatika",
+        "https://www.youtube.com/@sanjasomatika",
+        "https://budokon.si/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sanjasomatika.si/#person",
+      "name": "Sanja Zalar Gostimirović",
+      "alternateName": "Sanja Somatika",
+      "jobTitle": "somatsko usmerjena psihosocialna svetovalka in somatska praktičarka",
+      "url": "https://sanjasomatika.si/",
+      "email": "info@sanjasomatika.si",
+      "worksFor": {
+        "@id": "https://sanjasomatika.si/#org"
+      },
+      "knowsAbout": [
+        "psihosocialno svetovanje",
+        "somatska podpora",
+        "integrativni somatski pristopi",
+        "somatska terapija",
+        "somatska edukacija",
+        "somatska čuječnost",
+        "somatsko čuječe prakse",
+        "somatsko gibanje",
+        "intuitivno gibanje",
+        "regulacija živčnega sistema",
+        "razumevanje odzivov živčnega sistema",
+        "telesno orientirano svetovanje",
+        "Somatic Experiencing",
+        "travmatsko informirano delo",
+        "utelešena prisotnost",
+        "osebne meje",
+        "notranji viri moči",
+        "psihološka odpornost",
+        "Budokon",
+        "BDK joga",
+        "gibanje",
+        "joga",
+        "argentinski tango"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/sanja.somatika/",
+        "https://www.facebook.com/sanjasomatika",
+        "https://www.youtube.com/@sanjasomatika",
+        "https://budokon.si/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sanjasomatika.si/#service",
+      "name": "Psihosocialno svetovanje in somatska podpora",
+      "provider": {
+        "@id": "https://sanjasomatika.si/#person"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ljubljana"
+        },
+        {
+          "@type": "Country",
+          "name": "Slovenia"
+        }
+      ],
+      "availableChannel": [
+        {
+          "@type": "ServiceChannel",
+          "name": "Online",
+          "serviceUrl": "https://sanjasomatika.si/",
+          "availableLanguage": ["sl"]
+        },
+        {
+          "@type": "ServiceChannel",
+          "name": "V živo",
+          "serviceLocation": {
+            "@type": "Place",
+            "name": "Ljubljana"
+          },
+          "availableLanguage": ["sl"]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+  <style>
+    .hero-static {
+      background: #ffffff;
+      padding-top: 100px;
+    }
+
+    .hero-static-title {
+      padding: 40px 15px 50px 15px;
+    }
+
+    .hero-static-title h1 {
+      color: #40e0d0;
+    }
+
+    .hero-static-title h2 {
+      color: #6c757d;
+      font-size: 1.25rem;
+    }
+
+    .hero-image-section {
+      width: 100%;
+      height: 70vh;
+      max-height: 900px;
+      min-height: 520px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .hero-image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+
+    .text-section {
+      background: #ffffff;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .text-section h2 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .text-section h4 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .text-section p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .photo-strip {
+      width: 100%;
+      height: 30vh;
+      max-height: 320px;
+      min-height: 200px;
+      overflow: hidden;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .photo-strip img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+    }
+
+    #somatika.projects-section {
+      min-height: auto !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .project-image-narrow {
+      width: 100%;
+      height: 34vh;
+      max-height: 340px;
+      min-height: 220px;
+      overflow: hidden;
+    }
+
+    .project-image-narrow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+    }
+
+    #mainNav {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      position: fixed !important;
+      top: 0 !important;
+      width: 100% !important;
+      z-index: 9999 !important;
+      background-color: #ffffff !important;
+      box-shadow: none;
+    }
+
+    #mainNav .navbar-brand {
+      color: #40bfb6 !important;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    #mainNav .navbar-nav {
+      align-items: center;
+    }
+
+    #mainNav .navbar-nav .nav-link {
+      color: #333333 !important;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      font-variant-caps: all-small-caps;
+      letter-spacing: 0.025em;
+      text-transform: none;
+      white-space: nowrap;
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+    }
+
+    #mainNav .navbar-nav .nav-link:hover {
+      color: #40bfb6 !important;
+      text-decoration: none;
+      background: transparent;
+    }
+
+    #mainNav .navbar-nav .nav-link.nav-priority {
+      color: #222222 !important;
+      font-weight: 800;
+    }
+
+    @media (max-width: 991px) {
+      #mainNav .navbar-nav {
+        align-items: flex-start;
+        padding-top: 0.8rem;
+      }
+
+      #mainNav .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-static {
+        padding-top: 100px;
+      }
+
+      .hero-static-title {
+        padding: 30px 15px 35px 15px;
+      }
+
+      .hero-image-section {
+        height: 62vh;
+        max-height: 620px;
+        min-height: 430px;
+      }
+
+      .hero-image-section img {
+        object-fit: cover;
+        object-position: center top;
+      }
+
+      .text-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      .photo-strip {
+        height: 24vh;
+        max-height: 260px;
+        min-height: 170px;
+      }
+
+      .project-image-narrow {
+        height: 28vh;
+        max-height: 300px;
+        min-height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <main>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+          Sanja Somatika
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="somatika.html">somatika</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-priority" href="individualno.html">individualno</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sanja.html">pristop</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-static">
+      <div class="hero-static-title text-center">
+        <h1 class="mx-auto text-uppercase">sanja somatika</h1>
+        <h2 class="mx-auto mt-2 mb-5">
+          <b>psihosocialno svetovanje in somatska podpora</b>
+        </h2>
+      </div>
+
+      <div class="hero-image-section">
+        <img src="sanja_somatika.jpg" alt="Sanja Somatika">
+      </div>
+    </header>
+
+    <!-- Uvod -->
+<section id="uvod" class="text-section text-left">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+        <p class="text-black-50">
+            <b>
+        Prostor za krepitev jasnejšega stika s telesom, osebnimi mejami in notranjimi viri moči za več psihološke odpornosti in fleksibilnejši živčni sistem – skozi psihosocialno svetovanje s somatskim pristopom, integrativne somatske prakse in Somatsko čuječnost.  </b>
+    
+
+             
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Kaj je somatika -->
+
+<section id="kaj-je-somatika" class="text-section text-left">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+
+    <h2>Kaj je somatika?</h2>
+
+    <p class="text-black-50">
+      Somatika je poimenovanje za široko področje, ki raziskuje telo kot živo izkušnjo, namesto kot objekt, ki ga opazujemo, uporabljamo ali popravljamo. Ukvarja se s telesnim zaznavanjem, gibanjem, dihom, živčnim sistemom, čustvi, mejami, potrebami, stikom in utelešenim doživljanjem.
+      <br><br>
+      Ker se pojem somatika danes uporablja za zelo različne pristope, to prispeva k nejasnosti. Pod isto ime se lahko uvrščajo somatska terapija, somatska psihoterapija, somatsko gibanje, somatska edukacija, bodywork, čuječnostne prakse, fenomenologija telesa in medicinska raba izraza “somatsko”.
+      <br><br>
+      <b><a href="somatika.html">Preberite poglobljeno razlago: kaj je somatika, od kod izvira beseda, katere vrste somatike poznamo in zakaj Thomas Hanna ni izumitelj somatike.</a></b>
+    </p>
+
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+    
+    <!-- Individualno -->
+    <section id="individualno" class="text-section text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+            <h2>Individualni proces</h2>
+
+            <p class="text-black-50">
+             
+                Telesno orientirano psihosocialno svetovanje je namenjeno odraslim, ki želijo razvijati jasnejši stik s sabo, osebnimi mejami in potrebami, se posvečati ponavljajočim se odnosnim vzorcem ter razumeti telesne odzive v kontekstu.
+                <br><br>
+                Pri delu povezujem svetovalni pogovor z integrativnimi somatskimi pristopi, z izhodiščem v metodi Somatic Experiencing®, razumevanjem odzivov živčnega sistema in Somatsko čuječnostjo. Moj pristop je travmatsko informiran.
+                <br><br>
+                Proces podpira več notranje stabilnosti, psihološke odpornosti, občutka možnosti izbire, regulacije in utelešene prisotnosti v vsakdanjem življenju.
+                Srečanja potekajo sodelovalno, postopno in v tempu, ki podpira občutek varnosti, jasnosti in izbire.
+                <br><br>
+                Delo je namenjeno podpori ob spreminjanju doživljajsko-vedenjskih vzorcev, učenju, raziskovanju, opolnomočenju in krepitvi virov osebne moči.
+                <br><br>
+                 <b> <a href="individualno.html">Več o poteku individualnega procesa preberete tukaj.</a>   </b>
+        
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pas fotografije -->
+    <section class="photo-strip">
+      <img src="somatska-cujecnost-sanjasomatika.jpg" alt="Somatska čuječnost Sanja Somatika">
+    </section>
+
+    <!-- Somatski pristan -->
+    <section id="somatski-pristan" class="text-section text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+            <h2>Somatski pristan</h2>
+           <b>  Spletno mesečno članstvo </b>
+
+            <p class="text-black-50">
+              Somatski pristan združuje umiritev in poživitev. Je prvi spletni prostor, ki povezuje prakse za regulacijo živčnega sistema, Somatsko čuječnost©, intuitivno gibanje in opolnomočujoč Budokon - na enem mestu, v tvojem tempu in s podporo skupnosti. Za utelešeno življenje in trajnostno skrb zase, ki jo realno umestiš v svoj dan.
+              <br><br>
+            <b>    <a href="https://subscribepage.io/s0Zl9r">Več o spletnem članstvu za Somatski pristan preberete tukaj.</a>   </b>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Somatika / slika -->
+    <section id="somatika" class="projects-section">
+      <div class="project-image-narrow">
+        <img src="somatika.jpg" alt="Somatika">
+      </div>
+    </section>
+
+    <!-- Somatska čuječnost -->
+    <section id="somatska-cujecnost" class="text-section text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+
+            <h2>Somatska čuječnost</h2>
+
+            <p class="text-black-50">
+              Somatska čuječnost je avtorska somatska metoda in specifična podzvrst somatsko usmerjene čuječnosti. Od splošne čuječnosti se razlikuje po tem, da ne opazuje misli kot vsebine, temveč raziskuje, kako se notranje izkušnje (misli, občutki, impulzi, meje in potrebe) zaznavajo in doživljajo v telesu.
+              <br><br>
+              Metoda temelji na arhitekturi pozornosti: hkratnem zaznavanju notranjega senzornega dogajanja, opazovanju poteka doživljanja in orientaciji v realnem času in prostoru. Stik s telesom se gradi postopno, znotraj razpoložljive kapacitete, ob podpori somatosenzornih sider, kot so stik s podlago, opora, teža, prostor in občutek tukaj in zdaj.
+              <br><br>
+              Somatska čuječnost po tej metodi ne pomeni “čutiti več” ali se potopiti v doživljanje, ampak razvijati stabilnejši odnos do notranjih stanj brez izgube orientacije, izbire in povezanosti. Podpira jasnejši stik s potrebami in mejami, razločevanje med senzacijo, odzivom in interpretacijo ter več utelešene prisotnosti v vsakdanjem življenju.
+              <br><br>
+              <b>  <a href="https://doi.org/10.5281/zenodo.18460716">Metodološki okvir moje avtorske metode Somatska čuječnost je dostopen tukaj.</a>   </b>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <h2 class="text-uppercase">povezave</h2>
+
+            <div class="social d-flex justify-content-center">
+              <a href="https://www.facebook.com/sanjasomatika" class="mx-2" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a href="https://www.instagram.com/sanja.somatika?igsh=OXZ0ZzdrZzNraXY3" class="mx-2" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="https://www.youtube.com/@sanjasomatika" class="mx-2" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+
+            <p class="email">
+              <a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary small text-center text-muted">
+    <div class="container">
+      copyright &copy; <span>sanja somatika 2026 - vse pravice pridržane.</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
