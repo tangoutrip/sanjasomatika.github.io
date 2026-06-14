@@ -174,8 +174,8 @@
       z-index: 9999 !important;
       background-color: rgba(255, 255, 255, 0.94) !important;
       box-shadow: none;
-      padding-top: 1.05rem;
-      padding-bottom: 1.05rem;
+      padding-top: 0.58rem;
+      padding-bottom: 0.58rem;
     }
 
     #mainNav .container {
@@ -199,7 +199,7 @@
     #mainNav .navbar-nav .nav-link {
       color: var(--ss-dark) !important;
       font-family: var(--ss-nav);
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 700;
       font-variant-caps: all-small-caps;
       letter-spacing: 0.025em;
@@ -243,8 +243,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(180deg, rgba(57, 70, 58, 0.30) 0%, rgba(57, 70, 58, 0.38) 48%, rgba(57, 70, 58, 0.48) 100%),
-        radial-gradient(circle at center, rgba(57, 70, 58, 0.18) 0%, rgba(57, 70, 58, 0.54) 100%);
+        linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.34) 48%, rgba(0, 0, 0, 0.46) 100%),
+        radial-gradient(circle at center, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.42) 100%);
     }
 
     .home-hero__inner {
@@ -265,13 +265,13 @@
     }
 
     .home-hero__kicker {
-      font-family: var(--ss-display);
-      font-size: clamp(1.6rem, 3vw, 2.5rem);
+      font-family: 'Varela Round', sans-serif;
+      font-size: clamp(1.25rem, 2.1vw, 1.8rem);
       line-height: 1;
       font-weight: 400;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.02em;
       margin: 0 0 1.2rem;
-      color: rgba(255, 255, 255, 0.92);
+      color: #ffffff;
       text-transform: none;
     }
 
@@ -305,10 +305,10 @@
       background: rgba(224, 215, 199, 0.94);
       color: var(--ss-dark);
       font-family: var(--ss-nav);
-      font-size: 0.92rem;
+      font-size: 1rem;
       font-weight: 800;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-transform: none;
       text-decoration: none;
       border: 1px solid rgba(224, 215, 199, 0.75);
     }
@@ -368,9 +368,9 @@
     }
 
     .section-heading h2 {
-      font-family: var(--ss-display);
+      font-family: 'Varela Round', sans-serif;
       color: var(--ss-dark);
-      font-size: clamp(2.4rem, 5vw, 4.4rem);
+      font-size: clamp(2rem, 3.7vw, 3.2rem);
       font-weight: 500;
       line-height: 1.05;
       margin-bottom: 1rem;
@@ -417,8 +417,8 @@
     }
 
     .entry-item h3 {
-      font-family: var(--ss-display);
-      font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+      font-family: 'Varela Round', sans-serif;
+      font-size: clamp(1.35rem, 2.2vw, 1.85rem);
       line-height: 1.12;
       font-weight: 500;
       color: var(--ss-dark);
@@ -427,9 +427,9 @@
 
     .entry-item__note {
       color: var(--ss-rose);
-      font-family: var(--ss-display);
-      font-style: italic;
-      font-size: 1.1rem;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-size: 0.98rem;
       margin-bottom: 0.85rem;
     }
 
@@ -495,9 +495,9 @@
     }
 
     .somatika-panel__copy h2 {
-      font-family: var(--ss-display);
+      font-family: 'Varela Round', sans-serif;
       color: #ffffff;
-      font-size: clamp(2.3rem, 4.7vw, 4.2rem);
+      font-size: clamp(2rem, 3.7vw, 3.2rem);
       font-weight: 500;
       line-height: 1.05;
       margin: 0 0 1.4rem;
@@ -518,7 +518,9 @@
 
     /* Footer/contact */
     .contact-section,
-    footer.bg-primary {
+    footer,
+    footer.small,
+    footer.text-muted {
       background: var(--ss-dark) !important;
       color: rgba(255, 255, 255, 0.78) !important;
     }
@@ -529,8 +531,8 @@
 
     .contact-section h2 {
       color: #ffffff;
-      font-family: var(--ss-display);
-      font-size: 2.8rem;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 2.2rem;
       font-weight: 500;
       text-transform: none !important;
       margin-bottom: 1.8rem;
@@ -547,6 +549,12 @@
     footer {
       padding: 30px 0;
     }
+
+    footer a,
+    footer a:hover {
+      color: #ffffff;
+    }
+
 
     @media (max-width: 991px) {
       #mainNav .navbar-nav {
@@ -589,7 +597,7 @@
 
       .home-hero__inner {
         min-height: 78vh;
-        padding: 128px 20px 62px;
+        padding: 112px 20px 62px;
       }
 
       .home-hero__bg {
