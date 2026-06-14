@@ -23,7 +23,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@600;700;800&family=Roboto:wght@300&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -147,7 +147,7 @@
       margin: 0;
       background: var(--ss-paper);
       color: var(--ss-text);
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       line-height: 1.65;
       overflow-x: hidden;
     }
@@ -283,20 +283,20 @@
     }
 
     .home-hero__kicker {
-      font-family: 'Varela Round', sans-serif;
-      font-size: clamp(1.2rem, 2vw, 1.7rem);
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 0.82rem;
       line-height: 1;
-      font-weight: 400;
-      letter-spacing: 0.02em;
+      font-weight: 600;
+      letter-spacing: 0.16em;
       margin: 0 0 1rem;
       color: #ffffff;
-      text-transform: none;
+      text-transform: uppercase;
     }
 
     .home-hero h1 {
       font-family: var(--ss-display);
       font-size: clamp(3.4rem, 6.2vw, 6.1rem);
-      line-height: 0.86;
+      line-height: 0.9;
       font-weight: 500;
       letter-spacing: -0.025em;
       color: #ffffff;
@@ -310,12 +310,17 @@
     }
 
     .home-hero__subtitle {
-      font-family: 'Roboto', sans-serif;
-      font-size: clamp(1.05rem, 1.45vw, 1.25rem);
-      line-height: 1.55;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: clamp(1rem, 1.35vw, 1.18rem);
+      line-height: 1.7;
+      font-weight: 400;
       color: rgba(255, 255, 255, 0.94);
       margin: 0 auto 2rem;
-      max-width: 680px;
+      max-width: 760px;
+    }
+
+    .home-hero__subtitle span {
+      display: block;
     }
 
     .home-hero__cta {
@@ -324,20 +329,21 @@
       justify-content: center;
       min-width: 176px;
       padding: 0.9rem 1.45rem;
-      background: rgba(224, 215, 199, 0.94);
-      color: var(--ss-dark);
-      font-family: var(--ss-nav);
+      background: #73868A;
+      color: #ffffff;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 1rem;
-      font-weight: 800;
+      font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: none;
-      border: 1px solid rgba(224, 215, 199, 0.75);
+      border: 1px solid #73868A;
       transition: none;
     }
 
     .home-hero__cta:hover {
-      background: #ffffff;
-      color: var(--ss-dark);
+      background: #39463A;
+      border-color: #39463A;
+      color: #ffffff;
     }
 
     /* Uvod */
@@ -694,7 +700,8 @@
           <p class="home-hero__kicker">Sanja Somatika</p>
           <h1><span class="hero-line">Psihosocialno svetovanje</span><span class="hero-line">s somatskim pristopom</span></h1>
           <p class="home-hero__subtitle">
-            Za utelešene meje, prožnejši živčni sistem in manj avtomatskega ugajanja.
+            <span>Za utelešene meje in manj avtomatskega ugajanja.</span>
+            <span>Procesno, dozirano in odnosno delo za prožnejši živčni sistem.</span>
           </p>
           <a class="home-hero__cta" href="individualno.html">Individualno</a>
         </div>
