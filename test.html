@@ -281,7 +281,7 @@
       line-height: 0.98;
       font-weight: 500;
       letter-spacing: -0.025em;
-      color: #ffffff;!important;
+      color: #ffffff;
       margin: 0 auto 1.35rem;
       text-transform: none;
     }
@@ -619,6 +619,122 @@
         padding-right: 0;
       }
     }
+
+    /* FINAL OVERRIDES: hero + nav lock */
+    #mainNav,
+    #mainNav.navbar-shrink,
+    body #mainNav.navbar-shrink {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 9999 !important;
+      padding-top: 0.42rem !important;
+      padding-bottom: 0.42rem !important;
+      min-height: 62px !important;
+      transform: none !important;
+      transition: none !important;
+      background-color: rgba(255, 255, 255, 0.96) !important;
+      box-shadow: none !important;
+    }
+
+    #mainNav .container {
+      max-width: 1280px;
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+    }
+
+    #mainNav .navbar-brand,
+    #mainNav.navbar-shrink .navbar-brand {
+      color: #73868A !important;
+      font-family: 'Varela Round', sans-serif !important;
+      font-size: 1.22rem !important;
+      font-weight: 400 !important;
+      line-height: 1.1 !important;
+      letter-spacing: 0 !important;
+      text-transform: none !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin-right: 2rem !important;
+      white-space: nowrap !important;
+    }
+
+    #mainNav .navbar-nav .nav-link,
+    #mainNav.navbar-shrink .navbar-nav .nav-link {
+      color: #39463A !important;
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 0.98rem !important;
+      font-weight: 700 !important;
+      font-variant-caps: all-small-caps !important;
+      letter-spacing: 0.025em !important;
+      text-transform: none !important;
+      line-height: 1.2 !important;
+      padding-top: 0.28rem !important;
+      padding-bottom: 0.28rem !important;
+      padding-left: 0.62rem !important;
+      padding-right: 0.62rem !important;
+      white-space: nowrap !important;
+    }
+
+    #mainNav .navbar-nav .nav-link:hover,
+    #mainNav.navbar-shrink .navbar-nav .nav-link:hover {
+      color: #73868A !important;
+      background: transparent !important;
+      text-decoration: none !important;
+    }
+
+    #mainNav .navbar-nav .nav-link.nav-priority,
+    #mainNav.navbar-shrink .navbar-nav .nav-link.nav-priority {
+      color: #39463A !important;
+      font-weight: 800 !important;
+    }
+
+    #mainNav .navbar-toggler {
+      padding: 0.25rem 0.5rem !important;
+      margin: 0 !important;
+    }
+
+    header.home-hero .home-hero__copy > h1,
+    body#page-top header.home-hero h1,
+    .home-hero h1,
+    .home-hero h1.mx-auto,
+    .home-hero h1.text-uppercase,
+    .home-hero .text-uppercase {
+      color: #ffffff !important;
+      text-transform: none !important;
+      font-family: var(--ss-display) !important;
+      font-weight: 500 !important;
+    }
+
+    header.home-hero .home-hero__kicker,
+    header.home-hero .home-hero__subtitle {
+      color: #ffffff !important;
+    }
+
+    @media (max-width: 991px) {
+      #mainNav,
+      #mainNav.navbar-shrink {
+        padding-top: 0.55rem !important;
+        padding-bottom: 0.55rem !important;
+      }
+
+      #mainNav .container {
+        min-height: 44px;
+        align-items: center;
+      }
+
+      #mainNav .navbar-nav .nav-link,
+      #mainNav.navbar-shrink .navbar-nav .nav-link {
+        font-size: 1rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.45rem !important;
+      }
+    }
+
   </style>
 </head>
 
