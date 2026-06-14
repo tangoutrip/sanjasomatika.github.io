@@ -20,7 +20,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Roboto:wght@300&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
   <link href="css/grayscale-sanjasana.css" rel="stylesheet">
 
   <style>
@@ -103,14 +103,90 @@
         height: 280px;
       }
     }
+
+    /* Navigation only: shared visual style */
+    #mainNav {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      position: fixed !important;
+      top: 0 !important;
+      width: 100% !important;
+      z-index: 9999 !important;
+      background-color: #ffffff !important;
+      padding-top: 1.05rem;
+      padding-bottom: 1.05rem;
+      box-shadow: none;
+    }
+
+    #mainNav .container {
+      max-width: 1280px;
+    }
+
+    #mainNav .navbar-brand {
+      color: #40bfb6 !important;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 1.38rem;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      white-space: nowrap;
+      margin-right: 2.3rem;
+    }
+
+    #mainNav .navbar-nav {
+      align-items: center;
+    }
+
+    #mainNav .navbar-nav .nav-link {
+      color: #333333;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      font-variant-caps: all-small-caps;
+      letter-spacing: 0.025em;
+      text-transform: none;
+      white-space: nowrap;
+      padding-left: 0.55rem;
+      padding-right: 0.55rem;
+    }
+
+    #mainNav .navbar-nav .nav-link:hover {
+      color: #40bfb6;
+    }
+
+    #mainNav .navbar-nav .nav-link.nav-priority {
+      color: #222222;
+      font-weight: 800;
+    }
+
+    @media (max-width: 991px) {
+      #mainNav .navbar-nav {
+        align-items: flex-start;
+        padding-top: 0.8rem;
+      }
+
+      #mainNav .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        font-size: 1.08rem;
+      }
+    }
+
   </style>
 </head>
 
 <body id="page-top">
 
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="js-scroll-trigger" href="index.html">Sanja Somatika</a>
+
+      <a class="navbar-brand js-scroll-trigger" href="index.html">
+        Sanja Somatika
+      </a>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Odpri navigacijo">
         Menu
@@ -120,19 +196,30 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item">
-    <a class="nav-link" href="somatika.html"><b>somatika</b></a>
-  </li>
-          
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="sanja.html">moje delo</a>
+            <a class="nav-link" href="somatika.html">somatika</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="individualno.html">individualni proces</a>
+            <a class="nav-link nav-priority" href="individualno.html">individualno</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="strokovna-podlaga.html">strokovna podlaga</a>
+            <a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sanja.html">pristop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#somatski-pristan">somatski pristan</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -180,7 +267,7 @@
               </p>
 
               <p class="text-black-50">
-                Srečanje ostaja opazovalno, dialoško in sodelovalno. Somatske intervence so predlagane kot povabilo. Klientka je spodbujana, da izraža, če nečesa ne želi, če potrebuje premor ali želi ostati pri pogovoru — to je spoštovano; hkrati pa lahko postane del raziskovanja, kadar je za proces relevantno.
+                Srečanje ostaja opazovalno, dialoško in sodelovalno. Somatske intervencije so predlagane kot povabilo. Klientka je spodbujana, da izraža, če nečesa ne želi, če potrebuje premor ali želi ostati pri pogovoru — to je spoštovano; hkrati pa lahko postane del raziskovanja, kadar je za proces relevantno.
               </p>
 
               <p class="text-black-50">
@@ -193,10 +280,9 @@
               </p>
 
               <p class="text-black-50 mt-4">
-  <b>  
-  <a href="https://calendly.com/sanja-somatika/30min" target="_blank" rel="noopener noreferrer">
-   Termin za spoznavni 20 min. video klic naplanirate tukaj. (trenutno nimam razpoložljivih terminov) </b>
-  </a>
+  <b>
+    <a href="https://calendly.com/sanja-somatika/30min" target="_blank" rel="noopener noreferrer">Termin za spoznavni 20 min. video klic naplanirate tukaj. (trenutno nimam razpoložljivih terminov)</a>
+  </b>
 </p>
             </article>
 
@@ -212,16 +298,16 @@
 
               <h3>Uvodni video klic</h3>
               <p class="text-black-50">
-                Sodelovanje se začne s kratkim uvodnim video klicem, ki je namenjen spoznavanju in ugotavljanju kompatibilnosti za začetek porcesa. Klientka podeli svoje izzive in želen izid, jaz pa povzamem okvir mojega dela ter način sodelovanja. </p>
+                Sodelovanje se začne s kratkim uvodnim video klicem, ki je namenjen spoznavanju in ugotavljanju kompatibilnosti za začetek procesa. Klientka podeli svoje izzive in želen izid, jaz pa povzamem okvir mojega dela ter način sodelovanja. </p>
 
               <h3>Poskusna faza</h3>
               <p class="text-black-50">
-                V primeru kompatibilnosti za sodelovanje, sledi poskusna faza petih srečanj. Po tem času skupaj preveriva ali sta proces in odnos dovolj podporna za redno nadaljevanje. V nasprotnem primeru sem klientom na voljo za priporočila o sodelovanju s kolegi sorodnih strok. 
+                V primeru kompatibilnosti za sodelovanje, sledi poskusna faza petih srečanj. Po tem času skupaj preveriva, ali sta proces in odnos dovolj podporna za redno nadaljevanje. V nasprotnem primeru sem klientom na voljo za priporočila o sodelovanju s kolegi sorodnih strok. 
               </p>
 
               <h3>Dogovor o sodelovanju</h3>
               <p class="text-black-50">
-                Sodelovanje poteka v okviru Dogovora o sodelovanju, dokumenta ki ga skleneva ob pričetku sodelovanja. 
+                Sodelovanje poteka v okviru Dogovora o sodelovanju, dokumenta, ki ga skleneva ob pričetku sodelovanja. 
               </p>
 
               <p class="text-black-50">
@@ -253,9 +339,9 @@
         
               </p>
   <p class="text-black-50">
-              Psihosocialno svetovanje temelji na ohranjanju stika in vračanju v stik z osebno agencijo iz kjer naslavljamo izzive. Kontekst je drugačen kot pri psihoterapevtski obravnavi in ne temelji na delu z regresijo v otroška stanja ali delu s transferjem, ki je uporabljan kot terapevtsko orodje. 
+              Psihosocialno svetovanje temelji na ohranjanju stika in vračanju v stik z osebno agencijo, iz katere naslavljamo izzive. Kontekst je drugačen kot pri psihoterapevtski obravnavi in ne temelji na delu z regresijo v otroška stanja ali delu s transferjem, ki je uporabljen kot terapevtsko orodje. 
               Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v regulacijo, ponoven stik z odraslim delom klientove psihe in vsebino kolaborativno naslavljava. </p>
-              <p class="text-black-50">  Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in krepitev stika z notranjimi viri moči in možnostjo izbire. 
+              <p class="text-black-50">  Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in krepitvijo stika z notranjimi viri moči in možnostjo izbire. 
               Podobno ravnam tudi, če se v odnosu do mene pojavijo močne projekcije ali prenosne dinamike (transfer): te spoštljivo izpostavimo, poimenujemo in jih uporabimo za širši kontekst zavedanja v sedanjem trenutku.
 
                 
@@ -263,7 +349,7 @@
 
                              <div class="page-links">
           <b>    
-              <a href="sanja.html"> Tukaj preberite več o pristopu in o tem s kakšnimi izzivi se klienti tipično obračajo name.</a> <br><br>
+              <a href="sanja.html"> Tukaj preberite več o pristopu in o tem, s kakšnimi izzivi se klienti tipično obračajo name.</a> <br><br>
           
           <a href="strokovna-podlaga.html">Tukaj preberite več o moji strokovni podlagi.</a>  </b>
             </div>
