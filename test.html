@@ -21,15 +21,9 @@
 
   <meta name="google-site-verification" content="mtyq4CNLA9fQWDDKorFQCGXlDHb1CCRAQepgPDiGBek">
 
-  <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Roboto:wght@300&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale-sanjasana.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@600;700;800&family=Roboto:wght@300&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -138,7 +132,6 @@
       --ss-taupe: #927C67;
       --ss-cream: #E0D7C7;
       --ss-paper: #f7f3ee;
-      --ss-white: #ffffff;
       --ss-text: #39463A;
       --ss-muted: #6f766f;
       --ss-border: rgba(57, 70, 58, 0.18);
@@ -151,44 +144,59 @@
     }
 
     body {
+      margin: 0;
       background: var(--ss-paper);
       color: var(--ss-text);
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
     }
 
     a {
       color: var(--ss-bluegrey);
+      text-decoration: none;
     }
 
     a:hover {
       color: var(--ss-dark);
+      text-decoration: none;
     }
 
-    /* Navigation */
+    /* Navigacija: brez grayscale CSS in brez shrink premikov */
     #mainNav {
-      display: block !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-      position: fixed !important;
-      top: 0 !important;
-      width: 100% !important;
-      z-index: 9999 !important;
-      background-color: rgba(255, 255, 255, 0.94) !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      width: 100%;
+      min-height: 58px;
+      padding-top: 0.36rem;
+      padding-bottom: 0.36rem;
+      background: rgba(255, 255, 255, 0.96);
       box-shadow: none;
-      padding-top: 0.58rem;
-      padding-bottom: 0.58rem;
+      transition: none;
+      transform: none;
     }
 
     #mainNav .container {
       max-width: 1280px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
     }
 
     #mainNav .navbar-brand {
-      color: var(--ss-bluegrey) !important;
+      color: var(--ss-bluegrey);
       font-family: 'Varela Round', sans-serif;
-      font-size: 1.35rem;
+      font-size: 1.22rem;
       font-weight: 400;
-      text-transform: none;
+      line-height: 1.1;
       letter-spacing: 0;
+      text-transform: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 2rem;
       white-space: nowrap;
     }
 
@@ -197,27 +205,37 @@
     }
 
     #mainNav .navbar-nav .nav-link {
-      color: var(--ss-dark) !important;
+      color: var(--ss-dark);
       font-family: var(--ss-nav);
-      font-size: 1rem;
+      font-size: 0.98rem;
       font-weight: 700;
       font-variant-caps: all-small-caps;
       letter-spacing: 0.025em;
+      line-height: 1.2;
       text-transform: none;
+      padding-top: 0.28rem;
+      padding-bottom: 0.28rem;
+      padding-left: 0.62rem;
+      padding-right: 0.62rem;
       white-space: nowrap;
-      padding-left: 0.7rem;
-      padding-right: 0.7rem;
+      transition: none;
     }
 
     #mainNav .navbar-nav .nav-link:hover {
-      color: var(--ss-bluegrey) !important;
-      text-decoration: none;
+      color: var(--ss-bluegrey);
       background: transparent;
+      text-decoration: none;
     }
 
     #mainNav .navbar-nav .nav-link.nav-priority {
-      color: var(--ss-dark) !important;
+      color: var(--ss-dark);
       font-weight: 800;
+    }
+
+    #mainNav .navbar-toggler {
+      padding: 0.25rem 0.5rem;
+      margin: 0;
+      border-color: var(--ss-border);
     }
 
     /* Hero */
@@ -226,7 +244,7 @@
       width: 100%;
       min-height: 88vh;
       overflow: hidden;
-      background: var(--ss-dark);
+      background: #000;
       margin: 0;
     }
 
@@ -243,8 +261,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.34) 48%, rgba(0, 0, 0, 0.46) 100%),
-        radial-gradient(circle at center, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.42) 100%);
+        linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.34) 52%, rgba(0, 0, 0, 0.50) 100%),
+        radial-gradient(circle at center, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.40) 100%);
     }
 
     .home-hero__inner {
@@ -254,31 +272,31 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 150px 24px 86px;
+      padding: 126px 24px 72px;
       text-align: center;
     }
 
     .home-hero__copy {
-      width: min(920px, 100%);
+      width: min(1080px, 100%);
       color: #ffffff;
       margin: 0 auto;
     }
 
     .home-hero__kicker {
       font-family: 'Varela Round', sans-serif;
-      font-size: clamp(1.25rem, 2.1vw, 1.8rem);
+      font-size: clamp(1.2rem, 2vw, 1.7rem);
       line-height: 1;
       font-weight: 400;
       letter-spacing: 0.02em;
-      margin: 0 0 1.2rem;
+      margin: 0 0 1rem;
       color: #ffffff;
       text-transform: none;
     }
 
     .home-hero h1 {
       font-family: var(--ss-display);
-      font-size: clamp(3rem, 7vw, 6.8rem);
-      line-height: 0.98;
+      font-size: clamp(3.4rem, 6.2vw, 6.1rem);
+      line-height: 0.86;
       font-weight: 500;
       letter-spacing: -0.025em;
       color: #ffffff;
@@ -286,12 +304,17 @@
       text-transform: none;
     }
 
+    .home-hero h1 .hero-line {
+      display: block;
+      white-space: nowrap;
+    }
+
     .home-hero__subtitle {
       font-family: 'Roboto', sans-serif;
-      font-size: clamp(1.05rem, 1.55vw, 1.35rem);
-      line-height: 1.75;
-      color: rgba(255, 255, 255, 0.92);
-      margin: 0 auto 2.1rem;
+      font-size: clamp(1.05rem, 1.45vw, 1.25rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.94);
+      margin: 0 auto 2rem;
       max-width: 680px;
     }
 
@@ -299,9 +322,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 190px;
-      padding: 0.95rem 1.55rem;
-      border-radius: 0;
+      min-width: 176px;
+      padding: 0.9rem 1.45rem;
       background: rgba(224, 215, 199, 0.94);
       color: var(--ss-dark);
       font-family: var(--ss-nav);
@@ -309,17 +331,16 @@
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: none;
-      text-decoration: none;
       border: 1px solid rgba(224, 215, 199, 0.75);
+      transition: none;
     }
 
     .home-hero__cta:hover {
       background: #ffffff;
       color: var(--ss-dark);
-      text-decoration: none;
     }
 
-    /* Intro */
+    /* Uvod */
     .intro-section {
       background: var(--ss-paper);
       padding: clamp(4.5rem, 8vw, 7.5rem) 0;
@@ -351,14 +372,13 @@
       max-width: 850px;
       margin: 0 auto;
       color: var(--ss-dark);
-      font-family: 'Roboto', sans-serif;
       font-size: clamp(1.06rem, 1.4vw, 1.25rem);
       line-height: 1.95;
     }
 
-    /* Entry points */
+    /* Ponudba */
     .entry-section {
-      background: var(--ss-white);
+      background: #ffffff;
       padding: clamp(4.6rem, 8vw, 7.2rem) 0 clamp(5.4rem, 8vw, 7.8rem);
     }
 
@@ -372,7 +392,7 @@
       color: var(--ss-dark);
       font-size: clamp(2rem, 3.7vw, 3.2rem);
       font-weight: 500;
-      line-height: 1.05;
+      line-height: 1.08;
       margin-bottom: 1rem;
       text-transform: none;
     }
@@ -409,17 +429,12 @@
       object-fit: cover;
       object-position: center;
       display: block;
-      transition: transform 700ms ease;
-    }
-
-    .entry-item:hover .entry-item__image img {
-      transform: scale(1.035);
     }
 
     .entry-item h3 {
       font-family: 'Varela Round', sans-serif;
       font-size: clamp(1.35rem, 2.2vw, 1.85rem);
-      line-height: 1.12;
+      line-height: 1.15;
       font-weight: 500;
       color: var(--ss-dark);
       margin: 0 0 0.85rem;
@@ -427,8 +442,6 @@
 
     .entry-item__note {
       color: var(--ss-rose);
-      font-family: 'Roboto', sans-serif;
-      font-style: normal;
       font-size: 0.98rem;
       margin-bottom: 0.85rem;
     }
@@ -448,7 +461,6 @@
       font-weight: 800;
       letter-spacing: 0.11em;
       text-transform: uppercase;
-      text-decoration: none;
       border-bottom: 1px solid var(--ss-border);
       padding-bottom: 0.22rem;
     }
@@ -458,7 +470,7 @@
       border-bottom-color: var(--ss-bluegrey);
     }
 
-    /* Somatika section */
+    /* Somatika */
     .somatika-section {
       background: var(--ss-paper);
       padding: clamp(4.8rem, 8vw, 7.6rem) 0;
@@ -467,7 +479,6 @@
     .somatika-panel {
       display: grid;
       grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
-      gap: 0;
       background: var(--ss-taupe);
       color: #ffffff;
       min-height: 460px;
@@ -499,8 +510,9 @@
       color: #ffffff;
       font-size: clamp(2rem, 3.7vw, 3.2rem);
       font-weight: 500;
-      line-height: 1.05;
+      line-height: 1.08;
       margin: 0 0 1.4rem;
+      text-transform: none;
     }
 
     .somatika-panel__copy p {
@@ -516,13 +528,13 @@
       text-underline-offset: 4px;
     }
 
-    /* Footer/contact */
+    /* Kontakt / footer */
     .contact-section,
     footer,
     footer.small,
     footer.text-muted {
-      background: var(--ss-dark) !important;
-      color: rgba(255, 255, 255, 0.78) !important;
+      background: var(--ss-dark);
+      color: rgba(255, 255, 255, 0.78);
     }
 
     .contact-section {
@@ -534,15 +546,14 @@
       font-family: 'Varela Round', sans-serif;
       font-size: 2.2rem;
       font-weight: 500;
-      text-transform: none !important;
+      text-transform: none;
       margin-bottom: 1.8rem;
     }
 
-    .contact-section .social a {
-      color: #ffffff;
-    }
-
-    .contact-section .email a {
+    .contact-section .social a,
+    .contact-section .email a,
+    footer a,
+    footer a:hover {
       color: #ffffff;
     }
 
@@ -550,24 +561,28 @@
       padding: 30px 0;
     }
 
-    footer a,
-    footer a:hover {
-      color: #ffffff;
-    }
-
-
     @media (max-width: 991px) {
+      #mainNav {
+        padding-top: 0.55rem;
+        padding-bottom: 0.55rem;
+      }
+
+      #mainNav .container {
+        min-height: 44px;
+        align-items: center;
+      }
+
       #mainNav .navbar-nav {
         align-items: flex-start;
         padding-top: 0.8rem;
       }
 
       #mainNav .navbar-nav .nav-link {
+        font-size: 1rem;
         padding-left: 0;
         padding-right: 0;
         padding-top: 0.45rem;
         padding-bottom: 0.45rem;
-        font-size: 1rem;
       }
 
       .entry-grid {
@@ -605,136 +620,18 @@
       }
 
       .home-hero h1 {
-        font-size: clamp(2.7rem, 14vw, 4.4rem);
+        font-size: clamp(2.55rem, 12vw, 4.2rem);
+        line-height: 0.94;
+      }
+
+      .home-hero h1 .hero-line {
+        white-space: normal;
       }
 
       .home-hero__subtitle {
         font-size: 1rem;
       }
-
-      .intro-section,
-      .entry-section,
-      .somatika-section {
-        padding-left: 0;
-        padding-right: 0;
-      }
     }
-
-    /* FINAL OVERRIDES: hero + nav lock */
-    #mainNav,
-    #mainNav.navbar-shrink,
-    body #mainNav.navbar-shrink {
-      position: fixed !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      width: 100% !important;
-      z-index: 9999 !important;
-      padding-top: 0.42rem !important;
-      padding-bottom: 0.42rem !important;
-      min-height: 62px !important;
-      transform: none !important;
-      transition: none !important;
-      background-color: rgba(255, 255, 255, 0.96) !important;
-      box-shadow: none !important;
-    }
-
-    #mainNav .container {
-      max-width: 1280px;
-      min-height: 46px;
-      display: flex;
-      align-items: center;
-    }
-
-    #mainNav .navbar-brand,
-    #mainNav.navbar-shrink .navbar-brand {
-      color: #73868A !important;
-      font-family: 'Varela Round', sans-serif !important;
-      font-size: 1.22rem !important;
-      font-weight: 400 !important;
-      line-height: 1.1 !important;
-      letter-spacing: 0 !important;
-      text-transform: none !important;
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
-      margin-right: 2rem !important;
-      white-space: nowrap !important;
-    }
-
-    #mainNav .navbar-nav .nav-link,
-    #mainNav.navbar-shrink .navbar-nav .nav-link {
-      color: #39463A !important;
-      font-family: 'Manrope', sans-serif !important;
-      font-size: 0.98rem !important;
-      font-weight: 700 !important;
-      font-variant-caps: all-small-caps !important;
-      letter-spacing: 0.025em !important;
-      text-transform: none !important;
-      line-height: 1.2 !important;
-      padding-top: 0.28rem !important;
-      padding-bottom: 0.28rem !important;
-      padding-left: 0.62rem !important;
-      padding-right: 0.62rem !important;
-      white-space: nowrap !important;
-    }
-
-    #mainNav .navbar-nav .nav-link:hover,
-    #mainNav.navbar-shrink .navbar-nav .nav-link:hover {
-      color: #73868A !important;
-      background: transparent !important;
-      text-decoration: none !important;
-    }
-
-    #mainNav .navbar-nav .nav-link.nav-priority,
-    #mainNav.navbar-shrink .navbar-nav .nav-link.nav-priority {
-      color: #39463A !important;
-      font-weight: 800 !important;
-    }
-
-    #mainNav .navbar-toggler {
-      padding: 0.25rem 0.5rem !important;
-      margin: 0 !important;
-    }
-
-    header.home-hero .home-hero__copy > h1,
-    body#page-top header.home-hero h1,
-    .home-hero h1,
-    .home-hero h1.mx-auto,
-    .home-hero h1.text-uppercase,
-    .home-hero .text-uppercase {
-      color: #ffffff !important;
-      text-transform: none !important;
-      font-family: var(--ss-display) !important;
-      font-weight: 500 !important;
-    }
-
-    header.home-hero .home-hero__kicker,
-    header.home-hero .home-hero__subtitle {
-      color: #ffffff !important;
-    }
-
-    @media (max-width: 991px) {
-      #mainNav,
-      #mainNav.navbar-shrink {
-        padding-top: 0.55rem !important;
-        padding-bottom: 0.55rem !important;
-      }
-
-      #mainNav .container {
-        min-height: 44px;
-        align-items: center;
-      }
-
-      #mainNav .navbar-nav .nav-link,
-      #mainNav.navbar-shrink .navbar-nav .nav-link {
-        font-size: 1rem !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        padding-top: 0.45rem !important;
-        padding-bottom: 0.45rem !important;
-      }
-    }
-
   </style>
 </head>
 
@@ -795,7 +692,7 @@
       <div class="home-hero__inner">
         <div class="home-hero__copy">
           <p class="home-hero__kicker">Sanja Somatika</p>
-          <h1>Psihosocialno svetovanje s somatskim pristopom</h1>
+          <h1><span class="hero-line">Psihosocialno svetovanje</span><span class="hero-line">s somatskim pristopom</span></h1>
           <p class="home-hero__subtitle">
             Za utelešene meje, prožnejši živčni sistem in manj avtomatskega ugajanja.
           </p>
@@ -925,21 +822,14 @@
   </main>
 
   <!-- Footer -->
-  <footer class="small text-center text-muted">
+  <footer class="small text-center">
     <div class="container">
       copyright &copy; <span>sanja somatika 2026 - vse pravice pridržane.</span>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="js/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
 
 </body>
 
