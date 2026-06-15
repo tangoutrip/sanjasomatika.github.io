@@ -132,16 +132,21 @@
 
   <style>
     :root {
-      /* testna paleta iz hero fotografije: gozd, trava, denim, sonce */
-      --ss-dark: #2F3F32;
-      --ss-rose: #B8793F;
-      --ss-bluegrey: #6D8E9A;
-      --ss-taupe: #6F7F58;
-      --ss-cream: #F4EFE7;
-      --ss-paper: #F7F3EE;
-      --ss-text: #2F3F32;
-      --ss-muted: #667063;
-      --ss-border: rgba(47, 63, 50, 0.18);
+      /* paleta iz slike Somatski pristan: sonce, lubje, gozd, trava, denim, svetel papir */
+      --ss-gold: #D6A24A;
+      --ss-bark: #2E2416;
+      --ss-dark: #1F3B28;
+      --ss-grass: #6BAA7A;
+      --ss-bluegrey: #6FA7B5;
+      --ss-paper: #F4F2EC;
+      --ss-sage: #A5AB8A;
+
+      --ss-rose: #D6A24A;
+      --ss-taupe: #2E2416;
+      --ss-cream: #F4F2EC;
+      --ss-text: #2E2416;
+      --ss-muted: #62665A;
+      --ss-border: rgba(31, 59, 40, 0.18);
       --ss-display: 'Cormorant Garamond', serif;
       --ss-nav: 'Manrope', sans-serif;
     }
@@ -348,8 +353,8 @@
     }
 
     .home-hero__cta:hover {
-      background: var(--ss-dark);
-      border-color: var(--ss-dark);
+      background: #1F3B28;
+      border-color: #1F3B28;
       color: #ffffff;
     }
 
@@ -409,8 +414,8 @@
     }
 
     .section-text-link:hover {
-      color: var(--ss-rose);
-      border-bottom-color: var(--ss-rose);
+      color: var(--ss-gold);
+      border-bottom-color: var(--ss-gold);
     }
 
     .process-section .section-text-link {
@@ -419,8 +424,8 @@
     }
 
     .process-section .section-text-link:hover {
-      color: var(--ss-cream);
-      border-bottom-color: var(--ss-cream);
+      color: var(--ss-gold);
+      border-bottom-color: var(--ss-gold);
     }
 
     /* Ponudba */
@@ -488,7 +493,7 @@
     }
 
     .entry-item__note {
-      color: var(--ss-rose);
+      color: var(--ss-gold);
       font-size: 0.98rem;
       margin-bottom: 0.85rem;
     }
@@ -520,7 +525,7 @@
     /* Za koga in kako */
     .process-section {
       width: 100%;
-      background: var(--ss-taupe);
+      background: var(--ss-bluegrey);
       padding: clamp(5rem, 8vw, 7.8rem) 0;
       text-align: center;
     }
@@ -581,7 +586,7 @@
     /* Somatika */
     .somatika-section {
       width: 100%;
-      background: var(--ss-taupe);
+      background: var(--ss-gold);
       padding: 0;
     }
 
@@ -595,8 +600,8 @@
     .somatika-panel {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      background: var(--ss-taupe);
-      color: #ffffff;
+      background: var(--ss-gold);
+      color: var(--ss-bark);
       min-height: 540px;
       width: 100%;
     }
@@ -625,7 +630,7 @@
 
     .somatika-panel__copy h2 {
       font-family: 'Lora', serif;
-      color: #ffffff;
+      color: var(--ss-bark);
       font-size: clamp(1.85rem, 3.3vw, 2.9rem);
       font-weight: 400;
       line-height: 1.12;
@@ -634,13 +639,13 @@
     }
 
     .somatika-panel__copy p {
-      color: rgba(255, 255, 255, 0.88);
+      color: rgba(46, 36, 22, 0.86);
       line-height: 1.85;
       margin-bottom: 1.35rem;
     }
 
     .somatika-panel__copy a {
-      color: #ffffff;
+      color: var(--ss-bark);
       font-weight: 700;
       text-decoration: underline;
       text-underline-offset: 4px;
