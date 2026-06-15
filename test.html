@@ -348,27 +348,31 @@
 
     /* Uvod */
     .intro-section {
+      width: 100%;
       background: var(--ss-paper);
-      padding: clamp(4.5rem, 8vw, 7.5rem) 0;
+      padding: clamp(5rem, 8vw, 7.8rem) 0;
       text-align: center;
     }
 
+    .intro-section .container {
+      max-width: 960px;
+    }
 
-    .intro-section h2 {
+    .intro-section h3 {
       font-family: 'Varela Round', sans-serif;
       color: var(--ss-dark);
-      font-size: clamp(2rem, 3.7vw, 3.2rem);
+      font-size: clamp(2rem, 3.6vw, 3rem);
       font-weight: 500;
-      line-height: 1.08;
-      margin: 0 0 1.5rem;
+      line-height: 1.12;
+      margin: 0 0 1.65rem;
       text-transform: none;
     }
 
     .intro-section p {
-      max-width: 850px;
+      max-width: 880px;
       margin: 0 auto;
       color: var(--ss-dark);
-      font-size: clamp(1.06rem, 1.4vw, 1.25rem);
+      font-size: clamp(1.06rem, 1.35vw, 1.22rem);
       line-height: 1.95;
     }
 
@@ -466,21 +470,21 @@
       border-bottom-color: var(--ss-bluegrey);
     }
 
-
     /* Za koga in kako */
     .process-section {
-      background: var(--ss-paper);
-      padding: clamp(4.8rem, 8vw, 7.4rem) 0;
+      width: 100%;
+      background: #ffffff;
+      padding: clamp(5rem, 8vw, 7.8rem) 0;
+      text-align: center;
+    }
+
+    .process-section .container {
+      max-width: 980px;
     }
 
     .process-panel {
-      display: grid;
-      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
-      gap: clamp(2rem, 5vw, 4.8rem);
-      align-items: start;
-      padding: clamp(2.8rem, 5vw, 4.6rem);
-      background: #ffffff;
-      border: 1px solid var(--ss-border);
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .process-panel__kicker {
@@ -499,20 +503,23 @@
       color: var(--ss-dark);
       font-size: clamp(2rem, 3.6vw, 3.1rem);
       font-weight: 500;
-      line-height: 1.08;
-      margin: 0;
+      line-height: 1.12;
+      margin: 0 auto 2.2rem;
+      max-width: 760px;
       text-transform: none;
     }
 
     .process-panel__body {
-      max-width: 720px;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: left;
     }
 
     .process-panel__body p {
       color: var(--ss-dark);
       font-size: clamp(1rem, 1.18vw, 1.12rem);
-      line-height: 1.86;
-      margin: 0 0 1.25rem;
+      line-height: 1.9;
+      margin: 0 0 1.3rem;
     }
 
     .process-panel__body p:last-child {
@@ -524,23 +531,31 @@
       font-weight: 700;
     }
 
-
     /* Somatika */
     .somatika-section {
-      background: var(--ss-paper);
-      padding: clamp(4.8rem, 8vw, 7.6rem) 0;
+      width: 100%;
+      background: var(--ss-taupe);
+      padding: 0;
+    }
+
+    .somatika-section .container {
+      max-width: none;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .somatika-panel {
       display: grid;
-      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       background: var(--ss-taupe);
       color: #ffffff;
-      min-height: 460px;
+      min-height: 540px;
+      width: 100%;
     }
 
     .somatika-panel__image {
-      min-height: 460px;
+      min-height: 540px;
       overflow: hidden;
       background: var(--ss-cream);
     }
@@ -554,10 +569,11 @@
     }
 
     .somatika-panel__copy {
-      padding: clamp(3rem, 6vw, 5.4rem);
+      padding: clamp(3.2rem, 7vw, 6.2rem);
       display: flex;
       flex-direction: column;
       justify-content: center;
+      max-width: 720px;
     }
 
     .somatika-panel__copy h2 {
@@ -565,7 +581,7 @@
       color: #ffffff;
       font-size: clamp(2rem, 3.7vw, 3.2rem);
       font-weight: 500;
-      line-height: 1.08;
+      line-height: 1.12;
       margin: 0 0 1.4rem;
       text-transform: none;
     }
@@ -766,14 +782,21 @@ gap: 26px;
 margin-top: 52px;
 }
 }
-
     @media (max-width: 991px) {
-      .process-panel {
-        grid-template-columns: 1fr;
-        padding: clamp(2.1rem, 7vw, 3rem);
+      .process-panel__body {
+        max-width: none;
       }
 
-      .process-panel__body {
+      .somatika-panel {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+
+      .somatika-panel__image {
+        min-height: 330px;
+      }
+
+      .somatika-panel__copy {
         max-width: none;
       }
     }
@@ -847,10 +870,10 @@ margin-top: 52px;
     <!-- Uvod -->
     <section id="uvod" class="intro-section">
       <div class="container">
-        <h2>Hola, sem Sanja.</h2>
+        <h3>Hola,<br>sem Sanja.</h3>
 
         <p>
-          Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš, in prožnejši živčni sistem, ki se po vznemirjenju prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost, kjer meje niso le nekaj, kar “postavljaš”, ampak nekaj, kar se učiš zaznati, utelešati in živeti. <br> Brez obljub o hitrih nerealnih spremembah in brez dela na sebi, ki postane “full-time job”.
+          Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš, in prožnejši živčni sistem, ki se po vznemirjenju prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost, kjer meje niso le nekaj, kar “postavljaš”, ampak nekaj, kar se učiš zaznati, utelešati in živeti. <br> Brez obljub o hitrih nerealnih spremembah in brez dela na sebi, ki postane “full-time joba”.
         </p>
       </div>
     </section>
@@ -905,15 +928,12 @@ margin-top: 52px;
       </div>
     </section>
 
-
     <!-- Za koga in kako -->
     <section id="za-koga-in-kako" class="process-section">
       <div class="container">
         <div class="process-panel">
-          <div class="process-panel__heading">
-            <p class="process-panel__kicker">Za koga in kako</p>
-            <h2 class="process-panel__title">Za koga je ta pristop in kako poteka delo</h2>
-          </div>
+          <p class="process-panel__kicker">Za koga in kako</p>
+          <h2 class="process-panel__title">Za koga je ta pristop in kako poteka delo</h2>
 
           <div class="process-panel__body">
             <p>
