@@ -197,7 +197,7 @@
 
   <style>
     :root {
-      --ss-gold: #D6A24A;
+      --ss-gold: #927C67;
       --ss-bark: #2E2416;
       --ss-dark: #1F3B28;
       --ss-grass: #6BAA7A;
@@ -569,8 +569,8 @@
 
     .content-section article.article-bg-blue a:hover,
     .content-section article.article-bg-ochre a:hover {
-      color: var(--ss-gold);
-      border-bottom-color: var(--ss-gold);
+      color: var(--ss-paper);
+      border-bottom-color: var(--ss-paper);
     }
 
     .intro-box,
@@ -664,16 +664,20 @@
     }
 
     .author-table-wrap {
-      width: min(1120px, calc(100% - 48px));
-      overflow-x: auto;
-      margin: 2rem auto 2.5rem;
+      position: relative;
+      left: 50%;
+      width: min(1280px, calc(100vw - 48px));
+      overflow-x: visible;
+      margin: 2rem 0 2.5rem;
+      transform: translateX(-50%);
     }
 
     .author-table {
       width: 100%;
+      min-width: 0;
+      table-layout: fixed;
       border-collapse: collapse;
-      min-width: 900px;
-      font-size: 0.95rem;
+      font-size: 0.86rem;
       color: var(--ss-muted);
       background: #ffffff;
     }
@@ -683,15 +687,19 @@
       color: var(--ss-dark);
       font-weight: 800;
       border: 1px solid var(--ss-border);
-      padding: 0.9rem;
+      padding: 0.78rem;
       vertical-align: top;
+      overflow-wrap: anywhere;
+      word-break: normal;
     }
 
     .author-table td {
       border: 1px solid var(--ss-border);
-      padding: 0.9rem;
+      padding: 0.78rem;
       vertical-align: top;
-      line-height: 1.65;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+      word-break: normal;
     }
 
     .small-note {
@@ -949,6 +957,20 @@
         height: 26vh;
         max-height: 280px;
         min-height: 190px;
+      }
+
+      .author-table-wrap {
+        width: calc(100vw - 18px);
+      }
+
+      .author-table {
+        font-size: 0.66rem;
+      }
+
+      .author-table th,
+      .author-table td {
+        padding: 0.42rem;
+        line-height: 1.38;
       }
 
       .site-footer__inner {
