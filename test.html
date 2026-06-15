@@ -9,6 +9,7 @@
 
   <meta name="description" content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom za jasnejši stik s telesom, mejami, potrebami in odzivi živčnega sistema. Ljubljana in online.">
   <meta name="author" content="Sanja Zalar Gostimirović">
+  <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://sanjasomatika.si/">
   <link rel="icon" href="/favicon.ico">
@@ -18,6 +19,11 @@
   <meta property="og:image" content="https://sanjasomatika.si/sanjasana.jpg">
   <meta property="og:title" content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom">
   <meta property="og:description" content="Psihosocialno svetovanje s somatskim pristopom za jasnejši stik s telesom, mejami, potrebami in odzivi živčnega sistema. Individualno delo v Ljubljani in online.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom">
+  <meta name="twitter:description" content="Psihosocialno svetovanje s somatskim pristopom za jasnejši stik s telesom, mejami, potrebami in odzivi živčnega sistema.">
+  <meta name="twitter:image" content="https://sanjasomatika.si/sanjasana.jpg">
 
   <meta name="google-site-verification" content="mtyq4CNLA9fQWDDKorFQCGXlDHb1CCRAQepgPDiGBek">
 
@@ -364,12 +370,12 @@
       font-size: clamp(1.85rem, 3.2vw, 2.75rem);
       font-weight: 400;
       line-height: 1.12;
-      margin: 0 0 1rem;
+      margin: 0 0 1.25rem;
       text-transform: none;
     }
 
     .intro-section p.intro-section__byline {
-      margin: 0 auto 1.65rem;
+      margin: 0 auto 2.15rem;
       color: var(--ss-dark);
       font-family: var(--ss-nav);
       font-size: 0.82rem;
@@ -841,6 +847,190 @@ margin-top: 52px;
       }
     }
 
+
+    /* Mobile fixes */
+    @media (max-width: 991px) {
+      #mainNav {
+        min-height: 64px;
+        padding-top: 0.48rem;
+        padding-bottom: 0.48rem;
+      }
+
+      #mainNav .container {
+        min-height: 48px;
+      }
+
+      #mainNav .navbar-brand {
+        font-size: 1.45rem;
+        margin-right: 1rem;
+      }
+
+      .home-hero {
+        min-height: calc(100svh - 64px);
+      }
+
+      .home-hero__inner {
+        min-height: calc(100svh - 64px);
+        padding: 6.2rem 1.25rem 3.8rem;
+      }
+
+      .home-hero__bg {
+        background-position: 58% center;
+        transform: none;
+      }
+
+      .home-hero h1 {
+        font-size: clamp(2.55rem, 11.5vw, 4rem);
+        line-height: 0.96;
+        max-width: calc(100vw - 2rem);
+        letter-spacing: -0.02em;
+      }
+
+      .home-hero h1 .hero-line {
+        white-space: normal;
+      }
+
+      .home-hero__subtitle {
+        max-width: 92vw;
+        font-size: 1rem;
+        line-height: 1.55;
+      }
+
+      .home-hero__cta {
+        max-width: 92vw;
+        min-width: 0;
+        padding: 0.9rem 1.15rem;
+        font-size: 0.92rem;
+        letter-spacing: 0.05em;
+      }
+
+      .entry-grid {
+        grid-template-columns: 1fr;
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 4.5rem;
+      }
+
+      .entry-item__image {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .entry-item p {
+        max-width: 34ch;
+      }
+
+      .process-panel__body {
+        max-width: none;
+        text-align: left;
+      }
+
+      .somatika-panel {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+
+      .somatika-panel__image {
+        min-height: 330px;
+      }
+
+      .somatika-panel__copy {
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .intro-section {
+        padding: 4.4rem 0;
+      }
+
+      .intro-section .container,
+      .process-section .container {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+      }
+
+      .intro-section h3 {
+        margin-bottom: 1.35rem;
+      }
+
+      .intro-section p.intro-section__byline {
+        margin-bottom: 2.25rem;
+      }
+
+      .intro-section p {
+        font-size: 1rem;
+        line-height: 1.82;
+      }
+
+      .entry-section {
+        padding: 4.4rem 0 5.2rem;
+      }
+
+      .section-heading {
+        margin-bottom: 3rem;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2rem, 10vw, 2.65rem);
+      }
+
+      .entry-grid {
+        gap: 4.25rem;
+      }
+
+      .entry-item h3 {
+        font-size: clamp(1.55rem, 8vw, 2.1rem);
+      }
+
+      .entry-item__note {
+        line-height: 1.55;
+      }
+
+      .entry-item p {
+        font-size: 1rem;
+        line-height: 1.72;
+        max-width: 30ch;
+      }
+
+      .process-section {
+        padding: 4.6rem 0;
+      }
+
+      .process-panel__title {
+        font-size: clamp(1.75rem, 8.8vw, 2.45rem);
+        margin-bottom: 1.8rem;
+      }
+
+      .process-panel__body p {
+        font-size: 1rem;
+        line-height: 1.78;
+      }
+
+      .somatika-panel__image {
+        min-height: 300px;
+      }
+
+      .somatika-panel__copy {
+        padding: 3rem 1.45rem 3.2rem;
+      }
+
+      .somatika-panel__copy h2 {
+        font-size: clamp(1.9rem, 9vw, 2.45rem);
+      }
+
+      .somatika-panel__copy p {
+        font-size: 1rem;
+        line-height: 1.72;
+      }
+
+      .site-footer__inner {
+        width: min(1080px, calc(100% - 36px));
+      }
+    }
+
   </style>
 </head>
 
@@ -897,7 +1087,7 @@ margin-top: 52px;
       <div class="home-hero__inner">
         <div class="home-hero__copy">
           <p class="home-hero__kicker">Sanja Somatika</p>
-          <h1><span class="hero-line">Psihosocialno svetovanje</span><span class="hero-line">s somatskim pristopom</span></h1>
+          <h1><span class="hero-line">Psihosocialno svetovanje</span> <span class="hero-line">s somatskim pristopom</span></h1>
           <p class="home-hero__subtitle">
             <span> Za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde.</span>
             <span>Procesno, dozirano in odnosno telesno orientirano delo.</span>
@@ -915,7 +1105,7 @@ margin-top: 52px;
         <p class="intro-section__byline">Somatska praktičarka, psihosocialna svetovalka, tanguera in budokonita</p>
 
         <p>
-          Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš, in prožnejši živčni sistem, ki se po vznemirjenju prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost, kjer meje niso le nekaj, kar “postavljaš”, ampak nekaj, kar se učiš zaznati, utelešati in živeti. <br> Brez obljub o hitrih nerealnih spremembah in brez dela na sebi, ki postane “full-time joba”.
+          Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš, in prožnejši živčni sistem, ki se po vznemirjenju prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost, kjer meje niso le nekaj, kar “postavljaš”, ampak nekaj, kar se učiš zaznati, utelešati in živeti. <br> Brez obljub o hitrih nerealnih spremembah in brez dela na sebi, ki postane “full-time job”.
         </p>
 
         <a class="section-text-link" href="sanja.html">Več o mojem pristopu</a>
