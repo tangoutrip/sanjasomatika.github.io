@@ -353,25 +353,15 @@
       text-align: center;
     }
 
-    .intro-section__ornament {
-      width: 160px;
-      height: 1px;
-      background: var(--ss-border);
-      margin: 0 auto 2.5rem;
-      position: relative;
-    }
 
-    .intro-section__ornament::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 56px;
-      height: 56px;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-      background: var(--ss-paper);
-      border: 1px solid var(--ss-border);
+    .intro-section h2 {
+      font-family: 'Varela Round', sans-serif;
+      color: var(--ss-dark);
+      font-size: clamp(2rem, 3.7vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.08;
+      margin: 0 0 1.5rem;
+      text-transform: none;
     }
 
     .intro-section p {
@@ -475,6 +465,65 @@
       color: var(--ss-bluegrey);
       border-bottom-color: var(--ss-bluegrey);
     }
+
+
+    /* Za koga in kako */
+    .process-section {
+      background: var(--ss-paper);
+      padding: clamp(4.8rem, 8vw, 7.4rem) 0;
+    }
+
+    .process-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr);
+      gap: clamp(2rem, 5vw, 4.8rem);
+      align-items: start;
+      padding: clamp(2.8rem, 5vw, 4.6rem);
+      background: #ffffff;
+      border: 1px solid var(--ss-border);
+    }
+
+    .process-panel__kicker {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--ss-bluegrey);
+      margin: 0 0 1rem;
+    }
+
+    .process-panel__title {
+      font-family: 'Varela Round', sans-serif;
+      color: var(--ss-dark);
+      font-size: clamp(2rem, 3.6vw, 3.1rem);
+      font-weight: 500;
+      line-height: 1.08;
+      margin: 0;
+      text-transform: none;
+    }
+
+    .process-panel__body {
+      max-width: 720px;
+    }
+
+    .process-panel__body p {
+      color: var(--ss-dark);
+      font-size: clamp(1rem, 1.18vw, 1.12rem);
+      line-height: 1.86;
+      margin: 0 0 1.25rem;
+    }
+
+    .process-panel__body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .process-panel__body strong {
+      color: var(--ss-rose);
+      font-weight: 700;
+    }
+
 
     /* Somatika */
     .somatika-section {
@@ -717,6 +766,18 @@ gap: 26px;
 margin-top: 52px;
 }
 }
+
+    @media (max-width: 991px) {
+      .process-panel {
+        grid-template-columns: 1fr;
+        padding: clamp(2.1rem, 7vw, 3rem);
+      }
+
+      .process-panel__body {
+        max-width: none;
+      }
+    }
+
   </style>
 </head>
 
@@ -786,9 +847,10 @@ margin-top: 52px;
     <!-- Uvod -->
     <section id="uvod" class="intro-section">
       <div class="container">
-        <div class="intro-section__ornament" aria-hidden="true"></div>
+        <h2>Hola, sem Sanja.</h2>
+
         <p>
-          Hola, sem Sanja. <br> Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš in za fleksibilen živčni sistem, ki se po vznemirjenu prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost. <p>
+          Dobrodošli v kotičku za krepitev stika s telesom, osebnimi mejami in viri moči – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš, in prožnejši živčni sistem, ki se po vznemirjenju prej povrne v stanje relativne pomirjenosti. Pri delu integriram psihosocialno svetovanje s somatskim pristopom in uporabljam avtorsko metodo Somatska čuječnost, kjer meje niso le nekaj, kar “postavljaš”, ampak nekaj, kar se učiš zaznati, utelešati in živeti. <br> Brez obljub o hitrih nerealnih spremembah in brez dela na sebi, ki postane “full-time job”.
         </p>
       </div>
     </section>
@@ -839,6 +901,33 @@ margin-top: 52px;
             <a href="somatska-cujecnost.html">Preberi več o Somatski čuječnosti</a>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Za koga in kako -->
+    <section id="za-koga-in-kako" class="process-section">
+      <div class="container">
+        <div class="process-panel">
+          <div class="process-panel__heading">
+            <p class="process-panel__kicker">Za koga in kako</p>
+            <h2 class="process-panel__title">Za koga je ta pristop in kako poteka delo</h2>
+          </div>
+
+          <div class="process-panel__body">
+            <p>
+              Tipično me za individualno delo poiščejo ljudje, ki ugajajo drugim, pogosto iz občutka krivde. Svojih meja in potreb ne zaznajo pravočasno ali pa jih težko izrazijo. Želijo si stati za svojim hrbtom, krepiti psihološko odpornost in graditi bolj prožen živčni sistem.
+            </p>
+
+            <p>
+              Moj pristop je telesno orientiran, vendar ne izključuje uma, pogovora in razumevanja. Zanima me <strong>UMtelešanje</strong>, ne le telo. Telesne zgodbe ne moremo razumeti izven konteksta okolja, odnosov, življenjskih okoliščin in prepričanj.
+            </p>
+
+            <p>
+              Srečanja prepletajo pogovor, telesno doživljanje in opazovanje. Namesto potiskanja v katarze ali neskončnega procesiranja se posvečamo prizemljenemu, živemu odnosu do sebe – na način, ki ne zavzame celotnega življenjskega prostora, ampak odpira več prostora za življenje.
+            </p>
+          </div>
         </div>
       </div>
     </section>
