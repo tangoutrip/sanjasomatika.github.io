@@ -363,7 +363,7 @@
     /* Uvod */
     .intro-section {
       width: 100%;
-      background: #f7f3ee;
+      background: var(--ss-bluegrey);
       padding: clamp(5rem, 8vw, 7.8rem) 0;
       text-align: center;
     }
@@ -374,7 +374,7 @@
 
     .intro-section h3 {
       font-family: 'Lora', serif;
-      color: var(--ss-dark);
+      color: #ffffff;
       font-size: clamp(1.85rem, 3.2vw, 2.75rem);
       font-weight: 400;
       line-height: 1.12;
@@ -384,7 +384,7 @@
 
     .intro-section p.intro-section__byline {
       margin: 0 auto 2.15rem;
-      color: var(--ss-dark);
+      color: rgba(255, 255, 255, 0.86);
       font-family: var(--ss-nav);
       font-size: 0.82rem;
       font-weight: 800;
@@ -396,7 +396,7 @@
     .intro-section p {
       max-width: 880px;
       margin: 0 auto;
-      color: var(--ss-dark);
+      color: rgba(255, 255, 255, 0.9);
       font-size: clamp(1.06rem, 1.35vw, 1.22rem);
       line-height: 1.95;
     }
@@ -420,14 +420,24 @@
       border-bottom-color: var(--ss-gold);
     }
 
-    .process-section .section-text-link {
+    .intro-section .section-text-link {
       color: #ffffff;
       border-bottom-color: rgba(255, 255, 255, 0.45);
     }
 
-    .process-section .section-text-link:hover {
+    .intro-section .section-text-link:hover {
       color: var(--ss-gold);
       border-bottom-color: var(--ss-gold);
+    }
+
+    .process-section .section-text-link {
+      color: var(--ss-dark);
+      border-bottom-color: var(--ss-border);
+    }
+
+    .process-section .section-text-link:hover {
+      color: var(--ss-bluegrey);
+      border-bottom-color: var(--ss-bluegrey);
     }
 
     /* Ponudba */
@@ -527,7 +537,7 @@
     /* Za koga in kako */
     .process-section {
       width: 100%;
-      background: var(--ss-bluegrey);
+      background: #f7f3ee;
       padding: clamp(5rem, 8vw, 7.8rem) 0;
       text-align: center;
     }
@@ -548,13 +558,13 @@
       letter-spacing: 0.16em;
       line-height: 1.2;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.78);
+      color: var(--ss-bluegrey);
       margin: 0 0 1rem;
     }
 
     .process-panel__title {
       font-family: 'Lora', serif;
-      color: #ffffff;
+      color: var(--ss-dark);
       font-size: clamp(1.85rem, 3.25vw, 2.85rem);
       font-weight: 400;
       line-height: 1.12;
@@ -570,7 +580,7 @@
     }
 
     .process-panel__body p {
-      color: rgba(255, 255, 255, 0.88);
+      color: var(--ss-dark);
       font-size: clamp(1rem, 1.18vw, 1.12rem);
       line-height: 1.9;
       margin: 0 0 1.3rem;
@@ -581,7 +591,7 @@
     }
 
     .process-panel__body strong {
-      color: #ffffff;
+      color: var(--ss-dark);
       font-weight: 700;
     }
 
@@ -1194,7 +1204,7 @@ margin-top: 52px;
       <div class="container">
         <div class="process-panel">
           <p class="process-panel__kicker">Za koga in kako</p>
-          <h2 class="process-panel__title">Za koga je ta pristop in kako poteka delo</h2>
+          <h2 class="process-panel__title">Za koga je ta pristop</h2>
 
           <div class="process-panel__body">
             <p>
