@@ -132,15 +132,16 @@
 
   <style>
     :root {
-      --ss-dark: #39463A;
-      --ss-rose: #AB8A7A;
-      --ss-bluegrey: #73868A;
-      --ss-taupe: #927C67;
-      --ss-cream: #E0D7C7;
-      --ss-paper: #f7f3ee;
-      --ss-text: #39463A;
-      --ss-muted: #6f766f;
-      --ss-border: rgba(57, 70, 58, 0.18);
+      /* testna paleta iz hero fotografije: gozd, trava, denim, sonce */
+      --ss-dark: #2F3F32;
+      --ss-rose: #B8793F;
+      --ss-bluegrey: #6D8E9A;
+      --ss-taupe: #6F7F58;
+      --ss-cream: #F4EFE7;
+      --ss-paper: #F7F3EE;
+      --ss-text: #2F3F32;
+      --ss-muted: #667063;
+      --ss-border: rgba(47, 63, 50, 0.18);
       --ss-display: 'Cormorant Garamond', serif;
       --ss-nav: 'Manrope', sans-serif;
     }
@@ -335,20 +336,20 @@
       justify-content: center;
       min-width: 176px;
       padding: 0.9rem 1.45rem;
-      background: #73868A;
+      background: var(--ss-bluegrey);
       color: #ffffff;
       font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 1rem;
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: none;
-      border: 1px solid #73868A;
+      border: 1px solid var(--ss-bluegrey);
       transition: none;
     }
 
     .home-hero__cta:hover {
-      background: #39463A;
-      border-color: #39463A;
+      background: var(--ss-dark);
+      border-color: var(--ss-dark);
       color: #ffffff;
     }
 
@@ -408,8 +409,8 @@
     }
 
     .section-text-link:hover {
-      color: var(--ss-bluegrey);
-      border-bottom-color: var(--ss-bluegrey);
+      color: var(--ss-rose);
+      border-bottom-color: var(--ss-rose);
     }
 
     .process-section .section-text-link {
@@ -519,7 +520,7 @@
     /* Za koga in kako */
     .process-section {
       width: 100%;
-      background: var(--ss-bluegrey);
+      background: var(--ss-taupe);
       padding: clamp(5rem, 8vw, 7.8rem) 0;
       text-align: center;
     }
