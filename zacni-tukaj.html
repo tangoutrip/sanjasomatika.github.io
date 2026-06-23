@@ -386,7 +386,7 @@
               <h2>Somatska čuječnost</h2>
               <p>Prejmi video prakso, zvočno prakso in zapis o uporabnosti Somatske čuječnosti v vsakdanjem življenju.</p>
             </div>
-            <a class="start-card__button" href="uvod-somatska-cujecnost.html" onclick="trackCta('somatska_cujecnost_brezplacni_uvod');">Prejmi brezplačen uvod</a>
+            <a class="start-card__button" href="uvod-somatska-cujecnost.html" onclick="trackCta('brezplacni_uvod', 'uvod-somatska-cujecnost.html');">Prejmi brezplačen uvod</a>
           </article>
 
           <article class="start-card start-card--pristan">
@@ -395,7 +395,7 @@
               <h2>Somatski pristan</h2>
               <p>Mesečno članstvo za stik s telesom, podporo pri regulaciji živčnega sistema in več psihofizične odpornosti.</p>
             </div>
-            <a class="start-card__button" href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer" onclick="trackCta('somatski_pristan');">Poglej Somatski pristan</a>
+            <a class="start-card__button" href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer" onclick="trackCta('somatski_pristan', 'https://somatskipristan.si/');">Poglej Somatski pristan</a>
           </article>
 
           <article class="start-card start-card--individual">
@@ -404,7 +404,7 @@
               <h2>Individualno delo</h2>
               <p>Somatsko orientirano psihosocialno svetovanje za utelešene meje, manj ugajanja iz občutka krivde in delo na ponavljajočih se vzorcih.</p>
             </div>
-            <a class="start-card__button" href="individualno.html" onclick="trackCta('individualno_delo');">Poglej individualno delo</a>
+            <a class="start-card__button" href="individualno.html" onclick="trackCta('individualno_delo', 'individualno.html');">Poglej individualno delo</a>
           </article>
 
         </div>
@@ -428,11 +428,12 @@
   </footer>
 
   <script>
-    function trackCta(ctaName) {
+    function trackCta(ctaName, destinationUrl) {
       if (typeof gtag === 'function') {
         gtag('event', 'cta_click', {
           cta_name: ctaName,
-          cta_location: 'zacni_tukaj'
+          cta_location: 'zacni_tukaj',
+          destination_url: destinationUrl
         });
       }
     }
