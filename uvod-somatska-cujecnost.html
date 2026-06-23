@@ -33,15 +33,15 @@
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
 
-  <!-- GA4: dodaj šele, ko imaš pravi Measurement ID G-XXXXXXXXXX
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKZ0H1RD4Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+
+    gtag('config', 'G-NKZ0H1RD4Q');
   </script>
-  -->
 
   <style>
     :root {
@@ -144,11 +144,12 @@
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
       gap: clamp(1.4rem, 4vw, 2.4rem);
-      align-items: start;
+      align-items: stretch;
     }
 
     .lead-card,
     .lead-form-card {
+      min-height: 100%;
       background: #ffffff;
       border: 1px solid rgba(31, 59, 40, 0.11);
       box-shadow: 0 18px 46px rgba(46, 36, 22, 0.06);
@@ -192,7 +193,14 @@
     }
 
     .lead-form-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: clamp(1rem, 2.4vw, 1.3rem);
+    }
+
+    .lead-form-card .ml-form-embedContainer {
+      width: 100% !important;
     }
 
     .lead-back {
@@ -1246,6 +1254,23 @@
         });
       }
     }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var leadForm = document.querySelector('#mlb2-42974796 form');
+
+      if (leadForm) {
+        leadForm.addEventListener('submit', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'lead_magnet_form_submit', {
+              lead_magnet: 'somatska_cujecnost_3_dnevni_uvod',
+              form_location: 'uvod_somatska_cujecnost'
+            });
+          }
+        });
+      }
+    });
   </script>
 
   <script src="js/jquery.min.js"></script>
