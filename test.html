@@ -60,11 +60,11 @@
       --ss-display: 'Cormorant Garamond', serif;
       --ss-nav: 'Manrope', sans-serif;
 
-      --ss-card-warm: #E7D8BD;
-      --ss-card-green: #2E6F40;
-      --ss-card-blue: #6FA7B5;
-      --ss-button: #1F3B28;
-      --ss-button-hover: #2E2416;
+      --ss-card-warm: #becbc5;
+      --ss-card-blue: #6fa7b5;
+      --ss-card-teal: #208e96;
+      --ss-button: #ffffff;
+      --ss-button-hover: #ffffff;
     }
 
     html {
@@ -110,10 +110,12 @@
     .start-hero__brand {
       margin: 0 0 1.05rem;
       color: var(--ss-bluegrey);
-      font-family: 'Varela Round', sans-serif;
-      font-size: clamp(1.18rem, 3.8vw, 1.48rem);
-      font-weight: 400;
-      line-height: 1.15;
+      font-family: var(--ss-nav);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      line-height: 1.35;
+      text-transform: uppercase;
     }
 
     .start-hero h1 {
@@ -176,12 +178,12 @@
     }
 
     .start-card--pristan {
-      background: var(--ss-card-green);
+      background: var(--ss-card-blue);
       color: #ffffff;
     }
 
     .start-card--individual {
-      background: var(--ss-card-blue);
+      background: var(--ss-card-teal);
       color: #ffffff;
     }
 
@@ -222,8 +224,8 @@
       min-height: 46px;
       padding: 0.82rem 1rem;
       background: var(--ss-button);
-      border: 1px solid var(--ss-button);
-      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.92);
+      color: var(--ss-text);
       font-family: var(--ss-nav);
       font-size: 0.74rem;
       font-weight: 800;
@@ -235,14 +237,14 @@
 
     .start-card__button:hover {
       background: var(--ss-button-hover);
-      border-color: var(--ss-button-hover);
-      color: #ffffff;
+      border-color: #ffffff;
+      color: #208e96;
     }
 
     .start-footer {
       padding: 2.4rem 0 2.2rem;
-      background: var(--ss-dark);
-      color: rgba(255, 255, 255, 0.76);
+      background: var(--ss-paper);
+      color: var(--ss-muted);
       text-align: center;
     }
 
@@ -253,7 +255,7 @@
 
     .start-footer__name {
       margin: 0 0 0.45rem;
-      color: #ffffff;
+      color: var(--ss-dark);
       font-family: var(--ss-nav);
       font-size: 0.8rem;
       font-weight: 800;
@@ -268,7 +270,7 @@
     }
 
     .start-footer a {
-      color: rgba(255, 255, 255, 0.88);
+      color: var(--ss-dark);
       font-weight: 600;
       text-decoration: none;
     }
@@ -293,15 +295,15 @@
       width: 36px;
       height: 36px;
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      background-color: rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(31, 59, 40, 0.18);
+      background-color: #ffffff;
+      color: var(--ss-dark);
     }
 
     .start-footer__icon:hover {
-      border-color: rgba(255, 255, 255, 0.28);
-      background-color: rgba(255, 255, 255, 0.16);
-      color: var(--ss-bluegrey);
+      border-color: #208e96;
+      background-color: #ffffff;
+      color: #208e96;
       text-decoration: none;
     }
 
@@ -374,7 +376,7 @@
 
     <section class="start-options" aria-labelledby="start-options-title">
       <div class="start-shell">
-        <p id="start-options-title" class="start-options__heading">Izberi svoj naslednji korak</p>
+        <p id="start-options-title" class="start-options__heading">Izberi obliko sodelovanja</p>
 
         <div class="start-card-grid">
 
