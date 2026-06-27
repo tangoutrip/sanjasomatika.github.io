@@ -98,12 +98,12 @@
     }
 
     .start-shell {
-      width: min(880px, calc(100% - 40px));
+      width: min(900px, calc(100% - 40px));
       margin: 0 auto;
     }
 
     .start-hero {
-      padding: clamp(3.4rem, 8vw, 5.8rem) 0 clamp(2.2rem, 5vw, 3.4rem);
+      padding: clamp(3rem, 6.4vw, 4.8rem) 0 clamp(1.8rem, 4vw, 2.8rem);
       text-align: center;
     }
 
@@ -111,21 +111,21 @@
       margin: 0 0 1.05rem;
       color: var(--ss-bluegrey);
       font-family: var(--ss-nav);
-      font-size: clamp(1rem, 2.4vw, 1.35rem);
+      font-size: clamp(1.08rem, 2.6vw, 1.45rem);
       font-weight: 800;
       letter-spacing: 0.16em;
-      line-height: 1.35;
+      line-height: 1.28;
       text-transform: uppercase;
     }
 
     .start-hero h1 {
-      margin: 0 0 1rem;
+      margin: 0 0 0.9rem;
       color: var(--ss-dark);
       font-family: 'Lora', serif;
-      font-size: clamp(2.75rem, 10.5vw, 4.9rem);
+      font-size: clamp(2.65rem, 9.6vw, 4.65rem);
       font-weight: 400;
-      line-height: 1.02;
-      letter-spacing: -0.045em;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
       text-transform: none;
     }
 
@@ -138,16 +138,16 @@
     }
 
     .start-options {
-      padding: 0 0 clamp(3.4rem, 7vw, 5.6rem);
+      padding: 0 0 clamp(3.7rem, 7.4vw, 6.2rem);
     }
 
     .start-options__heading {
-      margin: 0 auto 1.6rem;
+      margin: 0 auto 1.85rem;
       color: var(--ss-dark);
       font-family: var(--ss-nav);
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 800;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       line-height: 1.35;
       text-align: center;
       text-transform: uppercase;
@@ -156,7 +156,7 @@
     .start-card-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: clamp(1.85rem, 3.6vw, 2.45rem);
+      gap: clamp(2rem, 3.8vw, 2.7rem);
       align-items: stretch;
       max-width: 760px;
       margin: 0 auto;
@@ -164,12 +164,12 @@
 
     .start-card {
       min-height: 100%;
-      padding: clamp(2.75rem, 5.2vw, 3.85rem);
+      padding: clamp(3rem, 5.4vw, 4.05rem);
       border-radius: 0;
-      border: 1px solid rgba(31, 59, 40, 0.12);
+      border: 1px solid rgba(31, 59, 40, 0.11);
       display: block;
       text-align: left;
-      box-shadow: 0 18px 46px rgba(46, 36, 22, 0.06);
+      box-shadow: 0 18px 46px rgba(46, 36, 22, 0.055);
     }
 
     .start-card--intro {
@@ -203,57 +203,60 @@
     }
 
     .start-card__label {
-      margin: 0 0 1.05rem;
+      margin: 0 0 1.12rem;
       font-family: var(--ss-nav);
-      font-size: clamp(1.14rem, 2.8vw, 1.62rem);
+      font-size: clamp(1.18rem, 2.9vw, 1.7rem);
       font-weight: 800;
-      letter-spacing: 0.16em;
-      line-height: 1.28;
+      letter-spacing: 0.15em;
+      line-height: 1.24;
       text-transform: uppercase;
       opacity: 0.96;
     }
 
     .start-card h2 {
-      margin: 0 0 1.35rem;
+      margin: 0 0 1.45rem;
       font-family: 'Lora', serif;
-      font-size: clamp(1.95rem, 4.2vw, 2.72rem);
+      font-size: clamp(1.78rem, 3.8vw, 2.46rem);
       font-weight: 400;
-      line-height: 1.05;
+      line-height: 1.08;
+      letter-spacing: -0.018em;
       color: currentColor;
       text-transform: none;
     }
 
     .start-card__description {
-      width: min(100%, 620px);
-      margin: 1.75rem 0 0;
-      font-size: clamp(1rem, 2.1vw, 1.12rem);
-      line-height: 1.58;
+      width: min(100%, 58ch);
+      margin: 1.85rem 0 0;
+      font-size: clamp(1rem, 2.05vw, 1.1rem);
+      line-height: 1.62;
       color: currentColor;
       opacity: 0.9;
     }
 
     .start-card__button {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: min(100%, 420px);
+      width: min(100%, 400px);
       min-height: 54px;
       padding: 0.96rem 1.15rem;
       background: var(--ss-button);
       border: 1px solid rgba(255, 255, 255, 0.92);
       color: var(--ss-text);
       font-family: var(--ss-nav);
-      font-size: 0.84rem;
+      font-size: 0.8rem;
       font-weight: 800;
       letter-spacing: 0.11em;
       line-height: 1.25;
       text-align: center;
       text-transform: uppercase;
+      gap: 0.55rem;
     }
 
     .start-card__button::after {
       content: "→";
-      margin-left: 0.75rem;
+      margin-left: 0;
       font-size: 1.05rem;
       line-height: 1;
     }
@@ -265,7 +268,7 @@
     }
 
     .start-footer {
-      padding: 2.4rem 0 2.2rem;
+      padding: 2.1rem 0 2rem;
       background: var(--ss-paper);
       color: var(--ss-muted);
       text-align: center;
@@ -322,7 +325,7 @@
     }
 
     .start-footer__email {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       line-height: 1.45;
     }
 
@@ -339,7 +342,7 @@
 
     .start-footer .start-footer__email a {
       color: var(--ss-text);
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 400;
       line-height: 1.45;
       text-decoration: none;
@@ -393,7 +396,7 @@
       }
 
       .start-hero {
-        padding: 3rem 0 2rem;
+        padding: 2.75rem 0 1.8rem;
       }
 
       .start-hero h1 {
@@ -423,7 +426,7 @@
       }
 
       .start-card h2 {
-        font-size: clamp(1.9rem, 8.5vw, 2.35rem);
+        font-size: clamp(1.78rem, 7.8vw, 2.2rem);
         margin-bottom: 1.18rem;
       }
 
@@ -431,6 +434,8 @@
         width: 100%;
         min-height: 52px;
         font-size: 0.78rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
       }
 
       .start-card__description {
@@ -457,7 +462,7 @@
       }
 
       .start-footer__email {
-        font-size: 0.72rem;
+        font-size: 0.7rem;
       }
     }
   </style>
