@@ -156,7 +156,7 @@
     .start-card-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: clamp(1.55rem, 3.2vw, 2.15rem);
+      gap: clamp(1.85rem, 3.6vw, 2.45rem);
       align-items: stretch;
       max-width: 760px;
       margin: 0 auto;
@@ -164,7 +164,7 @@
 
     .start-card {
       min-height: 100%;
-      padding: clamp(2.45rem, 4.8vw, 3.45rem);
+      padding: clamp(2.75rem, 5.2vw, 3.85rem);
       border-radius: 0;
       border: 1px solid rgba(31, 59, 40, 0.12);
       display: block;
@@ -224,8 +224,8 @@
     }
 
     .start-card__description {
-      width: min(100%, 58ch);
-      margin: 1.65rem 0 0;
+      width: min(100%, 46ch);
+      margin: 1.75rem 0 0;
       font-size: clamp(1rem, 2.1vw, 1.12rem);
       line-height: 1.58;
       color: currentColor;
@@ -278,7 +278,7 @@
     }
 
     .start-footer__identity {
-      width: 14.4rem;
+      width: 16.4rem;
       max-width: 100%;
       margin: 0 auto 0.9rem;
       text-align: center;
@@ -289,7 +289,7 @@
       margin: 0 0 0.18rem;
       color: var(--ss-bluegrey);
       font-family: var(--ss-nav);
-      font-size: clamp(1rem, 2.2vw, 1.24rem);
+      font-size: clamp(1.12rem, 2.6vw, 1.45rem);
       font-weight: 800;
       letter-spacing: 0.16em;
       line-height: 1.25;
@@ -302,15 +302,15 @@
       margin: 0;
       color: var(--ss-text);
       font-family: 'Lora', serif;
-      font-size: 0.78rem;
+      font-size: 0.92rem;
       font-style: italic;
       font-weight: 400;
-      letter-spacing: -0.015em;
+      letter-spacing: -0.035em;
       line-height: 1.3;
       text-align: center;
       text-transform: none;
       white-space: nowrap;
-      transform: scaleX(0.93);
+      transform: scaleX(0.86);
       transform-origin: center;
     }
 
@@ -322,7 +322,7 @@
     }
 
     .start-footer__email {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       line-height: 1.45;
     }
 
@@ -397,11 +397,11 @@
       }
 
       .start-card-grid {
-        gap: 1.35rem;
+        gap: 1.55rem;
       }
 
       .start-card {
-        padding: 2.25rem 1.45rem 2rem;
+        padding: 2.45rem 1.45rem 2.25rem;
       }
 
       .start-card__label {
@@ -431,16 +431,20 @@
       }
 
       .start-footer__identity {
-        width: 13.6rem;
+        width: 15.2rem;
+      }
+
+      .start-footer__brand {
+        font-size: 1.16rem;
       }
 
       .start-footer__name {
-        font-size: 0.74rem;
-        transform: scaleX(0.94);
+        font-size: 0.86rem;
+        transform: scaleX(0.86);
       }
 
       .start-footer__email {
-        font-size: 0.8rem;
+        font-size: 0.76rem;
       }
     }
   </style>
@@ -468,21 +472,21 @@
             <p class="start-card__label">Brezplačen<br>3-dnevni uvod</p>
             <h2>Somatska čuječnost</h2>
             <a class="start-card__button" href="/uvod-somatska-cujecnost.html" onclick="trackCta('brezplacni_uvod', '/uvod-somatska-cujecnost.html');">Prejmi brezplačen uvod</a>
-            <p class="start-card__description">Prejmi video prakso, zvočno prakso in zapis o uporabnosti<span class="desktop-break"><br></span>Somatske čuječnosti v vsakdanjem življenju.</p>
+            <p class="start-card__description">Prejmi video prakso, zvočno prakso in zapis o uporabnosti <span class="desktop-break"><br></span>Somatske čuječnosti v vsakdanjem življenju.</p>
           </article>
 
           <article class="start-card start-card--pristan">
             <p class="start-card__label">Redna praksa<br>v svojem tempu</p>
             <h2>Somatski pristan</h2>
             <a class="start-card__button" href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer" onclick="trackCta('somatski_pristan', 'https://somatskipristan.si/');">Poglej Somatski pristan</a>
-            <p class="start-card__description">Mesečno članstvo za stik s telesom, podporo pri regulaciji<span class="desktop-break"><br></span>živčnega sistema in več psihofizične odpornosti.</p>
+            <p class="start-card__description">Mesečno članstvo za stik s telesom, podporo pri regulaciji <span class="desktop-break"><br></span>živčnega sistema in več psihofizične odpornosti.</p>
           </article>
 
           <article class="start-card start-card--individual">
             <p class="start-card__label">Globlji<br>proces</p>
             <h2>Individualno delo</h2>
             <a class="start-card__button" href="/individualno.html" onclick="trackCta('individualno_delo', '/individualno.html');">Poglej individualno delo</a>
-            <p class="start-card__description">Somatsko orientirano psihosocialno svetovanje za utelešene meje,<span class="desktop-break"><br></span>manj ugajanja iz občutka krivde in delo na ponavljajočih se vzorcih.</p>
+            <p class="start-card__description">Somatsko orientirano psihosocialno svetovanje za utelešene meje, <span class="desktop-break"><br></span>manj ugajanja iz občutka krivde in delo na ponavljajočih se vzorcih.</p>
           </article>
 
         </div>
