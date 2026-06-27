@@ -49,7 +49,7 @@
       --ss-border: rgba(31, 59, 40, 0.18);
       --ss-display: 'Cormorant Garamond', serif;
       --ss-nav: 'Manrope', sans-serif;
-      --ss-card-warm: #becbc5;
+      --ss-card-warm: #DCE5E0;
       --ss-card-blue: #6fa7b5;
       --ss-card-teal: #208e96;
       --ss-button: #ffffff;
@@ -70,7 +70,7 @@
     }
 
     a {
-      color: #6fa7b5;
+      color: var(--ss-bluegrey);
       text-decoration: none;
     }
 
@@ -92,49 +92,60 @@
     }
 
     .lead-hero {
-      padding: clamp(3.4rem, 8vw, 5.8rem) 0 clamp(2.2rem, 5vw, 3.4rem);
+      padding: clamp(2.85rem, 6.4vw, 4.65rem) 0 clamp(1.55rem, 3.8vw, 2.6rem);
       text-align: center;
     }
 
     .lead-hero__brand {
       margin: 0 0 1.05rem;
-      color: #6fa7b5 !important;
+      color: var(--ss-bluegrey) !important;
       font-family: var(--ss-nav);
-      font-size: 0.82rem;
+      font-size: clamp(1rem, 2.4vw, 1.35rem);
       font-weight: 800;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.16em;
       line-height: 1.35;
       text-transform: uppercase;
     }
 
     .lead-hero h1 {
-      max-width: 780px;
-      margin: 0 auto 1rem;
+      max-width: 800px;
+      margin: 0 auto 0.95rem;
       color: var(--ss-dark);
       font-family: 'Lora', serif;
-      font-size: clamp(2.35rem, 8vw, 4.4rem);
+      font-size: clamp(2.35rem, 7.2vw, 4.35rem);
       font-weight: 400;
-      line-height: 1.05;
-      letter-spacing: -0.045em;
+      line-height: 1.1;
+      letter-spacing: -0.032em;
       text-transform: none;
     }
 
-    .lead-hero p {
-      max-width: 660px;
+    .lead-hero__subtitle {
+      max-width: 620px;
+      margin: 0 auto 0.85rem;
+      color: var(--ss-text);
+      font-family: 'Lora', serif;
+      font-size: clamp(1.24rem, 3.1vw, 1.72rem);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    .lead-hero__text {
+      max-width: 585px;
       margin: 0 auto;
       color: var(--ss-muted);
-      font-size: clamp(1.02rem, 2.2vw, 1.2rem);
-      line-height: 1.7;
+      font-size: clamp(0.98rem, 2vw, 1.12rem);
+      line-height: 1.72;
     }
 
     .lead-content {
-      padding: 0 0 clamp(3.4rem, 7vw, 5.6rem);
+      padding: 0 0 clamp(3.2rem, 7vw, 5.4rem);
     }
 
     .lead-layout {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: clamp(1.4rem, 4vw, 2.4rem);
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: clamp(1.45rem, 4vw, 2.65rem);
       align-items: stretch;
     }
 
@@ -147,27 +158,28 @@
     }
 
     .lead-card {
-      padding: clamp(1.55rem, 3vw, 2rem);
+      padding: clamp(1.9rem, 3.8vw, 2.65rem);
     }
 
     .lead-card__label {
-      margin: 0 0 0.85rem;
-      color: #6fa7b5 !important;
+      margin: 0 0 1.05rem;
+      color: var(--ss-bluegrey) !important;
       font-family: var(--ss-nav);
-      font-size: 0.72rem;
+      font-size: 0.78rem;
       font-weight: 800;
-      letter-spacing: 0.13em;
+      letter-spacing: 0.14em;
       line-height: 1.35;
       text-transform: uppercase;
     }
 
     .lead-card h2 {
-      margin: 0 0 1rem;
+      margin: 0 0 1.2rem;
       color: var(--ss-dark);
       font-family: 'Lora', serif;
-      font-size: clamp(1.55rem, 3vw, 2rem);
+      font-size: clamp(1.85rem, 3.5vw, 2.42rem);
       font-weight: 400;
-      line-height: 1.14;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
       text-transform: none;
     }
 
@@ -175,19 +187,32 @@
     .lead-card li {
       color: var(--ss-muted);
       font-size: 1rem;
-      line-height: 1.68;
+      line-height: 1.72;
+    }
+
+    .lead-card p {
+      margin-bottom: 1.1rem;
     }
 
     .lead-card ul {
-      margin: 1rem 0 0;
-      padding-left: 1.2rem;
+      margin: 1.35rem 0 0;
+      padding-left: 1.05rem;
+    }
+
+    .lead-card li {
+      margin-bottom: 0.65rem;
+      padding-left: 0.15rem;
+    }
+
+    .lead-card li:last-child {
+      margin-bottom: 0;
     }
 
     .lead-form-card {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: clamp(1rem, 2.4vw, 1.3rem);
+      padding: clamp(1.35rem, 3vw, 1.9rem);
     }
 
     .lead-form-card .ml-form-embedContainer {
@@ -205,8 +230,12 @@
       text-transform: uppercase;
     }
 
+    .lead-back:hover {
+      color: var(--ss-bluegrey);
+    }
+
     .lead-footer {
-      padding: 2.4rem 0 2.2rem;
+      padding: 2.15rem 0 2.05rem;
       background: var(--ss-paper);
       color: var(--ss-muted);
       text-align: center;
@@ -215,32 +244,73 @@
     .lead-footer__inner {
       width: min(760px, calc(100% - 40px));
       margin: 0 auto;
+      text-align: center;
+    }
+
+    .lead-footer__identity {
+      width: 14.6rem;
+      max-width: 100%;
+      margin: 0 auto 0.8rem;
+      text-align: center;
+    }
+
+    .lead-footer__brand {
+      width: 100%;
+      margin: 0 0 0.22rem;
+      color: var(--ss-bluegrey);
+      font-family: var(--ss-nav);
+      font-size: clamp(1.05rem, 2.25vw, 1.32rem);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      line-height: 1.25;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
     .lead-footer__name {
-      margin: 0 0 0.45rem;
-      color: var(--ss-dark);
-      font-family: var(--ss-nav);
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
+      width: 100%;
+      margin: 0;
+      color: var(--ss-text);
+      font-family: 'Lora', serif;
+      font-size: 0.84rem;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.012em;
+      line-height: 1.32;
+      text-align: center;
+      text-transform: none;
+      white-space: nowrap;
+      transform: scaleX(0.94);
+      transform-origin: center;
     }
 
     .lead-footer p {
       margin: 0.25rem 0;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       line-height: 1.6;
+      text-align: center;
+    }
+
+    .lead-footer__email {
+      margin-top: 0.35rem;
+      line-height: 1.45;
+    }
+
+    .lead-footer__email a {
+      color: var(--ss-muted);
+      font-size: 0.74rem;
+      font-weight: 400;
+      text-decoration: none;
     }
 
     .lead-footer a {
       color: var(--ss-dark);
-      font-weight: 600;
+      font-weight: 500;
       text-decoration: none;
     }
 
     .lead-footer a:hover {
-      color: #6fa7b5;
+      color: var(--ss-bluegrey);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
@@ -271,6 +341,70 @@
       text-decoration: none;
     }
 
+    /* MailerLite visual overrides: only styling, not form logic */
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+      padding: 24px 22px 0 22px !important;
+    }
+
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+      color: var(--ss-dark) !important;
+      font-family: 'Lora', serif !important;
+      font-size: clamp(1.55rem, 3vw, 2rem) !important;
+      font-weight: 400 !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.02em !important;
+      margin: 0 0 0.9rem 0 !important;
+      text-align: left !important;
+    }
+
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+      color: var(--ss-muted) !important;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+      font-size: 0.98rem !important;
+      font-weight: 400 !important;
+      line-height: 1.58 !important;
+      margin: 0 0 1rem 0 !important;
+      text-align: left !important;
+    }
+
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form .ml-field-group label {
+      color: var(--ss-text) !important;
+      font-family: var(--ss-nav) !important;
+      font-size: 0.78rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.04em !important;
+    }
+
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+      border-color: rgba(31, 59, 40, 0.2) !important;
+      border-radius: 0 !important;
+      color: var(--ss-text) !important;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+      font-size: 0.98rem !important;
+      line-height: 1.45 !important;
+      padding: 0.82rem 0.85rem !important;
+    }
+
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary {
+      background-color: var(--ss-bluegrey) !important;
+      border-radius: 0 !important;
+      color: #ffffff !important;
+      font-family: var(--ss-nav) !important;
+      font-size: 0.82rem !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.08em !important;
+      line-height: 1.3 !important;
+      padding: 0.9rem 1rem !important;
+      text-transform: uppercase !important;
+    }
+
+    #mlb2-42974796.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary:hover {
+      background-color: #208e96 !important;
+    }
+
     @media (max-width: 991px) {
       .lead-layout {
         grid-template-columns: 1fr;
@@ -285,20 +419,46 @@
       }
 
       .lead-hero {
-        padding: 3rem 0 2rem;
+        padding: 2.45rem 0 1.45rem;
       }
 
       .lead-hero h1 {
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.82rem;
+        font-size: clamp(2.15rem, 10vw, 3.08rem);
+        line-height: 1.08;
       }
 
-      .lead-hero p {
-        font-size: 1.02rem;
+      .lead-hero__subtitle {
+        margin-bottom: 0.8rem;
+        font-size: 1.18rem;
+        line-height: 1.34;
+      }
+
+      .lead-hero__text {
+        font-size: 0.98rem;
         line-height: 1.62;
       }
 
       .lead-card {
-        padding: 1.35rem 1.25rem 1.3rem;
+        padding: 1.55rem 1.25rem 1.45rem;
+      }
+
+      .lead-form-card {
+        padding: 1rem 0.8rem;
+      }
+
+      .lead-footer__identity {
+        width: 13.8rem;
+      }
+
+      .lead-footer__name {
+        font-size: 0.8rem;
+        transform: scaleX(0.94);
+      }
+
+      .lead-footer__email a {
+        font-size: 0.72rem;
+        font-weight: 400;
       }
     }
   </style>
@@ -307,9 +467,10 @@
 <main class="lead-page">
 <section aria-labelledby="lead-title" class="lead-hero">
 <div class="lead-shell">
-<p class="lead-hero__brand" style="color:#6fa7b5 !important;">Sanja Somatika</p>
+<p class="lead-hero__brand">Sanja Somatika</p>
 <h1 id="lead-title">Brezplačen 3-dnevni uvod v Somatsko čuječnost</h1>
-<p>Video praksa, zvočna praksa in kratek zapis, ki predstavi uporabnost Somatske čuječnosti v vsakdanjem življenju.</p>
+<p class="lead-hero__subtitle">Nežen prvi korak v prakso.</p>
+<p class="lead-hero__text">Video praksa, zvočna praksa in kratek zapis, ki predstavi uporabnost Somatske čuječnosti v vsakdanjem življenju.</p>
 </div>
 </section>
 <section aria-labelledby="lead-content-title" class="lead-content">
@@ -317,12 +478,12 @@
 <a class="lead-back" href="zacni-tukaj.html">Nazaj na začetek</a>
 <div class="lead-layout">
 <article class="lead-card">
-<p class="lead-card__label" style="color:#6fa7b5 !important;">Kaj prejmeš</p>
-<h2 id="lead-content-title">Nežen prvi korak v prakso.</h2>
+<p class="lead-card__label">V 3-dnevnem uvodu</p>
+<h2 id="lead-content-title">Kaj prejmeš</h2>
 <p>Ta brezplačen uvod je namenjen temu, da Somatsko čuječnost izkusiš v majhnih, preprostih korakih.</p>
 <ul>
 <li>1 video praksa Somatske čuječnosti.</li>
-<li>1 zvočna praksa Somatkse čuječnosti.</li>
+<li>1 zvočna praksa Somatske čuječnosti.</li>
 <li>Kratek zapis o uporabnosti Somatske čuječnosti v vsakdanjem življenju.</li>
 </ul>
 </article>
@@ -921,10 +1082,8 @@
 <div class="ml-form-embedWrapper embedForm">
 <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
 <div class="ml-form-embedContent" style=" ">
-<h4>Prejmi brezplačen 3-dnevni uvod v Somatsko čuječnost</h4>
-<p><br/></p>
-<p>Video praksa, zvočna praksa in kratek zapis te bodo vodili v izkušnjo stika s Somatsko čuječnostjo.</p>
-<p><br/></p>
+<h4>Vpiši email in prejmi brezplačen 3-dnevni uvod.</h4>
+<p>Vsak dan ena izkušnja stika s Somatsko čuječnostjo.</p>
 </div>
 <form action="https://assets.mailerlite.com/jsonp/1345870/forms/191102806394930573/subscribe" class="ml-block-form" data-code="" method="post" target="_blank">
 <div class="ml-form-formContent">
@@ -986,8 +1145,11 @@
 </main>
 <footer aria-label="Kontakt" class="lead-footer">
 <div class="lead-footer__inner">
+<div class="lead-footer__identity">
+<p class="lead-footer__brand">Sanja Somatika</p>
 <p class="lead-footer__name">Sanja Zalar Gostimirović</p>
-<p><a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a></p>
+</div>
+<p class="lead-footer__email"><a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a></p>
 <p>Ljubljana | splet</p>
 <div aria-label="Družbena omrežja" class="lead-footer__social">
 <a aria-label="Instagram" class="lead-footer__icon" href="https://www.instagram.com/sanja.somatika" rel="noopener noreferrer" target="_blank">
