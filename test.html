@@ -151,8 +151,6 @@
       line-height: 1.35;
       text-align: center;
       text-transform: uppercase;
-      gap: 0.55rem;
-      white-space: nowrap;
     }
 
     .start-card-grid {
@@ -236,10 +234,10 @@
     }
 
     .start-card__button {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.65rem;
       width: min(100%, 400px);
       min-height: 54px;
       padding: 0.96rem 1.15rem;
@@ -253,22 +251,6 @@
       line-height: 1.25;
       text-align: center;
       text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .start-card__button-text {
-      display: inline-block;
-      white-space: nowrap;
-    }
-
-    .start-card__button-arrow {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 auto;
-      font-size: 1.05rem;
-      line-height: 1;
-      transform: translateY(-0.02em);
     }
 
     .start-card__button:hover {
@@ -443,17 +425,9 @@
       .start-card__button {
         width: 100%;
         min-height: 52px;
-        padding-left: 0.55rem;
-        padding-right: 0.55rem;
-        font-size: 0.66rem;
-        letter-spacing: 0.045em;
-        gap: 0.45rem;
-        white-space: nowrap;
-      }
-
-      .start-card__button-arrow {
-        font-size: 0.98rem;
-        transform: translateY(-0.02em);
+        font-size: 0.78rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
       }
 
       .start-card__description {
@@ -507,21 +481,21 @@
           <article class="start-card start-card--intro">
             <p class="start-card__label">Brezplačen<br>3-dnevni uvod</p>
             <h2>Somatska čuječnost</h2>
-            <a class="start-card__button" href="/uvod-somatska-cujecnost.html" onclick="trackCta('brezplacni_uvod', '/uvod-somatska-cujecnost.html');"><span class="start-card__button-text">Prejmi brezplačen uvod</span><span class="start-card__button-arrow" aria-hidden="true">→</span></a>
+            <a class="start-card__button" href="/uvod-somatska-cujecnost.html" onclick="trackCta('brezplacni_uvod', '/uvod-somatska-cujecnost.html');">Prejmi brezplačen uvod</a>
             <p class="start-card__description">Prejmi video prakso, zvočno prakso in zapis o uporabnosti Somatske čuječnosti v vsakdanjem življenju.</p>
           </article>
 
           <article class="start-card start-card--pristan">
             <p class="start-card__label">Redna praksa<br>v svojem tempu</p>
             <h2>Somatski pristan</h2>
-            <a class="start-card__button" href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer" onclick="trackCta('somatski_pristan', 'https://somatskipristan.si/');"><span class="start-card__button-text">Poglej Somatski pristan</span><span class="start-card__button-arrow" aria-hidden="true">→</span></a>
+            <a class="start-card__button" href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer" onclick="trackCta('somatski_pristan', 'https://somatskipristan.si/');">Poglej Somatski pristan</a>
             <p class="start-card__description">Mesečno članstvo za stik s telesom, podporo pri regulaciji živčnega sistema in več psihofizične odpornosti.</p>
           </article>
 
           <article class="start-card start-card--individual">
             <p class="start-card__label">Globlji<br>proces</p>
             <h2>Individualno delo</h2>
-            <a class="start-card__button" href="/individualno.html" onclick="trackCta('individualno_delo', '/individualno.html');"><span class="start-card__button-text">Poglej individualno delo</span><span class="start-card__button-arrow" aria-hidden="true">→</span></a>
+            <a class="start-card__button" href="/individualno.html" onclick="trackCta('individualno_delo', '/individualno.html');">Poglej individualno delo</a>
             <p class="start-card__description">Somatsko orientirano psihosocialno svetovanje za utelešene meje, manj ugajanja iz občutka krivde in delo na ponavljajočih se vzorcih.</p>
           </article>
 
