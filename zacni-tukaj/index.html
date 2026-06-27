@@ -60,7 +60,7 @@
       --ss-display: 'Cormorant Garamond', serif;
       --ss-nav: 'Manrope', sans-serif;
 
-      --ss-card-warm: #becbc5;
+      --ss-card-warm: #DCE5E0;
       --ss-card-blue: #6fa7b5;
       --ss-card-teal: #208e96;
       --ss-button: #ffffff;
@@ -98,12 +98,12 @@
     }
 
     .start-shell {
-      width: min(940px, calc(100% - 40px));
+      width: min(900px, calc(100% - 40px));
       margin: 0 auto;
     }
 
     .start-hero {
-      padding: clamp(3.4rem, 8vw, 5.8rem) 0 clamp(2.2rem, 5vw, 3.4rem);
+      padding: clamp(3rem, 6.4vw, 4.8rem) 0 clamp(1.8rem, 4vw, 2.8rem);
       text-align: center;
     }
 
@@ -111,21 +111,21 @@
       margin: 0 0 1.05rem;
       color: var(--ss-bluegrey);
       font-family: var(--ss-nav);
-      font-size: 0.82rem;
+      font-size: clamp(1.08rem, 2.6vw, 1.45rem);
       font-weight: 800;
-      letter-spacing: 0.12em;
-      line-height: 1.35;
+      letter-spacing: 0.16em;
+      line-height: 1.28;
       text-transform: uppercase;
     }
 
     .start-hero h1 {
-      margin: 0 0 1rem;
+      margin: 0 0 0.9rem;
       color: var(--ss-dark);
       font-family: 'Lora', serif;
-      font-size: clamp(2.75rem, 10.5vw, 4.9rem);
+      font-size: clamp(2.65rem, 9.6vw, 4.65rem);
       font-weight: 400;
-      line-height: 1.02;
-      letter-spacing: -0.045em;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
       text-transform: none;
     }
 
@@ -138,16 +138,16 @@
     }
 
     .start-options {
-      padding: 0 0 clamp(3.4rem, 7vw, 5.6rem);
+      padding: 0 0 clamp(3.7rem, 7.4vw, 6.2rem);
     }
 
     .start-options__heading {
-      margin: 0 auto 1.6rem;
+      margin: 0 auto 1.85rem;
       color: var(--ss-dark);
       font-family: var(--ss-nav);
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 800;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       line-height: 1.35;
       text-align: center;
       text-transform: uppercase;
@@ -155,26 +155,41 @@
 
     .start-card-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(1rem, 2.4vw, 1.35rem);
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 3.8vw, 2.7rem);
       align-items: stretch;
+      max-width: 760px;
+      margin: 0 auto;
     }
 
     .start-card {
       min-height: 100%;
-      padding: clamp(1.55rem, 3vw, 2rem);
+      padding: clamp(3rem, 5.4vw, 4.05rem);
       border-radius: 0;
       border: 1px solid rgba(31, 59, 40, 0.11);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: block;
       text-align: left;
-      box-shadow: 0 18px 46px rgba(46, 36, 22, 0.06);
+      box-shadow: 0 18px 46px rgba(46, 36, 22, 0.055);
     }
 
     .start-card--intro {
-      background: var(--ss-card-warm);
-      color: var(--ss-text);
+      background: #DCE5E0;
+      color: #2E2416;
+    }
+
+    .start-card--intro .start-card__label,
+    .start-card--intro h2 {
+      color: #2E2416;
+    }
+
+    .start-card--intro .start-card__description {
+      color: #3F3A34;
+      opacity: 1;
+    }
+
+    .start-card--intro .start-card__button {
+      background: #ffffff;
+      color: #2E2416;
     }
 
     .start-card--pristan {
@@ -188,51 +203,61 @@
     }
 
     .start-card__label {
-      margin: 0 0 0.85rem;
+      margin: 0 0 1.12rem;
       font-family: var(--ss-nav);
-      font-size: 0.72rem;
+      font-size: clamp(1.18rem, 2.9vw, 1.7rem);
       font-weight: 800;
-      letter-spacing: 0.13em;
-      line-height: 1.35;
+      letter-spacing: 0.15em;
+      line-height: 1.24;
       text-transform: uppercase;
-      opacity: 0.78;
+      opacity: 0.96;
     }
 
     .start-card h2 {
-      margin: 0 0 1rem;
+      margin: 0 0 1.45rem;
       font-family: 'Lora', serif;
-      font-size: clamp(1.55rem, 3vw, 2rem);
+      font-size: clamp(1.78rem, 3.8vw, 2.46rem);
       font-weight: 400;
-      line-height: 1.14;
+      line-height: 1.08;
+      letter-spacing: -0.018em;
       color: currentColor;
       text-transform: none;
     }
 
-    .start-card p {
-      margin: 0 0 1.45rem;
-      font-size: 1rem;
-      line-height: 1.68;
+    .start-card__description {
+      width: min(100%, 58ch);
+      margin: 1.85rem 0 0;
+      font-size: clamp(1rem, 2.05vw, 1.1rem);
+      line-height: 1.62;
       color: currentColor;
-      opacity: 0.88;
+      opacity: 0.9;
     }
 
     .start-card__button {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      min-height: 46px;
-      padding: 0.82rem 1rem;
+      width: min(100%, 400px);
+      min-height: 54px;
+      padding: 0.96rem 1.15rem;
       background: var(--ss-button);
       border: 1px solid rgba(255, 255, 255, 0.92);
       color: var(--ss-text);
       font-family: var(--ss-nav);
-      font-size: 0.74rem;
+      font-size: 0.8rem;
       font-weight: 800;
-      letter-spacing: 0.085em;
+      letter-spacing: 0.11em;
       line-height: 1.25;
       text-align: center;
       text-transform: uppercase;
+    }
+
+    .start-card__button::after {
+      content: "→";
+      margin-left: 0.75rem;
+      font-size: 1.05rem;
+      line-height: 1;
     }
 
     .start-card__button:hover {
@@ -242,7 +267,7 @@
     }
 
     .start-footer {
-      padding: 2.4rem 0 2.2rem;
+      padding: 2.1rem 0 2rem;
       background: var(--ss-paper);
       color: var(--ss-muted);
       text-align: center;
@@ -251,27 +276,74 @@
     .start-footer__inner {
       width: min(760px, calc(100% - 40px));
       margin: 0 auto;
+      text-align: center;
+    }
+
+    .start-footer__identity {
+      width: 16.4rem;
+      max-width: 100%;
+      margin: 0 auto 0.9rem;
+      text-align: center;
+    }
+
+    .start-footer__brand {
+      width: 100%;
+      margin: 0 0 0.18rem;
+      color: var(--ss-bluegrey);
+      font-family: var(--ss-nav);
+      font-size: clamp(1.12rem, 2.6vw, 1.45rem);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      line-height: 1.25;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
     .start-footer__name {
-      margin: 0 0 0.45rem;
-      color: var(--ss-dark);
-      font-family: var(--ss-nav);
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
+      width: 100%;
+      margin: 0;
+      color: var(--ss-text);
+      font-family: 'Lora', serif;
+      font-size: 0.92rem;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 1.3;
+      text-align: center;
+      text-transform: none;
+      white-space: nowrap;
+      transform: scaleX(0.86);
+      transform-origin: center;
     }
 
     .start-footer p {
       margin: 0.25rem 0;
       font-size: 0.95rem;
       line-height: 1.6;
+      text-align: center;
+    }
+
+    .start-footer__email {
+      font-size: 0.7rem;
+      line-height: 1.45;
+    }
+
+    .start-footer__email a {
+      font-weight: 400;
+      color: var(--ss-text);
     }
 
     .start-footer a {
       color: var(--ss-dark);
       font-weight: 600;
+      text-decoration: none;
+    }
+
+    .start-footer .start-footer__email a {
+      color: var(--ss-text);
+      font-size: 0.7rem;
+      font-weight: 400;
+      line-height: 1.45;
       text-decoration: none;
     }
 
@@ -309,9 +381,7 @@
 
     @media (max-width: 991px) {
       .start-card-grid {
-        grid-template-columns: 1fr;
-        max-width: 560px;
-        margin: 0 auto;
+        max-width: 620px;
       }
 
       .start-card {
@@ -325,7 +395,7 @@
       }
 
       .start-hero {
-        padding: 3rem 0 2rem;
+        padding: 2.75rem 0 1.8rem;
       }
 
       .start-hero h1 {
@@ -342,21 +412,62 @@
       }
 
       .start-card-grid {
-        gap: 0.95rem;
+        gap: 1.55rem;
       }
 
       .start-card {
-        padding: 1.35rem 1.25rem 1.3rem;
+        padding: 2.45rem 1.45rem 2.25rem;
+      }
+
+      .start-card__label {
+        font-size: 1.22rem;
+        letter-spacing: 0.15em;
       }
 
       .start-card h2 {
-        font-size: 1.62rem;
+        font-size: clamp(1.78rem, 7.8vw, 2.2rem);
+        margin-bottom: 1.18rem;
       }
 
-      .start-card p {
-        font-size: 0.98rem;
-        line-height: 1.6;
-        margin-bottom: 1.25rem;
+      .start-card__button {
+        width: 100%;
+        min-height: 52px;
+        font-size: 0.78rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+      }
+
+      .start-card__button::after {
+        position: absolute;
+        right: 1.35rem;
+        margin-left: 0;
+      }
+
+      .start-card__description {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.58;
+      }
+
+      .desktop-break {
+        display: none;
+      }
+
+      .start-footer__identity {
+        width: 15.2rem;
+      }
+
+      .start-footer__brand {
+        font-size: 1.16rem;
+      }
+
+      .start-footer__name {
+        font-size: 0.86rem;
+        transform: scaleX(0.86);
+      }
+
+      .start-footer__email {
+        font-size: 0.7rem;
       }
     }
   </style>
@@ -369,42 +480,36 @@
     <section class="start-hero" aria-labelledby="start-title">
       <div class="start-shell">
         <p class="start-hero__brand">Sanja Somatika</p>
-        <h1 id="start-title">Začni tukaj.</h1>
-        <p>Če si me našla na Instagramu in želiš narediti prvi korak, si na pravem mestu.</p>
+        <h1 id="start-title">Kje želiš začeti?</h1>
+   
       </div>
     </section>
 
     <section class="start-options" aria-labelledby="start-options-title">
       <div class="start-shell">
-        <p id="start-options-title" class="start-options__heading">Izberi obliko sodelovanja</p>
+        <p id="start-options-title" class="start-options__heading">Izberi obliko somatskega sodelovanja</p>
 
         <div class="start-card-grid">
 
           <article class="start-card start-card--intro">
-            <div>
-              <p class="start-card__label">Brezplačen 3-dnevni uvod</p>
-              <h2>Somatska čuječnost</h2>
-              <p>Prejmi video prakso, zvočno prakso in zapis o uporabnosti Somatske čuječnosti v vsakdanjem življenju.</p>
-            </div>
+            <p class="start-card__label">Brezplačen<br>3-dnevni uvod</p>
+            <h2>Somatska čuječnost</h2>
             <a class="start-card__button" href="/uvod-somatska-cujecnost.html" onclick="trackCta('brezplacni_uvod', '/uvod-somatska-cujecnost.html');">Prejmi brezplačen uvod</a>
+            <p class="start-card__description">Prejmi video prakso, zvočno prakso in zapis o uporabnosti Somatske čuječnosti v vsakdanjem življenju.</p>
           </article>
 
           <article class="start-card start-card--pristan">
-            <div>
-              <p class="start-card__label">Za redno prakso v svojem tempu</p>
-              <h2>Somatski pristan</h2>
-              <p>Mesečno članstvo za stik s telesom, podporo pri regulaciji živčnega sistema in več psihofizične odpornosti.</p>
-            </div>
+            <p class="start-card__label">Redna praksa<br>v svojem tempu</p>
+            <h2>Somatski pristan</h2>
             <a class="start-card__button" href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer" onclick="trackCta('somatski_pristan', 'https://somatskipristan.si/');">Poglej Somatski pristan</a>
+            <p class="start-card__description">Mesečno članstvo za stik s telesom, podporo pri regulaciji živčnega sistema in več psihofizične odpornosti.</p>
           </article>
 
           <article class="start-card start-card--individual">
-            <div>
-              <p class="start-card__label">Za globlji proces</p>
-              <h2>Individualno delo</h2>
-              <p>Somatsko orientirano psihosocialno svetovanje za utelešene meje, manj ugajanja iz občutka krivde in delo na ponavljajočih se vzorcih.</p>
-            </div>
+            <p class="start-card__label">Globlji<br>proces</p>
+            <h2>Individualno delo</h2>
             <a class="start-card__button" href="/individualno.html" onclick="trackCta('individualno_delo', '/individualno.html');">Poglej individualno delo</a>
+            <p class="start-card__description">Somatsko orientirano psihosocialno svetovanje za utelešene meje, manj ugajanja iz občutka krivde in delo na ponavljajočih se vzorcih.</p>
           </article>
 
         </div>
@@ -415,8 +520,11 @@
 
   <footer class="start-footer" aria-label="Kontakt">
     <div class="start-footer__inner">
-      <p class="start-footer__name">Sanja Zalar Gostimirović</p>
-      <p><a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a></p>
+      <div class="start-footer__identity">
+        <p class="start-footer__brand">Sanja Somatika</p>
+        <p class="start-footer__name">Sanja Zalar Gostimirović</p>
+      </div>
+      <p class="start-footer__email"><a href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a></p>
       <p>Ljubljana | splet</p>
 
       <div class="start-footer__social" aria-label="Družbena omrežja">
