@@ -151,6 +151,8 @@
       line-height: 1.35;
       text-align: center;
       text-transform: uppercase;
+      gap: 0.55rem;
+      white-space: nowrap;
     }
 
     .start-card-grid {
@@ -251,7 +253,6 @@
       line-height: 1.25;
       text-align: center;
       text-transform: uppercase;
-      gap: 0.55rem;
     }
 
     .start-card__button::after {
@@ -259,6 +260,8 @@
       margin-left: 0;
       font-size: 1.05rem;
       line-height: 1;
+      transform: translateY(-0.02em);
+      flex: 0 0 auto;
     }
 
     .start-card__button:hover {
@@ -433,9 +436,19 @@
       .start-card__button {
         width: 100%;
         min-height: 52px;
-        font-size: 0.78rem;
-        padding-left: 2.4rem;
-        padding-right: 2.4rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.075em;
+        gap: 0.5rem;
+        white-space: nowrap;
+      }
+
+      .start-card__button::after {
+        position: static;
+        right: auto;
+        margin-left: 0;
+        transform: translateY(-0.02em);
       }
 
       .start-card__description {
