@@ -633,14 +633,15 @@
 
     .practice-split {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: clamp(2rem, 5vw, 4rem);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
       align-items: stretch;
       margin-top: 2.3rem;
     }
 
     .practice-block {
       padding-top: 0.2rem;
+      padding-right: clamp(2rem, 4vw, 3.4rem);
       display: flex;
       flex-direction: column;
       min-height: 100%;
@@ -649,6 +650,7 @@
     .practice-block + .practice-block {
       border-left: 1px solid rgba(255, 255, 255, 0.48);
       padding-left: clamp(2rem, 4vw, 3.4rem);
+      padding-right: 0;
     }
 
     .practice-block h3 {
@@ -660,12 +662,68 @@
       color: rgba(255, 255, 255, 0.9);
     }
 
-    .practice-links {
+    .practice-link-row {
       margin-top: auto;
+      padding-top: 1.2rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.85rem 1.2rem;
       align-items: flex-end;
+    }
+
+
+    .image-break {
+      width: 100%;
+      height: 34vh;
+      max-height: 340px;
+      min-height: 220px;
+      overflow: hidden;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-break img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+    }
+
+    .content-section .article-bg-blue h2,
+    .content-section .article-bg-blue h3,
+    .content-section .article-bg-blue p,
+    .content-section .article-bg-blue li,
+    .content-section .article-bg-green h2,
+    .content-section .article-bg-green h3,
+    .content-section .article-bg-green p,
+    .content-section .article-bg-green li {
+      color: rgba(255, 255, 255, 0.94) !important;
+    }
+
+    .content-section .article-bg-blue h2,
+    .content-section .article-bg-blue h3,
+    .content-section .article-bg-green h2,
+    .content-section .article-bg-green h3 {
+      color: #ffffff !important;
+    }
+
+    .content-section .article-bg-blue .section-kicker,
+    .content-section .article-bg-green .section-kicker {
+      color: rgba(255, 255, 255, 0.82) !important;
+    }
+
+    .content-section .article-bg-blue a,
+    .content-section .article-bg-green a {
+      color: #ffffff !important;
+      border-bottom-color: rgba(255, 255, 255, 0.55) !important;
+    }
+
+    .content-section .article-bg-blue a:hover,
+    .content-section .article-bg-green a:hover {
+      color: var(--ss-paper) !important;
+      border-bottom-color: var(--ss-paper) !important;
     }
 
     .site-footer {
@@ -871,6 +929,10 @@
         gap: 2rem;
       }
 
+      .practice-block {
+        padding-right: 0;
+      }
+
       .practice-block + .practice-block {
         border-left: 0;
         border-top: 1px solid rgba(255, 255, 255, 0.48);
@@ -878,7 +940,62 @@
         padding-top: 2rem;
       }
 
-      .site-footer {
+  
+    .image-break {
+      width: 100%;
+      height: 34vh;
+      max-height: 340px;
+      min-height: 220px;
+      overflow: hidden;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-break img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+    }
+
+    .content-section .article-bg-blue h2,
+    .content-section .article-bg-blue h3,
+    .content-section .article-bg-blue p,
+    .content-section .article-bg-blue li,
+    .content-section .article-bg-green h2,
+    .content-section .article-bg-green h3,
+    .content-section .article-bg-green p,
+    .content-section .article-bg-green li {
+      color: rgba(255, 255, 255, 0.94) !important;
+    }
+
+    .content-section .article-bg-blue h2,
+    .content-section .article-bg-blue h3,
+    .content-section .article-bg-green h2,
+    .content-section .article-bg-green h3 {
+      color: #ffffff !important;
+    }
+
+    .content-section .article-bg-blue .section-kicker,
+    .content-section .article-bg-green .section-kicker {
+      color: rgba(255, 255, 255, 0.82) !important;
+    }
+
+    .content-section .article-bg-blue a,
+    .content-section .article-bg-green a {
+      color: #ffffff !important;
+      border-bottom-color: rgba(255, 255, 255, 0.55) !important;
+    }
+
+    .content-section .article-bg-blue a:hover,
+    .content-section .article-bg-green a:hover {
+      color: var(--ss-paper) !important;
+      border-bottom-color: var(--ss-paper) !important;
+    }
+
+    .site-footer {
         padding: 64px 0 26px;
       }
 
@@ -1051,7 +1168,7 @@
             </p>
 
             <p>
-              Gibalne prakse, kjer telo ni orodje, ki ga kultiviramo v obliko, ampak predvsem prostor odnosa z zaznavanjem, doživljanjem in sidranjem v relaen prostor in čas. 
+              Gibalne prakse, kjer telo ni le izvedba forme, ampak prostor zaznavanja, odnosa, orientacije, odziva in izbire.
             </p>
 
             <a href="#utelesene-prakse">Utelešene prakse</a>
@@ -1065,7 +1182,7 @@
             </p>
 
             <p>
-              Urjenje somatskega zaznavanja, doživljanja, opazovanja, orientacije, doziranosti, osebnih meja in kapacitete za stik s telesom na stabilen način. 
+              Učenje somatskega zaznavanja, opazovanja, orientacije, doziranosti, osebnih meja in kapacitete za stik s sabo.
             </p>
 
             <a href="somatska-cujecnost.html">Somatska čuječnost</a>
@@ -1082,10 +1199,10 @@
 
           <p class="section-kicker">Individualno delo</p>
 
-          <h2>Psihosocialno svetovanje s somatskim pristopom</h2>
+          <h2>Psihosocialno svetovanje<br>s somatskim pristopom</h2>
 
           <p class="lead-text">
-            Individualno delo je umeščeno v <b>psihosocialno stroko</b> in <b>somatsko-terapevtski okvir</b>.
+            Individualno delo je umeščeno v <b>psihosocialno stroko</b> in <b>somatsko-terapevtski okvir</b>. Pri delu ne izhajam samo iz pogovora, razumevanja in uvida, temveč tudi iz telesnega zaznavanja, osebnih meja, potreb, odnosnih vzorcev in regulacije živčnega sistema.
           </p>
 
           <p>
@@ -1123,7 +1240,7 @@
           </p>
 
           <p>
-            Moja vloga je držanje strokovnega svetovalnega okvirja s somatsko usmeritvijo, ki omogoča stabilen odnos.
+            Moja vloga je držanje strokovnega svetovalnega okvirja s somatsko usmeritvijo, ki omogoča stabilen in varno razmejen odnos.
           </p>
 
           <p>
@@ -1135,15 +1252,15 @@
           </p>
 
           <p>
-            Ker moje delo ni psihoterapevtska obravnava, ne temelji na delu z otroškimi stanji ali s transferjem. Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v stik z odraslim delom klientkine psihe.
+            Ker moje delo ni psihoterapevtska obravnava, ne temelji na delu z regresijo v otroška stanja ali s transferjem. Če se med srečanjem pojavijo mlajši, bolj ranljivi ali preplavljeni deli, proces nežno usmerjam v stik z odraslim delom klientkine psihe in vsebino kolaborativno naslavljava.
           </p>
 
           <p>
-            Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in stikom z notranjimi viri moči. Podobno ravnam tudi, kadar se v odnosu do mene pojavijo projekcije ali prenosne dinamike (transfer): te spoštljivo opaziva, poimenujeva in jih uporabiva za več zavedanja, regulacije in jasnosti v sedanjem trenutku, brez raziskovanja zgodb iz preteklosti.
+            Proces se nadaljuje z orientacijo v tukaj in zdaj, telesno stabilizacijo in stikom z notranjimi viri moči. Podobno ravnam tudi, kadar se v odnosu do mene pojavijo močne projekcije ali prenosne dinamike: te spoštljivo opazimo, poimenujemo in jih uporabimo za več zavedanja, regulacije in jasnosti v sedanjem trenutku.
           </p>
 
           <p>
-            Izhajam iz predpostavke, da spremembe ne nastajajo zgolj zaradi razumevanja ali uvida. Razumevanje odpre vrata procesu. Spremembe se gradijo skozi dovolj varno, primerno dozirano, ponavljajočo se izkušnjo v stabilnem odnosnem kontekstu.
+            Izhajam iz predpostavke, da spremembe ne nastajajo zgolj zaradi razumevanja ali uvida. Razumevanje odpre vrata procesu. Spremembe se gradijo skozi varno, primerno dozirano, ponavljajočo se izkušnjo v stabilnem odnosnem kontekstu.
           </p>
 
           <p>
@@ -1151,7 +1268,7 @@
           </p>
 
           <p>
-           Ne ponujam psihoterapevtske obravnave niti diagnostika. Pri delu sem zavezana etičnemu kodeksu socialnih delavcev in etičnim smernicam Somatic Experiencing®.
+            Moje individualno delo ni psihoterapevtska obravnava, zdravstvena obravnava, diagnostika, fizioterapija ali rehabilitacija. Pri delu sem zavezana etičnemu kodeksu socialnih delavcev in etičnim smernicam Somatic Experiencing®.
           </p>
 
         </div>
@@ -1183,6 +1300,10 @@
         </div>
       </article>
 
+      <section class="image-break" aria-label="Zelenje in somatski prostor">
+        <img src="strokovna_podlaga.jpg" alt="Zelenje, narava in somatski prostor">
+      </section>
+
       <article class="article-bg-green" id="utelesene-prakse">
         <div class="article-inner">
 
@@ -1207,10 +1328,10 @@
                 Pri gibanju me zanimajo stik s tlemi, smer, dinamika, impulz, stik z drugim, možnost prilagoditve in sposobnost ostati prisoten v realnem času.
               </p>
 
-              <p class="practice-links">
+              <div class="practice-link-row">
                 <a href="https://budokon.si/" target="_blank" rel="noopener noreferrer">Budokon Slovenija</a>
                 <a href="https://tango.si/" target="_blank" rel="noopener noreferrer">Argentinski tango</a>
-              </p>
+              </div>
             </div>
 
             <div class="practice-block">
@@ -1224,9 +1345,9 @@
                 Lahko se izraža v mirovanju, v gibanju, v individualnem delu, v skupinski praksi ali v krajših vodenih praksah.
               </p>
 
-              <p class="practice-links">
+              <div class="practice-link-row">
                 <a href="somatska-cujecnost.html">Somatska čuječnost</a>
-              </p>
+              </div>
             </div>
 
           </div>
