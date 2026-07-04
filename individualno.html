@@ -491,6 +491,26 @@
     }
 
 
+
+    .audience-section {
+      background: #95BD84;
+      color: var(--ss-dark);
+    }
+
+    .audience-section .article-inner {
+      width: min(980px, calc(100% - 48px));
+    }
+
+    .audience-section h2 {
+      color: var(--ss-dark);
+      text-transform: none;
+    }
+
+    .audience-section .audience-intro,
+    .audience-section .audience-outro p {
+      color: var(--ss-dark);
+    }
+
     .audience-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -513,11 +533,29 @@
       color: #ffffff;
     }
 
+    .audience-grid p,
+    .audience-grid li {
+      color: rgba(255, 255, 255, 0.92);
+    }
+
     .audience-grid ul {
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .audience-outro {
+      margin-top: 2.4rem;
+      max-width: 900px;
+    }
+
+    .audience-outro p:last-child {
+      margin-bottom: 0;
     }
 
     @media (max-width: 767px) {
+      .audience-section .article-inner {
+        width: min(920px, calc(100% - 36px));
+      }
+
       .audience-grid {
         grid-template-columns: 1fr;
         gap: 2.8rem;
@@ -538,7 +576,7 @@
     .site-footer {
       width: 100%;
       padding: 78px 0 34px;
-      background: var(--ss-dark);
+      background: #05693D;
       color: rgba(255, 255, 255, 0.78);
       border-top: 1px solid rgba(255, 255, 255, 0.12);
     }
@@ -709,7 +747,90 @@
         padding-bottom: 0.45rem;
       }
 
-      .site-footer {
+  
+
+    .audience-section {
+      background: #95BD84;
+      color: var(--ss-dark);
+    }
+
+    .audience-section .article-inner {
+      width: min(980px, calc(100% - 48px));
+    }
+
+    .audience-section h2 {
+      color: var(--ss-dark);
+      text-transform: none;
+    }
+
+    .audience-section .audience-intro,
+    .audience-section .audience-outro p {
+      color: var(--ss-dark);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 0;
+      margin-top: 2.8rem;
+      align-items: start;
+    }
+
+    .audience-grid__col:first-child {
+      padding-right: clamp(1.8rem, 4vw, 3.6rem);
+    }
+
+    .audience-grid__col:last-child {
+      border-left: 1px solid rgba(255, 255, 255, 0.36);
+      padding-left: clamp(1.8rem, 4vw, 3.6rem);
+    }
+
+    .audience-grid h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .audience-grid p,
+    .audience-grid li {
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .audience-grid ul {
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .audience-outro {
+      margin-top: 2.4rem;
+      max-width: 900px;
+    }
+
+    .audience-outro p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+      .audience-section .article-inner {
+        width: min(920px, calc(100% - 36px));
+      }
+
+      .audience-grid {
+        grid-template-columns: 1fr;
+        gap: 2.8rem;
+      }
+
+      .audience-grid__col:first-child {
+        padding-right: 0;
+      }
+
+      .audience-grid__col:last-child {
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.36);
+        padding-left: 0;
+        padding-top: 2.4rem;
+      }
+    }
+
+    .site-footer {
         padding: 64px 0 26px;
       }
 
@@ -841,10 +962,9 @@
     </header>
 
     <section class="content-section">
-
-<article class="article-bg-blue" id="za-koga-je-individualno-delo"><div class="article-inner">
-<h2>ZA KOGA JE INDIVIDUALNO DELO?</h2>
-<p>
+<article class="audience-section" id="za-koga-je-individualno-delo"><div class="article-inner">
+<h2>Za koga je individualno delo?</h2>
+<p class="audience-intro">
                 Za individualno delo me poiščejo klientke, ki o sebi, svojih vzorcih in odnosih že veliko razumejo, a v konkretnih situacijah opazijo, da se telo še vedno odziva po starem.
               </p>
 <div class="audience-grid">
@@ -864,12 +984,6 @@
 </div>
 <div class="audience-grid__col">
 <h3>Želeni izidi</h3>
-<p>
-                  V individualnem delu zato ne raziskujeva samo, zakaj se določen vzorec pojavlja, ampak tudi, kako se kaže v telesu, odnosih in konkretnih trenutkih življenja.
-                </p>
-<p>
-                  Pomemben del procesa je učenje razločevanja, kdaj gre za mejo, kdaj za odmik, kdaj za krivdo in kdaj za star odziv živčnega sistema.
-                </p>
 <p>V individualnem procesu klientke pogosto želijo razvijati:</p>
 <ul>
 <li>utelešene meje, ki jih lahko komunicirajo na način, ki ne temelji na umiku, napadu ali pretiranem opravičevanju,</li>
@@ -882,6 +996,14 @@
 <li>zmeren, reden in prizemljen proces, kjer se um, telo, zgodba in kontekst življenja obravnavajo skupaj.</li>
 </ul>
 </div>
+</div>
+<div class="audience-outro">
+<p>
+                V individualnem delu zato ne raziskujeva samo, zakaj se določen vzorec pojavlja, ampak tudi, kako se kaže v telesu, odnosih in konkretnih trenutkih življenja.
+              </p>
+<p>
+                Pomemben del procesa je učenje razločevanja, kdaj gre za mejo, kdaj za odmik, kdaj za krivdo in kdaj za star odziv živčnega sistema.
+              </p>
 </div>
 </div></article>
 
