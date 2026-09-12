@@ -60,7 +60,7 @@
       "@id": "https://sanjasomatika.si/#person",
       "name": "Sanja Zalar Gostimirović",
       "alternateName": "Sanja Somatika",
-      "jobTitle": "somatsko usmerjena psihosocialna svetovalka in somatska praktičarka",
+      "jobTitle": "somatska praktičarka in psihosocialna svetovalka",
       "url": "https://sanjasomatika.si/",
       "email": "info@sanjasomatika.si",
       "worksFor": {
@@ -492,8 +492,25 @@
 
 
 
-    .audience-section {
+    .identity-strip {
       background: #95BD84;
+      color: var(--ss-dark);
+      padding: clamp(2.8rem, 5vw, 4.2rem) 0;
+    }
+
+    .identity-strip .article-inner {
+      width: min(980px, calc(100% - 48px));
+    }
+
+    .identity-strip p {
+      margin: 0;
+      color: var(--ss-dark);
+      font-size: clamp(1.15rem, 1.65vw, 1.38rem);
+      line-height: 1.7;
+    }
+
+    .audience-section {
+      background: #ffffff;
       color: var(--ss-dark);
     }
 
@@ -524,22 +541,22 @@
     }
 
     .audience-grid__col:last-child {
-      border-left: 1px solid rgba(255, 255, 255, 0.36);
+      border-left: 1px solid rgba(31, 59, 40, 0.18);
       padding-left: clamp(1.8rem, 4vw, 3.6rem);
     }
 
     .audience-grid h3 {
       margin-top: 0;
-      color: #ffffff;
+      color: var(--ss-dark);
     }
 
     .audience-grid p,
     .audience-grid li {
-      color: rgba(255, 255, 255, 0.92);
+      color: var(--ss-text);
     }
 
     .audience-grid ul {
-      color: rgba(255, 255, 255, 0.92);
+      color: var(--ss-text);
     }
 
     .audience-outro {
@@ -567,7 +584,7 @@
 
       .audience-grid__col:last-child {
         border-left: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.36);
+        border-top: 1px solid rgba(31, 59, 40, 0.18);
         padding-left: 0;
         padding-top: 2.4rem;
       }
@@ -771,87 +788,6 @@
 
   
 
-    .audience-section {
-      background: #95BD84;
-      color: var(--ss-dark);
-    }
-
-    .audience-section .article-inner {
-      width: min(980px, calc(100% - 48px));
-    }
-
-    .audience-section h2 {
-      color: var(--ss-dark);
-      text-transform: none;
-    }
-
-    .audience-section .audience-intro,
-    .audience-section .audience-outro p {
-      color: var(--ss-dark);
-    }
-
-    .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      column-gap: 0;
-      margin-top: 2.8rem;
-      align-items: start;
-    }
-
-    .audience-grid__col:first-child {
-      padding-right: clamp(1.8rem, 4vw, 3.6rem);
-    }
-
-    .audience-grid__col:last-child {
-      border-left: 1px solid rgba(255, 255, 255, 0.36);
-      padding-left: clamp(1.8rem, 4vw, 3.6rem);
-    }
-
-    .audience-grid h3 {
-      margin-top: 0;
-      color: #ffffff;
-    }
-
-    .audience-grid p,
-    .audience-grid li {
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    .audience-grid ul {
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    .audience-outro {
-      margin-top: 2.4rem;
-      max-width: 900px;
-    }
-
-    .audience-outro p:last-child {
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 767px) {
-      .audience-section .article-inner {
-        width: min(920px, calc(100% - 36px));
-      }
-
-      .audience-grid {
-        grid-template-columns: 1fr;
-        gap: 2.8rem;
-      }
-
-      .audience-grid__col:first-child {
-        padding-right: 0;
-      }
-
-      .audience-grid__col:last-child {
-        border-left: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.36);
-        padding-left: 0;
-        padding-top: 2.4rem;
-      }
-    }
-
     .site-footer {
         padding: 64px 0 26px;
       }
@@ -902,6 +838,10 @@
       }
 
       .article-inner {
+        width: min(920px, calc(100% - 36px));
+      }
+
+      .identity-strip .article-inner {
         width: min(920px, calc(100% - 36px));
       }
 
@@ -984,6 +924,10 @@
     </header>
 
     <section class="content-section">
+<article class="identity-strip"><div class="article-inner">
+<p>Somatsko orientirano psihosocialno svetovanje izvajam Sanja Zalar Gostimirović, somatska praktičarka in psihosocialna svetovalka. Online in v živo v Ljubljani.</p>
+</div></article>
+
 <article class="audience-section" id="za-koga-je-individualno-delo"><div class="article-inner">
 <h2>Za koga je individualno delo?</h2>
 <p class="audience-intro">
@@ -1002,7 +946,6 @@
 <li>v odnosih pogosto prevzamejo odgovornost za počutje drugih in sproti preverjajo, ali je vse v redu,</li>
 <li>si želijo počitka, a se ob počitku pojavi krivda, nemir ali občutek, da bi morale še nekaj narediti,</li>
 <li>se ob konfliktu umaknejo, zamrznejo ali začnejo pretirano razlagati, težko pa ostanejo v stiku s sabo,</li>
-  <li>v odnosih pogosto prevzamejo odgovornost za počutje drugih in sproti preverjajo, ali je vse v redu,</li>
 <li>po napetem pogovoru še ure razmišljajo, kaj so rekle, kako so izpadle in kaj bi morale povedati drugače,</li>
 <li>jih čustva pogosto preplavijo in potisnejo v ruminacijo.</li>
 
@@ -1163,7 +1106,7 @@
           <h2 id="footer-collab" class="footer-title">Sodelovanje</h2>
 
           <ul class="footer-list">
-            <li><a href="individualno.html">Individualno</a></li>
+            <li><a href="individualno.html">Psihosocialno svetovanje</a></li>
             <li><a href="https://somatskipristan.si/" target="_blank" rel="noopener noreferrer">Somatski pristan</a></li>
             <li><a href="https://budokon.si/" target="_blank" rel="noopener noreferrer">Utelešene prakse</a></li>
           </ul>
