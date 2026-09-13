@@ -487,6 +487,66 @@
       border-bottom-color: var(--ss-paper);
     }
 
+    /* Inline povezave v tekočem besedilu */
+    .content-section p a:not(.section-text-link),
+    .content-section li a:not(.section-text-link) {
+      color: inherit;
+      font: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      text-transform: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .content-section p a:not(.section-text-link):hover,
+    .content-section li a:not(.section-text-link):hover {
+      color: var(--ss-bluegrey);
+      text-decoration: underline;
+      border-bottom: 0;
+    }
+
+    .content-section article.article-bg-blue p a:not(.section-text-link),
+    .content-section article.article-bg-blue li a:not(.section-text-link) {
+      color: inherit;
+    }
+
+    .content-section article.article-bg-blue p a:not(.section-text-link):hover,
+    .content-section article.article-bg-blue li a:not(.section-text-link):hover {
+      color: var(--ss-paper);
+    }
+
+    .content-section .identity-strip p a:not(.section-text-link) {
+      color: inherit;
+    }
+
+    .content-section .identity-strip p a:not(.section-text-link):hover {
+      color: #ffffff;
+    }
+
+    /* Samostojne povezave pod besedilom ohranijo obstoječi navigacijski slog */
+    .content-section a.section-text-link {
+      color: var(--ss-dark);
+      font-family: var(--ss-nav);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      line-height: 1.7;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-bottom: 1px solid var(--ss-border);
+      padding-bottom: 0.18rem;
+    }
+
+    .content-section a.section-text-link:hover {
+      color: var(--ss-bluegrey);
+      border-bottom-color: var(--ss-bluegrey);
+    }
+
     .inline-links-box {
       margin-top: 2rem;
       display: grid;
@@ -946,9 +1006,15 @@
 <article class="article-bg-beige" id="kaj-je-somatsko-orientirano-psihosocialno-svetovanje"><div class="article-inner">
 <h2>Kaj je somatsko orientirano psihosocialno svetovanje?</h2>
 <p>
-Somatsko orientirano psihosocialno svetovanje je psihosocialno svetovanje, v katerem se pogovor in psihosocialno razumevanje človeka prepletata s somatskim raziskovanjem izkušnje. Telo ni obravnavano ločeno od zgodbe, odnosov in življenjskega konteksta, ampak kot del doživljanja v realnem času: pozornost usmerjava k telesnim občutkom, napetosti, impulzom, mejam, orientaciji in spremembam v delovanju živčnega sistema.
+Pri svojem delu izraz somatika uporabljam kot krovno področje in kot usmeritev znotraj prakse psihosocialnega svetovanja. To pomeni, da se pogovor, psihosocialno razumevanje človeka, telesno zaznavanje, orientacija, podpora pri regulaciji živčnega sistema in utelešeno učenje povezujejo v enoten strokovno-praktičen okvir.
 </p>
-<p><a href="somatika.html">Več o somatiki in razlikah med somatskimi pristopi.</a></p>
+<p>
+Delo poteka kot kolaborativen proces, usmerjen v raziskovanje konkretne življenjske teme, odnosa, vzorca ali tipičnih odzivov. Pogovor se prepleta s somatskim raziskovanjem izkušnje: s postopnim in uglašenim zaznavanjem telesnih občutkov, napetosti, impulzov, diha, stika s tlemi, orientacije v prostoru, občutka opore, meja in sprememb v delovanju živčnega sistema.
+</p>
+<p>
+Somatski del v sklopu psihosocialnega svetovanja ni vezan na vaje, lahko pa vključuje gibanje, ki organsko vznika v procesu. Pri delu uporabljam metodo Somatske čuječnosti, ki predstavlja regulirano, zasidrano usmerjanje pozornosti k telesni izkušnji v realnem času.
+</p>
+<p><a class="section-text-link" href="somatika.html">Več o somatiki in razlikah med somatskimi pristopi.</a></p>
 </div></article>
 
 <article class="audience-section" id="za-koga-je-individualno-delo"><div class="article-inner">
@@ -1025,7 +1091,7 @@ Somatsko orientirano psihosocialno svetovanje je psihosocialno svetovanje, v kat
               </p>
 <p>
   <b>
-    <a href="https://calendly.com/sanja-somatika/termin-za-spoznavno-srecanje-redno-delo" rel="noopener noreferrer" target="_blank">Termin za spoznavni 20-minutni video klic za delo preko spleta naplanirate tukaj.</a>
+    <a class="section-text-link" href="https://calendly.com/sanja-somatika/termin-za-spoznavno-srecanje-redno-delo" rel="noopener noreferrer" target="_blank">Termin za spoznavni 20-minutni video klic za delo preko spleta naplanirate tukaj.</a>
   </b>
 </p>
 <p>Izberite termin, ki bi vam ustrezal tudi za redno delo preko spleta. </p> <p> Za individualno delo v živo pišite na info@sanjasomatika.si </p>
