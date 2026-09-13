@@ -282,7 +282,7 @@
     .subpage-hero {
       position: relative;
       width: 100%;
-      min-height: 66vh;
+      min-height: 88vh;
       overflow: hidden;
       background: #000;
       margin: 0;
@@ -291,9 +291,9 @@
     .subpage-hero__bg {
       position: absolute;
       inset: 0;
-      background-image: url('Somatska-čuječnost-sanja-somatika.jpg');
+      background-image: url('sanja_somatika.jpg');
       background-size: cover;
-      background-position: center center;
+      background-position: center 24%;
       transform: scale(1.01);
     }
 
@@ -308,16 +308,16 @@
     .subpage-hero__inner {
       position: relative;
       z-index: 1;
-      min-height: 66vh;
+      min-height: 88vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 112px 24px 70px;
+      padding: 138px 24px 88px;
       text-align: center;
     }
 
     .subpage-hero__copy {
-      width: min(980px, 100%);
+      width: min(1080px, 100%);
       color: #ffffff;
       margin: 0 auto;
     }
@@ -335,12 +335,12 @@
 
     .subpage-hero h1 {
       font-family: 'Lora', serif;
-      font-size: clamp(3.05rem, 5.6vw, 5.3rem);
-      line-height: 1.02;
+      font-size: clamp(3.1rem, 5.4vw, 5.15rem);
+      line-height: 0.98;
       font-weight: 400;
-      letter-spacing: -0.035em;
+      letter-spacing: -0.03em;
       color: #ffffff;
-      margin: 0 auto 1.35rem;
+      margin: 0 auto 1.6rem;
       text-transform: none;
     }
 
@@ -349,7 +349,7 @@
       line-height: 1.7;
       font-weight: 400;
       color: rgba(255, 255, 255, 0.94);
-      margin: 0 auto 2rem;
+      margin: 0 auto 2.35rem;
       max-width: 860px;
     }
 
@@ -844,23 +844,30 @@
 
     @media (max-width: 575px) {
       .subpage-hero {
-        min-height: calc(72svh - 64px);
+        min-height: calc(100svh - 64px);
       }
 
       .subpage-hero__inner {
-        min-height: calc(72svh - 64px);
-        padding: 6.2rem 1.25rem 3.8rem;
+        min-height: calc(100svh - 64px);
+        padding: 6.8rem 1.25rem 4.4rem;
+      }
+
+      .subpage-hero__bg {
+        background-position: 58% center;
+        transform: none;
       }
 
       .subpage-hero h1 {
-        font-size: clamp(2.7rem, 14vw, 4.2rem);
-        line-height: 0.95;
+        font-size: clamp(2.4rem, 10.6vw, 3.7rem);
+        line-height: 0.96;
+        max-width: calc(100vw - 2rem);
+        letter-spacing: -0.02em;
       }
 
       .subpage-hero__subtitle {
         max-width: 92vw;
         font-size: 1rem;
-        line-height: 1.58;
+        line-height: 1.55;
       }
 
       .hero-actions {
@@ -1422,21 +1429,7 @@ Somatska čuječnost je kot metoda umeščena v širše področje
                 Metodološki zapis na Zenodo predstavlja konceptualno osnovo tega širšega dela.
               </p>
 </div></article>
-<article class="article-bg-white" id="zakljucek"><div class="article-inner">
-<h2>Kam naprej</h2>
-<p>
-Ni treba čutiti več ali globlje. Pomembneje je, ali lahko to, kar je že prisotno, zaznamo stabilno, z dovolj orientacije, opazovanja in občutka možnosti izbire.
-</p>
-<p>
-Somatsko čuječnost lahko doživiš v Somatskem pristanu, pri individualnem delu ali skozi utelešene gibalne prakse.
-</p>
-<p>
-<a class="section-text-link" href="https://somatskipristan.si/" rel="noopener noreferrer" target="_blank">Somatski pristan</a>
-</p>
-<p>
-<a class="section-text-link" href="https://doi.org/10.5281/zenodo.18460716" rel="noopener noreferrer" target="_blank">Metodološki zapis na Zenodo</a>
-</p>
-</div></article>
+
 </section>
 </main>
 <footer aria-labelledby="footer-title" class="site-footer" id="kontakt">
