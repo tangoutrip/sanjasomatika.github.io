@@ -372,12 +372,12 @@
     }
 
     .content-section article:nth-of-type(3) {
-      background: #ffffff;
+      background: var(--ss-home-beige);
     }
 
     .content-section article:nth-of-type(4) {
-      background: #95BD84;
-      color: #ffffff;
+      background: #ffffff;
+      color: var(--ss-text);
     }
 
     .article-inner {
@@ -395,8 +395,7 @@
       text-transform: none;
     }
 
-    .content-section article:nth-of-type(2) h2,
-    .content-section article:nth-of-type(4) h2 {
+    .content-section article:nth-of-type(2) h2 {
       color: #ffffff;
     }
 
@@ -416,15 +415,12 @@
       margin: 0 0 1.35rem;
     }
 
-    .content-section article:nth-of-type(2) p,
-    .content-section article:nth-of-type(4) p {
+    .content-section article:nth-of-type(2) p {
       color: rgba(255, 255, 255, 0.9);
     }
 
     .content-section article:nth-of-type(2) strong,
-    .content-section article:nth-of-type(2) b,
-    .content-section article:nth-of-type(4) strong,
-    .content-section article:nth-of-type(4) b {
+    .content-section article:nth-of-type(2) b {
       color: #ffffff;
     }
 
@@ -455,8 +451,7 @@
       background: var(--ss-bluegrey);
     }
 
-    .content-section article:nth-of-type(2) li,
-    .content-section article:nth-of-type(4) li {
+    .content-section article:nth-of-type(2) li {
       color: rgba(255, 255, 255, 0.86);
     }
 
@@ -464,30 +459,9 @@
       background: #ffffff;
       opacity: 0.78;
     }
-
-    .content-section article:nth-of-type(4) li::before {
-      background: #ffffff;
-      opacity: 0.84;
-    }
-
-    .content-section article:nth-of-type(4) .article-inner {
-      width: min(1040px, calc(100% - 48px));
-    }
-
-    .content-section article:nth-of-type(4) ul {
-      columns: 2;
-      column-gap: 3rem;
-      display: block;
-    }
-
-    .content-section article:nth-of-type(4) li {
-      break-inside: avoid;
-      margin-bottom: 0.82rem;
-    }
-
-    .content-section article:nth-of-type(1) p:first-of-type {
+.content-section article:nth-of-type(1) p:first-of-type {
       padding: 1.25rem 1.4rem;
-      background: var(--ss-home-beige);
+      background: rgba(111, 167, 181, 0.09);
       border-left: 4px solid var(--ss-bluegrey);
       color: var(--ss-dark);
       font-size: clamp(1.06rem, 1.3vw, 1.18rem);
@@ -578,16 +552,48 @@
       border-bottom-color: var(--ss-bluegrey);
     }
 
-    .content-section article:nth-of-type(2) a,
-    .content-section article:nth-of-type(4) a {
+    .content-section article:nth-of-type(2) a {
       color: #ffffff;
       border-bottom-color: rgba(255, 255, 255, 0.48);
     }
 
-    .content-section article:nth-of-type(2) a:hover,
-    .content-section article:nth-of-type(4) a:hover {
+    .content-section article:nth-of-type(2) a:hover {
       color: var(--ss-gold);
       border-bottom-color: var(--ss-gold);
+    }
+
+    /* Inline links inside running text: inherit surrounding typography */
+    .content-section p a,
+    .content-section li a {
+      color: inherit;
+      font: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      text-transform: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .content-section p a:hover,
+    .content-section li a:hover {
+      color: var(--ss-bluegrey);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      border-bottom: 0;
+    }
+
+    .content-section article:nth-of-type(2) p a,
+    .content-section article:nth-of-type(2) li a {
+      color: inherit;
+    }
+
+    .content-section article:nth-of-type(2) p a:hover,
+    .content-section article:nth-of-type(2) li a:hover {
+      color: var(--ss-gold);
     }
 
     .site-footer {
@@ -780,12 +786,7 @@
         padding-top: 0.45rem;
         padding-bottom: 0.45rem;
       }
-
-      .content-section article:nth-of-type(4) ul {
-        columns: 1;
-      }
-
-      .site-footer {
+.site-footer {
         padding: 64px 0 26px;
       }
 
@@ -913,7 +914,7 @@
 <h2>Strokovno-praktična podlaga</h2>
 <h3>Ključna strokovna podlaga</h3>
 <ul>
-<li>Fakulteta za socialno delo: dipl. socialna delavka; magistrski program psihosocialna podpora in pomoč (zaključevanje)</li>
+<li>Fakulteta za socialno delo; usmeritev v psihosocialno podporo in pomoč, dipl. socialna delavka, magistrski študij (zaključevanje)</li>
 <li>Somatic Experiencing® edukantka pod supervizijo</li>
 <li>600+ ur dodatnega strokovnega izobraževanja iz somatskih, psihosocialnih in psihoterapevtskih pristopov</li>
 <li>680 ur formalne psihosocialne strokovne prakse pod mentorstvom na FSD</li>
@@ -947,30 +948,6 @@
 <p>Formalno sem usposobljena za psihosocialno podporo, svetovalne pogovore, skupinsko delo, facilitacijo ter osebno vodenje posameznikov in skupin. Pri IPD Centru za integrativni razvoj sem opravila program RAR, ki obravnava vpliv zgodnjega razvoja na poznejše življenje, ter prvo leto programa OR kot del treninga za telesno orientirano psihoterapijo.</p>
 <p>Z dodatnimi strokovnimi izobraževanji se že dobro desetletje usmerjam na področje somatskih in telesno orientiranih terapevtskih pristopov. Principi Somatic Experiencing® pomembno usmerjajo moje delo tako v svetovalnem kot edukativnem in gibalnem kontekstu.</p>
 <p>Svoje delo nadgrajujem z več kot 600 urami dodatnih strokovnih izobraževanj iz psihoterapevtskih, somatskih in travmatsko informiranih pristopov, ob redni osebni terapevtski izkušnji, interviziji in superviziji kot pomembnem delu etične in strokovno odgovorne prakse.</p>
-</div></article>
-<article id="cujecnost-gibanje-telesna-praksa"><div class="article-inner">
-<h2>Čuječnost, gibanje in telesna praksa</h2>
-<p>
-                Od leta 2000, ko sem se prvič srečala z jogo in čuječnostjo, negujem osebno prakso, ki je danes zasidrana v somatsko-čuječem <b> <a href="https://budokon.si/" rel="noopener noreferrer" target="_blank">Budokonu.</a></b>
-</p>
-<p>
-<b> <a href="https://tango.si/" rel="noopener noreferrer" target="_blank"> Argentinski tango </a></b> je že drugo desetletje pomemben okvir mojega raziskovanja utelešenosti, ozemljenosti, odnosa s tlemi in povezave s sabo ob sočasni povezavi s partnerjem.
-              </p>
-<p>
-                Od leta 2014 profesionalno poučujem, facilitiram ter vodim individualne in skupinske prakse s somatsko orientacijo, kjer gibanje razumem kot bio-psiho-socialni fenomen, ne zgolj kot telovadbo.
-              </p>
-<p>
-                Moja učiteljska in facilitacijska izobraževanja vključujejo več kot 700 ur usposabljanj s področij joge, Budokona, čuječnosti in meditacije.
-              </p>
-<p>
-                Leta 2017 sem v Slovenijo licenčno pripeljala Budokon, sodobno prakso mešanih gibalnih umetnosti, ki je prva v enoten sistem povezala animalistično gibanje, mobilnost, kalisteniko, jogo, borilne veščine in čuječo prisotnost.
-              </p>
-<p>
-                Opravila sem program MBSR, Mindfulness-Based Stress Reduction, po pristopu dr. Jona Kabat-Zinna, ter učiteljsko usposabljanje iz evidence-based čuječnosti in meditacije pri International Mindfulness and Meditation Alliance, IMMA.
-              </p>
-<p>
-                Ta znanja vključujem kot del širšega somatskega razumevanja človeka.
-              </p>
 </div></article>
 <article id="dodatna-izobrazevanja"><div class="article-inner">
 <h2>Dodatna strokovna izobraževanja iz terapevtskih in somatskih pristopov</h2>
@@ -1009,6 +986,30 @@
 <a href="individualno.html">Preberite več o poteku individualnega procesa.</a> <br/><br/>
 <a href="sanja.html">Preberite več o meni, pristopu in okviru dela.</a>
 </b></div>
+</div></article>
+<article id="cujecnost-gibanje-telesna-praksa"><div class="article-inner">
+<h2>Čuječnost, gibanje in telesna praksa</h2>
+<p>
+                Od leta 2000, ko sem se prvič srečala z jogo in čuječnostjo, negujem osebno prakso, ki je danes zasidrana v somatsko-čuječem <b> <a href="https://budokon.si/" rel="noopener noreferrer" target="_blank">Budokonu.</a></b>
+</p>
+<p>
+<b> <a href="https://tango.si/" rel="noopener noreferrer" target="_blank"> Argentinski tango </a></b> je že drugo desetletje pomemben okvir mojega raziskovanja utelešenosti, ozemljenosti, odnosa s tlemi in povezave s sabo ob sočasni povezavi s partnerjem.
+              </p>
+<p>
+                Od leta 2014 profesionalno poučujem, facilitiram ter vodim individualne in skupinske prakse s somatsko orientacijo, kjer gibanje razumem kot bio-psiho-socialni fenomen, ne zgolj kot telovadbo.
+              </p>
+<p>
+                Moja učiteljska in facilitacijska izobraževanja vključujejo več kot 700 ur usposabljanj s področij joge, Budokona, čuječnosti in meditacije.
+              </p>
+<p>
+                Leta 2017 sem v Slovenijo licenčno pripeljala Budokon, sodobno prakso mešanih gibalnih umetnosti, ki je prva v enoten sistem povezala animalistično gibanje, mobilnost, kalisteniko, jogo, borilne veščine in čuječo prisotnost.
+              </p>
+<p>
+                Opravila sem program MBSR, Mindfulness-Based Stress Reduction, po pristopu dr. Jona Kabat-Zinna, ter učiteljsko usposabljanje iz evidence-based čuječnosti in meditacije pri International Mindfulness and Meditation Alliance, IMMA.
+              </p>
+<p>
+                Ta znanja vključujem kot del širšega somatskega razumevanja človeka.
+              </p>
 </div></article>
 </section>
 </main>
