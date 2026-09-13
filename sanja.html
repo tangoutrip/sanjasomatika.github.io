@@ -3,6 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKZ0H1RD4Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NKZ0H1RD4Q');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Sanja Zalar Gostimirović | Somatska praktičarka, psihosocialna svetovalka</title>
@@ -54,8 +62,7 @@
         "https://www.instagram.com/sanja.somatika/",
         "https://www.facebook.com/sanjasomatika",
         "https://www.youtube.com/@sanjasomatika",
-        "https://budokon.si/",
-        "https://tango.si/tango-tehnika-in-somatika/"
+        "https://budokon.si/"
       ]
     },
     {
@@ -77,8 +84,8 @@
         "somatsko-terapevtski pristopi",
         "somatsko gibanje",
         "somatska edukacija",
-        "Somatska čuječnost",
-        "Somatic Experiencing",
+        "Somatska čuječnost™",
+        "Somatic Experiencing®",
         "regulacija živčnega sistema",
         "osebne meje",
         "travmatsko informiran pristop",
@@ -86,11 +93,10 @@
         "argentinski tango"
       ],
       "sameAs": [
+        "https://orcid.org/0009-0004-4659-688X",
         "https://www.instagram.com/sanja.somatika/",
         "https://www.facebook.com/sanjasomatika",
-        "https://www.youtube.com/@sanjasomatika",
-        "https://budokon.si/",
-        "https://tango.si/tango-tehnika-in-somatika/"
+        "https://www.youtube.com/@sanjasomatika"
       ],
       "image": "https://sanjasomatika.si/prof.jpg",
       "mainEntityOfPage": {
@@ -134,7 +140,8 @@
       },
       "author": {
         "@id": "https://sanjasomatika.si/#person"
-      }
+      },
+      "dateModified": "2026-09-13"
     },
     {
       "@type": "BreadcrumbList",
@@ -293,7 +300,7 @@
       inset: 0;
       background-image: url('prof.jpg');
       background-size: cover;
-      background-position: center center;
+      background-position: center 55%;
       transform: scale(1.01);
     }
 
@@ -565,6 +572,36 @@
       border-bottom-color: var(--ss-bluegrey);
     }
 
+    /* Inline povezave v tekočem besedilu */
+    .content-section p a,
+    .content-section li a {
+      color: inherit;
+      font: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      text-transform: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .content-section p a:hover,
+    .content-section li a:hover {
+      color: var(--ss-bluegrey);
+      text-decoration: underline;
+      border-bottom: 0;
+    }
+
+    .article-bg-blue p a,
+    .article-bg-blue li a,
+    .article-bg-green p a,
+    .article-bg-green li a {
+      color: inherit;
+    }
+
     .section-kicker {
       font-family: var(--ss-nav);
       color: var(--ss-bluegrey);
@@ -808,6 +845,19 @@
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: #ffffff;
+    }
+
+    .footer-title a {
+      color: inherit;
+      text-decoration: none;
+      font: inherit;
+      letter-spacing: inherit;
+      text-transform: inherit;
+    }
+
+    .footer-title a:hover {
+      color: var(--ss-bluegrey);
+      text-decoration: none;
     }
 
     .contact-lines {
@@ -1125,10 +1175,6 @@
             <a class="nav-link" href="sanja.html">sanja</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="strokovna-podlaga.html">strokovna podlaga</a>
-          </li>
-
         </ul>
       </div>
     </div>
@@ -1425,7 +1471,7 @@
       <div class="site-footer__grid">
 
         <section aria-labelledby="footer-title" class="footer-col">
-          <h2 class="footer-title" id="footer-title">Sanja Zalar Gostimirović</h2>
+          <h2 class="footer-title" id="footer-title"><a href="sanja.html">Sanja Zalar Gostimirović</a></h2>
 
           <div class="contact-lines">
             <div class="contact-line">
