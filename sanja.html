@@ -282,7 +282,7 @@
     .subpage-hero {
       position: relative;
       width: 100%;
-      min-height: 66vh;
+      min-height: 88vh;
       overflow: hidden;
       background: #000;
       margin: 0;
@@ -301,14 +301,14 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.32) 52%, rgba(0, 0, 0, 0.52) 100%),
-        radial-gradient(circle at center, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.38) 100%);
+        linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.22) 52%, rgba(0, 0, 0, 0.38) 100%),
+        radial-gradient(circle at center, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.26) 100%);
     }
 
     .subpage-hero__inner {
       position: relative;
       z-index: 1;
-      min-height: 66vh;
+      min-height: 88vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -351,6 +351,24 @@
       color: rgba(255, 255, 255, 0.94);
       margin: 0 auto 2rem;
       max-width: 760px;
+    }
+
+
+    .subpage-hero__roles {
+      max-width: none;
+      white-space: nowrap;
+      margin-bottom: 1.7rem;
+    }
+
+    .subpage-hero__location {
+      margin: 0 auto 2.2rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-family: var(--ss-nav);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      line-height: 1.4;
+      text-transform: uppercase;
     }
 
     .hero-actions {
@@ -984,11 +1002,11 @@
 
     @media (max-width: 575px) {
       .subpage-hero {
-        min-height: calc(72svh - 64px);
+        min-height: calc(88svh - 64px);
       }
 
       .subpage-hero__inner {
-        min-height: calc(72svh - 64px);
+        min-height: calc(88svh - 64px);
         padding: 6.2rem 1.25rem 3.8rem;
       }
 
@@ -1001,6 +1019,17 @@
         max-width: 92vw;
         font-size: 1rem;
         line-height: 1.58;
+      }
+
+
+      .subpage-hero__roles {
+        white-space: normal;
+        max-width: 92vw;
+        margin-bottom: 1.45rem;
+      }
+
+      .subpage-hero__location {
+        margin-bottom: 1.9rem;
       }
 
       .hero-actions {
@@ -1117,8 +1146,11 @@
 
           <h1>Sanja Zalar Gostimirović</h1>
 
-          <p class="subpage-hero__subtitle">
-            Somatska praktičarka · psihosocialna svetovalka · avtorica metode Somatska čuječnost™<br>
+          <p class="subpage-hero__subtitle subpage-hero__roles">
+            Somatska praktičarka · psihosocialna svetovalka · avtorica metode Somatska čuječnost™
+          </p>
+
+          <p class="subpage-hero__location">
             Ljubljana | online
           </p>
 
