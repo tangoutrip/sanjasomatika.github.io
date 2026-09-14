@@ -322,6 +322,11 @@
       text-transform: uppercase;
     }
 
+    .hero-kicker__brand,
+    .hero-kicker__name {
+      display: inline;
+    }
+
     .subpage-hero h1 {
       font-family: var(--ss-display);
       font-size: clamp(3.05rem, 5.9vw, 5.8rem);
@@ -520,14 +525,6 @@
       color: var(--ss-paper);
     }
 
-    .content-section .identity-strip p a:not(.section-text-link) {
-      color: inherit;
-    }
-
-    .content-section .identity-strip p a:not(.section-text-link):hover {
-      color: #ffffff;
-    }
-
     /* Samostojne povezave pod besedilom ohranijo obstoječi navigacijski slog */
     .content-section a.section-text-link {
       color: var(--ss-dark);
@@ -557,23 +554,6 @@
     }
 
 
-
-    .identity-strip {
-      background: #95BD84;
-      color: #ffffff;
-      padding: clamp(2.8rem, 5vw, 4.2rem) 0;
-    }
-
-    .identity-strip .article-inner {
-      width: min(980px, calc(100% - 48px));
-    }
-
- .content-section .identity-strip p {
-  margin: 0;
-  color: #ffffff;
-  font-size: clamp(1.15rem, 1.65vw, 1.38rem);
-  line-height: 1.7;
-}
 
     .audience-section {
       background: #ffffff;
@@ -902,6 +882,20 @@
         line-height: 1.58;
       }
 
+      .subpage-hero__kicker {
+        line-height: 1.35;
+        margin-bottom: 1.25rem;
+      }
+
+      .hero-kicker__brand,
+      .hero-kicker__name {
+        display: block;
+      }
+
+      .hero-kicker__name {
+        margin-top: 0.42rem;
+      }
+
       .hero-actions {
         display: grid;
       }
@@ -917,10 +911,6 @@
       }
 
       .article-inner {
-        width: min(920px, calc(100% - 36px));
-      }
-
-      .identity-strip .article-inner {
         width: min(920px, calc(100% - 36px));
       }
 
@@ -986,7 +976,7 @@
 
       <div class="subpage-hero__inner">
         <div class="subpage-hero__copy">
-          <p class="subpage-hero__kicker">Sanja Somatika | Sanja Zalar Gostimirović</p>
+          <p class="subpage-hero__kicker"><span class="hero-kicker__brand">Sanja Somatika <span class="hero-kicker__sep">|</span></span><span class="hero-kicker__name">Sanja Zalar Gostimirović</span></p>
           <h1>Somatsko orientirano psihosocialno svetovanje</h1>
           <p class="subpage-hero__subtitle"> Individualni proces v rednem, kolaborativnem okviru.</p>
 
@@ -999,22 +989,19 @@
     </header>
 
     <section class="content-section">
-<article class="identity-strip"><div class="article-inner">
-<p>Somatsko orientirano psihosocialno svetovanje izvajam v Ljubljani in online. Sem <a href="sanja.html">Sanja Zalar Gostimirović</a>, somatska praktičarka in psihosocialna svetovalka.</p>
-</div></article>
-
 <article class="article-bg-beige" id="kaj-je-somatsko-orientirano-psihosocialno-svetovanje"><div class="article-inner">
 <h2>Kaj je somatsko orientirano psihosocialno svetovanje?</h2>
-<p>
-Pri svojem delu izraz somatika uporabljam kot krovno področje in kot usmeritev znotraj prakse psihosocialnega svetovanja. To pomeni, da se pogovor, psihosocialno razumevanje človeka, telesno zaznavanje, orientacija, podpora pri regulaciji živčnega sistema in utelešeno učenje povezujejo v enoten strokovno-praktičen okvir.
-</p>
-<p>
-Delo poteka kot kolaborativen proces, usmerjen v raziskovanje konkretne življenjske teme, odnosa, vzorca ali tipičnih odzivov. Pogovor se prepleta s somatskim raziskovanjem izkušnje: s postopnim in uglašenim zaznavanjem telesnih občutkov, napetosti, impulzov, diha, stika s tlemi, orientacije v prostoru, občutka opore, meja in sprememb v delovanju živčnega sistema.
-</p>
-<p>
-Somatski del v sklopu psihosocialnega svetovanja ni vezan na vaje, lahko pa vključuje gibanje, ki organsko vznika v procesu. Pri delu uporabljam metodo Somatske čuječnosti, ki predstavlja regulirano, zasidrano usmerjanje pozornosti k telesni izkušnji v realnem času.
-</p>
+
+<p><b>Somatsko orientirano psihosocialno svetovanje izvajam v Ljubljani in online. Sem <a href="sanja.html">Sanja Zalar Gostimirović</a>, somatska praktičarka in psihosocialna svetovalka.</b></p>
+
+<p>Pri svojem delu povezujem psihosocialno svetovanje s somatskim pristopom. Pogovor in razumevanje življenjskega konteksta se prepletata s spremljanjem telesnega doživljanja: telesnih občutkov, napetosti, impulzov, diha, osebnih meja, orientacije v prostoru ter sprememb v delovanju živčnega sistema.</p>
+
+<p>Delo poteka kot kolaborativen proces, usmerjen v konkretno življenjsko temo, odnos, vzorec ali odziv. Zanima naju tako razumevanje tega, kar se dogaja, kot tudi to, <b>kako se izkušnja kaže v telesu in kaj se lahko v procesu postopoma spremeni</b>.</p>
+
+<p>Somatski del ni vezan na vnaprej določene vaje. Vključuje usmerjanje pozornosti k telesni izkušnji v realnem času, po potrebi pa tudi gibanje, ki organsko vznikne v procesu. Pri delu uporabljam avtorsko metodo <a href="somatska-cujecnost.html">Somatska čuječnost™</a> in principe somatsko-terapevtskih pristopov, ki so del moje strokovne podlage.</p>
+
 <p><a class="section-text-link" href="somatika.html">Več o somatiki in razlikah med somatskimi pristopi.</a></p>
+<p><a class="section-text-link" href="/somatic-experiencing/">Več o somatski terapiji in Somatic Experiencing®.</a></p>
 </div></article>
 
 <article class="audience-section" id="za-koga-je-individualno-delo"><div class="article-inner">
