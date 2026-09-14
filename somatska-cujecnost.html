@@ -333,6 +333,11 @@
       text-transform: uppercase;
     }
 
+    .hero-kicker__brand,
+    .hero-kicker__name {
+      display: inline;
+    }
+
     .subpage-hero h1 {
       font-family: 'Lora', serif;
       font-size: clamp(3.1rem, 5.4vw, 5.15rem);
@@ -870,6 +875,20 @@
         line-height: 1.55;
       }
 
+      .subpage-hero__kicker {
+        line-height: 1.35;
+        margin-bottom: 1.25rem;
+      }
+
+      .hero-kicker__brand,
+      .hero-kicker__name {
+        display: block;
+      }
+
+      .hero-kicker__name {
+        margin-top: 0.42rem;
+      }
+
       .hero-actions {
         display: grid;
       }
@@ -881,7 +900,7 @@
       }
 
       .content-section {
-        padding: 4.4rem 0;
+        padding: 0;
       }
 
       .article-inner,
@@ -912,11 +931,38 @@
       }
 
       .image-break {
+        width: 100vw;
         height: 26vh;
         max-height: 280px;
         min-height: 190px;
-        margin-top: 3.2rem;
-        margin-bottom: 2.5rem;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .image-break img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .content-section > .image-break + article,
+      .content-section > article + .image-break {
+        margin-top: 0;
+      }
+
+      #knjiga {
+        margin-bottom: 0;
+      }
+
+      main,
+      .content-section {
+        margin-bottom: 0;
+      }
+
+      .site-footer {
+        margin-top: 0;
       }
 
       .site-footer__inner {
@@ -1019,7 +1065,7 @@
 <div aria-hidden="true" class="subpage-hero__overlay"></div>
 <div class="subpage-hero__inner">
 <div class="subpage-hero__copy">
-<p class="subpage-hero__kicker">Sanja Somatika | Sanja Zalar Gostimirović</p>
+<p class="subpage-hero__kicker"><span class="hero-kicker__brand">Sanja Somatika <span class="hero-kicker__sep">|</span></span><span class="hero-kicker__name">Sanja Zalar Gostimirović</span></p>
 <h1>Somatska čuječnost™</h1>
 <p class="subpage-hero__subtitle">Avtorska somatska metoda za urjenje zaznave in stabilnejši stik s sabo. Podpira pravočasnejše zaznavanje meja, potreb in telesnih signalov ter več izbire v odzivih.</p>
 <div class="hero-actions">
