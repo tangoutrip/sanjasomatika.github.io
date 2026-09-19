@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="sl">·
+<html lang="sl">
 <head><meta charset="utf-8"/>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NKZ0H1RD4Q"></script>
@@ -16,6 +16,9 @@
 <meta content="Psihosocialno svetovanje s somatskim pristopom za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde. Ljubljana in online." name="description"/>
 <meta content="Sanja Zalar Gostimirović" name="author"/>
 <meta content="index, follow" name="robots"/>
+<meta content="sl" name="language"/>
+<meta content="SI" name="geo.region"/>
+<meta content="Ljubljana" name="geo.placename"/>
 <link href="https://sanjasomatika.si/" rel="canonical"/>
 <link href="/favicon.ico" rel="icon" sizes="any"/><link href="/favicon-512.png" rel="icon" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
 <meta content="website" property="og:type"/>
@@ -23,10 +26,10 @@
 <meta content="sl_SI" property="og:locale"/>
 <meta content="https://sanjasomatika.si/" property="og:url"/>
 <meta content="https://sanjasomatika.si/sanja_somatika.jpg" property="og:image"/>
-<meta content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom" property="og:title"/>
+<meta content="Sanja Somatika | Psihosocialno svetovanje s somatskim pristopom" property="og:title"/>
 <meta content="Psihosocialno svetovanje s somatskim pristopom za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde. Ljubljana in online." property="og:description"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Sanja Somatika – psihosocialno svetovanje s somatskim pristopom" name="twitter:title"/>
+<meta content="Sanja Somatika | Psihosocialno svetovanje s somatskim pristopom" name="twitter:title"/>
 <meta content="Psihosocialno svetovanje s somatskim pristopom za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde. Ljubljana in online." name="twitter:description"/>
 <meta content="https://sanjasomatika.si/sanja_somatika.jpg" name="twitter:image"/>
 <meta content="mtyq4CNLA9fQWDDKorFQCGXlDHb1CCRAQepgPDiGBek" name="google-site-verification"/>
@@ -37,6 +40,16 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sanjasomatika.si/#website",
+      "name": "Sanja Somatika",
+      "url": "https://sanjasomatika.si/",
+      "inLanguage": "sl-SI",
+      "publisher": {
+        "@id": "https://sanjasomatika.si/#org"
+      }
+    },
     {
       "@type": "Organization",
       "@id": "https://sanjasomatika.si/#org",
@@ -62,44 +75,70 @@
       "jobTitle": "somatska praktičarka in psihosocialna svetovalka",
       "url": "https://sanjasomatika.si/sanja.html",
       "email": "info@sanjasomatika.si",
+      "telephone": "+38669888037",
+      "description": "Somatska praktičarka in psihosocialna svetovalka v Ljubljani, avtorica Somatske čuječnosti™ in edukantka Somatic Experiencing® pod supervizijo.",
       "worksFor": {
         "@id": "https://sanjasomatika.si/#org"
       },
       "knowsAbout": [
         "psihosocialno svetovanje",
         "somatsko orientirano psihosocialno svetovanje",
+        "somatika",
         "somatska terapija",
         "somatsko-terapevtski pristopi",
-        "somatska edukacija",
-        "somatska čuječnost",
-        "somatsko čuječe prakse",
         "somatsko gibanje",
-        "intuitivno gibanje",
+        "somatska edukacija",
+        "Somatska čuječnost™",
+        "Somatic Experiencing®",
         "regulacija živčnega sistema",
-        "razumevanje odzivov živčnega sistema",
-        "telesno orientirano svetovanje",
-        "Somatic Experiencing",
-        "travmatsko informirano delo",
-        "utelešena prisotnost",
         "osebne meje",
-        "notranji viri moči",
-        "psihološka odpornost",
+        "travmatsko informiran pristop",
         "Budokon",
-        "BDK joga",
-        "gibanje",
-        "joga",
         "argentinski tango"
       ],
       "sameAs": [
+        "https://orcid.org/0009-0004-4659-688X",
         "https://www.instagram.com/sanja.somatika/",
         "https://www.facebook.com/sanjasomatika",
         "https://www.youtube.com/@sanjasomatika"
-      ]
+      ],
+      "image": "https://sanjasomatika.si/prof.jpg",
+      "workLocation": {
+        "@type": "Place",
+        "name": "Ljubljana",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ljubljana",
+          "addressCountry": "SI"
+        }
+      },
+      "knowsLanguage": [
+        "sl",
+        "en"
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Somatska praktičarka"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Psihosocialna svetovalka"
+        }
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Univerza v Ljubljani, Fakulteta za socialno delo",
+        "url": "https://www.fsd.uni-lj.si/"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://sanjasomatika.si/#service",
       "name": "Psihosocialno svetovanje s somatskim pristopom",
+      "serviceType": "Somatsko orientirano psihosocialno svetovanje",
+      "description": "Individualno psihosocialno svetovanje s somatskim pristopom v Ljubljani in preko spleta.",
+      "url": "https://sanjasomatika.si/individualno.html",
       "provider": {
         "@id": "https://sanjasomatika.si/#person"
       },
@@ -110,7 +149,7 @@
         },
         {
           "@type": "Country",
-          "name": "Slovenia"
+          "name": "Slovenija"
         }
       ],
       "availableChannel": [
@@ -134,6 +173,30 @@
           ]
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sanjasomatika.si/#webpage",
+      "url": "https://sanjasomatika.si/",
+      "name": "Sanja Somatika | Psihosocialno svetovanje s somatskim pristopom",
+      "description": "Psihosocialno svetovanje s somatskim pristopom za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde. Ljubljana in online.",
+      "inLanguage": "sl-SI",
+      "isPartOf": {
+        "@id": "https://sanjasomatika.si/#website"
+      },
+      "publisher": {
+        "@id": "https://sanjasomatika.si/#org"
+      },
+      "author": {
+        "@id": "https://sanjasomatika.si/#person"
+      },
+      "mainEntity": {
+        "@id": "https://sanjasomatika.si/#service"
+      },
+      "about": {
+        "@id": "https://sanjasomatika.si/#person"
+      },
+      "dateModified": "2026-09-19"
     }
   ]
 }
@@ -1158,7 +1221,6 @@ margin-top: 52px;
   </style>
 </head>
 <body id="page-top">
-<main>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 <div class="container">
@@ -1172,22 +1234,26 @@ margin-top: 52px;
 <div class="collapse navbar-collapse" id="navbarResponsive">
 <ul class="navbar-nav ml-auto">
 <li class="nav-item">
-<a class="nav-link" href="somatika.html">somatika</a>
+<a class="nav-link" href="/somatika.html">somatika</a>
 </li>
 <li class="nav-item">
-<a class="nav-link nav-priority" href="individualno.html">individualen proces</a>
+<a class="nav-link nav-priority" href="/individualno.html">individualen proces</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="somatska-cujecnost.html">somatska čuječnost</a>
+<a class="nav-link" href="/somatska-cujecnost.html">somatska čuječnost</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="sanja.html">sanja</a>
+<a class="nav-link" href="/somatic-experiencing/">Somatic Experiencing®</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/sanja.html">sanja</a>
 </li>
 
 </ul>
 </div>
 </div>
 </nav>
+<main>
 <!-- Hero -->
 <header class="home-hero">
 <div aria-hidden="true" class="home-hero__bg"></div>
@@ -1200,7 +1266,7 @@ margin-top: 52px;
 <span> Za bolj prožen živčni sistem, utelešene meje in manj ugajanja iz občutka krivde.</span>
 <span>procesno | dozirano | kolaborativno </span>
 </p>
-<a class="home-hero__cta" href="individualno.html">VEČ O INDIVIDUALNEM PROCESU</a>
+<a class="home-hero__cta" href="/individualno.html">VEČ O INDIVIDUALNEM PROCESU</a>
 </div>
 </div>
 </header>
@@ -1208,11 +1274,11 @@ margin-top: 52px;
 <section class="intro-section" id="uvod">
 <div class="container">
 <h3>Dobrodošli</h3>
-<p class="intro-section__byline"><a href="sanja.html">Sanja Zalar Gostimirović</a> | Ljubljana | online <br> <br>  Somatska praktičarka · psihosocialna svetovalka · avtorica metode Somatska čuječnost™</p>
+<p class="intro-section__byline"><a href="/sanja.html">Sanja Zalar Gostimirović</a> | Ljubljana | online <br> <br>  Somatska praktičarka · psihosocialna svetovalka · avtorica metode Somatska čuječnost™</p>
 <p>
-          Moje delo povezuje psihosocialno svetovanje s somatsko-terapevtskimi pristopi, somatsko edukacijo in somatsko gibanje. Pri tem se osredotočam na krepitev psihološke odpornosti, stika s telesom in z osebnimi mejami – za manj avtomatskega ugajanja, meje, ki jih pravočasneje občutiš, bolj prožen živčni sistem in več izbire v odzivih. Izvajam somatsko orientirano psihosocialno svetovanje in uporabljam avtorsko metodo Somatska čuječnost™, kjer meje niso le nekaj, kar »postavljaš«, ampak nekaj, kar se učiš zaznati, utelešati in živeti. <em>Brez obljub o hitrih nerealnih spremembah in brez dela na sebi, ki postane »full-time job«.</em>
+          Moje delo povezuje psihosocialno svetovanje s somatsko-terapevtskimi pristopi, somatsko edukacijo in somatsko gibanje. Osredotočam se na krepitev psihološke odpornosti, odnosa s telesom in stika z osebnimi mejami: za manj avtomatskega ugajanja, meje, ki jih pravočasneje zaznaš, bolj prožen živčni sistem in več izbire v odzivih. Individualno izvajam somatsko orientirano psihosocialno svetovanje, pri katerem se med drugim opiram na principe <a href="/somatic-experiencing/">Somatic Experiencing®</a>. V edukativnem delu uporabljam avtorsko metodo Somatska čuječnost™. Pri mojem delu meje niso nekaj, kar se postavlja, ampak nekaj, kar se uči zaznavati, utelešati in živeti.
 </p>
-<div class="intro-links"><a class="section-text-link" href="individualno.html">Več o individualnem procesu</a></div>
+<div class="intro-links"><a class="section-text-link" href="/individualno.html">Več o individualnem procesu</a></div>
 </div>
 </section>
 <!-- Ponudba -->
@@ -1224,36 +1290,36 @@ margin-top: 52px;
 <div class="entry-grid">
 <article class="entry-item">
 <div class="entry-item__image">
-<img alt="Individualno – podporna fotografija" src="individualno.jpg"/>
+<img alt="Individualno, podporna fotografija" src="individualno.jpg"/>
 </div>
 <h3>Individualen proces</h3>
 <div class="entry-item__note">Za premik iz razmišljanja v spremembo.</div>
 <p>
               Kolaborativen in poglobljen individualen proces, kjer imata telesna izkušnja in razumevanje enakovredno mesto. Z mikro-premiki se pomikamo v smer želenih sprememb v odnosih in osebnih mejah ter več izbire pri odzivih.
             </p>
-<a href="individualno.html">Preberi več o individualnem delu</a>
+<a href="/individualno.html">Preberi več o individualnem delu</a>
 </article>
 <article class="entry-item" id="somatski-pristan">
 <div class="entry-item__image">
-<img alt="Somatski pristan – podporna fotografija" src="somatska-cujecnost-sanjasomatika.jpg"/>
+<img alt="Somatski pristan, podporna fotografija" src="somatska-cujecnost-sanjasomatika.jpg"/>
 </div>
 <h3>Somatski pristan</h3>
 <div class="entry-item__note">Za kontinuiteto, podporo in vodstvo.</div>
 <p>
-              Spletno mesečno članstvo za podporo pri regulaciji živčnega sistema. Kratke prakse, strukturiran okvir in kontinuiteta za krepitev psihološke odpornosti in stika s sabo. Namenjeno redni praksi, ki podpira kontinuiteto.
+              Spletno mesečno članstvo s kratkimi praksami in strukturiranim okvirom za podporo pri regulaciji živčnega sistema, psihološki odpornosti in stiku s sabo. Namenjeno je redni praksi, ki pomaga ohranjati kontinuiteto brez pritiska.
             </p>
 <a href="https://somatskipristan.si/" rel="noopener noreferrer" target="_blank">Preberi več o somatskem pristanu</a>
 </article>
 <article class="entry-item">
 <div class="entry-item__image">
-<img alt="Somatska čuječnost – podporna fotografija" src="Somatska-čuječnost-sanja-somatika.jpg"/>
+<img alt="Somatska čuječnost, podporna fotografija" src="Somatska-čuječnost-sanja-somatika.jpg"/>
 </div>
 <h3>Somatska čuječnost</h3>
 <div class="entry-item__note">Za urjenje zaznave in stabilen stik.</div>
 <p>
-              Somatska čuječnost™ je avtorska somatska metodologija za urjenje zaznave in stabilnejši stik s sabo. Podpira pravočasnejše zaznavanje meja, potreb in telesnih signalov ter več izbire v odzivih.
+              Somatska čuječnost™ je avtorska metoda somatske edukacije za urjenje zaznave in stabilnejši stik s sabo. Podpira pravočasnejše zaznavanje meja, potreb in telesnih signalov ter več izbire v odzivih.
             </p>
-<a href="somatska-cujecnost.html">Preberi več o Somatski čuječnosti</a>
+<a href="/somatska-cujecnost.html">Preberi več o Somatski čuječnosti</a>
 </article>
 </div>
 <div class="movement-note">
@@ -1275,10 +1341,10 @@ margin-top: 52px;
               Psihosocialno svetovanje je somatsko orientirano, vendar ne izključuje pogovora in razumevanja. Zanima me <strong>umelešanje</strong>, ne le telo. Telesne zgodbe ne moremo razumeti izven konteksta okolja, odnosov, življenjskih okoliščin in prepričanj.
             </p>
 <p>
-              Srečanja prepletajo pogovor, telesno doživljanje in opazovanje. Namesto potiskanja v katarze ali neskončnega procesiranja se posvečamo prizemljenemu, živemu odnosu do sebe – na način, ki ne zavzame celotnega življenjskega prostora, ampak odpira več prostora za življenje.
+              Srečanja prepletajo pogovor, telesno doživljanje in opazovanje. Namesto potiskanja v katarze ali neskončnega procesiranja se posvečamo prizemljenemu, živemu odnosu do sebe, ki ne zavzame celotnega življenjskega prostora, ampak odpira več prostora za življenje.
             </p>
 </div>
-<a class="section-text-link" href="sanja.html#nacin-dela">Več o mojem pristopu</a>
+<a class="section-text-link" href="/sanja.html#nacin-dela">Več o mojem pristopu</a>
 </div>
 </div>
 </section>
@@ -1289,7 +1355,7 @@ margin-top: 52px;
 <div class="somatika-panel__image">
 <img alt="Somatika" src="somatika.jpg"/>
 </div>
-<div class="somatika-panel__copy"><h2>Kaj je somatika?</h2><p>Somatika je poimenovanje za široko področje, ki raziskuje telo kot živo izkušnjo, namesto kot objekt, ki ga opazujemo, uporabljamo ali popravljamo.</p><p>Ker se pojem somatika danes uporablja za zelo različne pristope, to prispeva k nejasnosti in zmedi. Somatika v javnem diskurzu vse pogosteje postaja skoraj sinonim za »travma terapijo«, čeprav zajema bistveno širše področje. Prav zato je pomembno razlikovati med somatsko psihoterapijo, somatsko-terapevtskimi pristopi, somatsko edukacijo, somatskim gibanjem in drugimi oblikami somatskega dela – tudi zaradi jasnosti strokovnega okvira, kompetenc izvajalca in varnosti.</p><p><a class="somatika-text-link" href="somatika.html">Preberite poglobljeno: kaj je somatika in kako se razlikujejo somatski pristopi.</a></p></div>
+<div class="somatika-panel__copy"><h2>Kaj je somatika?</h2><p>Somatika je poimenovanje za široko področje, ki raziskuje telo kot živo izkušnjo, namesto kot objekt, ki ga opazujemo, uporabljamo ali popravljamo.</p><p>Ker se pojem somatika danes uporablja za zelo različne pristope, to prispeva k nejasnosti in zmedi. Somatika v javnem diskurzu vse pogosteje postaja skoraj sinonim za »travma terapijo«, čeprav zajema bistveno širše področje. Prav zato je pomembno razlikovati med somatsko psihoterapijo, somatsko-terapevtskimi pristopi, somatsko edukacijo, somatskim gibanjem in drugimi oblikami somatskega dela, tudi zaradi jasnosti strokovnega okvira, kompetenc izvajalca in varnosti.</p><p><a class="somatika-text-link" href="/somatika.html">Preberite poglobljeno: kaj je somatika in kako se razlikujejo somatski pristopi.</a></p></div>
 </div>
 </div>
 </section>
@@ -1298,7 +1364,7 @@ margin-top: 52px;
 <div class="site-footer__inner">
 <div class="site-footer__grid">
 <section aria-labelledby="footer-title" class="footer-col">
-<h2 class="footer-title" id="footer-title"><a href="sanja.html">Sanja Zalar Gostimirović</a></h2>
+<h2 class="footer-title" id="footer-title"><a href="/sanja.html">Sanja Zalar Gostimirović</a></h2>
 <div class="contact-lines">
 <div class="contact-line">
 <a class="contact-link" href="mailto:info@sanjasomatika.si">info@sanjasomatika.si</a>
@@ -1326,7 +1392,7 @@ margin-top: 52px;
 <section aria-labelledby="footer-collab" class="footer-col">
 <h2 class="footer-title" id="footer-collab">Sodelovanje</h2>
 <ul class="footer-list">
-<li><a href="individualno.html">Individualno</a></li>
+<li><a href="/individualno.html">Individualno</a></li>
 <li><a href="https://somatskipristan.si/" rel="noopener noreferrer" target="_blank">Somatski pristan</a></li>
 <li><a href="https://budokon.si/" rel="noopener noreferrer" target="_blank">Utelešene prakse</a></li>
 </ul>
@@ -1334,10 +1400,11 @@ margin-top: 52px;
 <section aria-labelledby="footer-method" class="footer-col">
 <h2 class="footer-title" id="footer-method">Metoda in pristop</h2>
 <ul class="footer-list">
-<li><a href="somatska-cujecnost.html">Somatska čuječnost</a></li>
-<li><a href="sanja.html">Pristop in okvir dela</a></li>
-<li><a href="strokovna-podlaga.html">Strokovna podlaga</a></li>
-<li><a href="somatika.html">Somatika</a></li>
+<li><a href="/somatska-cujecnost.html">Somatska čuječnost</a></li>
+<li><a href="/somatic-experiencing/">Somatic Experiencing®</a></li>
+<li><a href="/sanja.html#nacin-dela">Pristop in okvir dela</a></li>
+<li><a href="/strokovna-podlaga.html">Strokovna podlaga</a></li>
+<li><a href="/somatika.html">Somatika</a></li>
 </ul>
 </section>
 </div>
