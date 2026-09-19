@@ -1047,6 +1047,29 @@
         max-width: 46ch;
       }
 
+      .boundaries-panel {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+
+      .boundaries-panel__image {
+        min-height: 0;
+        height: auto;
+        overflow: visible;
+      }
+
+      .boundaries-panel__image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      .boundaries-panel__copy {
+        width: 100%;
+        max-width: none;
+      }
+
       .practice-split {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1141,7 +1164,7 @@
       }
 
       .boundaries-panel__image {
-        min-height: 300px;
+        min-height: 0;
       }
 
       .boundaries-panel__copy {
