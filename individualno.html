@@ -51,11 +51,26 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://sanjasomatika.si/#website",
+      "url": "https://sanjasomatika.si/",
+      "name": "Sanja Somatika",
+      "inLanguage": "sl-SI",
+      "publisher": {
+        "@id": "https://sanjasomatika.si/#org"
+      }
+    },
+    {
       "@type": "Organization",
       "@id": "https://sanjasomatika.si/#org",
       "name": "Sanja Somatika",
       "url": "https://sanjasomatika.si/",
-      "email": "info@sanjasomatika.si"
+      "email": "info@sanjasomatika.si",
+      "sameAs": [
+        "https://www.instagram.com/sanja.somatika/",
+        "https://www.facebook.com/sanjasomatika",
+        "https://www.youtube.com/@sanjasomatika"
+      ]
     },
     {
       "@type": "Person",
@@ -64,9 +79,58 @@
       "alternateName": "Sanja Somatika",
       "jobTitle": "somatska praktičarka in psihosocialna svetovalka",
       "url": "https://sanjasomatika.si/sanja.html",
+      "email": "info@sanjasomatika.si",
+      "description": "Sanja Zalar Gostimirović je somatska praktičarka in psihosocialna svetovalka v Ljubljani, avtorica Somatske čuječnosti™ in edukantka Somatic Experiencing® pod supervizijo.",
       "worksFor": {
         "@id": "https://sanjasomatika.si/#org"
-      }
+      },
+      "image": "https://sanjasomatika.si/prof.jpg",
+      "workLocation": {
+        "@type": "Place",
+        "name": "Ljubljana",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ljubljana",
+          "addressCountry": "SI"
+        }
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Univerza v Ljubljani, Fakulteta za socialno delo",
+        "url": "https://www.fsd.uni-lj.si/"
+      },
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Somatska praktičarka"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Psihosocialna svetovalka"
+        }
+      ],
+      "knowsAbout": [
+        "psihosocialno svetovanje",
+        "somatsko orientirano psihosocialno svetovanje",
+        "somatika",
+        "somatska terapija",
+        "somatsko-terapevtski pristopi",
+        "somatsko gibanje",
+        "somatska edukacija",
+        "Somatska čuječnost™",
+        "Somatic Experiencing®",
+        "regulacija živčnega sistema",
+        "osebne meje",
+        "travmatsko informiran pristop",
+        "Budokon",
+        "argentinski tango"
+      ],
+      "sameAs": [
+        "https://orcid.org/0009-0004-4659-688X",
+        "https://www.instagram.com/sanja.somatika/",
+        "https://www.facebook.com/sanjasomatika",
+        "https://www.youtube.com/@sanjasomatika"
+      ]
     },
     {
       "@type": "Service",
@@ -78,6 +142,7 @@
       "provider": {
         "@id": "https://sanjasomatika.si/#person"
       },
+      "inLanguage": "sl-SI",
       "areaServed": [
         {
           "@type": "City",
@@ -117,15 +182,19 @@
       "name": "Somatsko orientirano psihosocialno svetovanje | Sanja Somatika",
       "description": "Somatsko orientirano psihosocialno svetovanje v Ljubljani in online: meje, telesno zaznavanje, odnosni vzorci in regulacija živčnega sistema.",
       "isPartOf": {
-        "@id": "https://sanjasomatika.si/#org"
+        "@id": "https://sanjasomatika.si/#website"
       },
       "author": {
         "@id": "https://sanjasomatika.si/#person"
       },
+      "publisher": {
+        "@id": "https://sanjasomatika.si/#org"
+      },
       "mainEntity": {
         "@id": "https://sanjasomatika.si/individualno.html#service"
       },
-      "inLanguage": "sl-SI"
+      "inLanguage": "sl-SI",
+      "dateModified": "2026-09-19"
     },
     {
       "@type": "BreadcrumbList",
@@ -982,7 +1051,7 @@
         <div class="subpage-hero__copy">
           <p class="subpage-hero__kicker"><span class="hero-kicker__brand">Sanja Somatika <span class="hero-kicker__sep">|</span></span><span class="hero-kicker__name">Sanja Zalar Gostimirović</span></p>
           <h1>Somatsko orientirano psihosocialno svetovanje</h1>
-          <p class="subpage-hero__subtitle"> Individualni proces v rednem, kolaborativnem okviru.</p>
+          <p class="subpage-hero__subtitle">Individualni proces v rednem, kolaborativnem okviru.</p>
 
           <div class="hero-actions">
             <a href="https://calendly.com/sanja-somatika/termin-za-spoznavno-srecanje-redno-delo" rel="noopener noreferrer" target="_blank">Naplaniraj spoznavni video klic</a>
@@ -1144,7 +1213,7 @@ Več o širšem pomenu izraza somatika in razlikah med somatsko terapijo, somats
 </p>
 <div class="inline-links-box">
 <a href="/somatic-experiencing/">Več o pristopu Somatic Experiencing® in njegovi umestitvi znotraj somatske terapije.</a>
-<a href="sanja.html">Tukaj preberite več o mojem pristopu in strokovnem okviru dela.</a>
+<a href="sanja.html#nacin-dela">Tukaj preberite več o mojem pristopu in strokovnem okviru dela.</a>
 <a href="strokovna-podlaga.html">Tukaj preberite več o moji strokovni podlagi.</a>
 </div>
 <p>
@@ -1208,7 +1277,7 @@ Ne izvajam psihoterapevtske obravnave, diagnostike ali zdravljenja duševnih mot
           <ul class="footer-list">
             <li><a href="somatska-cujecnost.html">Somatska čuječnost</a></li>
             <li><a href="/somatic-experiencing/">Somatic Experiencing®</a></li>
-            <li><a href="sanja.html">Pristop in okvir dela</a></li>
+            <li><a href="sanja.html#nacin-dela">Pristop in okvir dela</a></li>
             <li><a href="strokovna-podlaga.html">Strokovna podlaga</a></li>
             <li><a href="somatika.html">Somatika</a></li>
           </ul>
