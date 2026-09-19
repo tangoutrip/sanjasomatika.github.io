@@ -486,6 +486,27 @@
       line-height: 1.95;
     }
 
+    /* Inline povezave v modrem uvodu: vidne na modrem ozadju */
+    .intro-section p:not(.intro-section__byline) a {
+      color: #ffffff;
+      font: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      text-transform: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .intro-section p:not(.intro-section__byline) a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
 
     .section-text-link {
       display: inline-flex;
