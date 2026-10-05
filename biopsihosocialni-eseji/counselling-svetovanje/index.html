@@ -142,7 +142,7 @@
 
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext"
     rel="stylesheet">
 
 
@@ -156,10 +156,15 @@
       --ss-bluegrey: #6FA7B5;
       --ss-paper: #F4F2EC;
       --ss-sage: #A5AB8A;
+
+      --ss-article-bg: #fbf9f5;
+
       --ss-text: #2E2416;
       --ss-muted: #62665A;
       --ss-border: rgba(31, 59, 40, 0.18);
+
       --ss-display: 'Cormorant Garamond', serif;
+      --ss-body-serif: 'Lora', serif;
       --ss-nav: 'Manrope', sans-serif;
     }
 
@@ -173,7 +178,7 @@
     body {
       margin: 0;
 
-      background: #ffffff;
+      background: var(--ss-article-bg);
 
       color: var(--ss-text);
 
@@ -186,6 +191,7 @@
         sans-serif;
 
       line-height: 1.7;
+
       overflow-x: hidden;
     }
 
@@ -216,6 +222,7 @@
       z-index: 9999;
 
       width: 100%;
+
       min-height: 58px;
 
       padding-top: 0.36rem;
@@ -227,6 +234,7 @@
 
     #mainNav .container {
       max-width: 1280px;
+
       min-height: 44px;
 
       display: flex;
@@ -282,6 +290,7 @@
 
     #mainNav .navbar-nav .nav-link.nav-priority {
       color: var(--ss-dark);
+
       font-weight: 800;
     }
 
@@ -298,7 +307,20 @@
     .article-page {
       padding-top: 58px;
 
-      background: #ffffff;
+      background: var(--ss-article-bg);
+    }
+
+
+    /*
+      Enotna poravnava:
+      kategorija, naslov, dek, meta,
+      članek in link nazaj imajo isti levi rob.
+    */
+
+    .article-shell {
+      width: min(980px, calc(100% - 56px));
+
+      margin-inline: auto;
     }
 
 
@@ -326,6 +348,7 @@
       height: 100%;
 
       object-fit: cover;
+
       object-position: center;
     }
 
@@ -335,30 +358,26 @@
        ========================================================= */
 
     .article-header {
-      background: #ffffff;
+      background: var(--ss-article-bg);
 
       padding:
-        clamp(5rem, 7vw, 7.4rem)
+        clamp(3rem, 4.2vw, 4rem)
         0
         0;
     }
 
 
-    .article-header__inner {
-      width: min(1000px, calc(100% - 56px));
-
-      margin-inline: auto;
-    }
-
-
     .article-category {
-      margin: 0 0 2.15rem;
+      margin:
+        0
+        0
+        1.35rem;
 
       color: var(--ss-gold);
 
       font-family: var(--ss-nav);
 
-      font-size: 0.77rem;
+      font-size: 0.76rem;
       font-weight: 700;
 
       line-height: 1.4;
@@ -370,50 +389,53 @@
 
 
     .article-title {
-      max-width: 1000px;
+      max-width: 940px;
 
-      margin: 0 0 2rem;
+      margin:
+        0
+        0
+        0.9rem;
 
       color: var(--ss-dark);
 
       font-family: var(--ss-display);
 
-      font-size: clamp(3.55rem, 5.5vw, 5.6rem);
+      font-size: clamp(2.8rem, 4vw, 4rem);
 
       font-weight: 500;
 
-      line-height: 0.99;
+      line-height: 1.04;
 
-      letter-spacing: -0.027em;
+      letter-spacing: -0.025em;
     }
 
 
     .article-dek {
-      max-width: 870px;
+      max-width: 860px;
 
       margin: 0;
 
       color: #786d62;
 
-      font-family: 'Lora', serif;
+      font-family: var(--ss-body-serif);
 
-      font-size: clamp(1.18rem, 1.75vw, 1.48rem);
+      font-size: clamp(1.1rem, 1.4vw, 1.3rem);
 
       font-weight: 400;
 
-      line-height: 1.58;
+      line-height: 1.55;
     }
 
 
     .article-meta {
-      margin-top: 3.5rem;
+      margin-top: 2.15rem;
 
-      padding-top: 1.7rem;
+      padding-top: 1.15rem;
 
       border-top:
         1px
         solid
-        rgba(146, 124, 103, 0.32);
+        rgba(146, 124, 103, 0.30);
 
       color: #8b8278;
 
@@ -433,47 +455,53 @@
     .article-meta span + span::before {
       content: " | ";
 
-      padding: 0 0.55rem;
+      padding:
+        0
+        0.55rem;
 
       color: #aaa198;
     }
 
 
     /* =========================================================
-       BESEDILO
+       BESEDILO ČLANKA
        ========================================================= */
 
     .article-body {
-      width: min(920px, calc(100% - 56px));
-
-      margin-inline: auto;
-
       padding:
-        clamp(5.5rem, 7vw, 7.3rem)
+        clamp(3.4rem, 4.8vw, 4.4rem)
         0
-        clamp(6rem, 8vw, 8rem);
+        clamp(5rem, 7vw, 7rem);
+    }
+
+
+    .article-body__text {
+      max-width: 900px;
     }
 
 
     .article-body p {
-      margin: 0 0 2rem;
+      margin:
+        0
+        0
+        1.75rem;
 
       color: #423b35;
 
-      font-family: 'Lora', serif;
+      font-family: var(--ss-body-serif);
 
-      font-size: clamp(1.07rem, 1.2vw, 1.18rem);
+      font-size: clamp(1.06rem, 1.18vw, 1.17rem);
 
       font-weight: 400;
 
-      line-height: 1.92;
+      line-height: 1.88;
     }
 
 
     .article-body p:first-child {
       color: #382f2a;
 
-      font-size: clamp(1.11rem, 1.28vw, 1.22rem);
+      font-size: clamp(1.08rem, 1.23vw, 1.19rem);
     }
 
 
@@ -487,11 +515,7 @@
        ========================================================= */
 
     .article-back {
-      width: min(920px, calc(100% - 56px));
-
-      margin: 0 auto;
-
-      padding-bottom: 6rem;
+      padding-bottom: 5rem;
     }
 
 
@@ -521,7 +545,7 @@
 
 
     /* =========================================================
-       FOOTER
+       FOOTER — BRAND MODRA
        ========================================================= */
 
     .site-footer {
@@ -532,9 +556,14 @@
         0
         34px;
 
-      background: #05693D;
+      background: var(--ss-bluegrey);
 
-      color: rgba(255, 255, 255, 0.78);
+      color: rgba(255, 255, 255, 0.82);
+
+      border-top:
+        1px
+        solid
+        rgba(255, 255, 255, 0.16);
     }
 
 
@@ -560,11 +589,20 @@
 
 
     .footer-title {
-      margin: 0 0 14px;
+      margin:
+        0
+        0
+        14px;
 
       color: #ffffff;
 
-      font-family: 'Inter', sans-serif;
+      font-family:
+        'Inter',
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
 
       font-size: 0.82rem;
       font-weight: 700;
@@ -579,6 +617,13 @@
 
     .footer-title a {
       color: inherit;
+    }
+
+
+    .footer-title a:hover {
+      color: #ffffff;
+
+      opacity: 0.8;
     }
 
 
@@ -598,6 +643,8 @@
 
       flex-wrap: wrap;
 
+      color: rgba(255, 255, 255, 0.82);
+
       font-size: 0.95rem;
 
       line-height: 1.6;
@@ -605,14 +652,23 @@
 
 
     .contact-link {
-      color: rgba(255, 255, 255, 0.88);
+      color: rgba(255, 255, 255, 0.94);
 
       font-weight: 600;
     }
 
 
+    .contact-link:hover {
+      color: #ffffff;
+
+      text-decoration: underline;
+
+      text-underline-offset: 3px;
+    }
+
+
     .contact-hours {
-      color: rgba(255, 255, 255, 0.58);
+      color: rgba(255, 255, 255, 0.68);
 
       font-size: 0.82rem;
     }
@@ -639,15 +695,26 @@
       border:
         1px
         solid
-        rgba(255, 255, 255, 0.16);
+        rgba(255, 255, 255, 0.28);
 
       border-radius: 999px;
 
       background:
-        rgba(255, 255, 255, 0.08);
+        rgba(255, 255, 255, 0.10);
 
       color:
-        rgba(255, 255, 255, 0.78);
+        rgba(255, 255, 255, 0.92);
+    }
+
+
+    .footer-social__icon:hover {
+      border-color:
+        rgba(255, 255, 255, 0.50);
+
+      background:
+        rgba(255, 255, 255, 0.18);
+
+      color: #ffffff;
     }
 
 
@@ -655,6 +722,7 @@
       list-style: none;
 
       margin: 0;
+
       padding: 0;
 
       display: grid;
@@ -664,7 +732,7 @@
 
 
     .footer-list li {
-      color: rgba(255, 255, 255, 0.74);
+      color: rgba(255, 255, 255, 0.82);
 
       font-size: 0.95rem;
 
@@ -673,16 +741,18 @@
 
 
     .footer-list a {
-      color: rgba(255, 255, 255, 0.82);
+      color: rgba(255, 255, 255, 0.90);
 
       font-weight: 500;
     }
 
 
-    .footer-list a:hover,
-    .footer-title a:hover,
-    .contact-link:hover {
-      color: var(--ss-bluegrey);
+    .footer-list a:hover {
+      color: #ffffff;
+
+      text-decoration: underline;
+
+      text-underline-offset: 3px;
     }
 
 
@@ -694,10 +764,9 @@
       border-top:
         1px
         solid
-        rgba(255, 255, 255, 0.14);
+        rgba(255, 255, 255, 0.24);
 
-      color:
-        rgba(255, 255, 255, 0.58);
+      color: rgba(255, 255, 255, 0.70);
 
       font-size: 0.82rem;
 
@@ -759,46 +828,44 @@
 
     @media (max-width: 767px) {
 
+      .article-shell {
+        width: calc(100% - 36px);
+      }
+
+
       .article-hero {
         aspect-ratio: 1.8 / 1;
       }
 
 
       .article-header {
-        padding-top: 3.8rem;
-      }
-
-
-      .article-header__inner,
-      .article-body,
-      .article-back {
-        width: calc(100% - 36px);
+        padding-top: 2.8rem;
       }
 
 
       .article-category {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.15rem;
       }
 
 
       .article-title {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.9rem;
 
-        font-size: clamp(2.7rem, 11vw, 3.75rem);
+        font-size: clamp(2.45rem, 10vw, 3.4rem);
 
-        line-height: 1.02;
+        line-height: 1.04;
       }
 
 
       .article-dek {
-        font-size: 1.1rem;
+        font-size: 1.08rem;
 
         line-height: 1.6;
       }
 
 
       .article-meta {
-        margin-top: 2.7rem;
+        margin-top: 1.9rem;
       }
 
 
@@ -815,15 +882,20 @@
 
 
       .article-body {
-        padding-top: 4.5rem;
+        padding-top: 3.2rem;
+      }
+
+
+      .article-body__text {
+        max-width: none;
       }
 
 
       .article-body p,
       .article-body p:first-child {
-        font-size: 1.05rem;
+        font-size: 1.04rem;
 
-        line-height: 1.85;
+        line-height: 1.82;
       }
 
 
@@ -841,7 +913,9 @@
 <body>
 
 
-  <!-- NAVIGACIJA -->
+  <!-- =======================================================
+       NAVIGACIJA
+       ======================================================= -->
 
   <nav
     class="navbar navbar-expand-lg navbar-light fixed-top"
@@ -973,7 +1047,9 @@
   </nav>
 
 
-  <!-- ARTICLE -->
+  <!-- =======================================================
+       ARTICLE
+       ======================================================= -->
 
   <main class="article-page">
 
@@ -994,7 +1070,7 @@
 
     <header class="article-header">
 
-      <div class="article-header__inner">
+      <div class="article-shell">
 
 
         <p class="article-category">
@@ -1034,70 +1110,76 @@
     </header>
 
 
-    <!-- FINALNI TEKST -->
+    <!-- =====================================================
+         BESEDILO
+         ===================================================== -->
 
-    <article class="article-body">
+    <article class="article-body article-shell">
 
-
-      <p>
-        Danes strokovno prakso, ki jo v mednarodnem prostoru poimenujemo <em>counselling</em>, v slovenščini pogosto poimenujemo "svetovanje". Ampak kaj človek ob besedi <em>svetovanje</em> pravzaprav sliši, kaj mu ta beseda pomeni in do katere mere ta predstava ustreza temu, kar se v svetovalnem procesu dejansko dogaja?
-      </p>
-
-
-      <p>
-        V vsakdanji rabi "svetovati" pomeni predvsem povedati nekomu, kaj bi bilo dobro narediti. Tako besedo opredeljuje tudi SSKJ². Svetovati pomeni izraziti svoje mnenje o tem, kako naj človek ravna, mu dajati nasvete ali strokovna priporočila. Zato lahko "psihosocialno svetovanje" čisto razumljivo ustvari predstavo: "Pridem s težavo, strokovnjak jo oceni in mi pove, kaj naj naredim."
-      </p>
+      <div class="article-body__text">
 
 
-      <p>
-        Pri <em>counsellingu</em> na področju psihosocialne pomoči in duševnega zdravja pa je praksa praviloma zastavljena precej drugače. Svetovalec v proces prinaša strokovno znanje, vendar njegova naloga ni iskati odgovore za življenje drugega človeka. Pomaga mu raziskovati njegovo izkušnjo, jo globlje spoznati in razumeti, prepoznavati različne možnosti ter iskati načine, kako se želi z določeno situacijo srečati. British Association for Counselling and Psychotherapy counselling opisuje kot proces, ki človeku pomaga bolje razumeti sebe in iskati lastne rešitve, ne pa kot odnos, v katerem mu strokovnjak pove, kaj naj misli ali naredi.
-      </p>
+        <p>
+          Danes strokovno prakso, ki jo v mednarodnem prostoru poimenujemo <em>counselling</em>, v slovenščini pogosto poimenujemo "svetovanje". Ampak kaj človek ob besedi <em>svetovanje</em> pravzaprav sliši, kaj mu ta beseda pomeni in do katere mere ta predstava ustreza temu, kar se v svetovalnem procesu dejansko dogaja?
+        </p>
 
 
-      <p>
-        Angleščina lahko to razliko nekoliko lažje izrazi že z različnimi besedami. <em>To advise</em> oziroma <em>advising</em> pomeni svetovati, priporočiti ali predlagati, kaj naj nekdo stori. <em>Counselling</em> pa v strokovnem kontekstu označuje širši proces. Meja seveda ni absolutna: različni svetovalni pristopi so različno direktivni in v nekaterih ima lahko svoje mesto tudi neposreden nasvet. Toda dajanje nasvetov ni tisto, kar <em>counselling</em> kot prakso opredeljuje.
-      </p>
+        <p>
+          V vsakdanji rabi "svetovati" pomeni predvsem povedati nekomu, kaj bi bilo dobro narediti. Tako besedo opredeljuje tudi SSKJ². Svetovati pomeni izraziti svoje mnenje o tem, kako naj človek ravna, mu dajati nasvete ali strokovna priporočila. Zato lahko "psihosocialno svetovanje" čisto razumljivo ustvari predstavo: "Pridem s težavo, strokovnjak jo oceni in mi pove, kaj naj naredim."
+        </p>
 
 
-      <p>
-        Tudi slovenska beseda včasih ni bila opredeljena tako ozko kot jo razumemo danes. Besedna družina okoli <em>sveta</em> je zgodovinsko zajemala tudi pomen posvetovanja in skupnega preudarjanja. Tudi angleški <em>counsel</em> je skozi zgodovino pomenil tako nasvet kot posvetovanje. Težava zato morda niti ni v besedi sami, ampak predvsem v tem, kateri od njenih pomenov danes stopi v ospredje in kakšno predstavo o svetovalnem odnosu s tem ustvari.
-      </p>
+        <p>
+          Pri <em>counsellingu</em> na področju psihosocialne pomoči in duševnega zdravja pa je praksa praviloma zastavljena precej drugače. Svetovalec v proces prinaša strokovno znanje, vendar njegova naloga ni iskati odgovore za življenje drugega človeka. Pomaga mu raziskovati njegovo izkušnjo, jo globlje spoznati in razumeti, prepoznavati različne možnosti ter iskati načine, kako se želi z določeno situacijo srečati. British Association for Counselling and Psychotherapy counselling opisuje kot proces, ki človeku pomaga bolje razumeti sebe in iskati lastne rešitve, ne pa kot odnos, v katerem mu strokovnjak pove, kaj naj misli ali naredi.
+        </p>
 
 
-      <p>
-        Če "svetovanje" razumemo predvsem kot dajanje nasvetov, se že vnaprej vzpostavi določena razporeditev vednosti in odgovornosti: človek pride s problemom, strokovnjak pa naj bi imel odgovor. Beseda tako ne oblikuje samo predstave o tem, kaj bo strokovnjak počel, ampak tudi o tem, kakšna naj bi bila vloga človeka, ki prihaja po pomoč. Njegova naloga naj bi bila predstaviti problem, strokovnjakova pa ga pravilno razumeti in povedati, kaj sledi.
-      </p>
+        <p>
+          Angleščina lahko to razliko nekoliko lažje izrazi že z različnimi besedami. <em>To advise</em> oziroma <em>advising</em> pomeni svetovati, priporočiti ali predlagati, kaj naj nekdo stori. <em>Counselling</em> pa v strokovnem kontekstu označuje širši proces. Meja seveda ni absolutna: različni svetovalni pristopi so različno direktivni in v nekaterih ima lahko svoje mesto tudi neposreden nasvet. Toda dajanje nasvetov ni tisto, kar <em>counselling</em> kot prakso opredeljuje.
+        </p>
 
 
-      <p>
-        Pri <em>counsellingu</em> je odnos praviloma drugačen. Strokovno znanje ostaja pomembno in strokovnjak zanj tudi nosi odgovornost, vendar ni edino znanje, ki je v procesu relevantno. Človek v proces prinaša neposredno poznavanje svojega življenja, telesa, odnosov, zgodovine, vrednot in okoliščin. Strokovnjak lahko vidi nekaj, česar človek sam trenutno ne vidi; ne more pa iz svoje strokovne pozicije vedeti vsega o tem, kaj neka izkušnja zanj pomeni ali katera možnost je zanj prava.
-      </p>
+        <p>
+          Tudi slovenska beseda včasih ni bila opredeljena tako ozko kot jo razumemo danes. Besedna družina okoli <em>sveta</em> je zgodovinsko zajemala tudi pomen posvetovanja in skupnega preudarjanja. Tudi angleški <em>counsel</em> je skozi zgodovino pomenil tako nasvet kot posvetovanje. Težava zato morda niti ni v besedi sami, ampak predvsem v tem, kateri od njenih pomenov danes stopi v ospredje in kakšno predstavo o svetovalnem odnosu s tem ustvari.
+        </p>
 
 
-      <p>
-        Tako razumem tudi svojo psihosocialno svetovalno prakso. V proces prinašam strokovno znanje, vprašanja, opažanja, razlage, metode, hipoteze in kdaj tudi predloge. Človek pa ne vstopa v proces kot pasivni prejemnik moje strokovne presoje. Njegova izkušnja in razumevanje lastnega življenja sta pomemben del tega, s čimer delava. Zato predloge skupaj pretehtava, hipoteze raziskujeva in jih lahko tudi opustiva, razlage pa preverjava, dopolnjujeva ali spreminjava. Sodelovalnost in soustvarjanje sta pomemben del načina, kako sama razumem psihosocialni podporni odnos.
-      </p>
+        <p>
+          Če "svetovanje" razumemo predvsem kot dajanje nasvetov, se že vnaprej vzpostavi določena razporeditev vednosti in odgovornosti: človek pride s problemom, strokovnjak pa naj bi imel odgovor. Beseda tako ne oblikuje samo predstave o tem, kaj bo strokovnjak počel, ampak tudi o tem, kakšna naj bi bila vloga človeka, ki prihaja po pomoč. Njegova naloga naj bi bila predstaviti problem, strokovnjakova pa ga pravilno razumeti in povedati, kaj sledi.
+        </p>
 
 
-      <p>
-        Prav tu se pokaže, zakaj poimenovanje ni nepomembno. Če človek ob besedi "svetovanje" pričakuje, da bo prišel po odgovor, v resnici pa vstopa v proces, ki od njega pričakuje aktivno raziskovanje, presojanje, preverjanje in odločanje, beseda že pred prvim srečanjem ustvari drugačno predstavo o odnosu, kot ga bo dejansko srečal.
-      </p>
+        <p>
+          Pri <em>counsellingu</em> je odnos praviloma drugačen. Strokovno znanje ostaja pomembno in strokovnjak zanj tudi nosi odgovornost, vendar ni edino znanje, ki je v procesu relevantno. Človek v proces prinaša neposredno poznavanje svojega življenja, telesa, odnosov, zgodovine, vrednot in okoliščin. Strokovnjak lahko vidi nekaj, česar človek sam trenutno ne vidi; ne more pa iz svoje strokovne pozicije vedeti vsega o tem, kaj neka izkušnja zanj pomeni ali katera možnost je zanj prava.
+        </p>
 
 
-      <p>
-        Človek zato k meni ne pride po "pravilen odgovor" za svoje življenje. Vstopa v strokovni odnos, v katerem prispevam svoje znanje in odgovornost za proces, on pa poznavanje svojega življenja, življenjskih izkušenj, vrednot, vizij in želenih izidov. Iz tega skupaj raziskujeva, kaj se dogaja, kaj je zanj pomembno in katere možnosti se v soustvarjalnem procesu odpirajo.
-      </p>
+        <p>
+          Tako razumem tudi svojo psihosocialno svetovalno prakso. V proces prinašam strokovno znanje, vprašanja, opažanja, razlage, metode, hipoteze in kdaj tudi predloge. Človek pa ne vstopa v proces kot pasivni prejemnik moje strokovne presoje. Njegova izkušnja in razumevanje lastnega življenja sta pomemben del tega, s čimer delava. Zato predloge skupaj pretehtava, hipoteze raziskujeva in jih lahko tudi opustiva, razlage pa preverjava, dopolnjujeva ali spreminjava. Sodelovalnost in soustvarjanje sta pomemben del načina, kako sama razumem psihosocialni podporni odnos.
+        </p>
 
 
-      <p>
-        "Beseda je konj," pravimo v socialnem delu in poimenovanje gotovo vpliva na to, kaj človek od procesa pričakuje, še preden vanj vstopi.
-      </p>
+        <p>
+          Prav tu se pokaže, zakaj poimenovanje ni nepomembno. Če človek ob besedi "svetovanje" pričakuje, da bo prišel po odgovor, v resnici pa vstopa v proces, ki od njega pričakuje aktivno raziskovanje, presojanje, preverjanje in odločanje, beseda že pred prvim srečanjem ustvari drugačno predstavo o odnosu, kot ga bo dejansko srečal.
+        </p>
 
+
+        <p>
+          Človek zato k meni ne pride po "pravilen odgovor" za svoje življenje. Vstopa v strokovni odnos, v katerem prispevam svoje znanje in odgovornost za proces, on pa poznavanje svojega življenja, življenjskih izkušenj, vrednot, vizij in želenih izidov. Iz tega skupaj raziskujeva, kaj se dogaja, kaj je zanj pomembno in katere možnosti se v soustvarjalnem procesu odpirajo.
+        </p>
+
+
+        <p>
+          "Beseda je konj," pravimo v socialnem delu in poimenovanje gotovo vpliva na to, kaj človek od procesa pričakuje, še preden vanj vstopi.
+        </p>
+
+
+      </div>
 
     </article>
 
 
-    <div class="article-back">
+    <div class="article-back article-shell">
 
       <a href="/biopsihosocialni-eseji/">
         ← Vsi zapisi
@@ -1109,7 +1191,9 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
 
   <footer
     id="kontakt"
@@ -1226,35 +1310,44 @@
 
           <ul class="footer-list">
 
+
             <li>
               <a href="/individualno.html">
                 Individualen proces
               </a>
             </li>
 
+
             <li>
               <a
                 href="https://somatskipristan.si/"
                 target="_blank"
                 rel="noopener noreferrer">
+
                 Somatski pristan
+
               </a>
             </li>
+
 
             <li>
               <a
                 href="https://budokon.si/"
                 target="_blank"
                 rel="noopener noreferrer">
+
                 Utelešene prakse
+
               </a>
             </li>
+
 
             <li>
               <a href="/biopsihosocialni-eseji/">
                 Zapisi
               </a>
             </li>
+
 
           </ul>
 
@@ -1270,11 +1363,13 @@
 
           <ul class="footer-list">
 
+
             <li>
               <a href="/somatska-cujecnost.html">
                 Somatska čuječnost
               </a>
             </li>
+
 
             <li>
               <a href="/somatic-experiencing/">
@@ -1282,11 +1377,13 @@
               </a>
             </li>
 
+
             <li>
               <a href="/sanja.html#nacin-dela">
                 Pristop in okvir dela
               </a>
             </li>
+
 
             <li>
               <a href="/strokovna-podlaga.html">
@@ -1294,11 +1391,13 @@
               </a>
             </li>
 
+
             <li>
               <a href="/somatika.html">
                 Somatika
               </a>
             </li>
+
 
           </ul>
 
@@ -1309,7 +1408,9 @@
 
 
       <div class="site-footer__legal">
+
         © 2026 Sanja Somatika. Vse pravice pridržane.
+
       </div>
 
 
@@ -1319,6 +1420,7 @@
 
 
   <script src="/js/jquery.min.js"></script>
+
   <script src="/js/bootstrap.bundle.min.js"></script>
 
 
