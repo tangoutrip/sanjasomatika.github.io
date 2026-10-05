@@ -32,7 +32,7 @@
   <meta name="geo.region" content="SI">
   <meta name="geo.placename" content="Ljubljana">
 
-  <link rel="canonical" href="https://sanjasomatika.si/zapisi.html">
+  <link rel="canonical" href="https://sanjasomatika.si/zapisi/">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-512.png">
@@ -41,7 +41,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sanja Somatika">
   <meta property="og:locale" content="sl_SI">
-  <meta property="og:url" content="https://sanjasomatika.si/zapisi.html">
+  <meta property="og:url" content="https://sanjasomatika.si/zapisi/">
   <meta property="og:title" content="Zapisi in eseji | Sanja Somatika">
   <meta
     property="og:description"
@@ -59,12 +59,16 @@
     name="twitter:image"
     content="https://sanjasomatika.si/counselling-svetovanje.jpg">
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+
+  <!-- POMEMBNO: absolutne poti iz ROOT-a -->
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/fontawesome/css/all.min.css" rel="stylesheet">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext"
     rel="stylesheet">
+
 
   <style>
 
@@ -120,7 +124,6 @@
     /* =========================================================
        NAVIGACIJA
        ========================================================= */
-
 
     #mainNav {
       position: fixed;
@@ -209,7 +212,6 @@
        STRAN
        ========================================================= */
 
-
     .journal-page {
       padding-top: 58px;
       background: #ffffff;
@@ -225,7 +227,6 @@
     /* =========================================================
        UVOD
        ========================================================= */
-
 
     .journal-header {
       background: var(--ss-home-beige);
@@ -297,7 +298,6 @@
        GRID
        ========================================================= */
 
-
     .journal-list {
       background: #ffffff;
       padding:
@@ -319,16 +319,12 @@
        KARTICA
        ========================================================= */
 
-
     .essay-card {
       min-width: 0;
       display: flex;
       flex-direction: column;
       color: var(--ss-text);
     }
-
-
-    /* SLIKA */
 
 
     .essay-card__media {
@@ -356,9 +352,6 @@
     }
 
 
-    /* PODROČJE */
-
-
     .essay-card__meta {
       display: flex;
       align-items: baseline;
@@ -382,11 +375,6 @@
     .essay-card__status {
       color: var(--ss-gold);
     }
-
-
-    /* =========================================================
-       NASLOV
-       ========================================================= */
 
 
     .essay-card h2 {
@@ -418,12 +406,6 @@
     }
 
 
-    /* =========================================================
-       POVZETEK
-       brez rezanja in brez "..."
-       ========================================================= */
-
-
     .essay-card__summary {
       margin: 0;
       min-height: 6.35em;
@@ -431,11 +413,6 @@
       font-size: 0.95rem;
       line-height: 1.58;
     }
-
-
-    /* =========================================================
-       SPODNJI DEL KARTICE
-       ========================================================= */
 
 
     .essay-card__footer {
@@ -479,7 +456,6 @@
     /* =========================================================
        FOOTER
        ========================================================= */
-
 
     .site-footer {
       width: 100%;
@@ -666,7 +642,6 @@
        TABLET
        ========================================================= */
 
-
     @media (max-width: 991px) {
 
       #mainNav {
@@ -675,23 +650,19 @@
         padding-bottom: 0.48rem;
       }
 
-
       #mainNav .container {
         min-height: 48px;
       }
-
 
       #mainNav .navbar-brand {
         font-size: 1.45rem;
         margin-right: 1rem;
       }
 
-
       #mainNav .navbar-nav {
         align-items: flex-start;
         padding-top: 0.85rem;
       }
-
 
       #mainNav .navbar-nav .nav-link {
         padding-left: 0;
@@ -700,27 +671,22 @@
         padding-bottom: 0.45rem;
       }
 
-
       .journal-page {
         padding-top: 64px;
       }
-
 
       .journal-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-
       .site-footer {
         padding: 64px 0 26px;
       }
-
 
       .site-footer__grid {
         grid-template-columns: 1fr;
         gap: 26px;
       }
-
 
       .site-footer__legal {
         margin-top: 52px;
@@ -733,39 +699,32 @@
        MOBILNO
        ========================================================= */
 
-
     @media (max-width: 767px) {
 
       .journal-shell {
         width: min(1180px, calc(100% - 36px));
       }
 
-
       .journal-header {
         padding: 4.6rem 0 4rem;
       }
-
 
       .journal-header h1 {
         font-size: clamp(3.15rem, 16vw, 4.5rem);
       }
 
-
       .journal-header__lead {
         font-size: 1.18rem;
       }
-
 
       .journal-list {
         padding-top: 4rem;
       }
 
-
       .journal-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
       }
-
 
       .essay-card__summary {
         min-height: 0;
@@ -781,16 +740,13 @@
         line-height: 1.26;
       }
 
-
       .essay-card__title-line {
-        white-space: nowrap;
+        white-space: normal;
       }
-
 
       .essay-card__summary {
         font-size: 0.94rem;
       }
-
 
       .site-footer__inner {
         width: min(1080px, calc(100% - 36px));
@@ -806,10 +762,7 @@
 <body id="page-top">
 
 
-  <!-- =======================================================
-       NAVIGACIJA
-       ======================================================= -->
-
+  <!-- NAVIGACIJA -->
 
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 
@@ -838,19 +791,19 @@
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item">
-            <a class="nav-link" href="somatika.html">
+            <a class="nav-link" href="/somatika.html">
               somatika
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link nav-priority" href="individualno.html">
+            <a class="nav-link nav-priority" href="/individualno.html">
               individualen proces
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="somatska-cujecnost.html">
+            <a class="nav-link" href="/somatska-cujecnost.html">
               somatska čuječnost
             </a>
           </li>
@@ -862,7 +815,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="sanja.html">
+            <a class="nav-link" href="/sanja.html">
               sanja
             </a>
           </li>
@@ -876,18 +829,12 @@
   </nav>
 
 
-  <!-- =======================================================
-       GLAVNA VSEBINA
-       ======================================================= -->
-
+  <!-- GLAVNA VSEBINA -->
 
   <main class="journal-page">
 
 
-    <!-- =====================================================
-         UVOD
-         ===================================================== -->
-
+    <!-- UVOD -->
 
     <header class="journal-header">
 
@@ -926,10 +873,7 @@
     </header>
 
 
-    <!-- =====================================================
-         KARTICE
-         ===================================================== -->
-
+    <!-- KARTICE -->
 
     <section
       class="journal-list"
@@ -938,21 +882,18 @@
       <div class="journal-shell journal-grid">
 
 
-        <!-- =================================================
-             1. OBJAVLJEN ZAPIS
-             ================================================= -->
-
+        <!-- 1. OBJAVLJEN ZAPIS -->
 
         <article class="essay-card">
 
           <a
             class="essay-card__media"
-            href="counselling-svetovanje.html"
+            href="/zapisi/counselling-svetovanje/"
             aria-label="Preberi zapis: Kaj se izgubi, ko counselling prevedemo kot svetovanje">
 
             <img
               class="essay-card__image"
-              src="counselling-svetovanje.jpg"
+              src="/counselling-svetovanje.jpg"
               alt="Dva prazna stola, videna skozi okno z odsevi"
               loading="eager"
               decoding="async">
@@ -971,7 +912,7 @@
 
           <h2>
 
-            <a href="counselling-svetovanje.html">
+            <a href="/zapisi/counselling-svetovanje/">
 
               <span class="essay-card__title-line">
                 Kaj se izgubi, ko counselling
@@ -995,7 +936,7 @@
 
             <a
               class="essay-card__action"
-              href="counselling-svetovanje.html">
+              href="/zapisi/counselling-svetovanje/">
 
               Preberi zapis
 
@@ -1006,10 +947,7 @@
         </article>
 
 
-        <!-- =================================================
-             2. V PRIPRAVI
-             ================================================= -->
-
+        <!-- 2. V PRIPRAVI -->
 
         <article class="essay-card">
 
@@ -1019,7 +957,7 @@
 
             <img
               class="essay-card__image"
-              src="strokovna-razlaga-resnica.jpg"
+              src="/strokovna-razlaga-resnica.jpg"
               alt=""
               loading="lazy"
               decoding="async">
@@ -1069,10 +1007,7 @@
         </article>
 
 
-        <!-- =================================================
-             3. V PRIPRAVI
-             ================================================= -->
-
+        <!-- 3. V PRIPRAVI -->
 
         <article class="essay-card">
 
@@ -1082,7 +1017,7 @@
 
             <img
               class="essay-card__image"
-              src="telesni-signali-kompas.jpg"
+              src="/telesni-signali-kompas.jpg"
               alt=""
               loading="lazy"
               decoding="async">
@@ -1139,10 +1074,7 @@
   </main>
 
 
-  <!-- =======================================================
-       FOOTER
-       ======================================================= -->
-
+  <!-- FOOTER -->
 
   <footer
     id="kontakt"
@@ -1162,7 +1094,7 @@
             id="footer-title"
             class="footer-title">
 
-            <a href="sanja.html">
+            <a href="/sanja.html">
               Sanja Zalar Gostimirović
             </a>
 
@@ -1280,7 +1212,7 @@
           <ul class="footer-list">
 
             <li>
-              <a href="individualno.html">
+              <a href="/individualno.html">
                 Individualno
               </a>
             </li>
@@ -1327,7 +1259,7 @@
           <ul class="footer-list">
 
             <li>
-              <a href="somatska-cujecnost.html">
+              <a href="/somatska-cujecnost.html">
                 Somatska čuječnost
               </a>
             </li>
@@ -1339,19 +1271,19 @@
             </li>
 
             <li>
-              <a href="sanja.html#nacin-dela">
+              <a href="/sanja.html#nacin-dela">
                 Pristop in okvir dela
               </a>
             </li>
 
             <li>
-              <a href="strokovna-podlaga.html">
+              <a href="/strokovna-podlaga.html">
                 Strokovna podlaga
               </a>
             </li>
 
             <li>
-              <a href="somatika.html">
+              <a href="/somatika.html">
                 Somatika
               </a>
             </li>
@@ -1378,8 +1310,10 @@
   </footer>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- tudi JS absolutno iz ROOT-a -->
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
