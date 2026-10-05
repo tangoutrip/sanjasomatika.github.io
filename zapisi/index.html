@@ -18,52 +18,116 @@
     gtag('config', 'G-NKZ0H1RD4Q');
   </script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
   <title>Zapisi in eseji | Sanja Somatika</title>
+
 
   <meta
     name="description"
     content="Strokovne teme z biopsihosocialnega področja v dostopni obliki: psihosocialno svetovanje, somatika, terapija, odnosi in doživljanje.">
 
-  <meta name="author" content="Sanja Zalar Gostimirović">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="sl">
-  <meta name="geo.region" content="SI">
-  <meta name="geo.placename" content="Ljubljana">
 
-  <link rel="canonical" href="https://sanjasomatika.si/zapisi/">
+  <meta
+    name="author"
+    content="Sanja Zalar Gostimirović">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="/favicon-512.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Sanja Somatika">
-  <meta property="og:locale" content="sl_SI">
-  <meta property="og:url" content="https://sanjasomatika.si/zapisi/">
-  <meta property="og:title" content="Zapisi in eseji | Sanja Somatika">
+  <meta
+    name="robots"
+    content="index, follow">
+
+
+  <meta
+    name="language"
+    content="sl">
+
+
+  <link
+    rel="canonical"
+    href="https://sanjasomatika.si/zapisi/">
+
+
+  <link
+    rel="icon"
+    href="/favicon.ico"
+    sizes="any">
+
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="/favicon-512.png">
+
+
+  <link
+    rel="apple-touch-icon"
+    href="/apple-touch-icon.png">
+
+
+  <!-- OPEN GRAPH -->
+
+  <meta
+    property="og:type"
+    content="website">
+
+  <meta
+    property="og:site_name"
+    content="Sanja Somatika">
+
+  <meta
+    property="og:locale"
+    content="sl_SI">
+
+  <meta
+    property="og:url"
+    content="https://sanjasomatika.si/zapisi/">
+
+  <meta
+    property="og:title"
+    content="Zapisi in eseji | Sanja Somatika">
+
   <meta
     property="og:description"
     content="Strokovne teme z biopsihosocialnega področja v dostopni obliki.">
+
   <meta
     property="og:image"
     content="https://sanjasomatika.si/counselling-svetovanje.jpg">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Zapisi in eseji | Sanja Somatika">
+
+  <!-- TWITTER -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Zapisi in eseji | Sanja Somatika">
+
   <meta
     name="twitter:description"
     content="Strokovne teme z biopsihosocialnega področja v dostopni obliki.">
+
   <meta
     name="twitter:image"
     content="https://sanjasomatika.si/counselling-svetovanje.jpg">
 
 
-  <!-- POMEMBNO: absolutne poti iz ROOT-a -->
+  <!-- CSS IZ ROOT-A -->
 
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/fontawesome/css/all.min.css" rel="stylesheet">
+  <link
+    href="/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="/fontawesome/css/all.min.css"
+    rel="stylesheet">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500&family=Manrope:wght@600;700;800&family=Varela+Round&display=swap&subset=latin-ext"
@@ -81,9 +145,7 @@
       --ss-paper: #F4F2EC;
       --ss-sage: #A5AB8A;
       --ss-home-beige: #f7f3ee;
-      --ss-old-ochre: #927C67;
 
-      --ss-cream: #F4F2EC;
       --ss-text: #2E2416;
       --ss-muted: #62665A;
       --ss-border: rgba(31, 59, 40, 0.18);
@@ -101,22 +163,34 @@
 
     body {
       margin: 0;
-      background: var(--ss-home-beige);
+
+      background: #ffffff;
+
       color: var(--ss-text);
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+      font-family:
+        'Inter',
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Arial,
+        sans-serif;
+
       line-height: 1.65;
+
       overflow-x: hidden;
     }
 
 
     a {
-      color: var(--ss-bluegrey);
+      color: inherit;
       text-decoration: none;
     }
 
 
     a:hover {
-      color: var(--ss-dark);
+      color: var(--ss-bluegrey);
       text-decoration: none;
     }
 
@@ -125,26 +199,33 @@
        NAVIGACIJA
        ========================================================= */
 
+
     #mainNav {
       position: fixed;
+
       top: 0;
       left: 0;
       right: 0;
+
       z-index: 9999;
+
       width: 100%;
       min-height: 58px;
+
       padding-top: 0.36rem;
       padding-bottom: 0.36rem;
+
       background: rgba(255, 255, 255, 0.96);
+
       box-shadow: none;
-      transition: none;
-      transform: none;
     }
 
 
     #mainNav .container {
       max-width: 1280px;
+
       min-height: 44px;
+
       display: flex;
       align-items: center;
     }
@@ -152,15 +233,18 @@
 
     #mainNav .navbar-brand {
       color: var(--ss-bluegrey);
+
       font-family: 'Varela Round', sans-serif;
+
       font-size: 1.22rem;
       font-weight: 400;
       line-height: 1.1;
-      letter-spacing: 0;
-      text-transform: none;
+
+      margin-right: 2rem;
+
       padding-top: 0;
       padding-bottom: 0;
-      margin-right: 2rem;
+
       white-space: nowrap;
     }
 
@@ -172,26 +256,30 @@
 
     #mainNav .navbar-nav .nav-link {
       color: var(--ss-dark);
+
       font-family: var(--ss-nav);
+
       font-size: 0.98rem;
       font-weight: 700;
+
       font-variant-caps: all-small-caps;
+
       letter-spacing: 0.025em;
       line-height: 1.2;
-      text-transform: none;
-      padding-top: 0.28rem;
-      padding-bottom: 0.28rem;
-      padding-left: 0.62rem;
-      padding-right: 0.62rem;
+
+      padding:
+        0.28rem
+        0.62rem;
+
       white-space: nowrap;
-      transition: none;
     }
 
 
-    #mainNav .navbar-nav .nav-link:hover {
+    #mainNav .navbar-nav .nav-link:hover,
+    #mainNav .navbar-nav .nav-link.is-current {
       color: var(--ss-bluegrey);
+
       background: transparent;
-      text-decoration: none;
     }
 
 
@@ -203,7 +291,9 @@
 
     #mainNav .navbar-toggler {
       padding: 0.25rem 0.5rem;
+
       margin: 0;
+
       border-color: var(--ss-border);
     }
 
@@ -212,14 +302,22 @@
        STRAN
        ========================================================= */
 
+
     .journal-page {
       padding-top: 58px;
+
       background: #ffffff;
     }
 
 
+    /*
+      ŠIRINA JE NAMERNO VEČJA.
+      To je proporcijsko bližje mockupu s tremi širokimi karticami.
+    */
+
     .journal-shell {
-      width: min(1180px, calc(100% - 48px));
+      width: min(1480px, calc(100% - 96px));
+
       margin-inline: auto;
     }
 
@@ -228,141 +326,207 @@
        UVOD
        ========================================================= */
 
+
     .journal-header {
-      background: var(--ss-home-beige);
+      background: #ffffff;
+
       padding:
-        clamp(5.4rem, 8vw, 7.8rem)
+        clamp(5rem, 7vw, 7rem)
         0
-        clamp(4.4rem, 6vw, 6rem);
+        clamp(3.8rem, 5vw, 5rem);
     }
 
 
     .journal-header__inner {
       width: min(900px, 100%);
+
       margin: 0 auto;
+
       text-align: center;
     }
 
 
     .journal-header__kicker {
-      margin: 0 0 1.35rem;
+      margin:
+        0
+        0
+        1.55rem;
+
       color: var(--ss-muted);
+
       font-family: var(--ss-nav);
-      font-size: 0.75rem;
+
+      font-size: 0.76rem;
       font-weight: 700;
+
       line-height: 1.4;
-      letter-spacing: 0.16em;
+
+      letter-spacing: 0.18em;
+
       text-transform: uppercase;
     }
 
 
     .journal-header h1 {
-      margin: 0 0 1.25rem;
+      margin:
+        0
+        0
+        0.9rem;
+
       color: var(--ss-dark);
+
       font-family: var(--ss-display);
-      font-size: clamp(3.8rem, 7vw, 6rem);
+
+      font-size: clamp(2.9rem, 4.4vw, 4.35rem);
+
       font-weight: 500;
-      line-height: 0.96;
-      letter-spacing: -0.035em;
-      text-transform: none;
+
+      line-height: 1;
+
+      letter-spacing: -0.025em;
     }
 
 
     .journal-header__lead {
       max-width: 760px;
-      margin: 0 auto 1.35rem;
+
+      margin:
+        0
+        auto
+        1.2rem;
+
       color: var(--ss-text);
+
       font-family: 'Lora', serif;
-      font-size: clamp(1.2rem, 2vw, 1.5rem);
+
+      font-size: clamp(1.12rem, 1.55vw, 1.38rem);
+
       font-weight: 400;
+
       line-height: 1.55;
     }
 
 
     .journal-header__topics {
       margin: 0 auto;
+
       color: var(--ss-muted);
-      font-size: 0.9rem;
+
+      font-size: 0.88rem;
+
       line-height: 1.7;
+
       text-align: center;
     }
 
 
     .journal-header__topics strong {
       color: var(--ss-dark);
+
       font-weight: 600;
     }
 
 
     /* =========================================================
-       GRID
+       KARTICE
        ========================================================= */
+
 
     .journal-list {
       background: #ffffff;
+
       padding:
-        clamp(4.8rem, 7vw, 6.6rem)
+        clamp(1.8rem, 3vw, 3rem)
         0
-        clamp(6.5rem, 10vw, 9rem);
+        clamp(7rem, 10vw, 9rem);
     }
 
 
     .journal-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(34px, 4vw, 58px);
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: clamp(32px, 2.7vw, 46px);
+
       align-items: stretch;
     }
 
 
-    /* =========================================================
-       KARTICA
-       ========================================================= */
-
     .essay-card {
       min-width: 0;
+
       display: flex;
       flex-direction: column;
-      color: var(--ss-text);
     }
+
+
+    /* =========================================================
+       SLIKA
+       ========================================================= */
 
 
     .essay-card__media {
       display: block;
+
       width: 100%;
+
       aspect-ratio: 16 / 9;
+
       overflow: hidden;
-      margin: 0 0 1.5rem;
+
+      margin:
+        0
+        0
+        1.4rem;
+
       background: var(--ss-paper);
     }
 
 
     .essay-card__image {
       display: block;
+
       width: 100%;
       height: 100%;
+
       object-fit: cover;
+
       object-position: center;
+
       transition: transform 280ms ease;
     }
 
 
     a.essay-card__media:hover .essay-card__image {
-      transform: scale(1.015);
+      transform: scale(1.012);
     }
 
 
+    /* =========================================================
+       KATEGORIJA / STATUS
+       ========================================================= */
+
+
     .essay-card__meta {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      margin: 0 0 0.8rem;
+      margin:
+        0
+        0
+        0.75rem;
+
+      color: var(--ss-muted);
+
       font-family: var(--ss-nav);
-      font-size: 0.69rem;
+
+      font-size: 0.7rem;
+
       font-weight: 700;
+
       line-height: 1.45;
-      letter-spacing: 0.085em;
+
+      letter-spacing: 0.095em;
+
       text-transform: uppercase;
     }
 
@@ -377,27 +541,35 @@
     }
 
 
+    /* =========================================================
+       NASLOV
+       ========================================================= */
+
+
     .essay-card h2 {
-      margin: 0 0 1rem;
-      min-height: 2.4em;
+      margin:
+        0
+        0
+        0.9rem;
+
       color: var(--ss-dark);
+
       font-family: 'Lora', serif;
-      font-size: clamp(1.3rem, 1.65vw, 1.62rem);
+
+      font-size: clamp(1.42rem, 1.65vw, 1.72rem);
+
       font-weight: 400;
-      line-height: 1.2;
+
+      line-height: 1.22;
+
       letter-spacing: -0.015em;
-    }
 
-
-    .essay-card__title-line {
-      display: block;
-      white-space: nowrap;
+      min-height: 2.44em;
     }
 
 
     .essay-card h2 a {
       color: inherit;
-      text-decoration: none;
     }
 
 
@@ -406,50 +578,85 @@
     }
 
 
+    /* =========================================================
+       POVZETEK
+       brez rezanja, brez ...
+       ========================================================= */
+
+
     .essay-card__summary {
       margin: 0;
-      min-height: 6.35em;
+
       color: var(--ss-muted);
-      font-size: 0.95rem;
-      line-height: 1.58;
+
+      font-family: 'Lora', serif;
+
+      font-size: 0.98rem;
+
+      font-weight: 400;
+
+      line-height: 1.55;
+
+      min-height: 4.65em;
     }
+
+
+    /* =========================================================
+       SPODNJA ČRTA / PODATKI
+       ========================================================= */
 
 
     .essay-card__footer {
       margin-top: auto;
-      padding-top: 1.3rem;
+
+      padding-top: 1.45rem;
     }
 
 
     .essay-card__footer::before {
       content: "";
+
       display: block;
+
       width: 100%;
+
       height: 1px;
+
       margin-bottom: 0.9rem;
+
       background: var(--ss-border);
     }
 
 
-    .essay-card__action {
-      color: var(--ss-dark);
-      font-family: var(--ss-nav);
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.075em;
-      line-height: 1.4;
-      text-transform: uppercase;
+    .essay-card__byline {
+      margin: 0;
+
+      color: var(--ss-muted);
+
+      font-family: 'Lora', serif;
+
+      font-size: 0.84rem;
+
+      line-height: 1.5;
     }
 
 
-    a.essay-card__action:hover {
+    .essay-card__byline a {
+      color: inherit;
+    }
+
+
+    .essay-card__byline a:hover {
       color: var(--ss-bluegrey);
     }
 
 
-    .essay-card__action--muted {
-      color: var(--ss-muted);
-      font-weight: 700;
+    .essay-card__dot {
+      margin:
+        0
+        0.45rem;
+
+      color: rgba(98, 102, 90, 0.6);
     }
 
 
@@ -457,85 +664,137 @@
        FOOTER
        ========================================================= */
 
+
     .site-footer {
       width: 100%;
-      padding: 78px 0 34px;
+
+      padding:
+        78px
+        0
+        34px;
+
       background: #05693D;
+
       color: rgba(255, 255, 255, 0.78);
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+      border-top:
+        1px
+        solid
+        rgba(255, 255, 255, 0.12);
     }
 
 
     .site-footer__inner {
       width: min(1080px, calc(100% - 48px));
+
       margin-inline: auto;
     }
 
 
     .site-footer__grid {
       display: grid;
-      grid-template-columns: 1.15fr 1fr 1fr;
+
+      grid-template-columns:
+        1.15fr
+        1fr
+        1fr;
+
       gap: clamp(18px, 3.2vw, 44px);
+
       align-items: start;
+
       text-align: left;
     }
 
 
     .footer-title {
-      margin: 0 0 14px 0;
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin:
+        0
+        0
+        14px
+        0;
+
+      font-family:
+        'Inter',
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Arial,
+        sans-serif;
+
       font-size: 0.82rem;
+
       font-weight: 700;
+
       line-height: 1.2;
+
       letter-spacing: 0.16em;
+
       text-transform: uppercase;
+
       color: #ffffff;
     }
 
 
     .footer-title a {
       color: inherit;
+
       text-decoration: none;
+
       font: inherit;
+
       letter-spacing: inherit;
+
       text-transform: inherit;
     }
 
 
     .footer-title a:hover {
       color: var(--ss-bluegrey);
-      text-decoration: none;
     }
 
 
     .contact-lines {
       display: grid;
+
       gap: 10px;
+
       margin-top: 2px;
     }
 
 
     .contact-line {
       display: flex;
+
       align-items: baseline;
+
       gap: 10px;
+
       flex-wrap: wrap;
+
       color: rgba(255, 255, 255, 0.78);
+
       font-size: 0.95rem;
+
       line-height: 1.6;
     }
 
 
     .contact-link {
       color: rgba(255, 255, 255, 0.88);
+
       text-decoration: none;
+
       font-weight: 600;
     }
 
 
     .contact-link:hover {
       color: var(--ss-bluegrey);
+
       text-decoration: underline;
+
       text-underline-offset: 3px;
     }
 
@@ -547,37 +806,55 @@
 
     .contact-hours {
       color: rgba(255, 255, 255, 0.58);
+
       font-size: 0.82rem;
-      letter-spacing: 0.01em;
     }
 
 
     .footer-social {
       margin-top: 16px;
+
       display: flex;
+
       gap: 10px;
+
       align-items: center;
     }
 
 
     .footer-social__icon {
       display: inline-flex;
+
       align-items: center;
       justify-content: center;
+
       width: 34px;
       height: 34px;
+
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      background-color: rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.78);
+
+      border:
+        1px
+        solid
+        rgba(255, 255, 255, 0.16);
+
+      background-color:
+        rgba(255, 255, 255, 0.08);
+
+      color:
+        rgba(255, 255, 255, 0.78);
+
       text-decoration: none;
-      transition: none;
     }
 
 
     .footer-social__icon:hover {
-      border-color: rgba(255, 255, 255, 0.28);
-      background-color: rgba(255, 255, 255, 0.16);
+      border-color:
+        rgba(255, 255, 255, 0.28);
+
+      background-color:
+        rgba(255, 255, 255, 0.16);
+
       color: var(--ss-bluegrey);
     }
 
@@ -589,46 +866,70 @@
 
     .footer-list {
       list-style: none;
+
       margin: 0;
+
       padding: 0;
+
       display: grid;
+
       gap: 0.42rem;
     }
 
 
     .footer-list li {
       padding-left: 0;
+
       line-height: 1.55;
+
       font-size: 0.95rem;
+
       color: rgba(255, 255, 255, 0.74);
     }
 
 
     .footer-list a {
       color: rgba(255, 255, 255, 0.82);
+
       text-decoration: none;
+
       font-weight: 500;
     }
 
 
     .footer-list a:hover {
       color: var(--ss-bluegrey);
+
       text-decoration: underline;
+
       text-underline-offset: 3px;
     }
 
 
     .site-footer__legal {
       margin-top: 72px;
+
       padding-top: 28px;
-      border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+      border-top:
+        1px
+        solid
+        rgba(255, 255, 255, 0.14);
+
       display: flex;
+
       justify-content: space-between;
+
       gap: 12px;
+
       align-items: center;
+
       flex-wrap: wrap;
+
       color: rgba(255, 255, 255, 0.58);
+
       font-size: 0.82rem;
+
       line-height: 1.6;
     }
 
@@ -642,51 +943,75 @@
        TABLET
        ========================================================= */
 
+
     @media (max-width: 991px) {
 
       #mainNav {
         min-height: 64px;
+
         padding-top: 0.48rem;
         padding-bottom: 0.48rem;
       }
+
 
       #mainNav .container {
         min-height: 48px;
       }
 
+
       #mainNav .navbar-brand {
         font-size: 1.45rem;
+
         margin-right: 1rem;
       }
 
+
       #mainNav .navbar-nav {
         align-items: flex-start;
+
         padding-top: 0.85rem;
       }
+
 
       #mainNav .navbar-nav .nav-link {
         padding-left: 0;
         padding-right: 0;
+
         padding-top: 0.45rem;
         padding-bottom: 0.45rem;
       }
+
 
       .journal-page {
         padding-top: 64px;
       }
 
-      .journal-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      .journal-shell {
+        width: min(1480px, calc(100% - 56px));
       }
 
-      .site-footer {
-        padding: 64px 0 26px;
+
+      .journal-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
       }
+
+
+      .site-footer {
+        padding:
+          64px
+          0
+          26px;
+      }
+
 
       .site-footer__grid {
         grid-template-columns: 1fr;
+
         gap: 26px;
       }
+
 
       .site-footer__legal {
         margin-top: 52px;
@@ -699,35 +1024,60 @@
        MOBILNO
        ========================================================= */
 
+
     @media (max-width: 767px) {
 
       .journal-shell {
-        width: min(1180px, calc(100% - 36px));
+        width: calc(100% - 36px);
       }
+
 
       .journal-header {
-        padding: 4.6rem 0 4rem;
+        padding:
+          4.5rem
+          0
+          3.6rem;
       }
+
+
+      .journal-header__kicker {
+        margin-bottom: 1.2rem;
+      }
+
 
       .journal-header h1 {
-        font-size: clamp(3.15rem, 16vw, 4.5rem);
+        font-size: 3rem;
       }
+
 
       .journal-header__lead {
-        font-size: 1.18rem;
+        font-size: 1.1rem;
       }
 
+
       .journal-list {
-        padding-top: 4rem;
+        padding-top: 1.2rem;
       }
+
 
       .journal-grid {
         grid-template-columns: 1fr;
-        gap: 4rem;
+
+        gap: 4.5rem;
       }
+
+
+      .essay-card h2 {
+        min-height: 0;
+
+        font-size: 1.55rem;
+      }
+
 
       .essay-card__summary {
         min-height: 0;
+
+        font-size: 0.98rem;
       }
 
     }
@@ -735,21 +1085,13 @@
 
     @media (max-width: 575px) {
 
-      .essay-card h2 {
-        font-size: 1.08rem;
-        line-height: 1.26;
+      .journal-header h1 {
+        font-size: 2.65rem;
       }
 
-      .essay-card__title-line {
-        white-space: normal;
-      }
-
-      .essay-card__summary {
-        font-size: 0.94rem;
-      }
 
       .site-footer__inner {
-        width: min(1080px, calc(100% - 36px));
+        width: calc(100% - 36px);
       }
 
     }
@@ -762,15 +1104,26 @@
 <body id="page-top">
 
 
-  <!-- NAVIGACIJA -->
+  <!-- =======================================================
+       NAVIGACIJA
+       ======================================================= -->
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+  <nav
+    class="navbar navbar-expand-lg navbar-light fixed-top"
+    id="mainNav">
 
     <div class="container">
 
-      <a class="navbar-brand js-scroll-trigger" href="/">
+
+      <a
+        class="navbar-brand"
+        href="/">
+
         Sanja Somatika
+
       </a>
+
 
       <button
         class="navbar-toggler navbar-toggler-right"
@@ -782,43 +1135,100 @@
         aria-label="Odpri navigacijo">
 
         Menu
-        <i class="fas fa-bars"></i>
+
+        <i
+          class="fas fa-bars"
+          aria-hidden="true">
+        </i>
 
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      <div
+        class="collapse navbar-collapse"
+        id="navbarResponsive">
 
         <ul class="navbar-nav ml-auto">
 
+
           <li class="nav-item">
-            <a class="nav-link" href="/somatika.html">
+
+            <a
+              class="nav-link"
+              href="/somatika.html">
+
               somatika
+
             </a>
+
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link nav-priority" href="/individualno.html">
-              individualen proces
-            </a>
-          </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/somatska-cujecnost.html">
+
+            <a
+              class="nav-link nav-priority"
+              href="/individualno.html">
+
+              individualno
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="/somatska-cujecnost.html">
+
               somatska čuječnost
+
             </a>
+
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link" href="/somatic-experiencing/">
+
+            <a
+              class="nav-link"
+              href="/somatic-experiencing/">
+
               Somatic Experiencing®
+
             </a>
+
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link" href="/sanja.html">
-              sanja
+
+            <a
+              class="nav-link is-current"
+              href="/zapisi/"
+              aria-current="page">
+
+              zapisi
+
             </a>
+
           </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="/sanja.html">
+
+              sanja
+
+            </a>
+
+          </li>
+
 
         </ul>
 
@@ -829,12 +1239,18 @@
   </nav>
 
 
-  <!-- GLAVNA VSEBINA -->
+  <!-- =======================================================
+       GLAVNA VSEBINA
+       ======================================================= -->
+
 
   <main class="journal-page">
 
 
-    <!-- UVOD -->
+    <!-- =====================================================
+         UVOD
+         ===================================================== -->
+
 
     <header class="journal-header">
 
@@ -842,17 +1258,21 @@
 
         <div class="journal-header__inner">
 
+
           <p class="journal-header__kicker">
             Strokovni zapisi
           </p>
+
 
           <h1>
             Zapisi in eseji
           </h1>
 
+
           <p class="journal-header__lead">
             Strokovne teme z biopsihosocialnega področja v dostopni obliki.
           </p>
+
 
           <p class="journal-header__topics">
 
@@ -866,6 +1286,7 @@
 
           </p>
 
+
         </div>
 
       </div>
@@ -873,7 +1294,10 @@
     </header>
 
 
-    <!-- KARTICE -->
+    <!-- =====================================================
+         KARTICE
+         ===================================================== -->
+
 
     <section
       class="journal-list"
@@ -882,21 +1306,27 @@
       <div class="journal-shell journal-grid">
 
 
-        <!-- 1. OBJAVLJEN ZAPIS -->
+        <!-- =================================================
+             1. OBJAVLJEN
+             ================================================= -->
+
 
         <article class="essay-card">
+
 
           <a
             class="essay-card__media"
             href="/zapisi/counselling-svetovanje/"
             aria-label="Preberi zapis: Kaj se izgubi, ko counselling prevedemo kot svetovanje">
 
+
             <img
               class="essay-card__image"
               src="/counselling-svetovanje.jpg"
-              alt="Dva prazna stola, videna skozi okno z odsevi"
+              alt="Dva prazna stola v svetlem prostoru ob majhni mizi"
               loading="eager"
               decoding="async">
+
 
           </a>
 
@@ -913,15 +1343,7 @@
           <h2>
 
             <a href="/zapisi/counselling-svetovanje/">
-
-              <span class="essay-card__title-line">
-                Kaj se izgubi, ko counselling
-              </span>
-
-              <span class="essay-card__title-line">
-                prevedemo kot svetovanje
-              </span>
-
+              Kaj se izgubi, ko counselling prevedemo kot svetovanje
             </a>
 
           </h2>
@@ -934,26 +1356,32 @@
 
           <div class="essay-card__footer">
 
-            <a
-              class="essay-card__action"
-              href="/zapisi/counselling-svetovanje/">
+            <p class="essay-card__byline">
 
-              Preberi zapis
+              <a href="/sanja.html">
+                Sanja Zalar Gostimirović
+              </a>
 
-            </a>
+            </p>
 
           </div>
+
 
         </article>
 
 
-        <!-- 2. V PRIPRAVI -->
+        <!-- =================================================
+             2. V PRIPRAVI
+             ================================================= -->
+
 
         <article class="essay-card">
+
 
           <div
             class="essay-card__media"
             aria-hidden="true">
+
 
             <img
               class="essay-card__image"
@@ -961,6 +1389,7 @@
               alt=""
               loading="lazy"
               decoding="async">
+
 
           </div>
 
@@ -979,41 +1408,39 @@
 
 
           <h2>
-
-            <span class="essay-card__title-line">
-              Ko strokovna razlaga postane
-            </span>
-
-            <span class="essay-card__title-line">
-              resnica o človeku
-            </span>
-
+            Ko strokovna razlaga postane resnica o človeku
           </h2>
 
 
           <p class="essay-card__summary">
-            Ko strokovna razlaga postane "resnica", se lahko prostor za človekovo nestrinjanje hitro zoži. Zapis raziskuje mejo med strokovno avtoriteto in sodelovalnim odnosom.
+            Kaj se zgodi, ko strokovna razlaga ni več ponujena kot hipoteza, temveč kot resnica o drugem človeku? Zapis raziskuje mejo med strokovno avtoriteto, sodelovalnim odnosom in pravico človeka, da strokovnjakovo razumevanje tudi zavrne.
           </p>
 
 
           <div class="essay-card__footer">
 
-            <span class="essay-card__action essay-card__action--muted">
+            <p class="essay-card__byline">
               V pripravi
-            </span>
+            </p>
 
           </div>
+
 
         </article>
 
 
-        <!-- 3. V PRIPRAVI -->
+        <!-- =================================================
+             3. V PRIPRAVI
+             ================================================= -->
+
 
         <article class="essay-card">
+
 
           <div
             class="essay-card__media"
             aria-hidden="true">
+
 
             <img
               class="essay-card__image"
@@ -1021,6 +1448,7 @@
               alt=""
               loading="lazy"
               decoding="async">
+
 
           </div>
 
@@ -1039,15 +1467,7 @@
 
 
           <h2>
-
-            <span class="essay-card__title-line">
-              Telesni signali niso nujno
-            </span>
-
-            <span class="essay-card__title-line">
-              tudi kompas
-            </span>
-
+            Telesni signali niso nujno tudi kompas
           </h2>
 
 
@@ -1058,11 +1478,12 @@
 
           <div class="essay-card__footer">
 
-            <span class="essay-card__action essay-card__action--muted">
+            <p class="essay-card__byline">
               V pripravi
-            </span>
+            </p>
 
           </div>
+
 
         </article>
 
@@ -1074,7 +1495,10 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+
 
   <footer
     id="kontakt"
@@ -1084,6 +1508,9 @@
     <div class="site-footer__inner">
 
       <div class="site-footer__grid">
+
+
+        <!-- KONTAKT -->
 
 
         <section
@@ -1102,6 +1529,7 @@
 
 
           <div class="contact-lines">
+
 
             <div class="contact-line">
 
@@ -1126,6 +1554,7 @@
 
               </a>
 
+
               <span class="contact-hours">
                 (pon–sre 13–15h)
               </span>
@@ -1141,12 +1570,14 @@
 
             </div>
 
+
           </div>
 
 
           <div
             class="footer-social"
             aria-label="Družbena omrežja">
+
 
             <a
               class="footer-social__icon"
@@ -1192,9 +1623,13 @@
 
             </a>
 
+
           </div>
 
         </section>
+
+
+        <!-- SODELOVANJE -->
 
 
         <section
@@ -1209,13 +1644,16 @@
 
           </h2>
 
+
           <ul class="footer-list">
+
 
             <li>
               <a href="/individualno.html">
-                Individualno
+                Individualen proces
               </a>
             </li>
+
 
             <li>
               <a
@@ -1228,6 +1666,7 @@
               </a>
             </li>
 
+
             <li>
               <a
                 href="https://budokon.si/"
@@ -1239,9 +1678,20 @@
               </a>
             </li>
 
+
+            <li>
+              <a href="/zapisi/">
+                Zapisi
+              </a>
+            </li>
+
+
           </ul>
 
         </section>
+
+
+        <!-- METODA IN PRISTOP -->
 
 
         <section
@@ -1256,7 +1706,9 @@
 
           </h2>
 
+
           <ul class="footer-list">
+
 
             <li>
               <a href="/somatska-cujecnost.html">
@@ -1264,11 +1716,13 @@
               </a>
             </li>
 
+
             <li>
               <a href="/somatic-experiencing/">
                 Somatic Experiencing®
               </a>
             </li>
+
 
             <li>
               <a href="/sanja.html#nacin-dela">
@@ -1276,11 +1730,13 @@
               </a>
             </li>
 
+
             <li>
               <a href="/strokovna-podlaga.html">
                 Strokovna podlaga
               </a>
             </li>
+
 
             <li>
               <a href="/somatika.html">
@@ -1288,9 +1744,11 @@
               </a>
             </li>
 
+
           </ul>
 
         </section>
+
 
       </div>
 
@@ -1299,9 +1757,11 @@
         class="site-footer__legal"
         aria-label="Pravne informacije">
 
+
         <p class="legal__copy">
           © 2026 Sanja Somatika. Vse pravice pridržane.
         </p>
+
 
       </div>
 
@@ -1310,10 +1770,11 @@
   </footer>
 
 
-  <!-- tudi JS absolutno iz ROOT-a -->
+  <!-- JS IZ ROOT-A -->
 
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
